@@ -77,9 +77,9 @@ E o algoritmo A-Estrela?
 | i $\rightarrow$ o | A-Estrela | |
 | b $\rightarrow$ o | A-Estrela | |
 | i $\rightarrow$ x | A-Estrela | |
-| i $\rightarrow$ o | A-Estrela (h * 100) | |
-| b $\rightarrow$ o | A-Estrela (h * 100)| |
-| i $\rightarrow$ x | A-Estrela (h * 100)| |
+| i $\rightarrow$ o | A-Estrela ($h(N) = h(N) * 100) | |
+| b $\rightarrow$ o | A-Estrela ($h(N) = h(N) * 100)| |
+| i $\rightarrow$ x | A-Estrela ($h(N) = h(N) * 100)| |
 | i $\rightarrow$ o | A-Estrela ($h(N) == 1$) | |
 | b $\rightarrow$ o | A-Estrela ($h(N) == 1$)| |
 | i $\rightarrow$ x | A-Estrela ($h(N) == 1$)| |
