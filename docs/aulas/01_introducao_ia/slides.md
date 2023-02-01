@@ -8,7 +8,56 @@ theme: insper
 aspectratio: 169
 ...
 
-# Origens da IA
+# Um pouco de Ficção
+
+## O que são? O que fazem? Como fazem? 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figuras/r2d2.jpg}
+\caption{R2D2 e C3PO em Star Wars}
+\end{figure}
+
+## E este aqui? Qual é a diferença?
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figuras/hal9000.jpg}
+\caption{HAL 9000 em 2001: A Space Odyssey}
+\end{figure}
+
+## E este aqui? Alguém já viu?
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figuras/carbon.png}
+\caption{AI em Altered Carbon}
+\end{figure}
+
+## O que este tem de diferente dos demais?
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figuras/ai_film.jpg}
+\caption{AI movie}
+\end{figure}
+
+## E estes?
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figuras/smith_matrix.jpeg}
+\caption{Agente Smith e outros em Matrix}
+\end{figure}
+
+## Resumo
+
+* Vamos sumarizar o que este exemplos da **ficção científica são**, 
+  * o **que** eles fazem, 
+  * **como** eles fazem e
+  * **onde** eles atuam? 
+
+# Será que a ficção tem relação com a ciência?
 
 ## 1950 Turing's "Computing Machinery and Intelligence" 
 
@@ -30,43 +79,53 @@ The Imitation Game: "Can machines think?"
 
   \vspace{1cm}
 
-**Prático**: a implementação de sistemas computacionais
-  baseados nestes modelos. Implementar sistemas computacionais que
-  resolvem problemas que outros sistemas, implementados usando
-  técnicas tradicionais, não conseguem resolver.
+**Prático**: $\cdots$
 
-## Etapas relacionadas com o objetivo teórico da IA
+# Um pouco de realidade
 
-* Algo que possui um **comportamento** considerado inteligente
-  (humano, uma sociedade de formigas, ...). 
+## Atividade em grupo (1/3)
 
-* Cria-se um **modelo** para esta "inteligência".
+* Formem grupos de 5 estudantes. 
+* Cada grupo deve escolher um dos setores abaixo: 
+  * Saúde
+  * Educação
+  * Segurança
+  * Financeiro
+  * Transportes
+  * E-commerce
+  * Agronegócio
+  * Cinema e Publicidade
 
-* Cria-se **ferramentas**, implementado os modelos definidos.
+## Atividades em grupo (2/3)
 
-* Implementar **aplicações** usando as ferramentas
-  implementadas.
+* Cada grupo deve fornecer 2 exemplos de aplicações que fazem uso de Inteligência Artificial e 2 exemplos de aplicações que não fazem uso de Inteligência Artificial considerando o setor escolhido.
 
-* O **comportamento das aplicações** implementadas pode ser
-  considerado inteligente?
+* Cada grupo deve justificar os exemplos escolhidos. Descrever o motivo de uma aplicação estar categoriza como aplicação de IA ou não.
 
-## Referências que valem a pena! 
+* Cada grupo deve criar um arquivo PPT com imagens das aplicações escolhidas, títulos para as aplicações escolhidas justificativa para os exemplos escolhidos e referências onde podem ser encontradas mais informações sobre as aplicações selecionadas. 
 
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-* **The Imitation Game**. 2014. Directed by Morten Tyldum. 
-* **Entrevista com o John McCarthy** (1927-2011), 1989. [https://www.youtube.com/watch?v=Ozipf13jRr4](https://www.youtube.com/watch?v=Ozipf13jRr4)
+## Atividades em grupo (3/3)
 
-* Minsky, Marvin (1986). **The Society of Mind**. New York: Simon & Schuster. ISBN 0-671-60740-5.
+* Cada grupo deve enviar o arquivo para o email fabriciojb at insper dot edu dot br.
 
-* McCarthy, John. **What is AI?**. [http://jmc.stanford.edu/articles/whatisai.html](http://jmc.stanford.edu/articles/whatisai.html). November, 2007.
-:::
-::: {.column width="50%"}
-\includegraphics[width=0.6\textwidth]{figuras/imitation_game.png}
-:::
-::::::::::::::
+* Na próxima aula cada grupo terá 10 minutos para apresentar o seu trabalho. 
 
-# Marcos da IA
+## Para aqueles que já terminaram
+
+* Pergunte para o [ChatGPT](https://chat.openai.com/):
+  * "What is General AI?"
+  * "O que é um agente autônomo?"
+
+* Compare a resposta dada pelo ChatGPT com o conteúdo que está nos Verbetes da Wikipedia sobre:
+  * "artificial general intelligence"  
+  * "autonomous agent".
+
+* Por favor, faça isto em sala de aula ou até a próxima aula.  
+
+
+<!--
+
+# Exemplos de Aplicações de IA
 
 ## IBM Deep Blue vence Kasparov (1997)
 
@@ -159,4 +218,6 @@ A partir de **2015** proliferação de **assistentes virtuais** que fazem uso de
 
 -->
 
+<!--
 # O que é um agente orientado a meta ou agente autônomo?
+-->

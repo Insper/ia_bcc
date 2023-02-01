@@ -21,11 +21,14 @@ mkdocs serve
 
 ## Publicar nova versão da página web
 
-Para publicar o novo conteúdo da página web basta fazer um `push` para o branch gh-pages e executar: 
+Para publicar o novo conteúdo da página web basta executar: 
 
 ````bash
 mkdocs gh-deploy
 ````
+
+No entanto, se fizer isto, todo o conteúdo que está local, mesmo se não exister no `main`, será publicado em gh-pages. 
+Para que isto não aconteça, este projeto tem um script em `.github/workflows/main.yml` que define uma action para publicação em `gh-pages` a partir do `main`.
 
 ## Compilando material escrito em Markdown
 
