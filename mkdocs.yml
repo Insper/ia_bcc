@@ -1,0 +1,82 @@
+site_name: Inteligência Artificial e Robótica 
+repo_url: https://github.com/Insper/ia_bcc/
+repo_name: Inteligência Artificial e Robótica
+site_url: https://insper.github.io/ia_bcc/
+
+theme:
+    name: 'material'
+
+extra_css:
+  - css/custom.css
+
+nav:
+  - 'Home': 'index.md'
+  - 'Ementa': 'ementa.md'
+  - 'Plano de Aula': 'plano_de_aulas.md'
+  - 'Critérios para Aprovação': 'avaliacao.md'
+  - 'Aulas':
+    - 'aulas/01_introducao_ia/index.md'
+#    - 'aulas/02_agentes_autonomos/index.md'
+#    - 'aulas/03_modelagem/index.md'
+#    - 'aulas/04_configuracao/index.md'
+#    - 'aulas/05_busca_cega/index.md'
+#    - 'aulas/06_busca_com_custo/index.md'
+#    - 'aulas/07_revisao/index.md'
+#    - 'aulas/08_heuristica/index.md'
+#    - 'aulas/09_heuristica_parte_2/index.md'
+#    - 'aulas/10_heuristica_revisao/index.md'
+#    - 'aulas/11_taxi_driver/index.md'
+#    - 'aulas/12_csp/index.md'
+#    - 'aulas/13_jogos/index.md'
+#    - 'aulas/14_competicao/index.md'
+#    - 'aulas/15_rl/index.md'
+#    - 'aulas/15_rl/exercicio1.md'
+#    - 'aulas/15_rl/exercicio2.md'
+#    - 'aulas/99_topicos/index.md'
+  - 'Referências':
+    - 'referencias/01_introducao/index.md'
+#    - 'referencias/03_algoritmos_busca/index.md'
+#    - 'referencias/03_csp/index.md'
+#    - 'referencias/04_busca_competitiva/index.md'
+#    - 'referencias/05_jogos/index.md'
+#    - 'referencias/06_rl/index.md'
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
+  - js/markdown-enhancer.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - markdown.extensions.admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: "docs/_snippets"
+      check_paths: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - footnotes
+
+plugins: 
+  - git-revision-date-localized
+
+
+
