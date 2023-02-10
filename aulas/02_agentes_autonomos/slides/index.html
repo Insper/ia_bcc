@@ -10,7 +10,7 @@
         <meta name="author" content="Fabrício Barth">
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/01_introducao_ia/slides/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/02_agentes_autonomos/slides/">
       
       
       
@@ -19,7 +19,7 @@
     
     
       
-        <title>Introdução à Inteligência Artificial - Inteligência Artificial e Robótica</title>
+        <title>Agente Autônomo - Inteligência Artificial e Robótica</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#um-pouco-de-ficcao" class="md-skip">
+        <a href="#definicao-russel-and-norvig-cap-02-do-aima" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução à Inteligência Artificial
+              Agente Autônomo
             
           </span>
         </div>
@@ -266,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../01_introducao_ia/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -294,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02_agentes_autonomos/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Agentes Autônomos
       </a>
     </li>
@@ -402,8 +402,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -412,44 +410,105 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#o-que-sao-o-que-fazem-como-fazem" class="md-nav__link">
-    O que são? O que fazem? Como fazem?
+  <a href="#definicao-russel-and-norvig-cap-02-do-aima" class="md-nav__link">
+    Definição: Russel and Norvig, cap. 02 do AIMA
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#e-este-aqui-qual-e-a-diferenca" class="md-nav__link">
-    E este aqui? Qual é a diferença?
+  <a href="#definicao-maes-1995" class="md-nav__link">
+    Definição Maes, 1995
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#e-este-aqui-alguem-ja-viu" class="md-nav__link">
-    E este aqui? Alguém já viu?
+  <a href="#definicao-wooldridge-jennings-1995" class="md-nav__link">
+    Definição Wooldridge &amp; Jennings, 1995
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#o-que-este-tem-de-diferente-dos-demais" class="md-nav__link">
-    O que este tem de diferente dos demais?
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#e-estes" class="md-nav__link">
-    E estes?
+  <a href="#exemplos" class="md-nav__link">
+    Exemplos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    Resumo
+  <a href="#e-possivel-saber-a-diferenca-entre-um-agente-autonomo-e-um-sistema-convencional" class="md-nav__link">
+    É possível saber a diferença entre um agente autônomo e um sistema convencional?
   </a>
+  
+    <nav class="md-nav" aria-label="É possível saber a diferença entre um agente autônomo e um sistema convencional?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#um-pouco-de-formalismo-segundo-silver-2021" class="md-nav__link">
+    Um pouco de formalismo segundo Silver, 2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propriedades-do-ambiente" class="md-nav__link">
+    Propriedades do ambiente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quais-sao-as-propriedades-destes-ambientes" class="md-nav__link">
+    Quais são as propriedades destes ambientes?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-propriedades-de-ambientes" class="md-nav__link">
+    Exemplos de propriedades de ambientes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-identificar-as-propriedades-de-um-ambiente-e-relevante" class="md-nav__link">
+    Por que identificar as propriedades de um ambiente é relevante?
+  </a>
+  
+    <nav class="md-nav" aria-label="Por que identificar as propriedades de um ambiente é relevante?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -472,215 +531,174 @@
 
 
 
-<h1 id="um-pouco-de-ficcao">Um pouco de Ficção</h1>
-<h2 id="o-que-sao-o-que-fazem-como-fazem">O que são? O que fazem? Como fazem?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figuras/r2d2.jpg}
-\caption{R2D2 e C3PO em Star Wars}
-\end{figure}\]</div>
-<h2 id="e-este-aqui-qual-e-a-diferenca">E este aqui? Qual é a diferença?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figuras/hal9000.jpg}
-\caption{HAL 9000 em 2001: A Space Odyssey}
-\end{figure}\]</div>
-<h2 id="e-este-aqui-alguem-ja-viu">E este aqui? Alguém já viu?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.75\textwidth]{figuras/carbon.png}
-\caption{AI em Altered Carbon}
-\end{figure}\]</div>
-<h2 id="o-que-este-tem-de-diferente-dos-demais">O que este tem de diferente dos demais?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figuras/ai_film.jpg}
-\caption{AI movie}
-\end{figure}\]</div>
-<h2 id="e-estes">E estes?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figuras/smith_matrix.jpeg}
-\caption{Agente Smith e outros em Matrix}
-\end{figure}\]</div>
-<h2 id="resumo">Resumo</h2>
-<ul>
-<li>Vamos sumarizar o que este exemplos da <strong>ficção científica são</strong>, </li>
-<li>o <strong>que</strong> eles fazem, </li>
-<li><strong>como</strong> eles fazem e</li>
-<li><strong>onde</strong> eles atuam? </li>
-</ul>
-<h1 id="sera-que-a-ficcao-tem-relacao-com-a-ciencia">Será que a ficção tem relação com a ciência?</h1>
-<h2 id="1950-turings-computing-machinery-and-intelligence">1950 Turing's "Computing Machinery and Intelligence"</h2>
-<p>The Imitation Game: "Can machines think?"</p>
-<p><img alt="Turing's paper" src="../figuras/turing.jpg" /></p>
-<h2 id="1956-dartmouth-meeting-artificial-intelligence-adopted">1956 Dartmouth meeting "Artificial Intelligence" adopted</h2>
+  <h1>Agente Autônomo</h1>
+
+<h2 id="definicao-russel-and-norvig-cap-02-do-aima">Definição: Russel and Norvig, cap. 02 do AIMA</h2>
+<p>:::::::::::::: {.columns}
+::: {.column width="50%"}</p>
+<p>Um agente é qualquer coisa que pode ser visualizada como percebendo o ambiente através de sensores e agindo sobre o ambiente através de atuadores.</p>
+<p>\vspace{0.5cm}</p>
 <div class="arithmatex">\[\begin{center}
-\includegraphics[width=0.7\textwidth]{figuras/dartmouth.png}
+\includegraphics[width=0.8\textwidth]{figuras/agent_01.png}
 \end{center}\]</div>
-<h2 id="objetivos-da-ia">Objetivos da IA</h2>
-<p><strong>Teórico</strong>: a criação de teorias e modelos para a
-  capacidade cognitiva. Compreender o que é inteligência e como o
-  raciocínio se processa.</p>
-<p>\vspace{1cm}</p>
-<p><strong>Prático</strong>: <span class="arithmatex">\(\cdots\)</span></p>
-<h1 id="um-pouco-de-realidade">Um pouco de realidade</h1>
-<h2 id="atividade-em-grupo-13">Atividade em grupo (&#8531;)</h2>
-<ul>
-<li>Formem grupos de 5 estudantes. </li>
-<li>Cada grupo deve escolher um dos setores abaixo: </li>
-<li>Saúde</li>
-<li>Educação</li>
-<li>Segurança</li>
-<li>Financeiro</li>
-<li>Transportes</li>
-<li>E-commerce</li>
-<li>Agronegócio</li>
-<li>Cinema e Publicidade</li>
-</ul>
-<h2 id="atividades-em-grupo-23">Atividades em grupo (&#8532;)</h2>
+<p>:::
+::: {.column width="50%"}</p>
+<p>\includegraphics[width=1\textwidth]{figuras/agente.png}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="definicao-maes-1995">Definição Maes, 1995</h2>
+<p>:::::::::::::: {.columns}
+::: {.column width="50%"}</p>
+<p>Agentes autônomos são <strong>sistemas computacionais</strong> que habitam algum <strong>ambiente complexo e dinâmico</strong>, percebem e agem de maneira <strong>autônoma</strong> sobre este ambiente, para realizar um conjunto de <strong>tarefas</strong> e <strong>objetivos</strong> para o qual ele foi projetado.</p>
+<p>:::
+::: {.column width="50%"}</p>
+<p>\includegraphics[width=1\textwidth]{figuras/agent_02.png}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="definicao-wooldridge-jennings-1995">Definição Wooldridge &amp; Jennings, 1995</h2>
+<p>Uma entidade de hardware ou software que possui as seguintes propriedades:</p>
 <ul>
 <li>
-<p>Cada grupo deve fornecer 2 exemplos de aplicações que fazem uso de Inteligência Artificial e 2 exemplos de aplicações que não fazem uso de Inteligência Artificial considerando o setor escolhido.</p>
+<p><strong>autonomia</strong>: agentes devem operar sem a intervenção direta de pessoas ou outros agentes e devem possuir controle sobre suas próprias ações e sobre o seu estado interno;</p>
 </li>
 <li>
-<p>Cada grupo deve justificar os exemplos escolhidos. Descrever o motivo de uma aplicação estar categoriza como aplicação de IA ou não.</p>
-</li>
-<li>
-<p>Cada grupo deve criar um arquivo PPT com imagens das aplicações escolhidas, títulos para as aplicações escolhidas justificativa para os exemplos escolhidos e referências onde podem ser encontradas mais informações sobre as aplicações selecionadas. </p>
+<p><strong>habilidade social</strong>: agentes devem ter capacidade de interagir com outros agentes, possivelmente pessoas, através de algum tipo de linguagem ou protocolo de comunicação;</p>
 </li>
 </ul>
-<h2 id="atividades-em-grupo-33">Atividades em grupo (3/3)</h2>
+<h2 id="_1"></h2>
 <ul>
 <li>
-<p>Cada grupo deve enviar o arquivo para o email fabriciojb at insper dot edu dot br.</p>
+<p><strong>reatividade</strong>: agentes devem perceber o ambiente onde estão inseridos (pode ser o mundo físico, o usuário através de uma interface gráfica, um grupo de agentes, a Internet ou todos estes objetos combinados), e;</p>
 </li>
 <li>
-<p>Na próxima aula cada grupo terá 10 minutos para apresentar o seu trabalho. </p>
+<p><strong>pró-ativo</strong>: agentes não devem simplesmente agir apenas em resposta ao ambiente, eles devem ter a capacidade de tomar a iniciativa para a execução de um determinado objetivo.</p>
 </li>
 </ul>
-<h2 id="para-aqueles-que-ja-terminaram">Para aqueles que já terminaram</h2>
+<h2 id="exemplos">Exemplos</h2>
 <ul>
-<li>Pergunte para o <a href="https://chat.openai.com/">ChatGPT</a>:</li>
-<li>"What is General AI?"</li>
 <li>
-<p>"O que é um agente autônomo?"</p>
+<p>Jogador de jogos de tabuleiro.</p>
 </li>
 <li>
-<p>Compare a resposta dada pelo ChatGPT com o conteúdo que está nos Verbetes da Wikipedia sobre:</p>
-</li>
-<li>"artificial general intelligence"  </li>
-<li>
-<p>"autonomous agent".</p>
+<p>Assistentes Virtuais.</p>
 </li>
 <li>
-<p>Por favor, faça isto em sala de aula ou até a próxima aula.  </p>
+<p>Sistemas de Recomendação.</p>
+</li>
+<li>
+<p>Veículos Autônomos. </p>
+</li>
+<li>
+<p>Classificadores automático de conteúdo. </p>
 </li>
 </ul>
-<!--
-
-# Exemplos de Aplicações de IA
-
-## IBM Deep Blue vence Kasparov (1997)
-
-\begin{center}
-\includegraphics[width=0.6\textwidth]{figuras/deep_blue.jpg}
-\end{center}
-
-## Criação do Dataset MNIST (1998)
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-\includegraphics[width=1\textwidth]{figuras/mnist.jpeg}
-:::
-::: {.column width="50%"}
-The MNIST database of handwritten digits
-
-\vspace{0.5cm}
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
-<span class="p">(</span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">),</span> 
-<span class="p">(</span><span class="n">test_X</span><span class="p">,</span> <span class="n">test_y</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-</code></pre></div>
-
-\vspace{0.5cm}
-
-Em 2012 existe uma solução que tem erro de teste igual a 0.23% [[http://yann.lecun.com/exdb/mnist/]](http://yann.lecun.com/exdb/mnist/)
-
-:::
-::::::::::::::
-
-## Veículos autônomos 
-
-A equipe de Stanford ganha a competição da DARPA no deserto (2005)
-
-\begin{center}
-\includegraphics[width=0.6\textwidth]{figuras/car_stanford.jpg}
-\end{center}
-
-## Criação do Dataset ImagineNet (2009) 
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-\includegraphics[width=1\textwidth]{figuras/image_classification.png}
-:::
-::: {.column width="50%"}
-
-Este dataset possui 14.197.122 imagens anotadas de acordo com a taxonomia da WordNet. Desde 2010 este dataset é usado na competição *ImageNet Large Scale Visual Recognition Challenge* (ILSVRC) e é um benchmark clássico para **classificação de imagens** e **reconhecimento de objetos**.
-
-:::
-::::::::::::::
-
-## IBM Watson vence no Jeopardy (2011)
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{figuras/watson.jpg}
-\end{center}
-
-A partir de **2015** proliferação de **assistentes virtuais** que fazem uso de **classificação de texto** para compreensão das intenção de uma sentença.
-
-## AlphaGO e AlphaGO Zero vencem no GO (2016)
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-\includegraphics[width=0.8\textwidth]{figuras/alphago.png}
-:::
-::: {.column width="50%"}
-\includegraphics[width=1\textwidth]{figuras/go.jpg}
-:::
-::::::::::::::
-
-# O que existe de comum nestes exemplos?
-
-## O que existe de comum nestes exemplos?
-
-* Todos têm um objetivo bem claro. Uma função de utilidade muito bem definida. 
-
-* Todos estão inseridos em um ambiente muito bem controlado, exceto o veículo autônomo 
-(questionável no caso da competição). 
-
-* Todos podem ser vistos como agentes orientados a meta. 
-
-<!-- ## Desafios
-
-* Less data
-
-* Fairness
-
-* Truth
-
--->
-
-<!--
-# O que é um agente orientado a meta ou agente autônomo?
--->
+<h1 id="e-possivel-saber-a-diferenca-entre-um-agente-autonomo-e-um-sistema-convencional">É possível saber a diferença entre um agente autônomo e um sistema convencional?</h1>
+<h2 id="um-pouco-de-formalismo-segundo-silver-2021">Um pouco de formalismo segundo Silver, 2021</h2>
+<p>:::::::::::::: {.columns}
+::: {.column width="50%"}</p>
+<p>Um <strong>agente</strong> é um sistema que recebe no tempo <span class="arithmatex">\(t\)</span> uma observação <span class="arithmatex">\(O_{t}\)</span> e gera uma saída 
+<span class="arithmatex">\(A_{t}\)</span>. </p>
+<p>\vspace{0.2cm}</p>
+<p>Ou seja, um agente é um sistema <span class="arithmatex">\(A_{t} = \alpha(H_{t})\)</span> que seleciona uma ação <span class="arithmatex">\(A_{t}\)</span> em um tempo <span class="arithmatex">\(t\)</span> dado uma história <span class="arithmatex">\(H_{t} = O_{1},A_{1}, \cdots, O_{t-1},A_{t-1},O_{t}\)</span>. </p>
+<div class="arithmatex">\[\begin{eqnarray}
+O_{i} = s \nonumber \\ 
+s \in S \nonumber \\ 
+A_{i} = a \in A \nonumber
+\end{eqnarray}\]</div>
+<p>:::
+::: {.column width="50%"}</p>
+<p>\includegraphics[width=1\textwidth]{figuras/agent_02.png}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="_2"></h2>
+<p>:::::::::::::: {.columns}
+::: {.column width="50%"}</p>
+<p>Um <strong>ambiente</strong> é um sistema que recebe uma ação <span class="arithmatex">\(A_{t}\)</span> no tempo <span class="arithmatex">\(t\)</span> e responde com
+uma observação <span class="arithmatex">\(O_{t+1}\)</span>.</p>
+<p>\vspace{0.5cm}</p>
+<p>Ou seja, um ambiente é um sistema <span class="arithmatex">\(O_{t+1} = \varepsilon(H_{t}, A_{t}, n_{t})\)</span></p>
+<p>\vspace{0.2cm}</p>
+<ul>
+<li><span class="arithmatex">\(H_{t}\)</span> é um estado que acumula toda a história;</li>
+<li><span class="arithmatex">\(A_{t}\)</span> é a última ação do agente;</li>
+<li><span class="arithmatex">\(n_{t}\)</span> <em>potencialmente</em> é uma fonte de aleatoriedade. </li>
+</ul>
+<p>:::
+::: {.column width="50%"}</p>
+<p>\includegraphics[width=1\textwidth]{figuras/agent_02.png}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="propriedades-do-ambiente">Propriedades do ambiente</h2>
+<ul>
+<li>
+<p><strong>Acessível ou inacessível</strong>: quando o agente tem percepção de todo ambiente, ou pelo menos das variáveis de seu interesse.</p>
+</li>
+<li>
+<p><strong>Determinístico ou indeterminístico</strong>: se o próximo estado é completamente determinado pelo estado atual e a ação selecionada pelo agente.</p>
+</li>
+<li>
+<p><strong>Síncrono ou assíncrono</strong>: é um ambiente que não muda enquanto o agente está deliberando.</p>
+</li>
+<li>
+<p><strong>Discreto ou contínuo</strong>: um número limitado e bem definido de percepções e ações.</p>
+</li>
+<li>
+<p><strong>Single Agent ou Multi-agent</strong>: neste caso podemos ter ambientes <em>multi-agent</em> competitivos ou colaborativos. </p>
+</li>
+<li>
+<p><strong>Competitivo ou colaborativo</strong>: o agente está competindo ou colaborando com outros agentes?</p>
+</li>
+</ul>
+<h2 id="quais-sao-as-propriedades-destes-ambientes">Quais são as propriedades destes ambientes?</h2>
+<ul>
+<li>
+<p><strong>Xadrez com relógio</strong>: </p>
+</li>
+<li>
+<p><strong>Xadrez sem relógio</strong>: </p>
+</li>
+<li>
+<p><strong>Veículo autônomo</strong>: </p>
+</li>
+<li>
+<p><strong>Futebol de robôs</strong>: </p>
+</li>
+</ul>
+<h2 id="exemplos-de-propriedades-de-ambientes">Exemplos de propriedades de ambientes</h2>
+<ul>
+<li>
+<p><strong>Xadrez com relógio</strong>: acessível, determinístico, assíncrono, discreto, single agent e competitivo.</p>
+</li>
+<li>
+<p><strong>Xadrez sem relógio</strong>: acessível, determinístico, síncrono, discreto, single agent e competitivo.</p>
+</li>
+<li>
+<p><strong>Veículo autônomo</strong>: inacessível, indeterminístico, assíncrono, contínuo, multi-agent e colaborativo. </p>
+</li>
+<li>
+<p><strong>Futebol de robôs</strong>: acessível, indeterminístico, assíncrono, contínuo, multi-agent e colaborativo/competitivo. </p>
+</li>
+</ul>
+<h1 id="por-que-identificar-as-propriedades-de-um-ambiente-e-relevante">Por que identificar as propriedades de um ambiente é relevante?</h1>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>
+<p>Franklin S., Graesser A. It is an Agent, or just a program? A Taxonomy for Autonomous Agents. 1996.</p>
+</li>
+<li>
+<p>Russell, S., Norvig P. Inteligência Artificial. Segunda Edição. Cap. 02.</p>
+</li>
+<li>
+<p>SILVER, D.; SINGH S.; PRECUP D.; SUTTON R. <a href="https://doi.org/10.1016/j.artint.2021.103535">Reward is enough</a>. Artificial Intelligence. Vol 299, 2021.</p>
+</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2023</span>
       
     
   </small>

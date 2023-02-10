@@ -41,6 +41,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://insper.github.io/ia_bcc/aulas/02_agentes_autonomos/</loc>
+         <lastmod>2023-02-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://insper.github.io/ia_bcc/aulas/02_agentes_autonomos/slides/</loc>
+         <lastmod>2023-02-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://insper.github.io/ia_bcc/aulas/03_modelagem/</loc>
+         <lastmod>2023-02-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://insper.github.io/ia_bcc/referencias/01_introducao/</loc>
          <lastmod>2023-02-10</lastmod>
          <changefreq>daily</changefreq>
