@@ -7,7 +7,7 @@
 * [Segurança](https://www.canva.com/design/DAFZy3JQMvM/Xm4LB2eKsGbZjmNUdXFVLQ/edit?utm_content=DAFZy3JQMvM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 * [Transporte](https://www.canva.com/design/DAFZy42_-fg/7vhfCt-tFvGXfVcRyTGIDQ/edit?utm_content=DAFZy42_-fg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 * [Finanças](https://www.canva.com/design/DAFZy9vDhk0/yclSZEu9AFaHFVFnslIkqg/edit?utm_content=DAFZy9vDhk0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-* [TBD]()
+* [Cinema](https://docs.google.com/presentation/d/1JBltZ0LX1F7gA64AvY3tjzqQIu8zwptUSEmiJsIyAKg/edit?usp=sharing)
 
 
 ## Questões que precisam ser respondidas
