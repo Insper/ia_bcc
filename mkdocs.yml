@@ -18,7 +18,7 @@ nav:
     - 'aulas/01_introducao_ia/index.md'
     - 'aulas/01_introducao_ia_aula2/index.md'
     - 'aulas/02_agentes_autonomos/index.md'
-#    - 'aulas/03_configuracao/index.md'
+    - 'aulas/03_configuracao/index.md'
 #    - 'aulas/04_modelagem/index.md'
 #    - 'aulas/05_busca_cega/index.md'
 #    - 'aulas/06_busca_com_custo/index.md'
