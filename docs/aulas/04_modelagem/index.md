@@ -1,6 +1,6 @@
 # Modelagem dos problemas
 
-Para cada um dos problemas relacionados responda as questões abaixo. Esta também é uma atividade em grupo (4 pessoas).
+Para cada um dos problemas relacionados responda as questões abaixo.
 
 * O que é relevante representar nos estados do mundo? Como os
     estados são estruturados (estrutura de dados) e qual o significado
