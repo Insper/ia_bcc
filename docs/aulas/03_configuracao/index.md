@@ -2,11 +2,15 @@
 
 ## Configuração do ambiente
 
-Para executar esta atividade você terá que fazer o fork do projeto [AIGYM](https://github.com/Insper/ai_gym). 
+Para executar esta atividade você terá que instalar a biblioteca [AIGYM](https://pypi.org/project/aigyminsper/):
+
+```bash
+pip install aigyminsper
+```
 
 Recomenda-se fortemente que todo estudante faça estas atividades em sua máquina. Os problemas podem ser discutidos em grupo, no entanto, cada aluno precisa ter a sua própria implementação. 
 
-Nas pastas `aigyminsper` e `tests` deste projeto você irá encontrar diversos arquivos `python`. São os arquivos desta pasta que você irá utilizar neste exercício.
+Nas pastas `aigyminsper` e `tests` do projeto [AIGYM](https://github.com/Insper/ai_gym) você irá encontrar diversos arquivos `python`. São os arquivos desta pasta que você irá utilizar neste exercício.
 
 ## Exercício: Aspirador de Pó 
 

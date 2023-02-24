@@ -1,6 +1,83 @@
 # Modelagem dos problemas
 
-Para cada um dos problemas relacionados responda as questões abaixo.
+Na aula passada começamos a implementar um agente que limpa casas com $2$ quartos. Para tanto, utilizamos uma biblioteca que já implementa alguns algoritmos de busca. 
+
+Para instalar esta biblioteca basta digitar: 
+
+```bash
+pip install aigyminsper
+```
+
+Uma solução possível encontrada para implementar o agente limpador de quartos em uma casa de 2 quartos foi: 
+
+```python
+from aigyminsper.search.SearchAlgorithms import BuscaLargura
+from aigyminsper.search.Graph import State
+
+class AspiradorPo(State):
+
+    def __init__(self, op, posicao, s_esq, s_dir):
+        self.operator = op
+        # DIR; ESQ
+        self.posicao_robo = posicao
+        # LIMPO; SUJO
+        self.situacao_esq = s_esq
+        # LIMPO; SUJO
+        self.situacao_dir = s_dir
+    
+    def sucessors(self):
+        sucessors = []
+        # esq
+        sucessors.append(AspiradorPo("esq","ESQ",self.situacao_esq,self.situacao_dir))
+        # dir
+        sucessors.append(AspiradorPo("dir","DIR",self.situacao_esq,self.situacao_dir))
+        # limpar
+        if self.posicao_robo == 'ESQ':
+            sucessors.append(AspiradorPo("limpar",self.posicao_robo,'LIMPO',self.situacao_dir))
+        else:
+            sucessors.append(AspiradorPo('limpar',self.posicao_robo,self.situacao_esq,'LIMPO'))
+        
+        return sucessors
+    
+    def is_goal(self):
+        if (self.situacao_dir == 'LIMPO') and (self.situacao_esq == 'LIMPO') and (self.posicao_robo == "ESQ"):
+            return True
+        return False 
+
+    def cost(self):
+        return 1
+
+    def description(self):
+        return "Implementa um aspirador de po para 2 quartos"
+
+    def env(self):
+        return self.operator
+
+
+def main():
+    state = AspiradorPo('','ESQ','SUJO','SUJO')
+    algorithm = BuscaLargura()
+    result = algorithm.search(state)
+    if result != None:
+        print('Achou!')
+        print(result.show_path())
+    else:
+        print('Nao achou solucao')
+
+if __name__ == '__main__':
+    main()
+```
+
+**Questões**:
+
+* O que significa `algorithm = BuscaLargura()`? 
+* Será que é possível utilizar outros algoritmos? 
+
+## Exercício 2: Aspirador de Pó com $4$ quartos.
+
+Vamos implementar um aspirador de pó que atua em um ambiente com 4 quartos? Um quadrado $2 \times 2$?
+
+Mas, antes de implementar usando uma estrutura similar a descrita acima, responda as questões abaixo: 
 
 * O que é relevante representar nos estados do mundo? Como os
     estados são estruturados (estrutura de dados) e qual o significado
@@ -13,42 +90,29 @@ Para cada um dos problemas relacionados responda as questões abaixo.
 * Qual a estimativa do tamanho do espaço de busca (número de
     estados possíveis)?
 
-## O homem, o lobo, o carneiro e o cesto de alface
+## Exercício 3: Aspirador de Pó em um mapa $10 \times 10$ e com algumas ações diferentes.
 
-Uma pessoa, um lobo, um carneiro e um cesto de alface estão à beira de
-  um rio. Dispondo de um barco no qual pode carregar apenas um dos
-  outros três, a pessoa deve transportar tudo para a outra margem.
-  Determine uma série de travessias que respeite a seguinte condição:
-  em nenhum momento devem ser deixados juntos e sozinhos o lobo e o
-  carneiro ou o carneiro e o cesto de alface.
+Neste exercício o agente sabe executar outras ações, mas o objetivo dele permanece o mesmo. As ações são: 
 
-## Banda U2
+* ir para frente;
+* virar para a esquerda;
+* virar para a direita, e;
+* limpar
 
-A banda U2 tem um concerto que começa daqui a 17 minutos e
-  todos precisam cruzar uma ponte par chegar lá. Todos os 4
-  participantes estão do mesmo lado da ponte. É noite. Só
-  há uma lanterna. A ponte suporta, no máximo, duas
-  pessoas. Qualquer pessoa que passe, uma ou duas, deve passar com a
-  lanterna na mão. A lanterna deve ser levada de um lado para outro
-  e não ser jogada. Cada membro da banda tem um tempo diferente
-  para passar de um lado para o outro. O par deve andar no tempo do
-  menos veloz: Bono: 1 minuto para passar; Edge: 2 minutos para
-  passar; Adam: 5 minutos para passar; e Larry: 10 minutos para
-  passar.
+E as dimensões da casa são de $10 \times 10$ quartos. 
 
-O problema consiste em ter os quatro elementos da banda do outro lado
-da ponte no menor tempo possível.
+* O que é relevante representar nos estados do mundo? Como os
+    estados são estruturados (estrutura de dados) e qual o significado
+    dela (dos campos)?
+* Mostre como ficam representados os estados inicial e final
+    segundo a representação adotada.
+* Quais as operações sobre os estados?
+    (detalhe como cada operação irá alterar os estados e quais as
+    condições para cada operação ser executada)
+* Qual a estimativa do tamanho do espaço de busca (número de
+    estados possíveis)?
+* Será que o algoritmo de busca em largura consegue encontrar resposta para todas as configurações iniciais? 
 
-## Cavalo e tabuleiro de xadrez
+## Vamos entender as diferenças entre os algoritmos de busca? 
 
-Considerando um tabuleiro de xadrez (`8x8`) com um
-  único cavalo, quais os movimentos que o cavalo deve fazer para
-  percorrer todas as posições do tabuleiro uma única vez e
-  retornar ao ponto de partida?
-
-## As 8 rainhas
-
-Coloque oito rainhas em um tabuleiro de
-  xadrez (`8x8` casas) de maneira que nenhuma rainha ameace
-  outra, i.e., as rainhas não devem compartilhar colunas, linhas ou
-  diagonais do tabuleiro.
+Se você já terminou as implementações acima, então leia o material neste [link](../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf). Em especial, do primeiro ao slide de número 28. 
