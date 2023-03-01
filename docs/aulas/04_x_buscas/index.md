@@ -41,8 +41,9 @@ class SumOne(State):
     
     def sucessors(self):
         sucessors = []
-        sucessors.append(SumOne(self.number+1, "+1 ", self.goal))
-        sucessors.append(SumOne(self.number+2, "+2 ", self.goal))
+        if self.number < self.goal:
+            sucessors.append(SumOne(self.number+1, "+1 ", self.goal))
+            sucessors.append(SumOne(self.number+2, "+2 ", self.goal))
         return sucessors
     
     def is_goal(self):
