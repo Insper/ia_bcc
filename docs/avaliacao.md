@@ -14,6 +14,23 @@ O critério para aprovação é:
 * nota final superior ou igual a cinco (5);
 * e 75% de frequência mínima nas aulas. 
 
+## *N* implementações de agentes autônomos
+
+Seguem os enunciados que se encaixam nesta categoria: 
+
+| Descrição                                                   |  Prazo para entrega |
+|:------------------------------------------------------------|:-------------------:|
+| [Exemplos de soluções baseadas em IA](./aulas/01_introducao_ia_aula2/index.md#apresentações-dos-alunos) | 09/02/2023 |
+| [Laboratório sobre algoritmos BL, BP e BPI](./aulas/04_x_buscas/index.md#atividade-de-laboratório) | 03/03/2023 |
+
+## 3 projetos
+
+Seguem os enunciados que se encaixam nesta categoria:
+
+| Descrição                                                   |  Prazo para entrega |
+|:------------------------------------------------------------|:-------------------:|
+
+
 ## Conversão de conceito para valor numérico
 
 O resultado de algumas avaliações poderá adotar conceitos (A+, B,..., I) ao invés de um valor numérico. Para estes casos será utilizada a seguinte tabela de conversão:
