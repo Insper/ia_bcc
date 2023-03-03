@@ -22,6 +22,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 |:------------------------------------------------------------|:-------------------:|
 | [Exemplos de soluções baseadas em IA](./aulas/01_introducao_ia_aula2/index.md#apresentações-dos-alunos) | 09/02/2023 |
 | [Laboratório sobre algoritmos BL, BP e BPI](./aulas/04_x_buscas/index.md#atividade-de-laboratório) | 03/03/2023 |
+| [Problema da banda U2](./aulas/05_busca_com_custo/index.md#banda-u2)                               | 07/03/2023 |
 
 ## 3 projetos
 
@@ -29,6 +30,9 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
+| Busca em espaço de estados                                  | TBD                 |
+| Ambiente competitivo                                        | TBD                 |
+| Agente robótico                                             | TBD                 |
 
 
 ## Conversão de conceito para valor numérico
