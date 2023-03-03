@@ -8,10 +8,8 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/referencias/03_algoritmos_busca/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/05_x_busca_cega/">
       
-      
-        <link rel="prev" href="../01_introducao/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -19,7 +17,7 @@
     
     
       
-        <title>Algoritmos de Busca - Inteligência Artificial e Robótica</title>
+        <title>Aspirador de pó em uma casa configurável - Inteligência Artificial e Robótica</title>
       
     
     
@@ -69,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algoritmos-de-busca" class="md-skip">
+        <a href="#aspirador-de-po-em-uma-casa-configuravel" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Algoritmos de Busca
+              Aspirador de pó em uma casa configurável
             
           </span>
         </div>
@@ -268,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/01_introducao_ia/" class="md-nav__link">
+      <a href="../01_introducao_ia/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -282,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/01_introducao_ia_aula2/" class="md-nav__link">
+      <a href="../01_introducao_ia_aula2/" class="md-nav__link">
         Introdução à Inteligência Artificial: aula 2
       </a>
     </li>
@@ -296,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/02_agentes_autonomos/" class="md-nav__link">
+      <a href="../02_agentes_autonomos/" class="md-nav__link">
         Agentes Autônomos
       </a>
     </li>
@@ -310,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/03_configuracao/" class="md-nav__link">
+      <a href="../03_configuracao/" class="md-nav__link">
         Implementando um Aspirador de Pó
       </a>
     </li>
@@ -324,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/04_modelagem/" class="md-nav__link">
+      <a href="../04_modelagem/" class="md-nav__link">
         Modelagem dos problemas
       </a>
     </li>
@@ -338,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/04_x_buscas/" class="md-nav__link">
+      <a href="../04_x_buscas/" class="md-nav__link">
         Algoritmos de Busca em Largura e Profundidade
       </a>
     </li>
@@ -352,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/06_busca_com_custo/index.md" class="md-nav__link">
+      <a href="../06_busca_com_custo/index.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -372,16 +370,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
       
       
       
@@ -390,7 +386,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Referências
@@ -403,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_introducao/" class="md-nav__link">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -415,21 +411,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
         Algoritmos de Busca
       </a>
-      
     </li>
   
 
@@ -477,15 +463,78 @@
   
 
 
-<h1 id="algoritmos-de-busca">Algoritmos de Busca</h1>
-<p><embed src="busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300"></p>
+<h1 id="aspirador-de-po-em-uma-casa-configuravel">Aspirador de pó em uma casa configurável</h1>
+<p><strong>Que tal implementar um aspirador de pó que consegue atuar em qualquer casa retangular?</strong> </p>
+<p>Utilize como exemplo o arquivo <code>src/ProblemSpecificationExample.py</code> para implementar a classe <code>VacuumWorldGeneric.py</code>. O método <code>main</code> da classe <code>VacuumWorldGeneric.py</code> deve receber um arquivo texto que descreve a situação do ambiente e as posições do robô como parâmetros. Por exemplo, para o seguinte ambiente: </p>
+<p><img src="img/mundo_ex_1.png"></p>
+<p>O seguinte arquivo de configuração será entregue: </p>
+<div class="highlight"><pre><span></span><code>0;1;1;1
+0;0;0;0
+1;1;1;1
+</code></pre></div>
+<p>onde <code>0</code> significa <strong>limpo</strong> e <code>1</code> <strong>sujo</strong>.</p>
+<p>E o seguinte comando deve ser executado:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>VacuumWorldGeneric.py<span class="w"> </span>configuracao.txt<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+</code></pre></div>
+<p>As ações que o robô (agente) sabe executar são: </p>
+<ul>
+<li><em>esq</em>: ir para a esquerda;</li>
+<li><em>dir</em>: ir para a direita;</li>
+<li><em>baixo</em>: ir para baixo;</li>
+<li><em>cima</em>: ir para cima;</li>
+<li><em>limpar</em>: limpar o quarto onde está.</li>
+</ul>
+<p>Ao executar o comando acima, o programa deverá gerar uma sequência de ações que fará com que o robô saia do <strong>estado inicial</strong> e chegue em um <strong>estado final</strong> válido. Um estado final válido é um estado onde todos os quartos (quadrados) estão limpos. </p>
+<p>Uma sequência de ações válida para resolver o estado acima é: </p>
+<div class="highlight"><pre><span></span><code>esq; limpar; esq; limpar; esq; baixo; baixo; limpar; dir; limpar; dir; limpar; dir; limpar
+</code></pre></div>
+<h1 id="um-outro-exemplo">Um outro exemplo</h1>
+<p>Considere um novo exemplo:</p>
+<p><img src="img/mundo_ex_2.png"></p>
+<p>Para este exemplo o arquivo de configuração precisa ter este conteúdo:</p>
+<div class="highlight"><pre><span></span><code>0;1;1;1
+0;0;1;1
+1;1;1;1
+</code></pre></div>
+<p>E a chamada para o programa: </p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>VacuumWorldGeneric.py<span class="w"> </span>configuracao.txt<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span>
+</code></pre></div>
+<p>O programa que você irá implementar não precisa se preocupar com a validação dos dados de entrada. Assume-se que os dados de entrada estão corretos, por exemplo, a posição do robô é uma posição válida. </p>
+<p><strong>A única tarefa que o programa deve fazer é se existir solução então retornar uma sequência de ações ótima para o problema. Se não existir solução então informar que não existe solução.</strong></p>
+<h2 id="formato-de-entrega">Formato de entrega</h2>
+<p>Para a implementação e entrega deste último exercício nós vamos utilizar o <a href="https://classroom.github.com/a/PVBTYkS_">Github Classroom</a>. O link para o enunciado é este aqui <a href="https://classroom.github.com/a/PVBTYkS_">https://classroom.github.com/a/PVBTYkS_</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
+<p>Sugere-se olhar o arquivo de testes <a href="https://github.com/Insper/ai_code/blob/main/src/test_VacuumWorldGeneric.py">src/test_VacuumWorldGeneric.py</a> para entender quais funções são demandadas pela sua implementação. Sugere-se também antes de submeter a sua solução, executar este arquivo de testes na sua máquina local.</p>
+<p><strong>Prazo para a entrega</strong>: 01/09/2022 até às 23:00 horas.</p>
+<h2 id="rubrica-de-avaliacao">Rubrica de avaliação</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Conceito</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A+</td>
+<td align="left">Preencheu os requisitos para A e apresentou uma solução bem projetada e um código bem escrito</td>
+</tr>
+<tr>
+<td align="center">A</td>
+<td align="left">Passou em todos os testes (os testes com número 5 são opcionais)</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="left">Submeteu uma solução, mas a mesma não passou em todos os testes obrigatórios</td>
+</tr>
+</tbody>
+</table>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2023</span>
       
     
   </small>
