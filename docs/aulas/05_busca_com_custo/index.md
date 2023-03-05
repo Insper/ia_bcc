@@ -1,6 +1,15 @@
 # Revisão do exercício anterior e novo exercício
 
-**(Aqui eu devo utilizar alguns exemplos dos trabalhos dos alunos)**
+Considerando [este exercício](../04_x_buscas/index.md#atividade-de-laboratório), quais são as respostas certas para as perguntas abaixo: 
+
+* Segundo o que discutimos em sala de aula, quais destes algoritmos são ótimos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.
+
+* Segundo o que discutimos em sala de aula, quais destes algoritmos são completos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.
+
+* Teve algum algoritmo que travou por falta de memória no seu computador? Se sim, qual é a explicação?
+
+* Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta.
+
 
 # Banda U2
 
