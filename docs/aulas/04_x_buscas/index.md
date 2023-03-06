@@ -138,8 +138,8 @@ Depois de avaliar os trabalhos entregues por vocês, gostaria de fazer os seguin
 
 Além disso, seguem dois exemplos de plots bem formados e completos: 
 
-<img src="figuras/esdras_convencional.png" width="400" height="300">
+<img src="figuras/esdras_convencional.png" width="800" height="600">
 
-<img src="figuras/esdras_log.png" width="400" height="300">
+<img src="figuras/esdras_log.png" width="800" height="600">
 
 Estes dois *plots* sumarizam muito os experimentos feitos. Principalmente o *plot* com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. 
