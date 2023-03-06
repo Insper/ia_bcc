@@ -10,7 +10,6 @@ Considerando [este exercício](../04_x_buscas/index.md#atividade-de-laboratório
 
 * Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta.
 
-
 # Banda U2
 
 Considere o seguinte problema: 
