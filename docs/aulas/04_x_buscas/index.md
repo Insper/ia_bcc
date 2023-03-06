@@ -123,3 +123,23 @@ Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard.
 | A        | Submeteu um documento que apresenta a tabela, responde todas as perguntas de forma correta e apresenta o *plot*| 
 | C        | Submeteu um documento que apresenta a tabela, mas não responde todas as perguntas de forma correta ou não apresenta o *plot* |
 | D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela ou *plot* |   
+
+## Comentários sobre os trabalhos entregue :new:
+
+Pessoal, 
+
+Depois de avaliar os trabalhos entregues por vocês, gostaria de fazer os seguintes comentários: 
+
+* sempre é bom persistir os resultados das simulações. Desta maneira você ou outra pessoa não precisam re-executar novamente todos os experimentos. Para persistir os dados talvez a forma mais simples seja armazenando os dados em um CSV. 
+
+* se você persistir os dados então você deve sempre enviar os dados junto com o relatório. Não adianta persistir os dados e não encaminhar eles junto com o relatório. 
+
+* quando uma simulação não termina (por excesso de tempo ou estouro de memória) vocês não podem colocar zero para o tempo de processamento. Vocês devem sempre colocar algo como valor faltante (NA) ou outro indicador de que este dado não foi possível de ser gerado. 
+
+Além disso, seguem dois exemplos de plots bem formados e completos: 
+
+<img src="figuras/esdras_convencional.png" width="400" height="300">
+
+<img src="figuras/esdras_log.png" width="400" height="300">
+
+Estes dois *plots* sumarizam muito os experimentos feitos. Principalmente o *plot* com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. 
