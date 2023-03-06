@@ -389,6 +389,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comentarios-sobre-os-trabalhos-entregue" class="md-nav__link">
+    Comentários sobre os trabalhos entregue
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -517,6 +524,13 @@
         <li class="md-nav__item">
   <a href="#rubrica-de-avaliacao" class="md-nav__link">
     Rubrica de avaliação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios-sobre-os-trabalhos-entregue" class="md-nav__link">
+    Comentários sobre os trabalhos entregue
   </a>
   
 </li>
@@ -720,6 +734,24 @@
 </tr>
 </tbody>
 </table>
+<h2 id="comentarios-sobre-os-trabalhos-entregue">Comentários sobre os trabalhos entregue <img alt="🆕" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f195.svg" title=":new:" /></h2>
+<p>Pessoal, </p>
+<p>Depois de avaliar os trabalhos entregues por vocês, gostaria de fazer os seguintes comentários: </p>
+<ul>
+<li>
+<p>sempre é bom persistir os resultados das simulações. Desta maneira você ou outra pessoa não precisam re-executar novamente todos os experimentos. Para persistir os dados talvez a forma mais simples seja armazenando os dados em um CSV. </p>
+</li>
+<li>
+<p>se você persistir os dados então você deve sempre enviar os dados junto com o relatório. Não adianta persistir os dados e não encaminhar eles junto com o relatório. </p>
+</li>
+<li>
+<p>quando uma simulação não termina (por excesso de tempo ou estouro de memória) vocês não podem colocar zero para o tempo de processamento. Vocês devem sempre colocar algo como valor faltante (NA) ou outro indicador de que este dado não foi possível de ser gerado. </p>
+</li>
+</ul>
+<p>Além disso, seguem dois exemplos de plots bem formados e completos: </p>
+<p><img src="figuras/esdras_convencional.png" width="400" height="300"></p>
+<p><img src="figuras/esdras_log.png" width="400" height="300"></p>
+<p>Estes dois <em>plots</em> sumarizam muito os experimentos feitos. Principalmente o <em>plot</em> com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. </p>
 
   <hr>
 <div class="md-source-file">
