@@ -687,8 +687,10 @@ a solução apresentada precisa ser ótima?</li>
 <summary>Temos uma nova versão do pacote aigyminsper</summary>
 <p>Para entender melhor a forma de seleção dos nodos em abertos, foi adicionado ao método search dos algoritmos de busca um atributo chamado trace. O valor default para este atributo é False. Mas se você colocar True então o algoritmo imprime na tela dados sobre o nodo que foi retirado de abertos.  </p>
 </details>
-<p>?? warning "Instale a nova versão do pacote aigyminsper"
-    Uma forma para instalar a nova versão do pacote aigyminsper é primeiro desistalar com o comando <code>pip uninstall aigyminsper</code> para depois instalar novamente com: <code>pip install aigyminsper</code>. </p>
+<details class="warning">
+<summary>Instale a nova versão do pacote aigyminsper</summary>
+<p>Uma forma para instalar a nova versão do pacote aigyminsper é primeiro desistalar com o comando <code>pip uninstall aigyminsper</code> para depois instalar novamente com: <code>pip install aigyminsper</code>. </p>
+</details>
 <p>Para entendermos melhor o que está acontecendo, segue a implementação da <strong>Busca de Custo Uniforme</strong>: </p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BuscaCustoUniforme</span> <span class="p">(</span><span class="n">SearchAlgorithm</span><span class="p">):</span>
 
