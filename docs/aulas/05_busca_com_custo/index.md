@@ -59,7 +59,13 @@ As variáveis bono, edge, adam, larry e lanterna são variáveis booleanas. Quan
 
 * O link para o enunciado é este aqui [https://classroom.github.com/a/1b1ermRX](https://classroom.github.com/a/1b1ermRX). Através deste link você consegue baixar o repositório e começar a sua codificação. 
 
-* **Prazo para a entrega**: 07/03/2023 (terça-feira) até às 23:00 horas. 
+* **Prazo para a entrega**: 08/03/2023 (quarta-feira) até às 23:00 horas. 
+
+## Cuidados! 
+
+* Execute os testes na sua máquina local antes de fazer o `push` para o Github Classroom.
+
+* Ao fazer o `push` da sua solução, certifique-se que a solução passou por todos os testes. Você consegue ver isto na aba `actions` do seu repositório.  
 
 ## Rubrica de avaliação
 
