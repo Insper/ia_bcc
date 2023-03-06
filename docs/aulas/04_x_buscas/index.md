@@ -114,3 +114,12 @@ Em um documento, coloque a tabela, o gráfico e responda as seguintes perguntas:
 * Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta. 
 
 Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard. A atividade já está disponível no Blackboard e o prazo para entrega é dia **03/03/2023** (sexta-feira) até às 20 horas.
+
+## Rubrica de avaliação
+
+| Conceito | Descrição |
+|:--------:|:----------|
+| A+       | Submeteu um documento que apresenta a tabela completa, responde todas as perguntas de forma correta e apresenta um único *plot* que sumariza todos os dados de forma correta|
+| A        | Submeteu um documento que apresenta a tabela, responde todas as perguntas de forma correta e apresenta o *plot*| 
+| C        | Submeteu um documento que apresenta a tabela, mas não responde todas as perguntas de forma correta ou não apresenta o *plot* |
+| D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela ou *plot* |   
