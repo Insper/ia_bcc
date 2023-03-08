@@ -128,7 +128,7 @@ Ao executar:
 
 O algoritmo abriu muitos nodos de forma desnecessária? 
 
-## Usando heurísticas para podar a árvore de busca
+## Usando heurísticas para otimizar a busca na árvore
 
 ??? warning "O que é uma heurística?"
     O que é uma heurística? 
