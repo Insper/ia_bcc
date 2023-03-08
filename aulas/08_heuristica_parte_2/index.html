@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/05_busca_com_custo/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/08_heuristica_parte_2/">
       
       
-        <link rel="prev" href="../04_x_buscas/">
+        <link rel="prev" href="../08_heuristica/">
       
       
-        <link rel="next" href="../07_revisao/">
+        <link rel="next" href="../09_heuristica_parte_3/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
-        <title>Revisão do exercício anterior e novo exercício - Inteligência Artificial e Robótica</title>
+        <title>Continuação: menor caminho entre duas cidades - Inteligência Artificial e Robótica</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#revisao-do-exercicio-anterior-e-novo-exercicio" class="md-skip">
+        <a href="#continuacao-menor-caminho-entre-duas-cidades" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Revisão do exercício anterior e novo exercício
+              Continuação: menor caminho entre duas cidades
             
           </span>
         </div>
@@ -354,21 +354,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
         Revisão do exercício anterior e novo exercício
       </a>
-      
     </li>
   
 
@@ -406,11 +396,73 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../08_heuristica_parte_2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Continuação: menor caminho entre duas cidades
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Continuação: menor caminho entre duas cidades
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-em-profundidade-iterativo" class="md-nav__link">
+    Usando busca em profundidade iterativo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-de-custo-uniforme" class="md-nav__link">
+    Usando busca de custo uniforme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-gananciosa" class="md-nav__link">
+    Usando busca gananciosa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-a" class="md-nav__link">
+    Usando busca A*
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -533,6 +585,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-em-profundidade-iterativo" class="md-nav__link">
+    Usando busca em profundidade iterativo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-de-custo-uniforme" class="md-nav__link">
+    Usando busca de custo uniforme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-gananciosa" class="md-nav__link">
+    Usando busca gananciosa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-a" class="md-nav__link">
+    Usando busca A*
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -549,110 +637,74 @@
   
 
 
-<h1 id="revisao-do-exercicio-anterior-e-novo-exercicio">Revisão do exercício anterior e novo exercício</h1>
-<p>Considerando <a href="../04_x_buscas/#atividade-de-laboratório">este exercício</a>, quais são as respostas certas para as perguntas abaixo: </p>
+<h1 id="continuacao-menor-caminho-entre-duas-cidades">Continuação: menor caminho entre duas cidades</h1>
+<p>Considerando o problema apresentado <a href="../08_heuristica/">na aula passada</a> e o código disponível em <a href="src/Map2023.py">src/Map2023.py</a> faça os seguintes testes abaixo. </p>
+<h2 id="usando-busca-em-profundidade-iterativo">Usando busca em profundidade iterativo</h2>
 <ul>
+<li><strong>Encontrar um caminho entre a cidade <em>i</em> e <em>o</em>.</strong></li>
+</ul>
+<p>Perguntas:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução? </li>
+<li>A árvore de busca gerada é "inteligente"? </li>
 <li>
-<p>Segundo o que discutimos em sala de aula, quais destes algoritmos são ótimos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.</p>
+<p>A solução encontrada é ótima? </p>
 </li>
 <li>
-<p>Segundo o que discutimos em sala de aula, quais destes algoritmos são completos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.</p>
-</li>
-<li>
-<p>Teve algum algoritmo que travou por falta de memória no seu computador? Se sim, qual é a explicação?</p>
-</li>
-<li>
-<p>Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta.</p>
+<p><strong>Encontre um caminho entre a cidade <em>b</em> e <em>o</em>.</strong> </p>
 </li>
 </ul>
-<h1 id="banda-u2">Banda U2</h1>
-<p>Considere o seguinte problema: </p>
-<p>A banda U2 tem um concerto que começa daqui a 17 minutos e
-  todos precisam cruzar uma ponte par chegar lá. Todos os 4
-  participantes estão do mesmo lado da ponte. É noite. Só
-  há uma lanterna. A ponte suporta, no máximo, duas
-  pessoas. Qualquer pessoa que passe, uma ou duas, deve passar com a
-  lanterna na mão. A lanterna deve ser levada de um lado para outro
-  e não ser jogada. Cada membro da banda tem um tempo diferente
-  para passar de um lado para o outro. O par deve andar no tempo do
-  menos veloz: Bono: 1 minuto para passar; Edge: 2 minutos para
-  passar; Adam: 5 minutos para passar; e Larry: 10 minutos para
-  passar.</p>
-<p>O problema consiste em ter os quatro elementos da banda do outro lado
-da ponte no menor tempo possível.</p>
-<p>Implemente um agente autônomo que consegue resolver este problema. Antes de iniciar a implementação, pense na resposta para as seguintes perguntas: </p>
+<p>Perguntas:</p>
 <ul>
-<li>O que é relevante representar nos estados do mundo? Como os
-    estados são estruturados (estrutura de dados) e qual o significado
-    dela (dos campos)?</li>
-<li>Mostre como ficam representados os estados inicial e final
-    segundo a representação adotada.</li>
-<li>Quais as operações sobre os estados?
-    (detalhe como cada operação irá alterar os estados e quais as
-    condições para cada operação ser executada)</li>
-<li>Qual a estimativa do tamanho do espaço de busca (número de
-    estados possíveis)?</li>
-<li>Que algoritmo de busca pode ser utilizado para resolver este problema considerando que
-a solução apresentada precisa ser ótima? </li>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução? </li>
+<li>A árvore de busca gerada é "inteligente"? </li>
+<li>A solução encontrada é ótima?</li>
 </ul>
-<p>Implemente uma classe chamada <code>Solver</code> que resolve este problema. Esta classe precisa ter um método <code>main</code> com a seguinte assinatura: </p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">bono</span><span class="p">,</span> <span class="n">edge</span><span class="p">,</span> <span class="n">adam</span><span class="p">,</span> <span class="n">larry</span><span class="p">,</span> <span class="n">lanterna</span><span class="p">)</span>
-</code></pre></div>
-<p>As variáveis bono, edge, adam, larry e lanterna são variáveis booleanas. Quando os valores são <code>False</code> significa que os mesmos estão do lado esquerdo do rio. Se os valores forem <code>True</code> significa que as pessoas ou a lanterna estão do lado direito do rio. </p>
-<h2 id="formato-de-entrega">Formato de entrega</h2>
+<h2 id="usando-busca-de-custo-uniforme">Usando busca de custo uniforme</h2>
+<p>Utilize o algoritmo de custo uniforme para encontrar uma solução para os problemas abaixo:</p>
 <ul>
-<li>
-<p>Para a implementação e entrega deste exercício nós vamos utilizar o <a href="https://classroom.github.com/a/1b1ermRX">Github Classroom</a>. </p>
-</li>
-<li>
-<p>O link para o enunciado é este aqui <a href="https://classroom.github.com/a/1b1ermRX">https://classroom.github.com/a/1b1ermRX</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
-</li>
-<li>
-<p><strong>Prazo para a entrega</strong>: 08/03/2023 (quarta-feira) até às 23:00 horas. </p>
-</li>
+<li>da cidade i para a cidade o</li>
+<li>da cidade b para a cidade o</li>
+<li>da cidade i para a cidade x</li>
 </ul>
-<h2 id="cuidados">Cuidados!</h2>
+<p>Perguntas:</p>
 <ul>
-<li>
-<p>Execute os testes na sua máquina local antes de fazer o <code>push</code> para o Github Classroom.</p>
-</li>
-<li>
-<p>Ao fazer o <code>push</code> da sua solução, certifique-se que a solução passou por todos os testes. Você consegue ver isto na aba <code>actions</code> do seu repositório.  </p>
-</li>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
+<li>A árvore de busca gerada é "inteligente"?</li>
+<li>A solução encontrada é ótima?</li>
 </ul>
-<h2 id="rubrica-de-avaliacao">Rubrica de avaliação</h2>
-<table>
-<thead>
-<tr>
-<th align="center">Conceito</th>
-<th align="left">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">A+</td>
-<td align="left">Preencheu os requisitos para A e apresentou uma solução bem projetada e um código bem escrito</td>
-</tr>
-<tr>
-<td align="center">A</td>
-<td align="left">Submeteu uma solução que consegue encontrar uma solução para o problema</td>
-</tr>
-<tr>
-<td align="center">D</td>
-<td align="left">Submeteu uma solução, mas a mesma não consegue encontrar uma solução para o problema</td>
-</tr>
-</tbody>
-</table>
-<h2 id="referencias">Referências</h2>
-<p>O material utilizado para esta aula está nos slides 29 até 31 do conjunto de slides abaixo: </p>
+<h2 id="usando-busca-gananciosa">Usando busca gananciosa</h2>
+<p>Considerar o slide 32 em diante: </p>
 <p><embed src="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300"></p>
+<ul>
+<li>
+<p>Que heurística podemos utilizar para este problema? Crie uma heurística e utilize o algoritmo <code>from aigyminsper.search.SearchAlgorithms import BuscaGananciosa</code> para encontrar as soluções para: </p>
+</li>
+<li>
+<p>da cidade i para a cidade o</p>
+</li>
+<li>da cidade b para a cidade o</li>
+<li>da cidade i para a cidade x</li>
+</ul>
+<p>O algoritmo de busca <code>BuscaGananciosa</code> precisa de um método que define a heurística. Este método na implementação do pacote <code>aigyminsper</code> é definido como: </p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">&lt;&lt;</span><span class="n">valor</span> <span class="n">numérico</span><span class="o">&gt;&gt;</span>
+</code></pre></div>
+<p>Perguntas:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
+<li>A árvore de busca gerada é "inteligente"?</li>
+<li>A solução encontrada é ótima?</li>
+</ul>
+<h2 id="usando-busca-a">Usando busca A*</h2>
+<p>E o algoritmo A-Estrela? </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 6, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
       
     
   </small>
