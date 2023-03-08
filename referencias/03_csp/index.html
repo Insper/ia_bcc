@@ -8,27 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/ementa/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/referencias/03_csp/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../03_algoritmos_busca/">
       
       
-        <link rel="next" href="../plano_de_aulas/">
-      
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
-        <title>Ementa - Inteligência Artificial e Robótica</title>
+        <title>Constraint Satisfaction Problems - Inteligência Artificial e Robótica</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.402914a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.402914a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -44,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#constraint-satisfaction-problems" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +85,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ementa
+              Constraint Satisfaction Problems
             
           </span>
         </div>
@@ -152,7 +150,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -183,7 +181,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -196,21 +194,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ementa/" class="md-nav__link">
         Ementa
       </a>
-      
     </li>
   
 
@@ -223,7 +211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../plano_de_aulas/" class="md-nav__link">
+      <a href="../../plano_de_aulas/" class="md-nav__link">
         Plano de Aula
       </a>
     </li>
@@ -238,7 +226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../avaliacao/" class="md-nav__link">
+      <a href="../../avaliacao/" class="md-nav__link">
         Critérios para Aprovação
       </a>
     </li>
@@ -280,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/01_introducao_ia/" class="md-nav__link">
+      <a href="../../aulas/01_introducao_ia/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -294,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/01_introducao_ia_aula2/" class="md-nav__link">
+      <a href="../../aulas/01_introducao_ia_aula2/" class="md-nav__link">
         Introdução à Inteligência Artificial: aula 2
       </a>
     </li>
@@ -308,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/02_agentes_autonomos/" class="md-nav__link">
+      <a href="../../aulas/02_agentes_autonomos/" class="md-nav__link">
         Agentes Autônomos
       </a>
     </li>
@@ -322,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/03_configuracao/" class="md-nav__link">
+      <a href="../../aulas/03_configuracao/" class="md-nav__link">
         Implementando um Aspirador de Pó
       </a>
     </li>
@@ -336,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/04_modelagem/" class="md-nav__link">
+      <a href="../../aulas/04_modelagem/" class="md-nav__link">
         Modelagem dos problemas
       </a>
     </li>
@@ -350,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/04_x_buscas/" class="md-nav__link">
+      <a href="../../aulas/04_x_buscas/" class="md-nav__link">
         Algoritmos de Busca em Largura e Profundidade
       </a>
     </li>
@@ -364,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/05_busca_com_custo/" class="md-nav__link">
+      <a href="../../aulas/05_busca_com_custo/" class="md-nav__link">
         Revisão do exercício anterior e novo exercício
       </a>
     </li>
@@ -378,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/07_revisao/" class="md-nav__link">
+      <a href="../../aulas/07_revisao/" class="md-nav__link">
         Revisão sobre algoritmos de busca sistemáticos
       </a>
     </li>
@@ -392,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/08_heuristica/" class="md-nav__link">
+      <a href="../../aulas/08_heuristica/" class="md-nav__link">
         Menor caminho entre duas cidades
       </a>
     </li>
@@ -412,14 +400,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
@@ -428,7 +418,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Referências
@@ -441,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../referencias/01_introducao/" class="md-nav__link">
+      <a href="../01_introducao/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -455,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../referencias/03_algoritmos_busca/" class="md-nav__link">
+      <a href="../03_algoritmos_busca/" class="md-nav__link">
         Algoritmos de Busca
       </a>
     </li>
@@ -467,11 +457,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../referencias/03_csp/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Constraint Satisfaction Problems
       </a>
+      
     </li>
   
 
@@ -483,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../referencias/04_dijkstra/index.md" class="md-nav__link">
+      <a href="../04_dijkstra/index.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -533,68 +533,15 @@
   
 
 
-<h1 id="introducao">Introdução</h1>
-<p>Aplicações modernas apontam para um conceito de Inteligência Artificial (IA) voltado para duas principais características: <strong>autonomia</strong> e <strong>adaptabilidade</strong>. 
-Autonomia é a habilidade de executar tarefas em contextos complexos sem constante intervenção do ser humano e adaptabilidade é a habilidade de melhorar seu 
-desempenho aprendendo com a experiência.</p>
-<h1 id="ementa">Ementa</h1>
-<p>Introdução à Inteligência Artificial; Definições de Agente Autônomo; Arquitetura computacional de agentes e o laço percepção – planejamento e ação; Caracterização de Ambientes; Resolução de problemas usando espaço de busca; Estratégias de busca; Algoritmos de busca cega e informados; Conceito de Heurística; Teoria de Jogos e Ambientes Competitivos; Aprendizagem por Reforço; Percepção, sensores e incerteza; Noções de visão computacional e reconhecimento de padrões; Aplicação comercial de robôs e usos emergentes, soluções de plataformas robóticas e de software para robôs (R.O.S, OpenCV). </p>
-<h2 id="objetivos">Objetivos</h2>
-<p>Ao final da disciplina o estudante será capaz de:</p>
-<ol>
-<li>Descrever os conceitos, técnicas e métodos para o desenvolvimento de Agentes Autônomos.</li>
-<li>Identificar quais tipos de problemas podem ser resolvidos através do uso de Agentes Autônomos. </li>
-<li>Criar soluções para alguns problemas clássicos desta área.</li>
-<li>Especificar, desenvolver e testar projetos que façam uso de Agentes Autônomos para resolver problemas complexos.</li>
-<li>Planejar e executar um trabalho em equipe, fornecendo e assimilando devolutivas.</li>
-</ol>
-<h2 id="conteudo-programatico">Conteúdo Programático</h2>
-<ol>
-<li>Definições de Agente Autônomo e resolução de problemas.</li>
-<li>Estratégias de busca: algoritmos de busca cega e algoritmos informados. </li>
-<li>Heurísticas.</li>
-<li>Implementação de agentes autônomos utilizando estratégias de busca.</li>
-<li>Programação por restrições (CSP).</li>
-<li>Ambientes competitivos e teoria de jogos. </li>
-<li>Algoritmo Min-Max e função de utilidade. </li>
-<li>Implementação de agentes autônomos para ambientes competitivos.</li>
-<li>Aprendizagem por Reforço.</li>
-<li>Implementação de agentes autônomos usando aprendizagem por reforço. </li>
-<li>Algoritmo Q-Learning. </li>
-<li>Implementações de agentes autônomos usando o projeto Gym.</li>
-<li>Implementação de um agente robótico. </li>
-</ol>
-<h2 id="bibliografia-basica">Bibliografia Básica</h2>
-<p>Livros:</p>
-<ol>
-<li>NORVIG, P.; RUSSELL, S., Inteligência Artificial, 3ª ed., Campus Elsevier, 2013</li>
-<li>SIEGWART, R.; NOURBAKHSH, I. R.; SCARAMUZZA, D., Introduction to Autonomous Mobile Robots., 2ª ed., MIT Press, 2011</li>
-<li>O'KANE, J., A Gentle introduction to ROS, CreateSpace Publishing, 2013</li>
-</ol>
-<p>Artigos:</p>
-<ol>
-<li>SILVER, D.; SINGH S.; PRECUP D.; SUTTON R. Reward is enough. Artificial Intelligence. Vol 299, 2021. Disponível em <a href="https://doi.org/10.1016/j.artint.2021.103535">https://doi.org/10.1016/j.artint.2021.103535</a>.</li>
-</ol>
-<h2 id="bibliografia-complementar">Bibliografia Complementar</h2>
-<p>Livros:</p>
-<ol>
-<li>SUTTON, R.; BARTO, A. Reinforcement Learning: An Introduction. Second Edition. The MIT Press, 2018.  </li>
-<li>GÉRON, A. Hands-on Machine Learning with Scikit-learn, Keras, and TensorFlow, 2ª ed., O'Reilly, 2021.</li>
-<li>SCHERZ, P.; MONK, S., Practical electronics for inventors, 3ª ed., Mc Graw Hill, 2013</li>
-<li>ASTRÖM, K.; MURRAY, R., Feedback Systems: An Introduction for Scientists and Engineers, Princeton University Press, 2008</li>
-<li>THRUN, S.; BURGARD, W; FOX, D., Probabilistic Robotics., MIT Press, 2006</li>
-</ol>
-<p>Artigos:</p>
-<ol>
-<li>SILVER, D.; HUBERT T.; SCHRITTWIESER, J.; ANTONOGLOU, I.; LAI, M.; GUEZ, A. <a href="https://doi.org/10.1126/science.aar6404">A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play</a>. Science 362, 1140-1144 (2018).</li>
-</ol>
+<h1 id="constraint-satisfaction-problems">Constraint Satisfaction Problems</h1>
+<p><embed src="csp.pdf" type="application/pdf" width="600" height="300"></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
       
     
   </small>
@@ -636,16 +583,16 @@ desempenho aprendendo com a experiência.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b78d2936.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b78d2936.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
       
-        <script src="../js/markdown-enhancer.js"></script>
+        <script src="../../js/markdown-enhancer.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
