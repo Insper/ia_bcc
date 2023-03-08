@@ -8,20 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/07_revisao/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/08_heuristicas_part_2/">
       
       
-        <link rel="prev" href="../05_busca_com_custo/">
-      
-      
-        <link rel="next" href="../08_heuristica/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
-        <title>Revisão sobre algoritmos de busca sistemáticos - Inteligência Artificial e Robótica</title>
+        <title>Continuação: menor caminho entre duas cidades - Inteligência Artificial e Robótica</title>
       
     
     
@@ -71,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#revisao-sobre-algoritmos-de-busca-sistematicos" class="md-skip">
+        <a href="#continuacao-menor-caminho-entre-duas-cidades" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Revisão sobre algoritmos de busca sistemáticos
+              Continuação: menor caminho entre duas cidades
             
           </span>
         </div>
@@ -241,16 +237,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
@@ -259,7 +253,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Aulas
@@ -368,87 +362,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Revisão sobre algoritmos de busca sistemáticos
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../07_revisao/" class="md-nav__link">
         Revisão sobre algoritmos de busca sistemáticos
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-em-largura" class="md-nav__link">
-    Algoritmo de busca em Largura
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-em-profundidade" class="md-nav__link">
-    Algoritmo de busca em Profundidade
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-em-profundidade-iterativa" class="md-nav__link">
-    Algoritmo de busca em Profundidade Iterativa
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-de-custo-uniforme" class="md-nav__link">
-    Algoritmo de busca de Custo Uniforme
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    Resumo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referências
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -592,43 +510,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-em-largura" class="md-nav__link">
-    Algoritmo de busca em Largura
+  <a href="#usando-busca-em-profundidade-iterativo" class="md-nav__link">
+    Usando busca em profundidade iterativo
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-em-profundidade" class="md-nav__link">
-    Algoritmo de busca em Profundidade
+  <a href="#usando-busca-de-custo-uniforme" class="md-nav__link">
+    Usando busca de custo uniforme
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-em-profundidade-iterativa" class="md-nav__link">
-    Algoritmo de busca em Profundidade Iterativa
+  <a href="#usando-busca-gananciosa" class="md-nav__link">
+    Usando busca gananciosa
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algoritmo-de-busca-de-custo-uniforme" class="md-nav__link">
-    Algoritmo de busca de Custo Uniforme
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    Resumo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referências
+  <a href="#usando-busca-a" class="md-nav__link">
+    Usando busca A*
   </a>
   
 </li>
@@ -651,34 +555,74 @@
   
 
 
-<h1 id="revisao-sobre-algoritmos-de-busca-sistematicos">Revisão sobre algoritmos de busca sistemáticos</h1>
-<h2 id="algoritmo-de-busca-em-largura">Algoritmo de busca em Largura</h2>
-<p><img src="img/bl.png" width="400" height="500" ></p>
-<p><img src="img/analise_bl.png" width="500" height="600" ></p>
-<h2 id="algoritmo-de-busca-em-profundidade">Algoritmo de busca em Profundidade</h2>
-<p><img src="img/bp.png" width="400" height="500" ></p>
-<p><img src="img/analise_bp.png" width="500" height="600" ></p>
-<h2 id="algoritmo-de-busca-em-profundidade-iterativa">Algoritmo de busca em Profundidade Iterativa</h2>
-<p><img src="img/bpi.png" width="400" height="500" ></p>
-<p><img src="img/analise_bpi.png" width="500" height="600" ></p>
-<h2 id="algoritmo-de-busca-de-custo-uniforme">Algoritmo de busca de Custo Uniforme</h2>
-<p><img src="img/bcu.png" width="400" height="500" ></p>
-<p><img src="img/analise_bcu.png" width="500" height="600" ></p>
-<h2 id="resumo">Resumo</h2>
-<p><img src="img/resumo.png" width="500" height="600" ></p>
-<details class="warning">
-<summary>Vamos revisar as implementações do problema do aspirador de pó e da banda U2?</summary>
-<p>Agora ficou mais claro o funcionamento destas soluções? </p>
-</details>
-<h2 id="referencias">Referências</h2>
+<h1 id="continuacao-menor-caminho-entre-duas-cidades">Continuação: menor caminho entre duas cidades</h1>
+<p>Considerando o problema apresentado <a href="../08_heuristica/">na aula passada</a> e o código disponível em <a href="src/Map2023.py">src/Map2023.py</a> faça os seguintes testes abaixo. </p>
+<h2 id="usando-busca-em-profundidade-iterativo">Usando busca em profundidade iterativo</h2>
+<ul>
+<li><strong>Encontrar um caminho entre a cidade <em>i</em> e <em>o</em>.</strong></li>
+</ul>
+<p>Perguntas:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução? </li>
+<li>A árvore de busca gerada é "inteligente"? </li>
+<li>
+<p>A solução encontrada é ótima? </p>
+</li>
+<li>
+<p><strong>Encontre um caminho entre a cidade <em>b</em> e <em>o</em>.</strong> </p>
+</li>
+</ul>
+<p>Perguntas:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução? </li>
+<li>A árvore de busca gerada é "inteligente"? </li>
+<li>A solução encontrada é ótima?</li>
+</ul>
+<h2 id="usando-busca-de-custo-uniforme">Usando busca de custo uniforme</h2>
+<p>Utilize o algoritmo de custo uniforme para encontrar uma solução para os problemas abaixo:</p>
+<ul>
+<li>da cidade i para a cidade o</li>
+<li>da cidade b para a cidade o</li>
+<li>da cidade i para a cidade x</li>
+</ul>
+<p>Perguntas:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
+<li>A árvore de busca gerada é "inteligente"?</li>
+<li>A solução encontrada é ótima?</li>
+</ul>
+<h2 id="usando-busca-gananciosa">Usando busca gananciosa</h2>
+<p>Considerar o slide 32 em diante: </p>
 <p><embed src="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300"></p>
+<ul>
+<li>
+<p>Que heurística podemos utilizar para este problema? Crie uma heurística e utilize o algoritmo <code>from aigyminsper.search.SearchAlgorithms import BuscaGananciosa</code> para encontrar as soluções para: </p>
+</li>
+<li>
+<p>da cidade i para a cidade o</p>
+</li>
+<li>da cidade b para a cidade o</li>
+<li>da cidade i para a cidade x</li>
+</ul>
+<p>O algoritmo de busca <code>BuscaGananciosa</code> precisa de um método que define a heurística. Este método na implementação do pacote <code>aigyminsper</code> é definido como: </p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">&lt;&lt;</span><span class="n">valor</span> <span class="n">numérico</span><span class="o">&gt;&gt;</span>
+</code></pre></div>
+<p>Perguntas:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
+<li>A árvore de busca gerada é "inteligente"?</li>
+<li>A solução encontrada é ótima?</li>
+</ul>
+<h2 id="usando-busca-a">Usando busca A*</h2>
+<p>E o algoritmo A-Estrela? </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 6, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
       
     
   </small>
