@@ -4,7 +4,7 @@ Considerando o problema apresentado [na aula passada](../08_heuristica/index.md)
 
 ## Usando busca em profundidade iterativo
 
-* **Encontrar um caminho entre a cidade *i* e *o*.**
+**Encontrar um caminho entre a cidade *i* e *o*.**
 
 Perguntas:
 
@@ -12,7 +12,7 @@ Perguntas:
 * A árvore de busca gerada é "inteligente"? 
 * A solução encontrada é ótima? 
 
-* **Encontre um caminho entre a cidade *b* e *o*.** 
+**Encontre um caminho entre a cidade *b* e *o*.** 
 
 Perguntas:
 
