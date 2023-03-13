@@ -466,6 +466,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#codigo-do-problema-do-mapa" class="md-nav__link">
+    Código do problema do Mapa
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -633,6 +640,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#codigo-do-problema-do-mapa" class="md-nav__link">
+    Código do problema do Mapa
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -779,6 +793,108 @@
 </tr>
 </tbody>
 </table>
+<h2 id="codigo-do-problema-do-mapa">Código do problema do Mapa</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaProfundidadeIterativa</span>
+<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaCustoUniforme</span>
+<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaGananciosa</span>
+<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaLargura</span>
+<span class="kn">from</span> <span class="nn">aigyminsper.search.Graph</span> <span class="kn">import</span> <span class="n">State</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">State</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">goal</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">city</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cost_value</span> <span class="o">=</span> <span class="n">cost</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">op</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">goal</span> <span class="o">=</span> <span class="n">goal</span>
+
+    <span class="k">def</span> <span class="nf">sucessors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">sucessors</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">Map</span><span class="o">.</span><span class="n">area</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">next_city</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
+            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Map</span><span class="p">(</span><span class="n">next_city</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_city</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">next_city</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">sucessors</span>
+
+    <span class="k">def</span> <span class="nf">is_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Um mapa para procurar&quot;</span>
+
+    <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cost_value</span>
+
+    <span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">operator</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">city</span>
+
+    <span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">])</span>
+        <span class="c1">#return random.randint(1,10)</span>
+        <span class="c1">#return 1</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">createArea</span><span class="p">():</span>
+        <span class="n">Map</span><span class="o">.</span><span class="n">area</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;a&#39;</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;b&#39;</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;c&#39;</span><span class="p">:[(</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;d&#39;</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;e&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">),(</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;f&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;g&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;h&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;i&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;l&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;k&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;m&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">),(</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;n&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;o&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;p&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)],</span>
+            <span class="s1">&#39;x&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">)]</span>
+            <span class="p">}</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">createHeuristics</span><span class="p">():</span>
+        <span class="c1">#</span>
+        <span class="c1"># O arquvo MapHeuristics.csv considera apenas os objetivos &quot;o&quot; e &quot;x&quot;</span>
+        <span class="c1"># TODO modificar o arquivo para considerar todas as cidades. talvez modificar</span>
+        <span class="c1"># a estrutura do arquivo considerando uma estrutura otimizada</span>
+        <span class="c1">#</span>
+        <span class="n">Map</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;data/MapHeuristics.csv&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span> 
+            <span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+
+    <span class="n">Map</span><span class="o">.</span><span class="n">createArea</span><span class="p">()</span>
+    <span class="n">Map</span><span class="o">.</span><span class="n">createHeuristics</span><span class="p">()</span>
+
+    <span class="c1">#state = Map(&#39;i&#39;, 0, &#39;i&#39;, &#39;o&#39;)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="c1">#state = Map(&#39;i&#39;, 0, &#39;i&#39;, &#39;x&#39;)</span>
+    <span class="c1">#algorithm = BuscaLargura()</span>
+    <span class="c1">#algorithm = BuscaCustoUniforme()</span>
+    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaGananciosa</span><span class="p">()</span>
+    <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">tf</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tempo de processamento em segundos: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tf</span><span class="o">-</span><span class="n">ts</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;O custo da solucao eh: &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
