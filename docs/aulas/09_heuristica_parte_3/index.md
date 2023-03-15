@@ -53,11 +53,11 @@ Ao implementar o método `sucessors` do seu agente considere a seguinte ordem pa
 ## Exemplo de código para o método `show_path`
 
 ```python
-    def show_path(state):
-        algorithm = #algoritmo de busca escolhido
-        if not Puzzle8.tem_solucao(state.tabuleiro):
+    def show_path(self):
+        algorithm = AEstrela()
+        if not Puzzle8.tem_solucao(self.tabuleiro):
             return 'Nao tem solucao' 
-        result = algorithm.search(state)
+        result = algorithm.search(self)
         if result != None:
             return result.show_path()
         else:
