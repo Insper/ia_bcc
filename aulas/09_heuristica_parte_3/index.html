@@ -671,11 +671,11 @@
 </li>
 </ul>
 <h2 id="exemplo-de-codigo-para-o-metodo-show_path">Exemplo de código para o método <code>show_path</code></h2>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">show_path</span><span class="p">(</span><span class="n">state</span><span class="p">):</span>
-        <span class="n">algorithm</span> <span class="o">=</span> <span class="c1">#algoritmo de busca escolhido</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">Puzzle8</span><span class="o">.</span><span class="n">tem_solucao</span><span class="p">(</span><span class="n">state</span><span class="o">.</span><span class="n">tabuleiro</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">show_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">algorithm</span> <span class="o">=</span> <span class="n">AEstrela</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">Puzzle8</span><span class="o">.</span><span class="n">tem_solucao</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tabuleiro</span><span class="p">):</span>
             <span class="k">return</span> <span class="s1">&#39;Nao tem solucao&#39;</span> 
-        <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
