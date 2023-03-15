@@ -669,6 +669,9 @@
 <li>
 <p><strong>Prazo para a entrega</strong>: 17/03/2022 (sexta-feira) até às 23:30 horas.</p>
 </li>
+<li>
+<p><strong>Atenção: NOVA VERSÃO DO ARQUIVO DE TESTES</strong> está disponível <a href="src/test_8Puzzle.py">aqui</a>.</p>
+</li>
 </ul>
 <h2 id="exemplo-de-codigo-para-o-metodo-show_path">Exemplo de código para o método <code>show_path</code></h2>
 <div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">show_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -681,6 +684,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;Nao achou solucao&#39;</span>
 </code></pre></div>
+<p><strong>Detalhe importante sobre o método <code>tem_solucao</code></strong>: uma forma para cálculo se uma determinada configuração tem solução ou não é seguir a seguinte regra: <em>deve-se calcular a quantidade de inversões necessárias para ordenar certa sequência numérica, determinado por Possível a quantidade de inversões pares e Impossível a quantidade de inversões ímpares</em>.</p>
 
   <hr>
 <div class="md-source-file">
