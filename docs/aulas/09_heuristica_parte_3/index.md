@@ -50,6 +50,8 @@ Ao implementar o método `sucessors` do seu agente considere a seguinte ordem pa
 
 * **Prazo para a entrega**: 17/03/2022 (sexta-feira) até às 23:30 horas.
 
+* **Atenção: NOVA VERSÃO DO ARQUIVO DE TESTES** está disponível [aqui](./src/test_8Puzzle.py).
+
 ## Exemplo de código para o método `show_path`
 
 ```python
@@ -63,3 +65,5 @@ Ao implementar o método `sucessors` do seu agente considere a seguinte ordem pa
         else:
             return 'Nao achou solucao'
 ```
+
+**Detalhe importante sobre o método `tem_solucao`**: uma forma para cálculo se uma determinada configuração tem solução ou não é seguir a seguinte regra: *deve-se calcular a quantidade de inversões necessárias para ordenar certa sequência numérica, determinado por Possível a quantidade de inversões pares e Impossível a quantidade de inversões ímpares*.
