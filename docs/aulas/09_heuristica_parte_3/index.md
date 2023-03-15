@@ -48,4 +48,18 @@ Ao implementar o método `sucessors` do seu agente considere a seguinte ordem pa
 
 * O link para o enunciado é este aqui [https://classroom.github.com/a/iZCPEiAe](https://classroom.github.com/a/iZCPEiAe). Através deste link você consegue baixar o repositório e começar a sua codificação. 
 
-* **Prazo para a entrega**: 15/03/2022 (quarta-feira) até às 23:00 horas.
+* **Prazo para a entrega**: 17/03/2022 (sexta-feira) até às 23:30 horas.
+
+## Exemplo de código para o método `show_path`
+
+```python
+    def show_path(state):
+        algorithm = #algoritmo de busca escolhido
+        if not Puzzle8.tem_solucao(state.tabuleiro):
+            return 'Nao tem solucao' 
+        result = algorithm.search(state)
+        if result != None:
+            return result.show_path()
+        else:
+            return 'Nao achou solucao'
+```
