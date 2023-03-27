@@ -8,20 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/referencias/03_csp/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/avaliacoes/intermediaria_2023/">
       
       
-        <link rel="prev" href="../03_algoritmos_busca/">
-      
-      
-        <link rel="next" href="../03_dijkstra/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.4">
     
     
       
-        <title>Constraint Satisfaction Problems - Inteligência Artificial e Robótica</title>
+        <title>Avaliação intermediária 01/2023 - Inteligência Artificial e Robótica</title>
       
     
     
@@ -71,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#constraint-satisfaction-problems" class="md-skip">
+        <a href="#avaliacao-intermediaria-012023" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Constraint Satisfaction Problems
+              Avaliação intermediária 01/2023
             
           </span>
         </div>
@@ -444,16 +440,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
       
       
       
@@ -462,7 +456,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Referências
@@ -475,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_introducao/" class="md-nav__link">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -489,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_algoritmos_busca/" class="md-nav__link">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
         Algoritmos de Busca
       </a>
     </li>
@@ -501,21 +495,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../referencias/03_csp/" class="md-nav__link">
         Constraint Satisfaction Problems
       </a>
-      
     </li>
   
 
@@ -527,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_dijkstra/" class="md-nav__link">
+      <a href="../../referencias/03_dijkstra/" class="md-nav__link">
         Comparação entre os algoritmos de Dijkstra e A-Estrela
       </a>
     </li>
@@ -561,6 +545,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#questoes" class="md-nav__link">
+    Questões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-crawler-10-ponto" class="md-nav__link">
+    Web crawler (1.0 ponto)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafo-20-pontos" class="md-nav__link">
+    Grafo (2.0 pontos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bicicleta-na-lama-40-pontos" class="md-nav__link">
+    Bicicleta na lama (4.0 pontos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjectura-de-knuth-30-pontos" class="md-nav__link">
+    Conjectura de Knuth (3.0 pontos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orientacoes-gerais-sobre-como-entregar-a-prova" class="md-nav__link">
+    Orientações gerais sobre como entregar a prova
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -577,15 +611,116 @@
   
 
 
-<h1 id="constraint-satisfaction-problems">Constraint Satisfaction Problems</h1>
-<p><embed src="csp.pdf" type="application/pdf" width="600" height="300"></p>
+<h1 id="avaliacao-intermediaria-012023">Avaliação intermediária 01/2023</h1>
+<ul>
+<li>
+<p>Quaisquer hipóteses relevantes devem ser <strong>explicitamente formuladas</strong>. Faz parte da avaliação a <strong>correta interpretação</strong> das questões. A <strong>clareza</strong> e a <strong>objetividade</strong> das respostas serão consideradas na avaliação. </p>
+</li>
+<li>
+<p>Esta avaliação é <strong>individual</strong>. Em hipótese alguma você poderá fazer uso de material de colegas.</p>
+</li>
+<li>
+<p>Durante esta avaliação você poderá fazer uso do seu material e de material existente na internet. </p>
+</li>
+</ul>
+<h2 id="questoes">Questões</h2>
+<h2 id="web-crawler-10-ponto">Web crawler (1.0 ponto)</h2>
+<p>O aplicativo <code>wget</code> é um web crawler disponível em sistemas operacionais do tipo <em>linux</em>. Com este aplicativo é possível informar uma <code>url</code> que será a base do <em>crawler</em>. A partir da <code>url</code> informada, o <code>wget</code> copia o conteúdo da página, identifica os links que estão nesta página, acessa o conteúdo destes links e copia o contéudo destas páginas de forma recursiva até encontrar um critério de parada. O critério de parada no caso do <code>wget</code> é a profundidade informada ao executar o comando.</p>
+<p>Um código possível para o <code>wget</code> é apresentado abaixo: </p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">wget</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">profundidade</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">profundidade</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">armazena_conteudo</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">nova_pagina</span> <span class="ow">in</span> <span class="n">identifica_links</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+            <span class="n">wget</span><span class="p">(</span><span class="n">nova_pagina</span><span class="p">,</span> <span class="n">profundidade</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<p>onde: </p>
+<ul>
+<li><code>armazena_conteudo(url)</code> é uma função que copia o contéudo da página para a máquina local, onde o <code>wget</code> está sendo executado. </li>
+<li><code>identifica_links(url)</code> é uma função que identifica todos os links na página - todas as tags <code>href</code>. </li>
+</ul>
+<p>Digamos que você precisa fazer o crawler de diversos conteúdos a partir de algumas páginas. Mas antes de fazer isto, você terá que fazer uma estimativa do tamanho de espaço necessário para armazenar todo o conteúdo. </p>
+<p>Os tópicos que você terá que armazenar são: </p>
+<ul>
+<li>
+<p>esportes: neste caso, você irá partir de uma única <code>url</code> e você sabe que todos os documentos que você irá baixar que estão relacionados com esta <code>url</code> tem <strong>10 links</strong> no seu conteúdo. Você também sabe que a profundidade configurada no <code>wget</code> para esportes será de <strong>5</strong>. E que cada documento documento tem o tamanho de 500 KBytes. Depois de executado o <code>wget</code> para esportes, quantos documentos (arquivos diferentes) serão armazenados no seu computador? Qual é o espaço que eles irão ocupar em GB? </p>
+</li>
+<li>
+<p>cotidiano: neste caso, você irá partir de uma única <code>url</code> e você sabe que todos os documentos que você irá baixar que estão relacionados com esta <code>url</code> tem <strong>3 links</strong> no seu conteúdo. Você também sabe que a profundidade configurada no <code>wget</code> para o tema cotidiano será de <strong>8</strong>. E que cada documento documento tem o tamanho de 800 KBytes. Depois de executado o <code>wget</code> para cotidiano, quantos documentos (arquivos diferentes) serão armazenados no seu computador? Qual é o espaço que eles irão ocupar em GB? </p>
+</li>
+<li>
+<p>Qual é a quantidade total de arquivos armazenados no seu computador? Qual é o espaço total que eles irão ocupar em MB? Justifique a sua resposta. </p>
+</li>
+</ul>
+<h2 id="grafo-20-pontos">Grafo (2.0 pontos)</h2>
+<p>Considere o grafo abaixo onde o número sobre as arestas é o custo de cada ação e o número em cada nodo é a heurística considerada até o
+estado objetivo. Note que cada arco é bidirecional. Considere o estado <strong>A</strong> como inicial e o estado <strong>G</strong> como o estado objetivo. Em todos os algoritmos utilizados existe um único tipo de poda da árvore de busca que é: não pode-se abrir nenhum sucessor igual ao pai do nodo. </p>
+<p><img src="img/grafo.png" width="800" height="200"></p>
+<ul>
+<li>
+<p>Qual é o caminho para a solução do problema que o algoritmo A* encontra.</p>
+</li>
+<li>
+<p>A heurística utilizada no problema é admissível? Explique.</p>
+</li>
+<li>
+<p>Qual é o caminho para a solução do problema que o algoritmo Ganancioso encontra. </p>
+</li>
+<li>
+<p>Qual é o caminho para a solução do problema que o algoritmo de busca em largura encontra. </p>
+</li>
+<li>
+<p>A solução encontrada pelo algoritmo de busca em largura é ótima? Justifique a sua resposta. </p>
+</li>
+</ul>
+<h2 id="bicicleta-na-lama-40-pontos">Bicicleta na lama (4.0 pontos)</h2>
+<p>Neste exercício você deverá implementar um agente que é capaz de ir de um lugar até outro em um mapa. Este agente está andando de bicicleta e sabe executar as seguintes ações: </p>
+<ul>
+<li>ir para baixo;</li>
+<li>ir para cima;</li>
+<li>ir para esquerda, e;</li>
+<li>ir para direita; </li>
+</ul>
+<p>Um exemplo possível de mapa que este agente pode receber é apresentado abaixo: </p>
+<p>Mapa 01: </p>
+<p><img src="img/mapa_01.png"> </p>
+<p>Neste estado inicial: </p>
+<ul>
+<li>o ciclista está na posição [0,0],</li>
+<li>o fim do pedal mais o almoço estão esperando o ciclista na posição [0,5],</li>
+<li>o mapa tem 5 linhas e 7 colunas, e</li>
+<li>existem campos no mapa que estão pintados em cinza e que representam campos com muita lama. </li>
+</ul>
+<p>Cada ação que o agente sabe executar tem custo 1. No entanto, quando uma ação é executada em um campo com lama então o custo dela passa a ser 4. </p>
+<p>Implemente uma solução que ajuda o ciclista a tomar a decisão com relação ao melhor plano - aquele plano que faz ele chegar no objetivo com o menor custo.</p>
+<p>A solução implementada precisa ser capaz de tratar diversas configurações com diversas dimensões. Por exemplo:</p>
+<p>Mapa 02:</p>
+<p><img src="img/mapa_01_01.png"> </p>
+<p>Mapa 03: </p>
+<p><img src="img/mapa_02.png"> </p>
+<p>Mapa 04: </p>
+<p><img src="img/mapa_03.png"> </p>
+<h2 id="conjectura-de-knuth-30-pontos">Conjectura de Knuth (3.0 pontos)</h2>
+<p>O cientista da computação Donal Knuth em 1964 conjecturou que <strong>todo</strong> número inteiro positivo pode ser gerado a partir do número <strong>4</strong> aplicando-se uma combinação de fatorial, raiz quadrada e arredondamento para baixo. Por exemplo, o número 2 pode ser gerado por <code>sqrt(4)</code>, o número 1 por <code>round_down(sqrt(sqrt(4)))</code> e o número 5 por <code>round_down(sqrt(sqrt(sqrt(sqrt(sqrt(factorial(factorial(4))))))))</code>.</p>
+<p>Implemente um agente autônomo (uma classe do tipo <code>State</code>) que dado um número inteiro positivo qualquer gere uma sequência de operações que transformam o número 4 no número informado.</p>
+<h2 id="orientacoes-gerais-sobre-como-entregar-a-prova">Orientações gerais sobre como entregar a prova</h2>
+<p>Toda a prova deve ser submetida no Github Classroom através deste <a href="https://classroom.github.com/a/MD_gKLBn">link</a>.</p>
+<p>Os arquivos que precisam ser submetidos são: </p>
+<ul>
+<li>README.md: onde você irá colocar a resposta para a questão do Web crawler e do grafo. </li>
+<li>requirements.txt: arquivo com todas as bibliotecas necessárias para as soluções que você irá entregar. </li>
+<li>Bike.py: arquivo com a solução para o problema da Bike.</li>
+<li>Knuth.py: arquivo com a solução para a conjectura de Knuth. </li>
+</ul>
+<p>Não existe nenhum projeto de <em>template</em> e também não existem arquivos de testes. </p>
+<p>No caso das implementações, você deverá definir tudo: como os estados são representados, quais são os parâmetros do construtor da classe, quais são as ações e como elas afetam os estados, qual é o critério que retorna <code>true</code> para o método <code>is_goal()</code>, e assim em diante. </p>
+<p>O horário limite para entrega da prova é 11:45 do dia 27 de março de 2023. Para fins de avaliação será considerado último <code>commit</code> no repositório. </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 27, 2023</span>
       
     
   </small>
