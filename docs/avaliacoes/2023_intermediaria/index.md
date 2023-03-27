@@ -105,11 +105,13 @@ Nesta implementação você deve utilizar a biblioteca `aigyminsper`.
 ## Conjectura de Knuth (3.0 pontos)
 
 O cientista da computação Donal Knuth em 1964 conjecturou que **todo** número inteiro positivo pode ser gerado a partir do número **4** aplicando-se uma combinação de:
+
 * fatorial, 
 * raiz quadrada e 
 * arredondamento para baixo. 
 
 Por exemplo: 
+
 * o número 2 pode ser gerado por `sqrt(4)`, 
 * o número 1 por `round_down(sqrt(sqrt(4)))` e 
 * o número 5 por `round_down(sqrt(sqrt(sqrt(sqrt(sqrt(factorial(factorial(4))))))))`.
