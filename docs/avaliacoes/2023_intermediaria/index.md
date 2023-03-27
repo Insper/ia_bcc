@@ -100,7 +100,7 @@ Mapa 04:
 
 Não existem testes pré-configurados. No entanto, recomenda-se fortemenete que você teste a sua implementação nos cenários descritos acima.
 
-Nesta implementação você deve utilizar a API `aigyminsper`.
+Nesta implementação você deve utilizar a biblioteca `aigyminsper`.
 
 ## Conjectura de Knuth (3.0 pontos)
 
@@ -114,7 +114,7 @@ Por exemplo:
 * o número 1 por `round_down(sqrt(sqrt(4)))` e 
 * o número 5 por `round_down(sqrt(sqrt(sqrt(sqrt(sqrt(factorial(factorial(4))))))))`.
 
-Implemente um agente autônomo que dado um número inteiro positivo qualquer gere uma sequência de operações que transformam o número 4 no número informado. Nesta implementação você deve utilizar a API `aigyminsper`. 
+Implemente um agente autônomo que dado um número inteiro positivo qualquer gere uma sequência de operações que transformam o número 4 no número informado. Nesta implementação você deve utilizar a biblioteca `aigyminsper`. 
 
 ## Entrega dos itens da avaliação
 
