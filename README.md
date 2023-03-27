@@ -46,6 +46,13 @@ Para atualizar o plano de aula no site basta digitar:
 python publica-plano-de-aulas.py
 ````
 
+## Gerando grafos com graphviz
+
+```bash
+dot -Tpng input.dot > grafo.png
+```
+
+
 
 
 
