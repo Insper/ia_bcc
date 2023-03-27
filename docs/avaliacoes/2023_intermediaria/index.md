@@ -120,7 +120,7 @@ Implemente um agente autônomo que dado um número inteiro positivo qualquer ger
 
 ## Entrega dos itens da avaliação
 
-Toda a prova deve ser submetida no Github Classroom através deste [link](https://classroom.github.com/a/MD_gKLBn).
+Toda a prova deve ser submetida no Github Classroom através deste link: [https://classroom.github.com/a/ejpQ-I36](https://classroom.github.com/a/ejpQ-I36).
 
 Os arquivos que precisam ser submetidos são: 
 
