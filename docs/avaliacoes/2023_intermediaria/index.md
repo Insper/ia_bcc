@@ -1,5 +1,7 @@
 # Avaliação intermediária 01/2023
 
+## Orientações gerais
+
 * Quaisquer hipóteses relevantes devem ser **explicitamente formuladas**. Faz parte da avaliação a **correta interpretação** das questões. A **clareza** e a **objetividade** das respostas serão consideradas na avaliação. 
 
 * Esta avaliação é **individual**. Em hipótese alguma você poderá fazer uso de material de colegas.
@@ -96,23 +98,34 @@ Mapa 04:
 
 <img src="img/mapa_03.png"> 
 
+Não existem testes pré-configurados. No entanto, recomenda-se fortemenete que você teste a sua implementação nos cenários descritos acima.
+
+Nesta implementação você deve utilizar a API `aigyminsper`.
 
 ## Conjectura de Knuth (3.0 pontos)
 
-O cientista da computação Donal Knuth em 1964 conjecturou que **todo** número inteiro positivo pode ser gerado a partir do número **4** aplicando-se uma combinação de fatorial, raiz quadrada e arredondamento para baixo. Por exemplo, o número 2 pode ser gerado por `sqrt(4)`, o número 1 por `round_down(sqrt(sqrt(4)))` e o número 5 por `round_down(sqrt(sqrt(sqrt(sqrt(sqrt(factorial(factorial(4))))))))`.
+O cientista da computação Donal Knuth em 1964 conjecturou que **todo** número inteiro positivo pode ser gerado a partir do número **4** aplicando-se uma combinação de:
+* fatorial, 
+* raiz quadrada e 
+* arredondamento para baixo. 
 
-Implemente um agente autônomo (uma classe do tipo `State`) que dado um número inteiro positivo qualquer gere uma sequência de operações que transformam o número 4 no número informado.
+Por exemplo: 
+* o número 2 pode ser gerado por `sqrt(4)`, 
+* o número 1 por `round_down(sqrt(sqrt(4)))` e 
+* o número 5 por `round_down(sqrt(sqrt(sqrt(sqrt(sqrt(factorial(factorial(4))))))))`.
 
-## Orientações gerais sobre como entregar a prova
+Implemente um agente autônomo que dado um número inteiro positivo qualquer gere uma sequência de operações que transformam o número 4 no número informado. Nesta implementação você deve utilizar a API `aigyminsper`. 
+
+## Entrega dos itens da avaliação
 
 Toda a prova deve ser submetida no Github Classroom através deste [link](https://classroom.github.com/a/MD_gKLBn).
 
 Os arquivos que precisam ser submetidos são: 
 
-* README.md: onde você irá colocar a resposta para a questão do Web crawler e do grafo. 
-* requirements.txt: arquivo com todas as bibliotecas necessárias para as soluções que você irá entregar. 
-* Bike.py: arquivo com a solução para o problema da Bike.
-* Knuth.py: arquivo com a solução para a conjectura de Knuth. 
+* `README.md`: onde você irá colocar a resposta para a questão do Web crawler e do Grafo. 
+* `requirements.txt`: arquivo com todas as bibliotecas necessárias para as soluções que você irá entregar. 
+* `Bike.py`: arquivo com a solução para o problema da Bike.
+* `Knuth.py`: arquivo com a solução para a conjectura de Knuth. 
 
 Não existe nenhum projeto de *template* e também não existem arquivos de testes. 
 
