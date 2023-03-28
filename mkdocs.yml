@@ -29,7 +29,6 @@ nav:
     - 'aulas/08_heuristica_parte_2/index.md'
     - 'aulas/09_heuristica_parte_3/index.md'
 #    - 'aulas/10_heuristica_revisao/index.md'
-#    - 'aulas/11_taxi_driver/index.md'
     - 'aulas/12_csp/index.md'
 #    - 'aulas/13_jogos/index.md'
 #    - 'aulas/14_competicao/index.md'
@@ -45,6 +44,10 @@ nav:
 #    - 'referencias/04_busca_competitiva/index.md'
 #    - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
+#  - 'Avaliações':
+#    - 'avaliacoes/2023_intermediaria/index.md'
+  - 'Projetos':
+    - 'projetos/11_taxi_driver/index.md'
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
