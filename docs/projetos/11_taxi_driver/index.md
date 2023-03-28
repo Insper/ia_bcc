@@ -48,9 +48,8 @@ A imagem abaixo é um mapa com as mesmas dimensões, mas com um número maior de
 ## Entrega do exercício
 
 * Este exercício deverá ser feito por equipes com até 3 integrantes.
-* O prazo máximo para entrega é 03/04/2023 (segunda-feira) até às 18:00 horas.
-* A entrega deverá ser feita via *Github Classroom*. 
-* O link para o projeto template e para a entrega é []().
+* O prazo máximo para entrega é 03/04/2023 (segunda-feira) até às 22:00 horas.
+* A entrega deverá ser feita via *Github Classroom*. O link para a entrega é [https://classroom.github.com/a/8PmrKZ2S](https://classroom.github.com/a/8PmrKZ2S).
 * Cada equipe deverá entregar a implementação de um *taxi driver* e um arquivo de documentação (`taxi_driver_readme.md`).
 * A implementação deve ter um arquivo de testes usando `pytest`.
 * O projeto deve ter um arquivo de `requirements.txt` que descreve os pacotes necessário para a execução. 
