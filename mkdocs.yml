@@ -34,6 +34,8 @@ nav:
       - 'aulas/12_csp/index.md'
     - 'Ambientes competitivos':
       - 'aulas/13_jogos/index.md'
+      - 'aulas/14_tictactoe/index.md'
+      - 'aulas/14_tictactoe/tictactoe.ipynb'
 #    - 'aulas/14_competicao/index.md'
 #    - 'Aprendizagem por reforço':
 #    - 'aulas/15_rl/index.md'
@@ -89,6 +91,7 @@ markdown_extensions:
 
 plugins: 
   - git-revision-date-localized
+  - mkdocs-jupyter
 
 
 

@@ -24,14 +24,17 @@ Seguem os enunciados que se encaixam nesta categoria:
 | [Laboratório sobre algoritmos BL, BP e BPI](./aulas/04_x_buscas/index.md#atividade-de-laboratório) | 03/03/2023 |
 | [Problema da banda U2](./aulas/05_busca_com_custo/index.md#banda-u2)                               | 07/03/2023 |
 | [Problema 8 Puzzle](./aulas/09_heuristica_parte_3/index.md#problema-dos-8-puzzle)               | 17/03/2023 |
+| [Questionário sobre busca competitiva](./aulas/13_jogos/index.md)                               | 10/04/2023 |
+| [Implementação de um jogador de jogo da velha](./aulas/14_tictactoe/index.md)                   | 12/04/2023 |
+
 
 ## 3 projetos
 
 Seguem os enunciados que se encaixam nesta categoria:
 
-| Descrição                                                   |  Prazo para entrega |
-|:------------------------------------------------------------|:-------------------:|
-| Busca em espaço de estados                                  | TBD                 |
+| Descrição                                                                                |  Prazo para entrega |
+|:-----------------------------------------------------------------------------------------|:-------------------:|
+| [Busca em espaço de estados](../docs/projetos/11_taxi_driver/index.md)   | 03/04/2023          |
 | Ambiente competitivo                                        | TBD                 |
 | Agente robótico                                             | TBD                 |
 
