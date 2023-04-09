@@ -8,25 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/ia_bcc/">
+        <link rel="canonical" href="https://insper.github.io/ia_bcc/aulas/14_tictactoe/">
       
       
+        <link rel="prev" href="../13_jogos/">
       
-        <link rel="next" href="ementa/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="tictactoe/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Inteligência Artificial e Robótica</title>
+        <title>Jogador de jogo da velha - Inteligência Artificial e Robótica</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,9 +44,9 @@
       
     
     
-      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inteligencia-artificial-e-robotica-20231" class="md-skip">
+        <a href="#jogador-de-jogo-da-velha" class="md-skip">
           Skip to content
         </a>
       
@@ -85,7 +87,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Jogador de jogo da velha
             
           </span>
         </div>
@@ -150,7 +152,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -179,73 +181,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#horario-das-aulas" class="md-nav__link">
-    Horário das aulas
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#horario-de-atendimento" class="md-nav__link">
-    Horário de atendimento
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacoes-adicionais-sobre-os-projetos-e-implementacoes" class="md-nav__link">
-    Informações adicionais sobre os projetos e implementações
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contato" class="md-nav__link">
-    Contato
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -258,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ementa/" class="md-nav__link">
+      <a href="../../ementa/" class="md-nav__link">
         Ementa
       </a>
     </li>
@@ -273,7 +213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="plano_de_aulas/" class="md-nav__link">
+      <a href="../../plano_de_aulas/" class="md-nav__link">
         Plano de Aula
       </a>
     </li>
@@ -288,7 +228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="avaliacao/" class="md-nav__link">
+      <a href="../../avaliacao/" class="md-nav__link">
         Critérios para Aprovação
       </a>
     </li>
@@ -301,14 +241,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -317,7 +259,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Aulas
@@ -357,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/01_introducao_ia/" class="md-nav__link">
+      <a href="../01_introducao_ia/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -371,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/01_introducao_ia_aula2/" class="md-nav__link">
+      <a href="../01_introducao_ia_aula2/" class="md-nav__link">
         Introdução à Inteligência Artificial: aula 2
       </a>
     </li>
@@ -385,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/02_agentes_autonomos/" class="md-nav__link">
+      <a href="../02_agentes_autonomos/" class="md-nav__link">
         Agentes Autônomos
       </a>
     </li>
@@ -399,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/03_configuracao/" class="md-nav__link">
+      <a href="../03_configuracao/" class="md-nav__link">
         Implementando um Aspirador de Pó
       </a>
     </li>
@@ -447,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/04_modelagem/" class="md-nav__link">
+      <a href="../04_modelagem/" class="md-nav__link">
         Modelagem dos problemas
       </a>
     </li>
@@ -461,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/04_x_buscas/" class="md-nav__link">
+      <a href="../04_x_buscas/" class="md-nav__link">
         Algoritmos de Busca em Largura e Profundidade
       </a>
     </li>
@@ -475,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/05_busca_com_custo/" class="md-nav__link">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
         Revisão do exercício anterior e novo exercício
       </a>
     </li>
@@ -489,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/07_revisao/" class="md-nav__link">
+      <a href="../07_revisao/" class="md-nav__link">
         Revisão sobre algoritmos de busca sistemáticos
       </a>
     </li>
@@ -503,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/08_heuristica/" class="md-nav__link">
+      <a href="../08_heuristica/" class="md-nav__link">
         Menor caminho entre duas cidades
       </a>
     </li>
@@ -517,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/08_heuristica_parte_2/" class="md-nav__link">
+      <a href="../08_heuristica_parte_2/" class="md-nav__link">
         Continuação: menor caminho entre duas cidades
       </a>
     </li>
@@ -531,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/09_heuristica_parte_3/" class="md-nav__link">
+      <a href="../09_heuristica_parte_3/" class="md-nav__link">
         Problema dos 8-Puzzle
       </a>
     </li>
@@ -545,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/12_csp/" class="md-nav__link">
+      <a href="../12_csp/" class="md-nav__link">
         Constraint Satisfaction Problems
       </a>
     </li>
@@ -564,14 +506,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" checked>
       
       
       
@@ -580,7 +524,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Ambientes competitivos
@@ -593,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/13_jogos/" class="md-nav__link">
+      <a href="../13_jogos/" class="md-nav__link">
         Jogos de tabuleiro e busca competitiva
       </a>
     </li>
@@ -605,11 +549,80 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="aulas/14_tictactoe/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Jogador de jogo da velha
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Jogador de jogo da velha
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-atividade" class="md-nav__link">
+    Pré-atividade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-da-atividade" class="md-nav__link">
+    Objetivo da atividade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-sobre-o-kaggle-environments" class="md-nav__link">
+    Tutorial sobre o kaggle-environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacao" class="md-nav__link">
+    Implementação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -621,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aulas/14_tictactoe/tictactoe/" class="md-nav__link">
+      <a href="tictactoe/" class="md-nav__link">
         Tutorial sobre o pacote kaggle-environments
       </a>
     </li>
@@ -677,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="referencias/01_introducao/" class="md-nav__link">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
         Introdução à Inteligência Artificial
       </a>
     </li>
@@ -691,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="referencias/03_algoritmos_busca/" class="md-nav__link">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
         Algoritmos de Busca
       </a>
     </li>
@@ -705,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="referencias/03_csp/" class="md-nav__link">
+      <a href="../../referencias/03_csp/" class="md-nav__link">
         Constraint Satisfaction Problems
       </a>
     </li>
@@ -719,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="referencias/03_dijkstra/" class="md-nav__link">
+      <a href="../../referencias/03_dijkstra/" class="md-nav__link">
         Comparação entre os algoritmos de Dijkstra e A-Estrela
       </a>
     </li>
@@ -733,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="referencias/04_busca_competitiva/" class="md-nav__link">
+      <a href="../../referencias/04_busca_competitiva/" class="md-nav__link">
         Busca Competitiva
       </a>
     </li>
@@ -747,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="referencias/05_jogos/" class="md-nav__link">
+      <a href="../../referencias/05_jogos/" class="md-nav__link">
         Jogos de tabuleiro e busca competitiva
       </a>
     </li>
@@ -796,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projetos/11_taxi_driver/" class="md-nav__link">
+      <a href="../../projetos/11_taxi_driver/" class="md-nav__link">
         Taxi Driver
       </a>
     </li>
@@ -837,29 +850,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#horario-das-aulas" class="md-nav__link">
-    Horário das aulas
+  <a href="#pre-atividade" class="md-nav__link">
+    Pré-atividade
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#horario-de-atendimento" class="md-nav__link">
-    Horário de atendimento
+  <a href="#objetivo-da-atividade" class="md-nav__link">
+    Objetivo da atividade
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#informacoes-adicionais-sobre-os-projetos-e-implementacoes" class="md-nav__link">
-    Informações adicionais sobre os projetos e implementações
+  <a href="#tutorial-sobre-o-kaggle-environments" class="md-nav__link">
+    Tutorial sobre o kaggle-environments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contato" class="md-nav__link">
-    Contato
+  <a href="#implementacao" class="md-nav__link">
+    Implementação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
   </a>
   
 </li>
@@ -882,30 +902,60 @@
   
 
 
-<h1 id="inteligencia-artificial-e-robotica-20231">Inteligência Artificial e Robótica - 2023/1</h1>
+<h1 id="jogador-de-jogo-da-velha">Jogador de jogo da velha</h1>
+<h2 id="pre-atividade">Pré-atividade</h2>
+<p>Responda as perguntas abaixo: </p>
 <ol>
-<li><a href="ementa/">Ementa da disciplina.</a></li>
-<li><a href="plano_de_aulas/">Plano aula-a-aula da disciplina.</a></li>
-<li><a href="avaliacao/">Critérios de avaliação.</a></li>
+<li>O que é um ambiente competitivo de soma zero?</li>
+<li>Qual o objetivo do algoritmo Min-Max? Em outras palavras, por que um agente autônomo que atua em um ambiente competitivo deve usar o algoritmo Min-Max?</li>
+<li>O que é função de utilidade? Por que utilizar funções de utilidade? </li>
+<li>Qual é a relação da profundidade da árvore de busca do Min-Max com o desempenho final do agente? Existe correlação? Justifique a sua resposta.</li>
 </ol>
-<h2 id="horario-das-aulas">Horário das aulas</h2>
-<p>Segundas e quartas das 07:30 até 09:30.</p>
-<h2 id="horario-de-atendimento">Horário de atendimento</h2>
-<p>Quartas das 10:00 até 11:30. </p>
-<h2 id="informacoes-adicionais-sobre-os-projetos-e-implementacoes">Informações adicionais sobre os projetos e implementações</h2>
-<p>Todas os projetos e implementações irão utilizar a linguagem de programação <strong>Python</strong>. 
-Algumas das implementações irão utilizar o toolkit <a href="https://gym.openai.com/">Gym OpenAI</a> e, talvez, outros toolkits.</p>
-<p>Espera-se que os alunos desta disciplina tenham conhecimento de programação em Python. </p>
-<p>As entregas dos projetos e exercícios serão via <a href="https://classroom.github.com/classrooms/66448216-insper-classroom-ai">Github Classroom</a></p>
-<h2 id="contato">Contato</h2>
-<p>Em caso de dúvida ou comentários, favor encaminhar e-mail para fabriciojb at insper.edu.br. </p>
+<h2 id="objetivo-da-atividade">Objetivo da atividade</h2>
+<p>O objetivo desta atividade é implementar um jogador de jogo da velha. O ambiente que vamos utilizar para implementar este jogador é o <code>kaggle-environments</code>. </p>
+<h2 id="tutorial-sobre-o-kaggle-environments">Tutorial sobre o kaggle-environments</h2>
+<p>Para instalar o pacote execute o comando:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>kaggle-environments
+</code></pre></div>
+<p>O código fonte deste pacote e alguma documentação está disponível <a href="https://github.com/Kaggle/kaggle-environments">neste link</a>. </p>
+<p>Além disso, <a href="tictactoe/">neste link</a> tem um tutorial bem básico sobre o funcionamento deste ambiente. </p>
+<h2 id="implementacao">Implementação</h2>
+<ol>
+<li>Implemente um agente usando o algoritmo <code>MinMax com poda alpha-beta</code>, sem limite de profundidade, capaz de jogar o jogo da velha. </li>
+<li>Execute 200 jogos do seu jogador contra o jogador <code>random</code>, onde <code>100</code> jogos o seu jogador é o primeiro a jogar e <code>100</code> jogos onde o seu jogador é o segundo a jogar. </li>
+<li>Quantas partidas o seu jogador ganhou, empatou e perdeu? Espera-se que ele não tenha perdido nenhuma partida. </li>
+<li>Para cada jogada feita pelo seu jogador você deve medir quanto tempo ele gasta para tomar a decisão e calcular a média e o desvio padrão.</li>
+</ol>
+<p>Toda a implementação e documentação sobre os resultados deve estar em um arquivo <code>ipynb</code>. Se a equipe entregar todos os itens listados acima então a nota será <strong>B</strong>. </p>
+<p>Para atingir a nota <strong>A+</strong> então a dupla terá que fazer todos os itens anteriores mais os itens listados abaixo: </p>
+<ol>
+<li>Implemente um agente usando o algoritmo <code>MinMax com poda alpha-beta</code>, <strong>com</strong> limite de profundidade, capaz de jogar o jogo da velha. Consequentemente, você terá que definir uma função de utilidade para o jogo da velha. </li>
+<li>Execute 200 jogos do seu jogador contra o jogador <code>random</code>, onde <code>100</code> jogos o seu jogador é o primeiro a jogar e <code>100</code> jogos onde o seu jogador é o segundo a jogar. </li>
+<li>Quantas partidas o seu jogador ganhou, empatou e perdeu? Espera-se que ele não tenha perdido nenhuma partida. </li>
+<li>Para cada jogada feita pelo seu jogador você deve medir quanto tempo ele gasta para tomar a decisão e calcular a média e o desvio padrão.</li>
+</ol>
+<p>Perguntas que você precisa responder: </p>
+<ol>
+<li>Qual é o agente com melhor desempenho? <code>MinMax</code> sem limite de profundidade ou com limite de profundidade? Justifique a sua resposta. </li>
+<li>Qual é o agente mais rápido? É significantemente mais rápido? Justifique a sua resposta. </li>
+</ol>
+<p>Todo o código e respostas para as perguntas devem estas no mesmo arquivo <code>ipynb</code>. </p>
+<h2 id="entrega">Entrega</h2>
+<ul>
+<li>
+<p>Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui <a href="https://classroom.github.com/a/v3HzDh0E">https://classroom.github.com/a/v3HzDh0E</a>. </p>
+</li>
+<li>
+<p>A entrega é em duplas e o  <strong>prazo para a entrega</strong> é 12/04/2023 (quarta-feira) até às 23:30 horas.</p>
+</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 9, 2023</span>
       
     
   </small>
@@ -947,16 +997,16 @@ Algumas das implementações irão utilizar o toolkit <a href="https://gym.opena
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
       
-        <script src="js/markdown-enhancer.js"></script>
+        <script src="../../js/markdown-enhancer.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
