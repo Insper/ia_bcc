@@ -32,7 +32,7 @@ Além disso, [neste link](tictactoe.ipynb) tem um tutorial bem básico sobre o f
 1. Quantas partidas o seu jogador ganhou, empatou e perdeu? Espera-se que ele não tenha perdido nenhuma partida. 
 1. Para cada jogada feita pelo seu jogador você deve medir quanto tempo ele gasta para tomar a decisão e calcular a média e o desvio padrão.
 
-Toda a implementação e documentação sobre os resultados deve estar em um arquivo `ipynb`. Se a equipe entregar todos os itens listados acima então a nota será **B**. 
+Toda a implementação e documentação sobre os resultados deve estar em um arquivo `ipynb`. Se a equipe entregar todos os itens listados acima então a nota será **B**. Se a equipe entregar todos os artefatos, mas como uma implementação que em alguns momentos perde do jogador aleatório então a nota será **C**. 
 
 Para atingir a nota **A+** então a dupla terá que fazer todos os itens anteriores mais os itens listados abaixo: 
 
