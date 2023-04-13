@@ -2,177 +2,177 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://insper.github.io/ia_bcc/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/avaliacao/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/ementa/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/plano_de_aulas/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/_snippets/plano_aula/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/01_introducao_ia/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/01_introducao_ia/slides/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/01_introducao_ia_aula2/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/02_agentes_autonomos/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/02_agentes_autonomos/slides/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/03_configuracao/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/04_modelagem/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/04_x_buscas/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/05_busca_com_custo/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/05_x_busca_cega/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/07_revisao/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/08_heuristica/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/08_heuristica_parte_2/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/08_heuristica_parte_2/src/Map2023/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/09_heuristica_parte_3/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/09_heuristica_parte_3/src/test_8Puzzle/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/12_csp/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/12_csp/src/N_QueensProblem/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/13_jogos/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/14_tictactoe/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/aulas/14_tictactoe/tictactoe/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/avaliacoes/2023_intermediaria/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/projetos/11_taxi_driver/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/01_introducao/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/01_introducao/slides/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/03_algoritmos_busca/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/03_csp/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/03_dijkstra/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/04_busca_competitiva/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://insper.github.io/ia_bcc/referencias/05_jogos/</loc>
-         <lastmod>2023-04-10</lastmod>
+         <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
