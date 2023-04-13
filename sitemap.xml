@@ -141,6 +141,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://insper.github.io/ia_bcc/projetos/16_robo/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://insper.github.io/ia_bcc/referencias/01_introducao/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
