@@ -35,7 +35,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
 | [Busca em espaço de estados](../docs/projetos/11_taxi_driver/index.md)   | 03/04/2023          |
-| Ambiente competitivo                                        | TBD                 |
+| Aprendizagem por reforço                                       | TBD                 |
 | Agente robótico                                             | TBD                 |
 
 
