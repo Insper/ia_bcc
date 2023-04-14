@@ -15,8 +15,7 @@ Este robô tem um conjunto de **sensores** e **atuadores** que permitem a navega
 <center>
 <img src="img/rviz.jpeg" height='400'>
 </center>
-
-Todo o controle dos sensores e atuadores do robô é feito utilizando um conjunto de bibliotecas e ferrramentas do projeto [ROS](http://wiki.ros.org/). Para este projeto, o professor Diego desenvolveu um módulo que abstrai toda a parte de sensores e atuadores. 
+Todo o controle dos sensores e atuadores do robô foram desenvolvidos utilizando um conjunto de bibliotecas e ferramentas no ambiente [ROS](http://wiki.ros.org/). Para este projeto, o professor Diego desenvolveu um módulo que abstrai toda a parte de sensores e atuadores. 
 
 Este módulo recebe apenas uma lista de coordenadas e ações. A partir desta lista de coordenadas e ações o robô físico consegue se mover pelo labirinto. Considere a seguinte abstração para o labirinto acima: 
 
@@ -97,6 +96,8 @@ yey
 ```
 
 que o robô também irá entender o que fazer. 
+
+Como parte das limitações do projeto, o robô é obrigado a se mover exclusivamente pelo centro dos corredores. Para ilustrar, de acordo com o plano resumido, a rota final se estenderá das coordenadas (3,11) até (15,11).
 
 Cada uma das linhas são coordenadas do mapa. A única ação que não é coordenada é o `yey`- que é uma ação de comemoração. Quando você pedir para o robô fazer um `yey` ele irá gerar movimentos que parecem uma comemoração. 
 
