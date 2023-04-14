@@ -130,8 +130,8 @@ Todas as entregas devem ser feitas via Github classroom. O link para o Github cl
 | Descrição                                                            | Conceito |
 |:---------------------------------------------------------------------|:--------:|
 | A equipe desenvolveu uma solução onde não é possível fazer nenhum configuração. A solução funciona apenas para um caso específico.       |    I     |
-| A equipe desenvolveu uma solução onde é fácil configurar o cenário dado um labirinto qualquer. Ou seja, a posição inicial do robô, a posição final do robô e os locais onde as comemorações devem acontecer são informadas via arquivo de configuração ou via parâmetros do programa. |  C    |
-| A equipe desenvolveu uma solução onde é fácil configurar o cenário e também é fácil configurar um labirinto qualquer. Ou seja, a posição inicial do robô, a posição final do robô, os locais onde as comemorações devem acontecer e o mapa do labirinto são informados via arquivo de configuração ou via parâmetros do programa usando uma notação fácil de ser compreendida e editada.                                               |   A   | 
+| A equipe desenvolveu uma solução onde é fácil configurar o cenário dado um labirinto qualquer. Ou seja, a posição inicial do robô, a posição final do robô e os locais onde as comemorações devem acontecer são informadas via arquivo de configuração ou via parâmetros do programa. Mas não é possível configurar facilmente o formato do labirinto. |  C    |
+| A equipe desenvolveu uma solução onde é fácil configurar o cenário e também é fácil configurar um labirinto qualquer. Ou seja, a posição inicial do robô, a posição final do robô, os locais onde as comemorações devem acontecer e o **mapa do labirinto** são informados via arquivo de configuração ou via parâmetros do programa usando uma notação fácil de ser compreendida e editada.                                               |   A   | 
 
 
 **Grupo de requisitos 2**: 
@@ -140,7 +140,7 @@ Todas as entregas devem ser feitas via Github classroom. O link para o Github cl
 |:---------------------------------------------------------------------|:--------:|
 | A implementação da equipe não retorna soluções ótimas                |     I    |
 | A implementação da equipe sempre retorna uma solução ótima, se uma solução existir, independente do cenário mas sempre considerando o labirinto deste enunciado.                                             |     C    |
-| A implementação da equipe sempre retorna uma solução ótima, se uma solução existir, independente do cenário e do labirinto.               |     A    |
+| A implementação da equipe sempre retorna uma solução ótima, se uma solução existir, **independente do cenário e do labirinto**.               |     A    |
 
 
 **Grupo de requisitos 3**: 
@@ -155,14 +155,14 @@ Todas as entregas devem ser feitas via Github classroom. O link para o Github cl
 | Descrição                                                            | Conceito |
 |:---------------------------------------------------------------------|:--------:|
 | Falta algum código para a solução funcionar ou o arquivo de README.md ou o arquivo de requirements.txt | I |
-| O arquivo de README.md não está bem escrito. Ou seja, através do arquivo README.md não é possível saber como executar a implementação | D |
-| Os artefatos estão completos no repositório | A | 
+| O arquivo de README.md não está bem escrito. Ou seja, através do arquivo README.md não é possível saber como executar a implementação. | D |
+| Os artefatos estão completos no repositório. | A | 
 
 ### Cálculo do conceito final
 
 O cálculo do conceito final é composto por 4 grupos de requisitos. As regras para cálculo do conceito final são: 
 
-* Se em algum grupo de requisito a equipe teve conceito **I** então a nota final será **I**.
+* Se a equipe obter conceito **I** em algum grupo de requisito então a nota final será **I**.
 
 Para as demais situações tem-se: 
 
@@ -183,3 +183,12 @@ Para este projeto devem ser consideradas as seguintes equipes:
 
 | Equipe | Estudantes |
 |:-------|:-----------|
+|1	|JOÃO LUCAS DE MORAES BARROS CADORNIGA <br> LIVIA TANAKA <br> ALAN MATHEUS ALVES BARBOSA
+|2	|TOMAS RODRIGUES ALESSI <br> ALEXANDRE MAGNO MACIEL DOS SANTOS <br> JULIA KARINE PERES
+|3	|MATHEUS AGUIAR DE JESUS <br> PEDRO VAZ DE MORAES <br> EDUARDO MENDES VAZ
+|4	|ESDRAS GOMES CARVALHO <br> JOÃO ALFREDO CARDOSO LAMY <br> GUSTAVO ANTONY
+|5	|THOMAS CHIARI CIOCCHETTI DE SOUZA <br> MARCELO RABELLO BARRANCO <br> ERIK LEONARDO SOARES DE OLIVEIRA
+|6	|PEDRO ANTÔNIO SILVA <br> GUSTAVO LINDENBERG PACHECO <br> SERGIO EDUARDO RAMELLA JUNIOR
+|7	|MARCELO VAMPRÉ FERREIRA MARCHETTO <br> LUCCA HIRATSUCA COSTA <br> LEONARDO SCARLATO
+|8	|EDUARDO SCHNEIDER MONTEIRO DE BARROS <br> ENZO QUENTAL VIEIRA DE CAMPOS <br> ISABELLE DA SILVA SANTOS
+|9	|FELIPE MALULI DE CARVALHO DIAS <br> ALEXANDRE WEVER <br> FERNANDO VIEIRA DOS SANTOS <br> JÚLIA FERREIRA DE PAIVA
