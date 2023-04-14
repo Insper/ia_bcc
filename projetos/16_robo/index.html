@@ -841,8 +841,8 @@
 <p>Este robô tem um conjunto de <strong>sensores</strong> e <strong>atuadores</strong> que permitem a navegação do mesmo pelo labirinto. Por exemplo, no que diz respeito aos sensores, este robô é capaz de identificar obstáculos, como visto na figura abaixo: </p>
 <p><center>
 <img src="img/rviz.jpeg" height='400'>
-</center></p>
-<p>Todo o controle dos sensores e atuadores do robô é feito utilizando um conjunto de bibliotecas e ferrramentas do projeto <a href="http://wiki.ros.org/">ROS</a>. Para este projeto, o professor Diego desenvolveu um módulo que abstrai toda a parte de sensores e atuadores. </p>
+</center>
+Todo o controle dos sensores e atuadores do robô foram desenvolvidos utilizando um conjunto de bibliotecas e ferramentas no ambiente <a href="http://wiki.ros.org/">ROS</a>. Para este projeto, o professor Diego desenvolveu um módulo que abstrai toda a parte de sensores e atuadores. </p>
 <p>Este módulo recebe apenas uma lista de coordenadas e ações. A partir desta lista de coordenadas e ações o robô físico consegue se mover pelo labirinto. Considere a seguinte abstração para o labirinto acima: </p>
 <p><center>
 <img src="img/abstracao.jpeg" height='400'>
@@ -914,6 +914,7 @@ yey
 yey
 </code></pre></div>
 <p>que o robô também irá entender o que fazer. </p>
+<p>Como parte das limitações do projeto, o robô é obrigado a se mover exclusivamente pelo centro dos corredores. Para ilustrar, de acordo com o plano resumido, a rota final se estenderá das coordenadas (3,11) até (15,11).</p>
 <p>Cada uma das linhas são coordenadas do mapa. A única ação que não é coordenada é o <code>yey</code>- que é uma ação de comemoração. Quando você pedir para o robô fazer um <code>yey</code> ele irá gerar movimentos que parecem uma comemoração. </p>
 <p>A sua tarefa será desenvolver um módulo que a partir de uma configuração inicial envolvendo: </p>
 <ul>
