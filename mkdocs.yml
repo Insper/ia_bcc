@@ -37,8 +37,9 @@ nav:
       - 'aulas/14_tictactoe/index.md'
       - 'aulas/14_tictactoe/tictactoe.ipynb'
 #    - 'aulas/14_competicao/index.md'
-#    - 'Aprendizagem por reforço':
-#    - 'aulas/15_rl/index.md'
+    - 'Aprendizagem por reforço':
+    - 'aulas/15_rl/index.md'
+    - 'aulas/15_rl_part2/index.md'
 #    - 'aulas/15_rl/exercicio1.md'
 #    - 'aulas/15_rl/exercicio2.md'
 #    - 'aulas/99_topicos/index.md'
@@ -49,7 +50,7 @@ nav:
     - 'referencias/03_dijkstra/index.md'
     - 'referencias/04_busca_competitiva/index.md'
     - 'referencias/05_jogos/index.md'
-#    - 'referencias/06_rl/index.md'
+    - 'referencias/06_rl/index.md'
 #  - 'Avaliações':
 #    - 'avaliacoes/2023_intermediaria/index.md'
   - 'Projetos':
