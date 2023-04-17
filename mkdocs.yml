@@ -41,7 +41,7 @@ nav:
       - 'aulas/15_rl/index.md'
       - 'aulas/15_rl_parte2/index.md'
       - 'aulas/15_rl_sarsa/index.md'
-      - 'aulas/15_xon_determ/index.md'
+      - 'aulas/15_xnon_determ/index.md'
 #     - 'aulas/15_rl/exercicio1.md'
 #     - 'aulas/15_rl/exercicio2.md'
 #    - 'aulas/99_topicos/index.md'
