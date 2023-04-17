@@ -86,10 +86,12 @@ C = para aqueles que só implementaram
 D = para aqueles que implementaram parcialmente
 -->
 
+
+<!--
 ## Delivery
 
 Put all those files in the same project and then submit them to [https://classroom.github.com/a/gTxejAeH](https://classroom.github.com/a/gTxejAeH). This activity is individual and the **deadline is 03/07/2023 20:00 -0300.**
 
+-->
 
 <!-- usar este texto https://www.baeldung.com/cs/q-learning-vs-sarsa para comentar os resultados do cliff walking e as diferencas entre os algoritmos -->
-
