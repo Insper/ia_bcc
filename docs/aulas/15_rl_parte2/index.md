@@ -64,9 +64,17 @@ Na legenda é necessário ter o título da imagem e um texto explicativo. O text
 
 O gráfico deve possuir 3 linhas distintas. Cada uma destas linhas deve apresentar uma variação possível considerando os hiperparâmetros $\alpha$, $\gamma$ e $\epsilon$. Deverá ficar a critério do estudante quais valores utilizar. 
 
-Um exemplo de imagem que sumariza dados ou apresenta resultados de experimentos é apresentada abaixo: 
+### Exemplo de gráfico
 
+Um exemplo de imagem [^1] que sumariza dados ou apresenta resultados de experimentos é apresentada abaixo: 
+
+<!--
 <img src="figures/graph_anatomy.png" alt="Elementos de um gráfico" style="height: 400px;"/>
+-->
+
+<center>
+<img src="figures/leticia.png" alt="Exemplo de gráfico" style="height: 500px;"/>
+</center>
 
 Todas as informações relevantes para entender o resultado do treinamento precisam estar auto-contidas na imagem e na legenda da imagem. 
 
@@ -87,3 +95,5 @@ Segue abaixo um exemplo de gráfico muito bem formatado e completo. Este gráfic
 </center>
 
 -->
+
+[^1]: Este gráfico foi feito pela Letícia, aluna de Engenharia da Computação, durante a disciplina eletiva de *Reinforcement Learning*.  

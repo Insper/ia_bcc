@@ -1,4 +1,4 @@
-# Using RL in non-deterministic environments
+# Ambientes não determinísticos
     
 O ambiente [Frozen Lake](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) é um ambiente não determinístico onde um agente deve encontrar um caminho do lugar onde ele está para outro lugar passando por buracos. Se ele chegar no objetivo sem cair no buraco então ele termina a tarefa e tem 1 ponto de reward. Se ele cair em um dos buracos então ele termina a tarefa com 0 pontos de reward. Cada ação que não leva para um estado terminal tem reward igual a 0.  
 
@@ -12,9 +12,9 @@ Neste ambiente o agente consegue executar 4 ações: ir para cima, ir para baixo
 
 1. Veja o que está codificado no arquivo `FrozenLake_introduction.py` e execute o mesmo.
 
-3. Quantos estados e quantas ações o ambiente FrozenLake-v1 tem?
+1. Quantos estados e quantas ações o ambiente FrozenLake-v1 tem?
 
-4. O que aconteceu com a execução das ações? O resultado foi o esperado? Descreva o que aconteceu.
+1. O que aconteceu com a execução das ações? O resultado foi o esperado? Descreva o que aconteceu.
 
 ## Trabalhe com o arquivo `FrozenLake.py`
 
@@ -64,7 +64,7 @@ env = gym.make("FrozenLake-v1", map_name="8x8", is_slippery=True).env
 
 * O que muda? O problema se torna mais complexo? É necessário mudar algum dos hiperparâmetros? Qual é o melhor algoritmo? *Sarsa* ou *Q-Learning*? 
 
-Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto final em mais de 80% das vezes". Faça o *clone* do projeto [https://classroom.github.com/a/Ag-dCmlJ](https://classroom.github.com/a/Ag-dCmlJ). Você deve adicionar neste projeto e fazer o commit dos seguintes artefatos: 
+Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto final em mais de 80% das vezes*. Faça o *clone* do projeto [XXXX](xxxx). Você deve adicionar neste projeto e fazer o commit dos seguintes artefatos: 
 
 * o arquivo `q-table.csv` dentro do diretório `data`. Já existe um arquivo q-table neste projeto, mas ele é para a versão do ambiente 4x4. Quando você executar o arquivo `test_frozenlake.py` usando o comando `pytest` irá ocorrer um erro de `IndexError`. Você deve substituir este arquivo pelo arquivo gerado pelo seu agente durante o período de treinamento; 
 
@@ -74,7 +74,7 @@ Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto f
 
 * alterar o arquivo README.md informando os hiperparâmetros utilizados para o treinamento. 
 
-* (critério para A+) apresentar um gráfico comparando a curva de aprendizagem de diversas abordagens utilizadas durante o treinamento. A imagem deste gráfico deve ser adicionada ao projeto e o texto explicando os resultados ao arquivo README.md.  
+* (critério para A+) apresentar um gráfico comparando a curva de aprendizagem de diversas abordagens utilizadas durante o treinamento. A imagem deste gráfico deve ser adicionada ao projeto e o texto explicando os resultados ao arquivo README.md. Este gráfico deve possuir no mínimo duas linhas, uma considerando o algoritmo Q-Learning e outra considerando o algoritmo Sarsa. Fica à critério do estudante adicionar outras linhas considerando outros parâmetros. Um exemplo de gráfico bem estruturado é o apresentado [aqui](../15_rl_parte2/index.md#exemplo-de-gráfico). 
 
 ### Algoritmo e hiperparâmetros utilizados para o treinamento
 
@@ -96,11 +96,11 @@ Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto f
 * Entregou todos os artefatos mencionados acima então a nota é calculada de acordo com o número de testes aprovados: 
     * 1 teste aprovado = 2.5, 
     * 2 testes aprovados = 5.0, 
-    * 3 testes aprovados = 7.5, 
-    * 4 testes aprovados = 9.0
+    * 3 testes aprovados = 7.0, 
+    * 4 testes aprovados = 8.0
 
 * Foi aprovado em todos os testes e entregou o gráfico comparando a curva de aprendizagem de diversas abordagens utilizadas ao longo do treinamento então nota igual a **10 (dez)**. 
 
 ### Deadline
 
-O deadline para a entrega desta atividade é 12 de março de 2023 às 23:30 horas. 
+O deadline para a entrega desta atividade é 26 de abril de 2023 às 23:30 horas. 

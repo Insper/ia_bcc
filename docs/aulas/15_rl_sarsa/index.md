@@ -1,4 +1,4 @@
-# SARSA Algorithm: on-policy approach
+# SARSA: on-policy approach
     
 ## Definition and key concepts
 

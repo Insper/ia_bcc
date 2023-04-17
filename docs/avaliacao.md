@@ -35,8 +35,8 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
 | [Busca em espaço de estados](../docs/projetos/11_taxi_driver/index.md)   | 03/04/2023          |
-| Aprendizagem por reforço                                       | TBD                 |
-| Agente robótico                                             | TBD                 |
+| [Aprendizagem por reforço](../docs/aulas/15_xnon_determ/index.md)        | 26/04/2023          |
+| Agente robótico                                             | 10/05/2023            |
 
 
 ## Conversão de conceito para valor numérico

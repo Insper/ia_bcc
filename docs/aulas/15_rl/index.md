@@ -20,7 +20,7 @@ O processo recomendado é criar um ambiente virtual (*virtualenv*). Na pasta `sr
 python3 -m virtualenv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
-pip install -r requirements_part_01.txt
+pip install -r requirements.txt
 ````
 
 ### Trabalhe com o arquivo TaxiDriverGym_introduction.py
