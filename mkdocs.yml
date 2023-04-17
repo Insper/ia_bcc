@@ -38,10 +38,10 @@ nav:
       - 'aulas/14_tictactoe/tictactoe.ipynb'
 #    - 'aulas/14_competicao/index.md'
     - 'Aprendizagem por reforço':
-    - 'aulas/15_rl/index.md'
-    - 'aulas/15_rl_part2/index.md'
-#    - 'aulas/15_rl/exercicio1.md'
-#    - 'aulas/15_rl/exercicio2.md'
+      - 'aulas/15_rl/index.md'
+      - 'aulas/15_rl_part2/index.md'
+#     - 'aulas/15_rl/exercicio1.md'
+#     - 'aulas/15_rl/exercicio2.md'
 #    - 'aulas/99_topicos/index.md'
   - 'Referências':
     - 'referencias/01_introducao/index.md'
