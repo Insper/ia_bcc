@@ -6,7 +6,7 @@ Material utilizado para aula expositiva:
 
 <embed src="../../referencias/06_rl/reinforcementLearning.pdf" type="application/pdf" width="600" height="300">
 
-## Immplementação
+## Implementação
 
 Depois de uma breve explicação sobre definições e principais conceitos, nós vamos implementar o primeiro agente usando aprendizagem por reforço. Por favor, siga as instruções abaixo:
 
