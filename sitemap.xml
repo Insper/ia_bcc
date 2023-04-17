@@ -146,6 +146,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://insper.github.io/ia_bcc/aulas/15_xnon_determ/</loc>
+         <lastmod>2023-04-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://insper.github.io/ia_bcc/avaliacoes/2023_intermediaria/</loc>
          <lastmod>2023-04-17</lastmod>
          <changefreq>daily</changefreq>
