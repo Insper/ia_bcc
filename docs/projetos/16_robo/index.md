@@ -114,7 +114,11 @@ Deve criar uma sequência de ações que serão enviadas para o robô executar. 
 
 O cronograma do projeto tem os seguintes marcos: 
 
-* **03-Maio**: divulgação do enunciado. Cada equipe terá acesso ao enunciado e poderá desenvolver a sua solução com base no exemplo de labirinto descrito aqui. 
+* **03-Maio**: 
+
+    * aula do professor Diego sobre ROS e sensores de um robô.
+
+    * divulgação do enunciado. Cada equipe terá acesso ao enunciado e poderá desenvolver a sua solução com base no exemplo de labirinto descrito aqui. 
 
 * **08-Maio**: as equipes deverão testar as suas soluções submentendo o conjunto de ações para um robô disponível em sala de aula. O labirinto disponível em sala de aula será o mesmo que está descrito neste enunciado.
 
@@ -124,7 +128,7 @@ O deadline para entrega de todos os artefatos é dia **10 de maio**. No entanto,
 
 ## Entregáveis e rubrica de avaliação
 
-Todas as entregas devem ser feitas via Github classroom. O link para o Github classroom deste projeto é este: [xxxx](). Todo o código da solução deve ser adicionado ao repositório, além de um arquivo README.md, que descreve como deve ser utilizada a solução, e um arquivo requirements.txt, que enumera os pacotes necessários para a execução da implementação. 
+Todas as entregas devem ser feitas via Github classroom. O link para o Github classroom deste projeto é este: [https://classroom.github.com/a/5GtJoh6U](https://classroom.github.com/a/5GtJoh6U). Todo o código da solução deve ser adicionado ao repositório, além de um arquivo README.md, que descreve como deve ser utilizada a solução, e um arquivo requirements.txt, que enumera os pacotes necessários para a execução da implementação. 
 
 **Grupo de requisitos 1**: 
 
