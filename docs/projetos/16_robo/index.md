@@ -108,6 +108,24 @@ A sua tarefa será desenvolver um módulo que a partir de uma configuração ini
 * posições onde o robô deve chegar e comemorar, e;
 * uma posição final.
 
+Você deve considerar que o seu usuário final irá informar estes valores. O mapa específico pode ser informado via uma interface gráfica onde o usuário pinta o mesmo ou o seu código poderá receber uma [imagem como esta](./img/map_s_cut.png) e o seu código poderá tratar. Todos os layouts tem o mesmo tamanho (26 por 38).
+
+As posições de início e posição final devem ser informadas no formato $[linha, coluna]$.
+
+Os locais de comemoração serão informados como uma lista de posições $[[linha,coluna],[linha,coluna],\cdots, [linha,coluna]]$
+
+Para o caso apresentado acima, a estrada relacionada com as posições é: 
+
+* posição inicial = [3,3]
+* posição final = [15,11]
+* comemorações = [[15,11]]
+
+Mas, para o mesmo layout um objetivo diferente pode ser informado: 
+
+* posição inicial = [3,3]
+* posição final = [15,11]
+* comemorações = [[15,26],[15,11]]
+
 Deve criar uma sequência de ações que serão enviadas para o robô executar. Esta sequência de ações deve ser uma solução ótima. 
 
 ## Agenda e método de trabalho
