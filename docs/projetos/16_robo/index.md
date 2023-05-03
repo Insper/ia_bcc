@@ -215,3 +215,20 @@ Para este projeto devem ser consideradas as seguintes equipes:
 |7	|MARCELO VAMPRÉ FERREIRA MARCHETTO <br> LUCCA HIRATSUCA COSTA <br> LEONARDO SCARLATO
 |8	|EDUARDO SCHNEIDER MONTEIRO DE BARROS <br> ENZO QUENTAL VIEIRA DE CAMPOS <br> ISABELLE DA SILVA SANTOS
 |9	|FELIPE MALULI DE CARVALHO DIAS <br> ALEXANDRE WEVER <br> FERNANDO VIEIRA DOS SANTOS <br> JÚLIA FERREIRA DE PAIVA
+
+## Labirintos para testes
+
+Durante o desenvolvimento do seu projeto, considere os seguintes labirintos para testes: 
+
+<center>
+<img src="img/abstracao.jpeg" height='400'>
+</center>
+
+[Imagem](./img/map_s_cut.png) que representa o labirinto acima.
+
+
+<center>
+<img src="img/layout_8.jpg" height='400'>
+</center>
+
+[Imagem](./img/map_8_cut.png) que representa o labirinto acima.
