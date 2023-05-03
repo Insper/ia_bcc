@@ -1128,6 +1128,21 @@ yey
 <li>posições onde o robô deve chegar e comemorar, e;</li>
 <li>uma posição final.</li>
 </ul>
+<p>Você deve considerar que o seu usuário final irá informar estes valores. O mapa específico pode ser informado via uma interface gráfica onde o usuário pinta o mesmo ou o seu código poderá receber uma <a href="img/map_s_cut.png">imagem como esta</a> e o seu código poderá tratar. Todos os layouts tem o mesmo tamanho (26 por 38).</p>
+<p>As posições de início e posição final devem ser informadas no formato <span class="arithmatex">\([linha, coluna]\)</span>.</p>
+<p>Os locais de comemoração serão informados como uma lista de posições <span class="arithmatex">\([[linha,coluna],[linha,coluna],\cdots, [linha,coluna]]\)</span></p>
+<p>Para o caso apresentado acima, a estrada relacionada com as posições é: </p>
+<ul>
+<li>posição inicial = [3,3]</li>
+<li>posição final = [15,11]</li>
+<li>comemorações = [[15,11]]</li>
+</ul>
+<p>Mas, para o mesmo layout um objetivo diferente pode ser informado: </p>
+<ul>
+<li>posição inicial = [3,3]</li>
+<li>posição final = [15,11]</li>
+<li>comemorações = [[15,26],[15,11]]</li>
+</ul>
 <p>Deve criar uma sequência de ações que serão enviadas para o robô executar. Esta sequência de ações deve ser uma solução ótima. </p>
 <h2 id="agenda-e-metodo-de-trabalho">Agenda e método de trabalho</h2>
 <p>O cronograma do projeto tem os seguintes marcos: </p>
@@ -1363,7 +1378,7 @@ yey
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 2, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 3, 2023</span>
       
     
   </small>
