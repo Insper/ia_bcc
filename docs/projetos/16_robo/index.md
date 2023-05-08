@@ -232,3 +232,7 @@ Durante o desenvolvimento do seu projeto, considere os seguintes labirintos para
 </center>
 
 [Imagem](./img/map_8_cut.png) que representa o labirinto acima.
+
+Além disso, temos o mapa que está no dia de hoje (08/05): 
+
+[Imagem](./img/map_cara_feliz.jpeg) que representa o labirinto acima.
