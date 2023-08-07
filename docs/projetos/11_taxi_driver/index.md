@@ -97,6 +97,12 @@ A equipe deverá implementar no minímo dois arquivos: um arquivo python com a l
 
 [^1]: É importante lembrar que a equipe deve satisfazer também os requisitos de documentação para alcançar esta nota.
 
+## Exemplo de interface gráfica esperada
+
+Na imagem abaixo é apresentado um exemplo de interface gráfica esperada como resultado do projeto. 
+
+<img src="img/taxi_driver_ai_v2.gif">
+
 
 
 
