@@ -186,56 +186,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://insper.github.io/ia_bcc/avaliacoes/2023_final/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/avaliacoes/2023_intermediaria/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/avaliacoes/2023_sub/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/enunciados/implementacao_busca_competitiva/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/enunciados/implementacoes_busca_parte1/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/enunciados/implementacoes_busca_parte2/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/enunciados/implementacoes_busca_parte3/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/projetos/11_taxi_driver/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/projetos/15_rl/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://insper.github.io/ia_bcc/projetos/16_robo/</loc>
-         <lastmod>2023-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://insper.github.io/ia_bcc/referencias/01_introducao/</loc>
          <lastmod>2023-08-07</lastmod>
          <changefreq>daily</changefreq>
