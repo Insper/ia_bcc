@@ -1,4 +1,4 @@
-# Inteligência Artificial e Robótica - 2023/1
+# Inteligência Artificial e Robótica - 2023/2
 
 1. [Ementa da disciplina.](ementa.md)
 2. [Plano aula-a-aula da disciplina.](plano_de_aulas.md)
