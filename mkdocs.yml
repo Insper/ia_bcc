@@ -1,7 +1,7 @@
 site_name: Inteligência Artificial e Robótica 
-repo_url: https://github.com/Insper/ia_bcc/
-repo_name: Inteligência Artificial e Robótica
-site_url: https://insper.github.io/ia_bcc/
+#repo_url: https://github.com/Insper/ia_bcc/
+#repo_name: Inteligência Artificial e Robótica
+#site_url: https://insper.github.io/ia_bcc/
 
 theme:
     name: 'material'
@@ -17,7 +17,6 @@ nav:
   - 'Aulas':
     - 'Introdução':
       - 'aulas/01_introducao_ia/index.md'
-      - 'aulas/01_introducao_ia_aula2/index.md'
       - 'aulas/02_agentes_autonomos/index.md'
       - 'aulas/03_configuracao/index.md'
 #    - 'Busca em espaço de estados':

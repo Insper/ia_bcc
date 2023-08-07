@@ -4,14 +4,15 @@ Os objetivos de aprendizagem desta disciplina serão avaliados através das segu
 
 | Atividade | Peso |
 | ----------| ----------|
-| *N* implementações de agentes autônomos | 20% |
+| *N* implementações de agentes autônomos | 10% |
 | 3 projetos | 30% | 
-| Avaliação Intermediária | 20% | 
+| Avaliação Intermediária | 30% | 
 | Avaliação Final | 30% | 
 
 O critério para aprovação é:
 
 * nota final superior ou igual a cinco (5);
+* a média das avaliações intermediária e final deve ser igual ou maior que quatro (4);
 * e 75% de frequência mínima nas aulas. 
 
 ## *N* implementações de agentes autônomos
@@ -20,13 +21,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| [Exemplos de soluções baseadas em IA](./aulas/01_introducao_ia_aula2/index.md#apresentações-dos-alunos) | 09/02/2023 |
-| [Laboratório sobre algoritmos BL, BP e BPI](./aulas/04_x_buscas/index.md#atividade-de-laboratório) | 03/03/2023 |
-| [Problema da banda U2](./aulas/05_busca_com_custo/index.md#banda-u2)                               | 07/03/2023 |
-| [Problema 8 Puzzle](./aulas/09_heuristica_parte_3/index.md#problema-dos-8-puzzle)               | 17/03/2023 |
-| [Questionário sobre busca competitiva](./aulas/13_jogos/index.md)                               | 10/04/2023 |
-| [Implementação de um jogador de jogo da velha](./aulas/14_tictactoe/index.md)                   | 12/04/2023 |
-
+|                                                             |                     |
 
 ## 3 projetos
 
@@ -34,9 +29,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| [Busca em espaço de estados](../docs/projetos/11_taxi_driver/index.md)   | 03/04/2023          |
-| [Aprendizagem por reforço](../docs/aulas/15_xnon_determ/index.md)        | 26/04/2023          |
-| Agente robótico                                             | 10/05/2023            |
+|                                                                                          |                     |
 
 
 ## Conversão de conceito para valor numérico
