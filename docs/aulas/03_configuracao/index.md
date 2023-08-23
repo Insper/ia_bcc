@@ -32,11 +32,11 @@ Na pasta `tests` temos o arquivo `ProblemSpecificationExample.py`.
 
     Algoritmos de Busca, começando com o algoritmo de busca em largura. 
 
-## Exercício 2.a: Aspirador de Pó com 4 quartos.
+## Exercício 2: Aspirador de Pó com 4 quartos.
 
 Vamos implementar um aspirador de pó que atua em um ambiente com 4 quartos? Um quadrado $2 \times 2$? 
 
-## Exercício 2.b: Aspirador de Pó com poltrona. 
+## Exercício 3: Aspirador de Pó com poltrona. 
 
 Neste problema os quartos da casa podem possuir poltronas. Para limpar o quarto da casa que tem poltrona o agente deve antes de executar a ação limpar `virar` a poltrona. Claro que depois de limpar o agente deve também `desvirar` a poltrona para deixar o quarto em ordem. 
 
