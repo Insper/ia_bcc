@@ -12,7 +12,7 @@
         <link rel="prev" href="../02_agentes_autonomos/">
       
       
-        <link rel="next" href="../../referencias/01_introducao/">
+        <link rel="next" href="../04_modelagem/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -433,6 +433,68 @@
 
               
             
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Busca em espaço de estados
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Busca em espaço de estados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_modelagem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelagem dos problemas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -485,6 +547,26 @@
   
   <span class="md-ellipsis">
     Introdução à Inteligência Artificial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algoritmos de Busca
   </span>
   
 
@@ -572,20 +654,19 @@
 
 <h1 id="implementando-um-aspirador-de-po">Implementando um Aspirador de Pó</h1>
 <h2 id="configuracao-do-ambiente">Configuração do ambiente</h2>
-<p>Para executar esta atividade você terá que instalar a biblioteca <a href="https://pypi.org/project/aigyminsper/">AIGYM</a>:</p>
+<p>Para executar esta atividade você terá que criar um projeto e como dependência deste projeto instalar a biblioteca <a href="https://pypi.org/project/aigyminsper/">AIGYM</a>:</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>aigyminsper
 </code></pre></div>
-<p>Recomenda-se fortemente que todo estudante faça estas atividades em sua máquina. Os problemas podem ser discutidos em grupo, no entanto, cada aluno precisa ter a sua própria implementação. </p>
-<p>Nas pastas <code>aigyminsper</code> e <code>tests</code> do projeto <a href="https://github.com/Insper/ai_gym">AIGYM</a> você irá encontrar diversos arquivos <code>python</code>. São os arquivos desta pasta que você irá utilizar neste exercício.</p>
+<p>Esta biblioteca implementa diversos algoritmos de busca que serão utilizados ao longo da disciplina. Além disso, esta biblioteca permite o desenvolvimento de agentes inteligentes através de uma interface padrão.  </p>
 <h2 id="exercicio-aspirador-de-po">Exercício: Aspirador de Pó</h2>
-<p>Na pasta <code>tests</code> temos o arquivo <code>ProblemSpecificationExample.py</code>. </p>
+<p>Para este exercício vamos utilizar o arquivo <a href="code/AgentSpecification/">AgentSpecification.py</a>.</p>
 <ul>
-<li>Faça uma cópia deste arquivo e chama ele de <code>AspiradorPo.py</code>, por exemplo.</li>
+<li>Faça uma cópia deste arquivo e chame ele de <code>AspiradorPo.py</code>, por exemplo.</li>
 <li>No método <code>__init__</code> defina a estrutura de dados que você especificou na aula passada. </li>
 <li>No método <code>sucessors</code> codifique a execução das ações segundo o que você especificou na aula passada. <strong>Dica</strong>: cada novo estado é uma instância de um novo objeto da classe que é adicionado na lista retornada pelo método. </li>
 <li>Codifique o comportamento do método <code>is_goal</code>. Ele deve retornar <code>True</code> quando encontrar um estado igual a meta. </li>
-<li>O médoto <code>description</code> retorna uma descrição do problema que está sendo resolvido. Por favor, altere o que está descrito no método. </li>
-<li>Faça um retorno para o método <code>env</code>. Peça para o professor explicar em sala de aula.</li>
+<li>O médoto <code>description()</code> retorna uma descrição do problema que está sendo resolvido. Por favor, altere o que está descrito no método. </li>
+<li>Faça um retorno para o método <code>env()</code>. Peça para o professor explicar em sala de aula.</li>
 <li>Altere o método <code>main()</code> para que o mesmo chame a sua classe. </li>
 </ul>
 <details class="warning">
@@ -596,11 +677,41 @@
 <summary>Conceitos que devem ser explorados neste exercício</summary>
 <p>Algoritmos de Busca, começando com o algoritmo de busca em largura. </p>
 </details>
+<details class="hint">
+<summary>Importante!</summary>
+<p>Recomenda-se fortemente que todo estudante faça estas atividades em sua máquina. Os problemas podem ser discutidos em grupo, no entanto, cada aluno precisa ter a sua própria implementação.</p>
+</details>
 <h2 id="exercicio-2-aspirador-de-po-com-4-quartos">Exercício 2: Aspirador de Pó com 4 quartos.</h2>
 <p>Vamos implementar um aspirador de pó que atua em um ambiente com 4 quartos? Um quadrado <span class="arithmatex">\(2 \times 2\)</span>? </p>
+<p>Mas, antes de implementar usando uma estrutura similar a descrita acima, responda as questões abaixo: </p>
+<ul>
+<li>O que é relevante representar nos estados do mundo? Como os
+    estados são estruturados (estrutura de dados) e qual o significado
+    dela (dos campos)?</li>
+<li>Mostre como ficam representados os estados inicial e final
+    segundo a representação adotada.</li>
+<li>Quais as operações sobre os estados?
+    (detalhe como cada operação irá alterar os estados e quais as
+    condições para cada operação ser executada)</li>
+<li>Qual a estimativa do tamanho do espaço de busca (número de
+    estados possíveis)?</li>
+</ul>
 <h2 id="exercicio-3-aspirador-de-po-com-poltrona">Exercício 3: Aspirador de Pó com poltrona.</h2>
 <p>Neste problema os quartos da casa podem possuir poltronas. Para limpar o quarto da casa que tem poltrona o agente deve antes de executar a ação limpar <code>virar</code> a poltrona. Claro que depois de limpar o agente deve também <code>desvirar</code> a poltrona para deixar o quarto em ordem. </p>
 <p>Para este problema considere um ambiente (casa) também com 4 quartos (um quadrado <span class="arithmatex">\(2 \times 2\)</span>). </p>
+<p>Mas, antes de implementar usando uma estrutura similar a descrita acima, responda as questões abaixo: </p>
+<ul>
+<li>O que é relevante representar nos estados do mundo? Como os
+    estados são estruturados (estrutura de dados) e qual o significado
+    dela (dos campos)?</li>
+<li>Mostre como ficam representados os estados inicial e final
+    segundo a representação adotada.</li>
+<li>Quais as operações sobre os estados?
+    (detalhe como cada operação irá alterar os estados e quais as
+    condições para cada operação ser executada)</li>
+<li>Qual a estimativa do tamanho do espaço de busca (número de
+    estados possíveis)?</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
