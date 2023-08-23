@@ -1,14 +1,6 @@
 # Modelagem dos problemas
 
-Na aula passada começamos a implementar um agente que limpa casas com $2$ quartos. Para tanto, utilizamos uma biblioteca que já implementa alguns algoritmos de busca. 
-
-Para instalar esta biblioteca basta digitar: 
-
-```bash
-pip install aigyminsper
-```
-
-Uma solução possível encontrada para implementar o agente limpador de quartos em uma casa de 2 quartos foi: 
+Na aula passada começamos a implementar um agente que limpa casas com $2$ quartos. Para tanto, utilizamos uma biblioteca que já implementa alguns algoritmos de busca. Uma solução possível para implementar o agente limpador de quartos em uma casa de 2 quartos é: 
 
 ```python
 from aigyminsper.search.SearchAlgorithms import BuscaLargura
@@ -16,46 +8,42 @@ from aigyminsper.search.Graph import State
 
 class AspiradorPo(State):
 
-    def __init__(self, op, posicao, s_esq, s_dir):
+    def __init__(self, op, quarto_esq, quarto_dir, robo):
+        # You must use this name for the operator!
         self.operator = op
-        # DIR; ESQ
-        self.posicao_robo = posicao
-        # LIMPO; SUJO
-        self.situacao_esq = s_esq
-        # LIMPO; SUJO
-        self.situacao_dir = s_dir
+        self.quarto_esq = quarto_esq
+        self.quarto_dir = quarto_dir
+        self.robo = robo
     
-    def sucessors(self):
-        sucessors = []
-        # esq
-        sucessors.append(AspiradorPo("esq","ESQ",self.situacao_esq,self.situacao_dir))
-        # dir
-        sucessors.append(AspiradorPo("dir","DIR",self.situacao_esq,self.situacao_dir))
-        # limpar
-        if self.posicao_robo == 'ESQ':
-            sucessors.append(AspiradorPo("limpar",self.posicao_robo,'LIMPO',self.situacao_dir))
+    def successors(self):
+        successors = []
+        successors.append(AspiradorPo('esq',self.quarto_esq,self.quarto_dir,'esq'))
+        successors.append(AspiradorPo('dir',self.quarto_esq,self.quarto_dir,'dir'))
+        if self.robo == 'esq':
+            successors.append(AspiradorPo("limpar","limpo",self.quarto_dir,self.robo))
         else:
-            sucessors.append(AspiradorPo('limpar',self.posicao_robo,self.situacao_esq,'LIMPO'))
-        
-        return sucessors
+            successors.append(AspiradorPo("limpar",self.quarto_esq,"limpo",self.robo))
+        return successors
     
     def is_goal(self):
-        if (self.situacao_dir == 'LIMPO') and (self.situacao_esq == 'LIMPO') and (self.posicao_robo == "ESQ"):
-            return True
-        return False 
-
+        return self.quarto_esq == 'limpo' and self.quarto_dir == 'limpo' and self.robo == 'esq'
+    
+    def description(self):
+        return "Problema clássico do robô aspirador de pó com 2 quartos"
+    
     def cost(self):
         return 1
-
-    def description(self):
-        return "Implementa um aspirador de po para 2 quartos"
-
+    
     def env(self):
-        return self.operator
+        return f'(robô no quarto {self.robo}, quarto da esquerda está {self.quarto_esq}, quarto da direita está {self.quarto_dir})'
 
 
 def main():
-    state = AspiradorPo('','ESQ','SUJO','SUJO')
+    robo = input('Onde o robô está? (esq/dir) ')
+    quarto_esq = input('Condição do quarto da esquerda? (limpo/sujo) ')
+    quarto_dir = input('Condição do quarto da direita? (limpo/sujo) ')
+    state = AspiradorPo('',quarto_esq,quarto_dir,robo)
+    print('Aplicando o algoritmo de busca em largura')
     algorithm = BuscaLargura()
     result = algorithm.search(state)
     if result != None:
@@ -68,29 +56,30 @@ if __name__ == '__main__':
     main()
 ```
 
-**Questões**:
+??? "Questão"
+    
+    O que significa `algorithm = BuscaLargura()`? 
 
-* O que significa `algorithm = BuscaLargura()`? 
-* Será que é possível utilizar outros algoritmos? 
 
-## Exercício 2: Aspirador de Pó com $4$ quartos.
+## Comportamento do algoritmo de Busca em Largura
 
-Vamos implementar um aspirador de pó que atua em um ambiente com 4 quartos? Um quadrado $2 \times 2$?
+Na hora de chamar o método `search` altere o código de: 
 
-Mas, antes de implementar usando uma estrutura similar a descrita acima, responda as questões abaixo: 
+```python
+    algorithm = BuscaLargura()
+    result = algorithm.search(state)
+```
 
-* O que é relevante representar nos estados do mundo? Como os
-    estados são estruturados (estrutura de dados) e qual o significado
-    dela (dos campos)?
-* Mostre como ficam representados os estados inicial e final
-    segundo a representação adotada.
-* Quais as operações sobre os estados?
-    (detalhe como cada operação irá alterar os estados e quais as
-    condições para cada operação ser executada)
-* Qual a estimativa do tamanho do espaço de busca (número de
-    estados possíveis)?
+para: 
 
-## Exercício 3: Aspirador de Pó em um mapa $10 \times 10$ e com algumas ações diferentes.
+```python
+    algorithm = BuscaLargura()
+    result = algorithm.search(state, trace=True)
+```
+
+adicionando o parâmetro `trace=True`. Tente entender o que acontece.
+
+## Aspirador de Pó em uma casa 10 por 10.
 
 Neste exercício o agente sabe executar outras ações, mas o objetivo dele permanece o mesmo. As ações são: 
 
@@ -113,6 +102,11 @@ E as dimensões da casa são de $10 \times 10$ quartos.
     estados possíveis)?
 * Será que o algoritmo de busca em largura consegue encontrar resposta para todas as configurações iniciais? 
 
-## Vamos entender as diferenças entre os algoritmos de busca? 
 
-Se você já terminou as implementações acima, então leia o material neste [link](../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf). Em especial, do primeiro ao slide de número 28. 
+??? "Questão"
+    
+    Será que é possível utilizar outros algoritmos? 
+
+## Próximas atividades
+
+Se você já terminou as implementações acima e as implementações da [aula anterior](../03_configuracao/index.md), então leia o material neste [link](../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf). Em especial, do primeiro ao slide de número 28. 
