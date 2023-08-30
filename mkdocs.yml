@@ -21,7 +21,7 @@ nav:
       - 'aulas/03_configuracao/index.md'
     - 'Busca em espaço de estados':
       - 'aulas/04_modelagem/index.md'
-#      - 'aulas/04_x_buscas/index.md'
+      - 'aulas/04_x_buscas/index.md'
 #    # - 'aulas/04_x_modelagem/index.md'
 #      - 'aulas/05_busca_com_custo/index.md'
 #    # - 'aulas/05_x_busca_cega/index.md'

@@ -21,7 +21,9 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-|                                                             |                     |
+| Atividade em sala de aula 1                                 | 23/08/2023          |
+| [Atividade em sala de aula 2](./aulas/04_x_buscas/index.md) | 04/09/2023          |
+
 
 ## 3 projetos
 
