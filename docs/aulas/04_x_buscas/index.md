@@ -94,7 +94,7 @@ Armazene o tempo de processamento criando uma tabela similar a esta:
 | Busca em Largura | 50 | $\cdots$ | 
 | Busca em Profundidade com $m= 10$ | 1 | 0:00:00.000033 |
 | Busca em Produndidade com $m= 10$ | $\cdots$ | $\cdots$ |
-| Busca em Produndidade com $m= 50$ | $\cdots$ | $\cdots$ |
+| Busca em Produndidade com $m= 100$ | $\cdots$ | $\cdots$ |
 | Busca em Profundidade Iterativa |  1 | $\cdots$ |
 | Busca em Profundidade Iterativa |  $\cdots$ | $\cdots$ |
 | Busca em Profundidade Iterativa |  50 | $\cdots$ |
