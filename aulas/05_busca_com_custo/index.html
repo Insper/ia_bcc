@@ -9,14 +9,18 @@
       
       
       
+        <link rel="prev" href="../04_x_buscas/">
+      
+      
+        <link rel="next" href="../07_revisao/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
     
     
       
-        <title>Revisão do exercício anterior e novo exercício - Inteligência Artificial e Robótica</title>
+        <title>Algoritmo de custo uniforme - Inteligência Artificial e Robótica</title>
       
     
     
@@ -63,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#revisao-do-exercicio-anterior-e-novo-exercicio" class="md-skip">
+        <a href="#algoritmo-de-custo-uniforme" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Revisão do exercício anterior e novo exercício
+              Algoritmo de custo uniforme
             
           </span>
         </div>
@@ -225,17 +229,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -248,7 +254,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -361,17 +367,19 @@
                 
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
             
@@ -384,7 +392,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Busca em espaço de estados
@@ -422,6 +430,56 @@
   
   <span class="md-ellipsis">
     Algoritmos de Busca em Largura e Profundidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Algoritmo de custo uniforme
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_revisao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Revisão sobre algoritmos de busca sistemáticos
   </span>
   
 
@@ -560,24 +618,39 @@
                   
 
 
-<h1 id="revisao-do-exercicio-anterior-e-novo-exercicio">Revisão do exercício anterior e novo exercício</h1>
-<p>Considerando <a href="../04_x_buscas/#atividade-de-laboratório">este exercício</a>, quais são as respostas certas para as perguntas abaixo: </p>
+<h1 id="algoritmo-de-custo-uniforme">Algoritmo de custo uniforme</h1>
+<p>Na aula passada implementamos algumas soluções com o objetivo de encontrar o menor caminho entre dois pontos de interesse (POI) considerando o grafo abaixo: </p>
+<p><img src="img/grafo.png" width="600" height="800"></p>
+<p>Implementamos soluções usando os algoritmos: </p>
 <ul>
-<li>
-<p>Segundo o que discutimos em sala de aula, quais destes algoritmos são ótimos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.</p>
-</li>
-<li>
-<p>Segundo o que discutimos em sala de aula, quais destes algoritmos são completos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.</p>
-</li>
-<li>
-<p>Teve algum algoritmo que travou por falta de memória no seu computador? Se sim, qual é a explicação?</p>
-</li>
-<li>
-<p>Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta.</p>
-</li>
+<li>Busca em Profundidade</li>
+<li>Busca em Largura</li>
+<li>Busca em Profundidade Iterativa</li>
+<li>Busca de Custo Uniforme</li>
 </ul>
+<p>Percebemos que o único algoritmo capaz de retornar uma solução ótima, ou seja, uma solução com menor custo para diversos casos foi o algoritmo de <strong>busca de custo uniforme</strong>. </p>
+<p>Leia o conteúdo dos slides 29 até 31 do arquivo abaixo e justifique os resultados encontrados na aula passada. </p>
+<p><embed src="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300"></p>
+<p>Execute o método <code>search</code> do programa <code>Poi.py</code>, que você implementou na aula passada, da seguinte forma: </p>
+<div class="highlight"><pre><span></span><code><span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaCustoUniforme</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<p>Use o trace gerado pelo programa para entender o que está acontecendo.</p>
+<!--# Revisão do exercício anterior e novo exercício
+
+Considerando [este exercício](../04_x_buscas/index.md#atividade-de-laboratório), quais são as respostas certas para as perguntas abaixo: 
+
+* Segundo o que discutimos em sala de aula, quais destes algoritmos são ótimos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.
+
+* Segundo o que discutimos em sala de aula, quais destes algoritmos são completos? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.
+
+* Teve algum algoritmo que travou por falta de memória no seu computador? Se sim, qual é a explicação?
+
+* Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta.
+-->
+
 <h1 id="banda-u2">Banda U2</h1>
-<p>Considere o seguinte problema: </p>
+<p><strong>Considere o seguinte problema</strong>: </p>
 <p>A banda U2 tem um concerto que começa daqui a 17 minutos e
   todos precisam cruzar uma ponte par chegar lá. Todos os 4
   participantes estão do mesmo lado da ponte. É noite. Só
@@ -613,13 +686,13 @@ a solução apresentada precisa ser ótima? </li>
 <h2 id="formato-de-entrega">Formato de entrega</h2>
 <ul>
 <li>
-<p>Para a implementação e entrega deste exercício nós vamos utilizar o <a href="https://classroom.github.com/a/1b1ermRX">Github Classroom</a>. </p>
+<p>Para a implementação e entrega deste exercício nós vamos utilizar o <a href="https://classroom.github.com/a/pXHDvvE_">Github Classroom</a>. </p>
 </li>
 <li>
-<p>O link para o enunciado é este aqui <a href="https://classroom.github.com/a/1b1ermRX">https://classroom.github.com/a/1b1ermRX</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
+<p>O link para o enunciado é este aqui <a href="https://classroom.github.com/a/pXHDvvE_">https://classroom.github.com/a/pXHDvvE_</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
 </li>
 <li>
-<p><strong>Prazo para a entrega</strong>: 08/03/2023 (quarta-feira) até às 23:00 horas. </p>
+<p><strong>Prazo para a entrega</strong>: 15/09/2023 (sexta-feira) até às 23:30 horas. </p>
 </li>
 </ul>
 <h2 id="cuidados">Cuidados!</h2>
@@ -663,7 +736,7 @@ a solução apresentada precisa ser ótima? </li>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 6, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 12, 2023</span>
       
     
   </small>

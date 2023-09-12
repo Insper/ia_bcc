@@ -1,0 +1,14 @@
+digraph G {
+    layout="circo";
+    /* Relationships */
+    A -> B[label="1", dir="both"]
+    A -> C[label="10", dir="both"]
+    B -> C[label="1", dir="both"]
+    B -> D[label="1", dir="both"]
+    C -> E[label="5", dir="both"]
+    D -> E[label="3", dir="both"]
+    E -> F[label="1", dir="both"]
+    E -> G[label="2", dir="both"]
+    F -> G[label="1", dir="both"]          
+
+} 
