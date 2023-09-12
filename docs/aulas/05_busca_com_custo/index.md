@@ -1,4 +1,33 @@
-# Revisão do exercício anterior e novo exercício
+# Algoritmo de custo uniforme
+
+Na aula passada implementamos algumas soluções com o objetivo de encontrar o menor caminho entre dois pontos de interesse (POI) considerando o grafo abaixo: 
+
+<img src="img/grafo.png" width="600" height="800">
+
+Implementamos soluções usando os algoritmos: 
+
+* Busca em Profundidade
+* Busca em Largura
+* Busca em Profundidade Iterativa
+* Busca de Custo Uniforme
+
+Percebemos que o único algoritmo capaz de retornar uma solução ótima, ou seja, uma solução com menor custo para diversos casos foi o algoritmo de **busca de custo uniforme**. 
+
+Leia o conteúdo dos slides 29 até 31 do arquivo abaixo e justifique os resultados encontrados na aula passada. 
+
+<embed src="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300">
+
+Execute o método `search` do programa `Poi.py`, que você implementou na aula passada, da seguinte forma: 
+
+```python
+algorithm = BuscaCustoUniforme()
+result = algorithm.search(state, trace=True)
+```
+
+Use o trace gerado pelo programa para entender o que está acontecendo.
+
+
+<!--# Revisão do exercício anterior e novo exercício
 
 Considerando [este exercício](../04_x_buscas/index.md#atividade-de-laboratório), quais são as respostas certas para as perguntas abaixo: 
 
@@ -9,10 +38,11 @@ Considerando [este exercício](../04_x_buscas/index.md#atividade-de-laboratório
 * Teve algum algoritmo que travou por falta de memória no seu computador? Se sim, qual é a explicação?
 
 * Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta.
+-->
 
 # Banda U2
 
-Considere o seguinte problema: 
+**Considere o seguinte problema**: 
 
 A banda U2 tem um concerto que começa daqui a 17 minutos e
   todos precisam cruzar uma ponte par chegar lá. Todos os 4
@@ -54,11 +84,11 @@ As variáveis bono, edge, adam, larry e lanterna são variáveis booleanas. Quan
 
 ## Formato de entrega
 
-* Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/1b1ermRX). 
+* Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/pXHDvvE_). 
 
-* O link para o enunciado é este aqui [https://classroom.github.com/a/1b1ermRX](https://classroom.github.com/a/1b1ermRX). Através deste link você consegue baixar o repositório e começar a sua codificação. 
+* O link para o enunciado é este aqui [https://classroom.github.com/a/pXHDvvE_](https://classroom.github.com/a/pXHDvvE_). Através deste link você consegue baixar o repositório e começar a sua codificação. 
 
-* **Prazo para a entrega**: 08/03/2023 (quarta-feira) até às 23:00 horas. 
+* **Prazo para a entrega**: 15/09/2023 (sexta-feira) até às 23:30 horas. 
 
 ## Cuidados! 
 
