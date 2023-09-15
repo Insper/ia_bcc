@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../07_revisao/">
+      
+      
+        <link rel="next" href="../08_heuristica_parte_2/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -225,17 +229,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -248,7 +254,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -361,17 +367,19 @@
                 
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
             
@@ -384,7 +392,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Busca em espaço de estados
@@ -462,6 +470,121 @@
   
   <span class="md-ellipsis">
     Revisão sobre algoritmos de busca sistemáticos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Menor caminho entre duas cidades
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Menor caminho entre duas cidades
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementacoes" class="md-nav__link">
+    Implementações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-o-algoritmo-de-custo-uniforme" class="md-nav__link">
+    Usando o algoritmo de custo uniforme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codificacao-do-mapa" class="md-nav__link">
+    Codificação do mapa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendendo-a-busca-que-o-algoritmo-faz" class="md-nav__link">
+    Entendendo a busca que o algoritmo faz
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-heuristicas-para-otimizar-a-busca-na-arvore" class="md-nav__link">
+    Usando heurísticas para otimizar a busca na árvore
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_heuristica_parte_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuação: menor caminho entre duas cidades
   </span>
   
 
@@ -717,14 +840,6 @@ a solução apresentada precisa ser ótima?</li>
             <span class="p">}</span>
 </code></pre></div>
 <h2 id="entendendo-a-busca-que-o-algoritmo-faz">Entendendo a busca que o algoritmo faz</h2>
-<details class="warning">
-<summary>Temos uma nova versão do pacote aigyminsper</summary>
-<p>Para entender melhor a forma de seleção dos nodos em abertos, foi adicionado ao método search dos algoritmos de busca um atributo chamado trace. O valor default para este atributo é False. Mas se você colocar True então o algoritmo imprime na tela dados sobre o nodo que foi retirado de abertos.  </p>
-</details>
-<details class="warning">
-<summary>Instale a nova versão do pacote aigyminsper</summary>
-<p>Uma forma para instalar a nova versão do pacote aigyminsper é primeiro desistalar com o comando <code>pip uninstall aigyminsper</code> para depois instalar novamente com: <code>pip install aigyminsper</code>. </p>
-</details>
 <p>Para entendermos melhor o que está acontecendo, segue a implementação da <strong>Busca de Custo Uniforme</strong>: </p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BuscaCustoUniforme</span> <span class="p">(</span><span class="n">SearchAlgorithm</span><span class="p">):</span>
 
@@ -781,7 +896,7 @@ Execute a implementação considerando os algoritmos:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 15, 2023</span>
       
     
   </small>
