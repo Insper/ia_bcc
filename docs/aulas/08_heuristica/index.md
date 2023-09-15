@@ -86,14 +86,6 @@ Considere a definição abaixo como mapa para a sua implementação:
 
 ## Entendendo a busca que o algoritmo faz
 
-??? warning "Temos uma nova versão do pacote aigyminsper"
-    Para entender melhor a forma de seleção dos nodos em abertos, foi adicionado ao método search dos algoritmos de busca um atributo chamado trace. O valor default para este atributo é False. Mas se você colocar True então o algoritmo imprime na tela dados sobre o nodo que foi retirado de abertos.  
-
-
-??? warning "Instale a nova versão do pacote aigyminsper"
-    Uma forma para instalar a nova versão do pacote aigyminsper é primeiro desistalar com o comando `pip uninstall aigyminsper` para depois instalar novamente com: `pip install aigyminsper`. 
-
-
 Para entendermos melhor o que está acontecendo, segue a implementação da **Busca de Custo Uniforme**: 
 
 ```python

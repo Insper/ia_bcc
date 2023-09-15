@@ -23,6 +23,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 |:------------------------------------------------------------|:-------------------:|
 | Atividade em sala de aula 1                                 | 23/08/2023          |
 | [Atividade em sala de aula 2](./aulas/04_x_buscas/index.md) | 04/09/2023          |
+| [Atividade em sala de aula 3](./aulas/05_busca_com_custo/index.md) | 15/09/2023   |
 
 
 ## 3 projetos
