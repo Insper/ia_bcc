@@ -966,7 +966,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">op</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">goal</span> <span class="o">=</span> <span class="n">goal</span>
 
-    <span class="k">def</span> <span class="nf">sucessors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">successors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">sucessors</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">neighbors</span> <span class="o">=</span> <span class="n">Map</span><span class="o">.</span><span class="n">area</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">]</span>
         <span class="k">for</span> <span class="n">next_city</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
@@ -1050,13 +1050,20 @@
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span>
 </code></pre></div>
+<details class="note">
+<summary>Atenção!</summary>
+<p>Uma nova versão da biblioteca foi disponibilizada. Para atualizar a biblioteca, execute o comando abaixo no terminal: </p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>aigyminsper
+</code></pre></div>
+<p>Esta nova versão possui a possibilidade de poda da árvore de busca pelo método de busca. </p>
+</details>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 14, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2023</span>
       
     
   </small>
