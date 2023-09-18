@@ -104,7 +104,7 @@ class Map(State):
         self.operator = op
         self.goal = goal
     
-    def sucessors(self):
+    def successors(self):
         sucessors = []
         neighbors = Map.area[self.city]
         for next_city in neighbors:
@@ -188,3 +188,13 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+??? note "Atenção!"
+    Uma nova versão da biblioteca foi disponibilizada. Para atualizar a biblioteca, execute o comando abaixo no terminal: 
+
+    ```bash
+    pip install --upgrade aigyminsper
+    ```
+
+    Esta nova versão possui a possibilidade de poda da árvore de busca pelo método de busca. 
+
