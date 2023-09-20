@@ -96,7 +96,7 @@ Anote na tabela acima o tempo de processamento e a solução encontrada e discut
 * Por que a solução encontrada foi diferente em cada algoritmo?
 * Por que a solução encontrada foi diferente em cada versão do A-Estrela? 
 
-Crie um documento pdf e envie via blackboard.
+Crie um documento pdf e envie via blackboard. A data limite para entrega é **23/09/2021**.
 
 ## Código do problema do Mapa
 
