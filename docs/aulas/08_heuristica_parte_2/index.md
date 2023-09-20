@@ -210,5 +210,5 @@ if __name__ == '__main__':
     pip install --upgrade aigyminsper
     ```
 
-    Esta nova versão possui a possibilidade de poda da árvore de busca pelo método de busca. 
+    Esta nova versão possui a possibilidade de poda da árvore de busca pelo método de busca. A versão atual é **0.1.6**
 
