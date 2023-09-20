@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
       
       
 
@@ -877,77 +877,117 @@
 <h2 id="usando-busca-a">Usando busca A*</h2>
 <p>E o algoritmo A-Estrela? </p>
 <h2 id="comparando-algoritmos">Comparando algoritmos</h2>
+<p>Execute todos os objetivos listados abaixo para os algoritmos de busca também listados na tabela abaixo. </p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Objetivo</th>
 <th style="text-align: left;">Algoritmo</th>
-<th style="text-align: center;">Resultado</th>
+<th style="text-align: center;">Solução</th>
+<th style="text-align: center;">Tempo de processamento</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> o</td>
+<td style="text-align: left;">Custo Uniforme</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">b <span class="arithmatex">\(\rightarrow\)</span> o</td>
+<td style="text-align: left;">Custo Uniforme</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> x</td>
+<td style="text-align: left;">Custo Uniforme</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">Ganancioso</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">b <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">Ganancioso</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> x</td>
 <td style="text-align: left;">Ganancioso</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">A-Estrela</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">b <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">A-Estrela</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> x</td>
 <td style="text-align: left;">A-Estrela</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">A-Estrela ($h(N) = h(N) * 100)</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">b <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">A-Estrela ($h(N) = h(N) * 100)</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> x</td>
 <td style="text-align: left;">A-Estrela ($h(N) = h(N) * 100)</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">A-Estrela (<span class="arithmatex">\(h(N) == 1\)</span>)</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">b <span class="arithmatex">\(\rightarrow\)</span> o</td>
 <td style="text-align: left;">A-Estrela (<span class="arithmatex">\(h(N) == 1\)</span>)</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">i <span class="arithmatex">\(\rightarrow\)</span> x</td>
 <td style="text-align: left;">A-Estrela (<span class="arithmatex">\(h(N) == 1\)</span>)</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
+<p>Anote na tabela acima o tempo de processamento e a solução encontrada e discuta os resultados obtidos:</p>
+<ul>
+<li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
+<li>Por que o tempo de processamento foi diferente para cada algoritmo?</li>
+<li>Por que a solução encontrada foi diferente em cada algoritmo?</li>
+<li>Por que a solução encontrada foi diferente em cada versão do A-Estrela? </li>
+</ul>
+<p>Crie um documento pdf e envie via blackboard.</p>
 <h2 id="codigo-do-problema-do-mapa">Código do problema do Mapa</h2>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaProfundidadeIterativa</span>
 <span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaCustoUniforme</span>
@@ -1063,7 +1103,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2023</span>
       
     
   </small>
