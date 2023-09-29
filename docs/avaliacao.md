@@ -33,7 +33,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-|                                                                                          |                     |
+| [Problema do cavalo no tabuleiro](./projetos/11_cavalo/index.md)                         | 06/10/2023          |
 
 
 ## Conversão de conceito para valor numérico

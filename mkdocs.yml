@@ -28,7 +28,7 @@ nav:
       - 'aulas/07_revisao/index.md'
       - 'aulas/08_heuristica/index.md'
       - 'aulas/08_heuristica_parte_2/index.md'
-#      - 'aulas/09_heuristica_parte_3/index.md'
+      - 'aulas/08_heuristica_parte_3/index.md'
 #    # - 'aulas/10_heuristica_revisao/index.md'
 #      - 'aulas/12_csp/index.md'
 #    - 'Ambientes competitivos':
@@ -54,8 +54,8 @@ nav:
 #    - 'referencias/06_rl/index.md'
   - 'Avaliações':
     - 'avaliacoes/2023_2_intermediaria/index.md'
-#  - 'Projetos':
-#    - 'projetos/11_taxi_driver/index.md'
+  - 'Projetos':
+    - 'projetos/11_cavalo/index.md'
 #    - 'projetos/15_rl/index.md'
 #    - 'projetos/16_robo/index.md'
 
