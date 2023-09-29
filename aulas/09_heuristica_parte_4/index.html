@@ -16,7 +16,7 @@
     
     
       
-        <title>Revisão sobre heurística - Inteligência Artificial e Robótica</title>
+        <title>Problema dos 8-Puzzle - Inteligência Artificial e Robótica</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#revisao-sobre-heuristica" class="md-skip">
+        <a href="#problema-dos-8-puzzle" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Revisão sobre heurística
+              Problema dos 8-Puzzle
             
           </span>
         </div>
@@ -517,6 +517,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_heuristica_parte_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heurística admissível
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -718,6 +738,69 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Projetos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Projetos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projetos/11_cavalo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cavalo e tabuleiro de xadrez
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -745,36 +828,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atividades" class="md-nav__link">
-    Atividades:
-  </a>
-  
-    <nav class="md-nav" aria-label="Atividades:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilizando-o-arquivo-mappy" class="md-nav__link">
-    Utilizando o arquivo Map.py
+  <a href="#formato-de-entrega" class="md-nav__link">
+    Formato de entrega
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#utilizando-o-arquivo-puzzle8py" class="md-nav__link">
-    Utilizando o arquivo Puzzle8.py
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-codigo-para-o-metodo-show_path" class="md-nav__link">
+    Exemplo de código para o método show_path
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#utilizando-o-arquivo-vacuumworldgenericpy" class="md-nav__link">
-    Utilizando o arquivo VacuumWorldGeneric.py
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -793,76 +856,89 @@
                   
 
 
-<h1 id="revisao-sobre-heuristica">Revisão sobre heurística</h1>
-<ul>
-<li>
-<p>As heurísticas utilizadas nas implementações do <em>8 puzzle</em> e do <em>Mapa</em> são heurísticas boas? </p>
-</li>
-<li>
-<p>O que são heurísticas <strong>boas</strong>? </p>
-<ul>
-<li>Heurísticas admissíveis.</li>
-<li>Heurísticas que não são do "<em>contra</em>". </li>
-</ul>
-</li>
-</ul>
-<h2 id="atividades">Atividades:</h2>
-<ul>
-<li>Atualize o seu repositório local do projeto <a href="https://github.com/Insper/ai_code">AI Code</a>.</li>
-</ul>
-<h3 id="utilizando-o-arquivo-mappy">Utilizando o arquivo <code>Map.py</code></h3>
-<ul>
-<li>
-<p>altere o algoritmo de busca que deve ser utilizado. Troque o algoritmo <code>AEstrela</code> pelo <code>BuscaGananciosa</code>. A solução retornada continua sendo ótima? Explique o comportamento da solução. </p>
-</li>
-<li>
-<p>volte a utilizar o algoritmo <code>AEstrela</code>, mas altere a heurística implementada na solução de: </p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">])</span>
+<h1 id="problema-dos-8-puzzle">Problema dos 8-Puzzle</h1>
+<p>Considere o problema dos <em>8-puzzle</em> discutido em sala de aula. Implemente uma solução para este problema. </p>
+<p align="center">
+<img src="../../referencias/03_algoritmos_busca/figuras/fig03-04.png" alt="Grafo" width="400"/>
+</p>
+
+<p>Implemente um agente autônomo que consegue resolver este problema. Você deve adotar uma matriz como forma de representação dos estados. Por exemplo, o estado inicial indicado acima deve ser representado da seguinte forma: </p>
+<div class="highlight"><pre><span></span><code><span class="p">[[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]]</span>
 </code></pre></div>
-<p>para: </p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="mi">1000</span>
+<p>ou seja, o espaço em branco deve ser representado por um <code>zero</code>. O estado final apresentado acima deve ser representado da seguinte forma: </p>
+<div class="highlight"><pre><span></span><code><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">]]</span>
 </code></pre></div>
-<p>A solução continua sendo ótima? Explique o comportamento da solução. </p>
-<h3 id="utilizando-o-arquivo-puzzle8py">Utilizando o arquivo <code>Puzzle8.py</code></h3>
+<p>As operações que o agente sabe fazer são: </p>
+<ul>
+<li><code>cima</code>: o agente move o espaço em branco para cima;</li>
+<li><code>baixo</code>: o agente move o espaço em branco para baixo;</li>
+<li><code>esquerda</code>: o agente move o espaço em branco para a esquerda, e;</li>
+<li><code>direita</code>: o agente move o espaço em branco para a direita.</li>
+</ul>
+<p>Considerando a forma como os estados são representados e as ações que o agente sabe executar, responda as seguintes perguntas: </p>
+<ul>
+<li>Qual a estimativa do tamanho do espaço de busca (número de
+    estados possíveis)?</li>
+<li>Que algoritmo de busca pode ser utilizado para resolver este problema considerando que a solução apresentada precisa ser ótima? </li>
+</ul>
+<p>A entrega da sua implementação deverá ter 1 arquivo chamado <code>Puzzle8.py</code> que implementa a interface <code>State</code> e que deve passar por TODOS os testes especificados em <code>test_8_puzzle.py</code>. </p>
+<p>O seu agente deve ser capaz de identificar um plano para todos os estados iniciais descritos como fáceis e difícieis no arquivo de testes. Para os estados descritos como impossível o agente precisa retornar a mensagem <em>"Nao achou solucao"</em>. Deve-se considerar o estado <em>goal</em> em formato caracol, como apresentado abaixo:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<p>Ao implementar o método <code>sucessors</code> do seu agente considere a seguinte ordem para adicionar os nodos em abertos: cima, baixo, esquerda e direita. </p>
+<h2 id="formato-de-entrega">Formato de entrega</h2>
 <ul>
 <li>
-<p>existem duas funções <code>h1()</code> e <code>h2()</code>. Ambas as funções implementam heurísticas para o problema dos <code>8 puzzles</code>. Que heurísticas são estas? </p>
+<p>Para a implementação e entrega deste exercício nós vamos utilizar o <a href="https://classroom.github.com/a/iZCPEiAe">Github Classroom</a>. </p>
 </li>
 <li>
-<p>execute o arquivo <code>Puzzle8.py</code> considerando: </p>
+<p>O link para o enunciado é este aqui <a href="https://classroom.github.com/a/iZCPEiAe">https://classroom.github.com/a/iZCPEiAe</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
+</li>
+<li>
+<p><strong>Prazo para a entrega</strong>: 17/03/2022 (sexta-feira) até às 23:30 horas.</p>
+</li>
+<li>
+<p><strong>Atenção: NOVA VERSÃO DO ARQUIVO DE TESTES</strong> está disponível <a href="src/test_8Puzzle/">aqui</a>.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h1</span><span class="p">()</span>
+<h2 id="exemplo-de-codigo-para-o-metodo-show_path">Exemplo de código para o método <code>show_path</code></h2>
+<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">show_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">algorithm</span> <span class="o">=</span> <span class="n">AEstrela</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">Puzzle8</span><span class="o">.</span><span class="n">tem_solucao</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tabuleiro</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s1">&#39;Nao tem solucao&#39;</span> 
+        <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;Nao achou solucao&#39;</span>
 </code></pre></div>
-<p>e depois considerando:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h2</span><span class="p">()</span>
-</code></pre></div>
-<p>você notou alguma diferença de tempo de processamento para resolver alguns dos problemas? </p>
-<ul>
-<li>será que é possível combinar estas duas heurísticas em uma só? Esta combinação fornece algum ganho? </li>
-</ul>
-<h3 id="utilizando-o-arquivo-vacuumworldgenericpy">Utilizando o arquivo <code>VacuumWorldGeneric.py</code></h3>
-<ul>
-<li>
-<p>implemente uma heurística para este problema. </p>
-</li>
-<li>
-<p>depois de implementada a heurística e utilizando o algoritmo <code>AEstrela</code>, a solução consegue encontrar respostas para configurações que antes não conseguia? </p>
-</li>
-</ul>
+<p><strong>Detalhe importante sobre o método <code>tem_solucao</code></strong>: uma forma para cálculo se uma determinada configuração tem solução ou não é seguir a seguinte regra: <em>deve-se calcular a quantidade de inversões necessárias para ordenar certa sequência numérica, determinado por Possível a quantidade de inversões pares e Impossível a quantidade de inversões ímpares</em>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 29, 2023</span>
       
     
   </small>

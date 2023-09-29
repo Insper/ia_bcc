@@ -7,22 +7,24 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="Fabrício Barth">
       
       
+        <link rel="prev" href="../08_heuristica_parte_2/">
       
       
+        <link rel="next" href="../../referencias/01_introducao/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
-        <title>Introdução à Inteligência Artificial - Inteligência Artificial e Robótica</title>
+        <title>Heurística admissível - Inteligência Artificial e Robótica</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
       
       
 
@@ -41,9 +43,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#um-pouco-de-ficcao" class="md-skip">
+        <a href="#heuristica-admissivel" class="md-skip">
           Skip to content
         </a>
       
@@ -81,7 +83,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução à Inteligência Artificial
+              Heurística admissível
             
           </span>
         </div>
@@ -136,7 +138,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -153,7 +155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -172,7 +174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ementa/" class="md-nav__link">
+      <a href="../../ementa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -191,7 +193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../plano_de_aulas/" class="md-nav__link">
+      <a href="../../plano_de_aulas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -210,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../avaliacao/" class="md-nav__link">
+      <a href="../../avaliacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,18 +229,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -252,7 +256,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -301,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../01_introducao_ia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02_agentes_autonomos/" class="md-nav__link">
+      <a href="../02_agentes_autonomos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -341,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03_configuracao/" class="md-nav__link">
+      <a href="../03_configuracao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -367,18 +371,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -392,7 +398,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Busca em espaço de estados
@@ -405,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04_modelagem/" class="md-nav__link">
+      <a href="../04_modelagem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04_x_buscas/" class="md-nav__link">
+      <a href="../04_x_buscas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -445,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05_busca_com_custo/" class="md-nav__link">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -465,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../07_revisao/" class="md-nav__link">
+      <a href="../07_revisao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -485,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08_heuristica/" class="md-nav__link">
+      <a href="../08_heuristica/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -505,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08_heuristica_parte_2/" class="md-nav__link">
+      <a href="../08_heuristica_parte_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -523,9 +529,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../08_heuristica_parte_3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Heurística admissível
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -534,6 +560,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-do-taxi-driver" class="md-nav__link">
+    Problema do Taxi Driver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-puzzle" class="md-nav__link">
+    8-Puzzle
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -596,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../referencias/01_introducao/" class="md-nav__link">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../referencias/03_algoritmos_busca/" class="md-nav__link">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -636,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../referencias/03_csp/" class="md-nav__link">
+      <a href="../../referencias/03_csp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../referencias/03_dijkstra/" class="md-nav__link">
+      <a href="../../referencias/03_dijkstra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -719,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../avaliacoes/2023_2_intermediaria/" class="md-nav__link">
+      <a href="../../avaliacoes/2023_2_intermediaria/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -782,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../projetos/11_cavalo/" class="md-nav__link">
+      <a href="../../projetos/11_cavalo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,43 +890,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#o-que-sao-o-que-fazem-como-fazem" class="md-nav__link">
-    O que são? O que fazem? Como fazem?
+  <a href="#problema-do-taxi-driver" class="md-nav__link">
+    Problema do Taxi Driver
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#e-este-aqui-qual-e-a-diferenca" class="md-nav__link">
-    E este aqui? Qual é a diferença?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#e-este-aqui-alguem-ja-viu" class="md-nav__link">
-    E este aqui? Alguém já viu?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o-que-este-tem-de-diferente-dos-demais" class="md-nav__link">
-    O que este tem de diferente dos demais?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#e-estes" class="md-nav__link">
-    E estes?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    Resumo
+  <a href="#8-puzzle" class="md-nav__link">
+    8-Puzzle
   </a>
   
 </li>
@@ -886,215 +918,34 @@
                   
 
 
-<h1 id="um-pouco-de-ficcao">Um pouco de Ficção</h1>
-<h2 id="o-que-sao-o-que-fazem-como-fazem">O que são? O que fazem? Como fazem?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figuras/r2d2.jpg}
-\caption{R2D2 e C3PO em Star Wars}
-\end{figure}\]</div>
-<h2 id="e-este-aqui-qual-e-a-diferenca">E este aqui? Qual é a diferença?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figuras/hal9000.jpg}
-\caption{HAL 9000 em 2001: A Space Odyssey}
-\end{figure}\]</div>
-<h2 id="e-este-aqui-alguem-ja-viu">E este aqui? Alguém já viu?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.75\textwidth]{figuras/carbon.png}
-\caption{AI em Altered Carbon}
-\end{figure}\]</div>
-<h2 id="o-que-este-tem-de-diferente-dos-demais">O que este tem de diferente dos demais?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figuras/ai_film.jpg}
-\caption{AI movie}
-\end{figure}\]</div>
-<h2 id="e-estes">E estes?</h2>
-<div class="arithmatex">\[\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figuras/smith_matrix.jpeg}
-\caption{Agente Smith e outros em Matrix}
-\end{figure}\]</div>
-<h2 id="resumo">Resumo</h2>
-<ul>
-<li>Vamos sumarizar o que este exemplos da <strong>ficção científica são</strong>, </li>
-<li>o <strong>que</strong> eles fazem, </li>
-<li><strong>como</strong> eles fazem e</li>
-<li><strong>onde</strong> eles atuam? </li>
-</ul>
-<h1 id="sera-que-a-ficcao-tem-relacao-com-a-ciencia">Será que a ficção tem relação com a ciência?</h1>
-<h2 id="1950-turings-computing-machinery-and-intelligence">1950 Turing's "Computing Machinery and Intelligence"</h2>
-<p>The Imitation Game: "Can machines think?"</p>
-<p><img alt="Turing's paper" src="../figuras/turing.jpg" /></p>
-<h2 id="1956-dartmouth-meeting-artificial-intelligence-adopted">1956 Dartmouth meeting "Artificial Intelligence" adopted</h2>
-<div class="arithmatex">\[\begin{center}
-\includegraphics[width=0.7\textwidth]{figuras/dartmouth.png}
-\end{center}\]</div>
-<h2 id="objetivos-da-ia">Objetivos da IA</h2>
-<p><strong>Teórico</strong>: a criação de teorias e modelos para a
-  capacidade cognitiva. Compreender o que é inteligência e como o
-  raciocínio se processa.</p>
-<p>\vspace{1cm}</p>
-<p><strong>Prático</strong>: <span class="arithmatex">\(\cdots\)</span></p>
-<h1 id="um-pouco-de-realidade">Um pouco de realidade</h1>
-<h2 id="atividade-em-grupo-13">Atividade em grupo (&#8531;)</h2>
-<ul>
-<li>Formem grupos de 5 estudantes. </li>
-<li>Cada grupo deve escolher um dos setores abaixo: </li>
-<li>Saúde</li>
-<li>Educação</li>
-<li>Segurança</li>
-<li>Financeiro</li>
-<li>Transportes</li>
-<li>E-commerce</li>
-<li>Agronegócio</li>
-<li>Cinema e Publicidade</li>
-</ul>
-<h2 id="atividades-em-grupo-23">Atividades em grupo (&#8532;)</h2>
-<ul>
-<li>
-<p>Cada grupo deve fornecer 2 exemplos de aplicações que fazem uso de Inteligência Artificial e 2 exemplos de aplicações que não fazem uso de Inteligência Artificial considerando o setor escolhido.</p>
-</li>
-<li>
-<p>Cada grupo deve justificar os exemplos escolhidos. Descrever o motivo de uma aplicação estar categoriza como aplicação de IA ou não.</p>
-</li>
-<li>
-<p>Cada grupo deve criar um arquivo PPT com imagens das aplicações escolhidas, títulos para as aplicações escolhidas justificativa para os exemplos escolhidos e referências onde podem ser encontradas mais informações sobre as aplicações selecionadas. </p>
-</li>
-</ul>
-<h2 id="atividades-em-grupo-33">Atividades em grupo (3/3)</h2>
-<ul>
-<li>
-<p>Cada grupo deve enviar o arquivo para o email fabriciojb at insper dot edu dot br.</p>
-</li>
-<li>
-<p>Na próxima aula cada grupo terá 10 minutos para apresentar o seu trabalho. </p>
-</li>
-</ul>
-<h2 id="para-aqueles-que-ja-terminaram">Para aqueles que já terminaram</h2>
-<ul>
-<li>Pergunte para o <a href="https://chat.openai.com/">ChatGPT</a>:</li>
-<li>"What is General AI?"</li>
-<li>
-<p>"O que é um agente autônomo?"</p>
-</li>
-<li>
-<p>Compare a resposta dada pelo ChatGPT com o conteúdo que está nos Verbetes da Wikipedia sobre:</p>
-</li>
-<li>"artificial general intelligence"  </li>
-<li>
-<p>"autonomous agent".</p>
-</li>
-<li>
-<p>Por favor, faça isto em sala de aula ou até a próxima aula.  </p>
-</li>
-</ul>
-<!--
-
-# Exemplos de Aplicações de IA
-
-## IBM Deep Blue vence Kasparov (1997)
-
-\begin{center}
-\includegraphics[width=0.6\textwidth]{figuras/deep_blue.jpg}
-\end{center}
-
-## Criação do Dataset MNIST (1998)
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-\includegraphics[width=1\textwidth]{figuras/mnist.jpeg}
-:::
-::: {.column width="50%"}
-The MNIST database of handwritten digits
-
-\vspace{0.5cm}
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
-<span class="p">(</span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">),</span> 
-<span class="p">(</span><span class="n">test_X</span><span class="p">,</span> <span class="n">test_y</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-</code></pre></div>
-
-\vspace{0.5cm}
-
-Em 2012 existe uma solução que tem erro de teste igual a 0.23% [[http://yann.lecun.com/exdb/mnist/]](http://yann.lecun.com/exdb/mnist/)
-
-:::
-::::::::::::::
-
-## Veículos autônomos 
-
-A equipe de Stanford ganha a competição da DARPA no deserto (2005)
-
-\begin{center}
-\includegraphics[width=0.6\textwidth]{figuras/car_stanford.jpg}
-\end{center}
-
-## Criação do Dataset ImagineNet (2009) 
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-\includegraphics[width=1\textwidth]{figuras/image_classification.png}
-:::
-::: {.column width="50%"}
-
-Este dataset possui 14.197.122 imagens anotadas de acordo com a taxonomia da WordNet. Desde 2010 este dataset é usado na competição *ImageNet Large Scale Visual Recognition Challenge* (ILSVRC) e é um benchmark clássico para **classificação de imagens** e **reconhecimento de objetos**.
-
-:::
-::::::::::::::
-
-## IBM Watson vence no Jeopardy (2011)
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{figuras/watson.jpg}
-\end{center}
-
-A partir de **2015** proliferação de **assistentes virtuais** que fazem uso de **classificação de texto** para compreensão das intenção de uma sentença.
-
-## AlphaGO e AlphaGO Zero vencem no GO (2016)
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-\includegraphics[width=0.8\textwidth]{figuras/alphago.png}
-:::
-::: {.column width="50%"}
-\includegraphics[width=1\textwidth]{figuras/go.jpg}
-:::
-::::::::::::::
-
-# O que existe de comum nestes exemplos?
-
-## O que existe de comum nestes exemplos?
-
-* Todos têm um objetivo bem claro. Uma função de utilidade muito bem definida. 
-
-* Todos estão inseridos em um ambiente muito bem controlado, exceto o veículo autônomo 
-(questionável no caso da competição). 
-
-* Todos podem ser vistos como agentes orientados a meta. 
-
-<!-- ## Desafios
-
-* Less data
-
-* Fairness
-
-* Truth
-
--->
-
-<!--
-# O que é um agente orientado a meta ou agente autônomo?
--->
+<h1 id="heuristica-admissivel">Heurística admissível</h1>
+<p>No problema apresentado na <a href="../08_heuristica/">aula passada</a> teve alguma situação onde o <strong>algoritmo A*</strong> não encontrou a solução ótima?</p>
+<details class="question">
+<summary>Resposta</summary>
+<p>Sim, quando a heurística não é admissível.</p>
+</details>
+<details class="info">
+<summary>Dica</summary>
+<p>A heurística é admissível quando ela nunca superestima o custo para alcançar o objetivo.</p>
+</details>
+<h2 id="problema-do-taxi-driver">Problema do Taxi Driver</h2>
+<p>Considere um agente que precisa levar um passageiro de um ponto A para um ponto B como apresentado no mapa abaixo: </p>
+<p><img alt="Mapa" src="img/mapa_01.png" /></p>
+<p>Neste mapa o taxi está na posição [0,0], o passageiro está na posição [0,5] e o destino do passageiro está na posição [4,0]. O agente pode se mover em qualquer direção (esquerda, direita, cima, baixo), mas apenas uma casa por vez. O custo para se mover de uma casa para outra é 1. O agente também tem como ação pegar e deixar o passageiro. O custo para pegar o passageiro é 2 e o custo para deixar o passageiro é 0. O objetivo do agente é levar o passageiro até o destino com o menor custo possível.</p>
+<p>Para as dimensões apresentadas acima talvez algoritmos de busca cegos poderiam ser utilizados. No entanto, considerando um mapa maior algoritmos de busca cegos não seriam uma boa opção.</p>
+<p><strong>O que é necessário fazer para implementar uma solução que sempre fornece uma solução ótima para o problema? Independente das dimensões do mapa?</strong></p>
+<h2 id="8-puzzle">8-Puzzle</h2>
+<p>Defina uma ou mais heurísticas admissíveis para o problema do <a href="https://www.aiai.ed.ac.uk/~gwickler/eightpuzzle-inf.html">8-puzzle</a>.</p>
+<p><img alt="8-Puzzle" src="img/puzzle.png" /></p>
+<p>Esta mesma heurística pode ser utilizada para o problema do <a href="https://en.wikipedia.org/wiki/15_puzzle">15-puzzle</a>?</p>
+<p>O que muda do problema do 8-puzzle para o 15-puzzle?</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 29, 2023</span>
       
     
   </small>
@@ -1136,16 +987,16 @@ A partir de **2015** proliferação de **assistentes virtuais** que fazem uso de
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
       
-        <script src="../../../js/markdown-enhancer.js"></script>
+        <script src="../../js/markdown-enhancer.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
