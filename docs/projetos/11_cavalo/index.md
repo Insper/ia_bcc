@@ -11,7 +11,7 @@ Segundo alguns textos, é possível implementar um algoritmo que encontre uma so
 * Este exercício deverá ser feito individualmente.
 * O prazo máximo para entrega é **06/10/2023** (sexta-feira) até às 23:30 horas.
 * A entrega deverá ser feita via *Github Classroom*. O link para a entrega é [https://classroom.github.com/a/sAi4kKq3](https://classroom.github.com/a/sAi4kKq3).
-* Cada estudante deverá entregar a implementação de um *taxi driver* e um arquivo de documentação (`README.md`).
+* Cada estudante deverá entregar a implementação do *cavalo no tabuleiro de xadrez* e um arquivo de documentação (`README.md`).
 * A implementação deve ter um arquivo de testes usando `pytest`.
 * O projeto deve ter um arquivo de `requirements.txt` que descreve os pacotes necessário para a execução. 
 * O projeto também deve ter um arquivo `python` que implementa a solução para o problema. 
