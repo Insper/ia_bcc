@@ -25,7 +25,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | [Atividade em sala de aula 2](./aulas/04_x_buscas/index.md) | 04/09/2023          |
 | [Atividade em sala de aula 3](./aulas/05_busca_com_custo/index.md) | 15/09/2023   |
 | [Atividade em sala de aula 4](./aulas/08_heuristica_parte2/index.md) | 23/09/2023 |
-
+| [Atividade em sala de aula 5](./aulas/11_contribuindo_aigyminsper/index.md) | 09/10/2023 |
 
 ## 3 projetos
 
