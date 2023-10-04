@@ -913,7 +913,7 @@ O arquivo <code>tests/test_poda_BCU.py</code> já possui um teste implementado.<
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Solução = </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot; ; +2  ; +2  ; +2  ; +2  ; +2 &quot;</span>
 </code></pre></div>
-<p>O código acima testa o algoritmo de busca <code>BuscaCustoUniforme</code> para o problema <code>SumOne</code> sem poda alguma.</p>
+<p>O código acima testa o algoritmo de busca <code>BuscaCustoUniforme</code> para o problema <code>SumOne</code> sem poda alguma. Você pode utilizar este padrão para implementar os testes para os outros algoritmos e problemas.</p>
 <p>Neste exercício você deve realizar as seguintes atividades: </p>
 <ol>
 <li>Fazer o fork do projeto <a href="https://github.com/Insper/ai_gym">AI Gym Insper</a>;</li>
@@ -923,8 +923,9 @@ O arquivo <code>tests/test_poda_BCU.py</code> já possui um teste implementado.<
 <li>Implementar os testes;</li>
 <li>Fazer o commit das alterações;</li>
 <li>Fazer o push do branch para o seu repositório remoto;</li>
-<li>Criar um pull request para o projeto AI Gym Insper.  </li>
+<li>Criar um pull request para o projeto AI Gym Insper. Ao fazer o pull request para o projeto deixe claro no título e na descrição do pull request qual issue você está implementando.</li>
 </ol>
+<p>Você deverá implementar diversos testes em um mesmo arquivo. Cada arquivo de teste deve considerar apenas um algoritmo de busca. Mas deve considerar os 3 problemas listados acima (<code>AspiradorPo</code>, <code>SumOne</code> e <code>Poi</code>). </p>
 <p>O objetivo é fazer esta atividade em sala de aula no dia <strong>09/10/2023</strong>. </p>
 
   <hr>
