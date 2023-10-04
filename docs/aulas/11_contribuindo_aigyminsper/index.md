@@ -49,7 +49,7 @@ def test_sumone_without_pruning():
     assert result.show_path() == " ; +2  ; +2  ; +2  ; +2  ; +2 "
 ```
 
-O código acima testa o algoritmo de busca `BuscaCustoUniforme` para o problema `SumOne` sem poda alguma.
+O código acima testa o algoritmo de busca `BuscaCustoUniforme` para o problema `SumOne` sem poda alguma. Você pode utilizar este padrão para implementar os testes para os outros algoritmos e problemas.
 
 Neste exercício você deve realizar as seguintes atividades: 
 
@@ -60,6 +60,8 @@ Neste exercício você deve realizar as seguintes atividades:
 1. Implementar os testes;
 1. Fazer o commit das alterações;
 1. Fazer o push do branch para o seu repositório remoto;
-1. Criar um pull request para o projeto AI Gym Insper.  
+1. Criar um pull request para o projeto AI Gym Insper. Ao fazer o pull request para o projeto deixe claro no título e na descrição do pull request qual issue você está implementando.
+
+Você deverá implementar diversos testes em um mesmo arquivo. Cada arquivo de teste deve considerar apenas um algoritmo de busca. Mas deve considerar os 3 problemas listados acima (`AspiradorPo`, `SumOne` e `Poi`). 
 
 O objetivo é fazer esta atividade em sala de aula no dia **09/10/2023**. 
