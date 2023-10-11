@@ -32,8 +32,8 @@ nav:
 #    # - 'aulas/10_heuristica_revisao/index.md'
       - 'aulas/11_contribuindo_aigyminsper/index.md'
 
-#    - 'Programação por restrições':
-#      - 'aulas/12_csp/index.md'
+    - 'Programação por restrições':
+      - 'aulas/12_csp/index.md'
 
 #    - 'Ambientes competitivos':
 #      - 'aulas/13_jogos/index.md'
