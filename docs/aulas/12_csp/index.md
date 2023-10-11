@@ -1,4 +1,4 @@
-# Constraint Satisfaction Problems
+# Atividade proposta
 
 ## Contexto
 

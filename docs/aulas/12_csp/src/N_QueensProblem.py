@@ -19,7 +19,7 @@ class N_QueensProblem(State):
     def env(self):
         return self.board
     
-    def sucessors(self):
+    def successors(self):
         sucessores = []
         for i in range(0,self.size):
             for j in range(0,self.size):
