@@ -1,5 +1,7 @@
 # Jogador de jogo da velha
 
+
+<!--
 ## Pré-atividade
 
 Responda as perguntas abaixo: 
@@ -9,9 +11,14 @@ Responda as perguntas abaixo:
 1. O que é função de utilidade? Por que utilizar funções de utilidade? 
 1. Qual é a relação da profundidade da árvore de busca do Min-Max com o desempenho final do agente? Existe correlação? Justifique a sua resposta.
 
+-->
+
 ## Objetivo da atividade
 
-O objetivo desta atividade é implementar um jogador de jogo da velha. O ambiente que vamos utilizar para implementar este jogador é o `kaggle-environments`. 
+O objetivo desta atividade é implementar um jogador de jogo da velha usando o algoritmo Min-Max e avaliar o impacto da 
+profundidade no desempenho do agente. 
+
+O ambiente que vamos utilizar para implementar este jogador é o `kaggle-environments`. 
 
 ## Tutorial sobre o kaggle-environments
 
@@ -27,29 +34,24 @@ Além disso, [neste link](tictactoe.ipynb) tem um tutorial bem básico sobre o f
 
 ## Implementação 
 
-1. Implemente um agente usando o algoritmo `MinMax com poda alpha-beta`, sem limite de profundidade, capaz de jogar o jogo da velha. 
-1. Execute 200 jogos do seu jogador contra o jogador `random`, onde `100` jogos o seu jogador é o primeiro a jogar e `100` jogos onde o seu jogador é o segundo a jogar. 
-1. Quantas partidas o seu jogador ganhou, empatou e perdeu? Espera-se que ele não tenha perdido nenhuma partida. 
-1. Para cada jogada feita pelo seu jogador você deve medir quanto tempo ele gasta para tomar a decisão e calcular a média e o desvio padrão.
+* Implemente um agente usando o algoritmo `MinMax`, com limite de profundidade, capaz de jogar o jogo da velha.
+* Utilize uma função de utilidade não muito complexa, mas que você acredita que é correta para o jogo da velha.
+* No caso do jogo da velha, a profundidade pode variar de `1` até `9`. 
+* Para cada profundidade você deve executar `200` jogos do seu jogador contra o jogador `random`, onde `100` jogos o seu jogador é o primeiro a jogar e `100` jogos onde o seu jogador é o segundo a jogar. Ao final deste processo, você terá uma tabela parecida com esta: 
 
-Toda a implementação e documentação sobre os resultados deve estar em um arquivo `ipynb`. Se a equipe entregar todos os itens listados acima então a nota será **B**. Se a equipe entregar todos os artefatos, mas como uma implementação que em alguns momentos perde do jogador aleatório então a nota será **C**. 
+| Profundidade | Quantidade de vitórias | Quantidade de derrotas | Quantidade de empates | Tempo médio por jogada | Desvio padrão |
+|--------------|------------------------|------------------------|------------------------|------------------------|---------------|
+| 1            | 100                    | 100                    | 0                      | 0.1                    | 0.01          |
+| 2            | 100                    | 100                    | 0                      | 0.2                    | 0.02          |
 
-Para atingir a nota **A+** então a dupla terá que fazer todos os itens anteriores mais os itens listados abaixo: 
+* Para cada jogada feita pelo seu jogador você deve medir quanto tempo ele gasta para tomar a decisão e calcular a média e o desvio padrão.
+* Você deve encontrar uma forma gráfica para sumarizar os dados existentes na tabela acima. 
 
-1. Implemente um agente usando o algoritmo `MinMax com poda alpha-beta`, **com** limite de profundidade, capaz de jogar o jogo da velha. Consequentemente, você terá que definir uma função de utilidade para o jogo da velha. 
-1. Execute 200 jogos do seu jogador contra o jogador `random`, onde `100` jogos o seu jogador é o primeiro a jogar e `100` jogos onde o seu jogador é o segundo a jogar. 
-1. Quantas partidas o seu jogador ganhou, empatou e perdeu? Espera-se que ele não tenha perdido nenhuma partida. 
-1. Para cada jogada feita pelo seu jogador você deve medir quanto tempo ele gasta para tomar a decisão e calcular a média e o desvio padrão.
+Toda a implementação e documentação sobre os resultados deve estar em um arquivo `ipynb`.  
 
-Perguntas que você precisa responder: 
-
-1. Qual é o agente com melhor desempenho? `MinMax` sem limite de profundidade ou com limite de profundidade? Justifique a sua resposta. 
-1. Qual é o agente mais rápido? É significantemente mais rápido? Justifique a sua resposta. 
-
-Todo o código e respostas para as perguntas devem estas no mesmo arquivo `ipynb`. 
 
 ## Entrega
 
-* Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui [https://classroom.github.com/a/v3HzDh0E](https://classroom.github.com/a/v3HzDh0E). 
+* Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui [https://classroom.github.com/a/Vcgejq9z](https://classroom.github.com/a/Vcgejq9z). 
 
-* A entrega é em duplas e o  **prazo para a entrega** é 12/04/2023 (quarta-feira) até às 23:30 horas.
+* A entrega é individual e o  **prazo para a entrega** é 20/10/2023 (sexta-feira) até às 23:30 horas.

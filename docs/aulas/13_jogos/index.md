@@ -14,6 +14,7 @@ Depois de feito o tutorial acima, responda as seguintes perguntas:
 1. Qual é a relação da profundidade da árvore de busca do Min-Max com o desempenho final do agente? Existe correlação? Justifique a sua resposta. 
 1. Faça um resumo, com poucos parágrafos, sobre como o [Stockfish](https://stockfishchess.org/) é implementado.
 
+<!--
 Entregue este questionário respondido, via [blackboard](https://insper.blackboard.com/webapps/assignment/uploadAssignment?content_id=_1138106_1&course_id=_42090_1), até o início da próxima aula (10/04/2023). 
-
+-->
 
