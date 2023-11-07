@@ -61,7 +61,7 @@ nav:
     - 'avaliacoes/2023_2_intermediaria/index.md'
   - 'Projetos':
     - 'projetos/11_cavalo/index.md'
-#    - 'projetos/15_rl/index.md'
+    - 'projetos/15_rl/index.md'
 #    - 'projetos/16_robo/index.md'
 
 extra_javascript:
