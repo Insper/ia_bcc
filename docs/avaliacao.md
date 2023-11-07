@@ -5,7 +5,7 @@ Os objetivos de aprendizagem desta disciplina serão avaliados através das segu
 | Atividade | Peso |
 | ----------| ----------|
 | *N* implementações de agentes autônomos | 10% |
-| 3 projetos | 30% | 
+| 2 projetos | 30% | 
 | Avaliação Intermediária | 30% | 
 | Avaliação Final | 30% | 
 
@@ -28,13 +28,14 @@ Seguem os enunciados que se encaixam nesta categoria:
 | [Atividade em sala de aula 5](./aulas/11_contribuindo_aigyminsper/index.md) | 09/10/2023 |
 | [Atividade em sala de aula 6](./aulas/14_tictactoe/index.md) | 20/10/2023 |
 
-## 3 projetos
+## 2 projetos
 
 Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
 | [Problema do cavalo no tabuleiro](./projetos/11_cavalo/index.md)                         | 06/10/2023          |
+| [Jogador de BlackJack](./projetos/15_rl/index.md)                                        | 23/11/2023          |
 
 
 ## Conversão de conceito para valor numérico
