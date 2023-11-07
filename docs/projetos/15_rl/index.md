@@ -24,7 +24,7 @@ A biblioteca Gymnasium possui um ambiente que simula um jogo de [BlackJack (*Bla
 
 * você deve criar um arquivo README.md informando os hiperparâmetros utilizados para o treinamento. Este arquivo README.md deve possuir um link para o plot da q-table.
 
-* você deve entregar a sua implementação via Github Classroom no repositório: [](). Este respositório deve possuir o arquivo README.md, os arquivos python das implementações e a(s) q-table(s) gerada(s) pelo(s) algoritmo(s).
+* você deve entregar a sua implementação via Github Classroom no repositório: [https://classroom.github.com/a/ExQNdof6](https://classroom.github.com/a/ExQNdof6). Este respositório deve possuir o arquivo README.md, os arquivos python das implementações e a(s) q-table(s) gerada(s) pelo(s) algoritmo(s).
 
 
 Exemplo de comparação entre algoritmos e hiperparâmetros utilizados no treinamento:
