@@ -4,7 +4,7 @@ Segundo a [Wikipedia](https://pt.wikipedia.org/wiki/Problema_do_cavalo), o probl
 
 ![Cavalo](./img/cavalo.gif)
 
-Segundo alguns textos, é possível implementar um algoritmo que encontre uma solução para o problema do cavalo usando árvores de busca e heurísticas. Neste exercício você deverá implementar um agente que resolve o problema do cavalo fechado usando algoritmos de busca e heurísticas.
+Segundo alguns textos, é possível implementar um algoritmo que encontre uma solução para o problema do cavalo usando árvores de busca e heurísticas. Neste exercício você deverá implementar um agente que resolve o problema do cavalo fechado usando algoritmos de busca e heurísticas. A solução implementada deverá fazer uso da biblioteca `aigyminsper`. 
 
 ## Entrega do exercício
 
