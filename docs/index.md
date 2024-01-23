@@ -1,4 +1,4 @@
-# Inteligência Artificial e Robótica - 2023/2
+# Inteligência Artificial e Robótica - 2024/1
 
 1. [Ementa da disciplina.](ementa.md)
 2. [Plano aula-a-aula da disciplina.](plano_de_aulas.md)
@@ -19,7 +19,7 @@ Algumas das implementações irão utilizar o toolkit [Gym OpenAI](https://gym.o
 
 Espera-se que os alunos desta disciplina tenham conhecimento de programação em Python. 
 
-As entregas dos projetos e exercícios serão via [Github Classroom](https://classroom.github.com/classrooms/66448216-insper-classroom-ai)
+As entregas dos projetos e exercícios serão via [Github Classroom](https://classroom.github.com/classrooms/66448216-insper-classroom-ai-2024)
 
 ## Contato
 
