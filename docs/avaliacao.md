@@ -4,7 +4,7 @@ Os objetivos de aprendizagem desta disciplina serão avaliados através das segu
 
 | Atividade | Peso |
 | ----------| ----------|
-| *N* implementações de agentes autônomos | 10% |
+| *N* exercícios sobre agentes autônomos | 10% |
 | 2 projetos | 30% | 
 | Avaliação Intermediária | 30% | 
 | Avaliação Final | 30% | 
@@ -15,18 +15,15 @@ O critério para aprovação é:
 * a média das avaliações intermediária e final deve ser igual ou maior que quatro (4);
 * e 75% de frequência mínima nas aulas. 
 
-## *N* implementações de agentes autônomos
+## *N* exercícios sobre agentes autônomos
 
 Seguem os enunciados que se encaixam nesta categoria: 
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| Atividade em sala de aula 1                                 | 23/08/2023          |
-| [Atividade em sala de aula 2](./aulas/04_x_buscas/index.md) | 04/09/2023          |
-| [Atividade em sala de aula 3](./aulas/05_busca_com_custo/index.md) | 15/09/2023   |
-| [Atividade em sala de aula 4](./aulas/08_heuristica_parte2/index.md) | 23/09/2023 |
-| [Atividade em sala de aula 5](./aulas/11_contribuindo_aigyminsper/index.md) | 09/10/2023 |
-| [Atividade em sala de aula 6](./aulas/14_tictactoe/index.md) | 20/10/2023 |
+| TBD                                 | TBD          |
+| ...                                 | ...          |
+
 
 ## 2 projetos
 
@@ -34,8 +31,8 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| [Problema do cavalo no tabuleiro](./projetos/11_cavalo/index.md)                         | 06/10/2023          |
-| [Jogador de BlackJack](./projetos/15_rl/index.md)                                        | 23/11/2023          |
+| TBD                         | TBD          |
+| TBD                                        | TBD          |
 
 
 ## Conversão de conceito para valor numérico
