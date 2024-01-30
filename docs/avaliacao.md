@@ -4,7 +4,7 @@ Os objetivos de aprendizagem desta disciplina serão avaliados através das segu
 
 | Atividade | Peso |
 | ----------| ----------|
-| *N* exercícios sobre agentes autônomos | 10% |
+| *N* exercícios (APS) sobre agentes autônomos | 10% |
 | 2 projetos | 30% | 
 | Avaliação Intermediária | 30% | 
 | Avaliação Final | 30% | 
