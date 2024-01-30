@@ -32,4 +32,6 @@ Material com exemplos de aplicações reais:
 
 <embed src="../../referencias/01_introducao/slides.pdf" type="application/pdf" width="600" height="300">
 
- 
+Uma apresentação sobre a evolução da IA:
+
+<embed src="../../referencias/01_introducao/moitara.pdf" type="application/pdf" width="600" height="300">
