@@ -38,8 +38,6 @@ Ao final da disciplina o estudante será capaz de:
 
 ## Bibliografia Básica
 
-Livros:
-
 1. NORVIG, P.; RUSSELL, S., Inteligência Artificial, 3ª ed., Campus Elsevier, 2013
 1. SIEGWART, R.; NOURBAKHSH, I. R.; SCARAMUZZA, D., Introduction to Autonomous Mobile Robots., 2ª ed., MIT Press, 2011
 1. O'KANE, J., A Gentle introduction to ROS, CreateSpace Publishing, 2013
@@ -47,8 +45,6 @@ Livros:
 
 
 ## Bibliografia Complementar
-
-Livros:
 
 1. SUTTON, R.; BARTO, A. Reinforcement Learning: An Introduction. Second Edition. The MIT Press, 2018.	
 1. GÉRON, A. Hands-on Machine Learning with Scikit-learn, Keras, and TensorFlow, 2ª ed., O'Reilly, 2021.
