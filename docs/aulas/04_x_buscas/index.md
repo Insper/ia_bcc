@@ -1,12 +1,17 @@
 # Algoritmos de Busca em Largura e Profundidade
 
-Ao final desta aula você deverá saber a diferença entre os algoritmos de busca: 
+??? hint "Ao final desta aula..."
 
-* em largura;
-* em profundidade, e;
-* em profundidade iterativa.
+    Ao final desta aula você deverá saber a diferença entre os algoritmos de busca: 
 
-Além disso você também deverá saber como avaliar um algoritmo de busca, quais indicadores utilizar, e, consequentemente, saber como aplicá-los nos problemas apresentados. 
+    * em largura;
+    * em profundidade, e;
+    * em profundidade iterativa.
+
+??? hint "Além disso..."
+
+    Além disso você também deverá saber como avaliar um algoritmo de busca, quais indicadores utilizar, e, consequentemente, saber como aplicá-los nos problemas apresentados. 
+
 
 O material utilizado para esta aula está nos slides 17 até 28 do conjunto de slides abaixo: 
 
@@ -39,7 +44,7 @@ class SumOne(State):
         self.number = n
         self.goal = g
     
-    def sucessors(self):
+    def successors(self):
         sucessors = []
         if self.number < self.goal:
             sucessors.append(SumOne(self.number+1, "+1 ", self.goal))
@@ -113,16 +118,16 @@ Em um documento, coloque a tabela, o gráfico e responda as seguintes perguntas:
 
 * Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta. 
 
-Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard. A atividade já está disponível no Blackboard e o prazo para entrega é dia **05/09/2023** (terça-feira) até às 20 horas.
+Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard. A atividade já está disponível no Blackboard e o prazo para entrega é até amanhã, dia **27/02/2024** (terça-feira) até às 23:30 horas.
 
 ## Rubrica de avaliação
 
 | Conceito | Descrição |
 |:--------:|:----------|
-| A+       | Submeteu um documento que apresenta a tabela completa, responde todas as perguntas de forma correta e apresenta um único *plot* que sumariza todos os dados de forma correta|
-| A        | Submeteu um documento que apresenta a tabela, responde todas as perguntas de forma correta e apresenta o *plot*| 
-| C        | Submeteu um documento que apresenta a tabela, mas não responde todas as perguntas de forma correta ou não apresenta o *plot* |
-| D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela ou *plot* |   
+| A+       | Submeteu um documento que apresenta a tabela completa, responde todas as perguntas de forma correta e apresenta um único *plot* que sumariza todos os dados de forma correta e objetiva.|
+| A        | Submeteu um documento que apresenta a tabela completa, responde todas as perguntas de forma correta e apresenta o *plot*, mas este plot poderia ser melhor feito.| 
+| C        | Submeteu um documento que apresenta a tabela, mas não responde todas as perguntas de forma correta ou não apresenta o *plot*.|
+| D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela completa ou *plot*.|   
 
 <!--
 ## Comentários sobre os trabalhos entregue :new:
