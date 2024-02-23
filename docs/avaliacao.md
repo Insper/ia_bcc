@@ -21,7 +21,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| TBD                                 | TBD          |
+| [Laboratório sobre Busca em Largura e Profundidade](../docs/aulas/04_x_buscas/index.md)  | 27/02/2024          |
 | ...                                 | ...          |
 
 
