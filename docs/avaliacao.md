@@ -21,7 +21,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| [Laboratório sobre Busca em Largura e Profundidade](aulas/04_x_buscas/index.md#atividade-de-laboratório)  | 27/02/2024          |
+| [Laboratório sobre Busca em Largura e Profundidade](aulas/04_x_buscas/index.md#atividade-de-laboratório)  | 29/02/2024          |
 | ...                                 | ...          |
 
 
