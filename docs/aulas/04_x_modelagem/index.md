@@ -31,6 +31,9 @@ da ponte no menor tempo possível.
 ??? warning "Tem algo dirente neste problema..." 
     O que é diferente neste problema em relação aos outros?
 
+
+<!--
+
 ## Cavalo e tabuleiro de xadrez
 
 Considerando um tabuleiro de xadrez (`8x8`) com um
@@ -76,3 +79,5 @@ E as dimensões da casa são de $10 \times 10$ quartos.
 ## Próximas atividades
 
 Se você já terminou as implementações acima e as implementações da [aula anterior](../03_configuracao/index.md), então leia o material neste [link](../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf). Em especial, do primeiro ao slide de número 28. 
+
+-->
