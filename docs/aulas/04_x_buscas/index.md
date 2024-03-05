@@ -129,8 +129,8 @@ Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard.
 | C        | Submeteu um documento que apresenta a tabela, mas não responde todas as perguntas de forma correta ou não apresenta o *plot*.|
 | D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela completa ou *plot*.|   
 
-<!--
-## Comentários sobre os trabalhos entregue :new:
+
+## Comentários sobre os trabalhos entregues :new:
 
 Pessoal, 
 
@@ -142,12 +142,12 @@ Depois de avaliar os trabalhos entregues por vocês, gostaria de fazer os seguin
 
 * quando uma simulação não termina (por excesso de tempo ou estouro de memória) vocês não podem colocar zero para o tempo de processamento. Vocês devem sempre colocar algo como valor faltante (NA) ou outro indicador de que este dado não foi possível de ser gerado. 
 
-Além disso, seguem dois exemplos de plots bem formados e completos: 
+Além disso, seguem três exemplos de plots bem formados e completos: 
 
 <img src="figuras/esdras_convencional.png" width="800" height="600">
 
 <img src="figuras/esdras_log.png" width="800" height="600">
 
-Estes dois *plots* sumarizam muito os experimentos feitos. Principalmente o *plot* com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. 
+<img src="figuras/laura.png" width="800" height="600">
 
--->
+Estes dois *plots* sumarizam muito os experimentos feitos. Principalmente o *plot* com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. 

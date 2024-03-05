@@ -2,7 +2,7 @@
 
 **Que tal implementar um aspirador de pó que consegue atuar em qualquer casa retangular?** 
 
-Utilize como exemplo o arquivo `src/ProblemSpecificationExample.py` para implementar a classe `VacuumWorldGeneric.py`. O método `main` da classe `VacuumWorldGeneric.py` deve receber um arquivo texto que descreve a situação do ambiente e as posições do robô como parâmetros. Por exemplo, para o seguinte ambiente: 
+Implemente a classe `VacuumWorldGeneric.py`. O método `main` da classe `VacuumWorldGeneric.py` deve receber um arquivo texto que descreve a situação do ambiente e as posições do robô como parâmetros. Por exemplo, para o seguinte ambiente: 
 
 <img src="img/mundo_ex_1.png">
 
