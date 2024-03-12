@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../08_heuristica/">
+      
+      
+        <link rel="next" href="../../referencias/01_introducao/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -229,17 +233,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -253,7 +259,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -370,17 +376,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -394,7 +402,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Busca em espaço de estados
@@ -480,6 +488,112 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Continuação: menor caminho entre duas cidades
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Continuação: menor caminho entre duas cidades
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-em-profundidade-iterativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando busca em profundidade iterativo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-de-custo-uniforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando busca de custo uniforme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-gananciosa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando busca gananciosa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-busca-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando busca A*
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparando-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparando algoritmos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -655,15 +769,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#codigo-do-problema-do-mapa" class="md-nav__link">
-    <span class="md-ellipsis">
-      Código do problema do Mapa
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -681,20 +786,19 @@
 
 <h1 id="continuacao-menor-caminho-entre-duas-cidades">Continuação: menor caminho entre duas cidades</h1>
 <p>Considerando o problema apresentado <a href="../08_heuristica/">na aula passada</a> e o código disponível em <a href="src/Map2023/">src/Map2023.py</a> faça os seguintes testes abaixo. </p>
-<p>Considere também o arquivo CSV com a definição das heurísticas: <a href="data/MapHeuristics.csv">MapHeuristicas.csv</a>.</p>
 <h2 id="usando-busca-em-profundidade-iterativo">Usando busca em profundidade iterativo</h2>
 <p><strong>Encontrar um caminho entre a cidade <em>i</em> e <em>o</em>.</strong></p>
 <p>Perguntas:</p>
 <ul>
 <li>Qual foi o tempo de processamento até a implementação encontrar uma solução? </li>
-<li>A árvore de busca gerada é "inteligente"? </li>
+<li>Quantos nodos o algoritmo de busca abriu até encontrar a solução? </li>
 <li>A solução encontrada é ótima? </li>
 </ul>
 <p><strong>Encontre um caminho entre a cidade <em>b</em> e <em>o</em>.</strong> </p>
 <p>Perguntas:</p>
 <ul>
 <li>Qual foi o tempo de processamento até a implementação encontrar uma solução? </li>
-<li>A árvore de busca gerada é "inteligente"? </li>
+<li>Quantos nodos o algoritmo de busca abriu até encontrar a solução? </li>
 <li>A solução encontrada é ótima?</li>
 </ul>
 <h2 id="usando-busca-de-custo-uniforme">Usando busca de custo uniforme</h2>
@@ -707,7 +811,7 @@
 <p>Perguntas:</p>
 <ul>
 <li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
-<li>A árvore de busca gerada é "inteligente"?</li>
+<li>Quantos nodos o algoritmo de busca abriu até encontrar a solução?</li>
 <li>A solução encontrada é ótima?</li>
 </ul>
 <h2 id="usando-busca-gananciosa">Usando busca gananciosa</h2>
@@ -727,10 +831,11 @@
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="o">&lt;&lt;</span><span class="n">valor</span> <span class="n">numérico</span><span class="o">&gt;&gt;</span>
 </code></pre></div>
+<p>Para esta parte do exercício considere também o arquivo CSV com a definição das heurísticas: <a href="data/MapHeuristics.csv">MapHeuristicas.csv</a>.</p>
 <p>Perguntas:</p>
 <ul>
 <li>Qual foi o tempo de processamento até a implementação encontrar uma solução?</li>
-<li>A árvore de busca gerada é "inteligente"?</li>
+<li>Quantos nodos o algoritmo de busca abriu até encontrar a solução?</li>
 <li>A solução encontrada é ótima?</li>
 </ul>
 <h2 id="usando-busca-a">Usando busca A*</h2>
@@ -846,116 +951,8 @@
 <li>Por que a solução encontrada foi diferente em cada algoritmo?</li>
 <li>Por que a solução encontrada foi diferente em cada versão do A-Estrela? </li>
 </ul>
-<p>Crie um documento pdf e envie via blackboard. A data limite para entrega é <strong>23/09/2021</strong>.</p>
-<h2 id="codigo-do-problema-do-mapa">Código do problema do Mapa</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaProfundidadeIterativa</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaCustoUniforme</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaGananciosa</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaLargura</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.Graph</span> <span class="kn">import</span> <span class="n">State</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
-<span class="kn">import</span> <span class="nn">csv</span>
-
-<span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">State</span><span class="p">):</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">goal</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">city</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">cost_value</span> <span class="o">=</span> <span class="n">cost</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">op</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">goal</span> <span class="o">=</span> <span class="n">goal</span>
-
-    <span class="k">def</span> <span class="nf">successors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">sucessors</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">Map</span><span class="o">.</span><span class="n">area</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">next_city</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
-            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Map</span><span class="p">(</span><span class="n">next_city</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_city</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">next_city</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">sucessors</span>
-
-    <span class="k">def</span> <span class="nf">is_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">&quot;Um mapa para procurar&quot;</span>
-
-    <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cost_value</span>
-
-    <span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">operator</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">city</span>
-
-    <span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">])</span>
-        <span class="c1">#return random.randint(1,10)</span>
-        <span class="c1">#return 1</span>
-
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">createArea</span><span class="p">():</span>
-        <span class="n">Map</span><span class="o">.</span><span class="n">area</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;a&#39;</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;b&#39;</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;c&#39;</span><span class="p">:[(</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;d&#39;</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;e&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">),(</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;f&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;g&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;h&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;i&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;l&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;k&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;m&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">),(</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;n&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;o&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;p&#39;</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)],</span>
-            <span class="s1">&#39;x&#39;</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">)]</span>
-            <span class="p">}</span>
-
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">createHeuristics</span><span class="p">():</span>
-        <span class="c1">#</span>
-        <span class="c1"># O arquvo MapHeuristics.csv considera apenas os objetivos &quot;o&quot; e &quot;x&quot;</span>
-        <span class="c1"># TODO modificar o arquivo para considerar todas as cidades. talvez modificar</span>
-        <span class="c1"># a estrutura do arquivo considerando uma estrutura otimizada</span>
-        <span class="c1">#</span>
-        <span class="n">Map</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;data/MapHeuristics.csv&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span> 
-            <span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-
-    <span class="n">Map</span><span class="o">.</span><span class="n">createArea</span><span class="p">()</span>
-    <span class="n">Map</span><span class="o">.</span><span class="n">createHeuristics</span><span class="p">()</span>
-
-    <span class="c1">#state = Map(&#39;i&#39;, 0, &#39;i&#39;, &#39;o&#39;)</span>
-    <span class="n">state</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
-    <span class="c1">#state = Map(&#39;i&#39;, 0, &#39;i&#39;, &#39;x&#39;)</span>
-    <span class="c1">#algorithm = BuscaLargura()</span>
-    <span class="c1">#algorithm = BuscaCustoUniforme()</span>
-    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaGananciosa</span><span class="p">()</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">tf</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tempo de processamento em segundos: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tf</span><span class="o">-</span><span class="n">ts</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;O custo da solucao eh: &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
-</code></pre></div>
-<details class="note">
-<summary>Atenção!</summary>
-<p>Uma nova versão da biblioteca foi disponibilizada. Para atualizar a biblioteca, execute o comando abaixo no terminal: </p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>aigyminsper
-</code></pre></div>
-<p>Esta nova versão possui a possibilidade de poda da árvore de busca pelo método de busca. A versão atual é <strong>0.1.6</strong></p>
-</details>
+<!--Crie um documento pdf e envie via blackboard. A data limite para entrega é **23/09/2021**.
+-->
 
 
 
@@ -976,7 +973,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 12, 2024</span>
   </span>
 
     
