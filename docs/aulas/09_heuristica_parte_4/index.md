@@ -31,7 +31,7 @@ Considerando a forma como os estados são representados e as ações que o agent
     estados possíveis)?
 * Que algoritmo de busca pode ser utilizado para resolver este problema considerando que a solução apresentada precisa ser ótima? 
 
-A entrega da sua implementação deverá ter 1 arquivo chamado `Puzzle8.py` que implementa a interface `State` e que deve passar por TODOS os testes especificados em `test_8_puzzle.py`. 
+A entrega da sua implementação deverá ter 1 arquivo chamado `Puzzle8.py` que implementa a interface `State` e que deve passar por TODOS os testes especificados em [test_8_puzzle.py](./src/test_8Puzzle.py). 
 
 O seu agente deve ser capaz de identificar um plano para todos os estados iniciais descritos como fáceis e difícieis no arquivo de testes. Para os estados descritos como impossível o agente precisa retornar a mensagem *"Nao achou solucao"*. Deve-se considerar o estado *goal* em formato caracol, como apresentado abaixo:
 
@@ -40,7 +40,7 @@ O seu agente deve ser capaz de identificar um plano para todos os estados inicia
 | 8 |   | 4 |
 | 7 | 6 | 5 |
 
-Ao implementar o método `sucessors` do seu agente considere a seguinte ordem para adicionar os nodos em abertos: cima, baixo, esquerda e direita. 
+Ao implementar o método `successors` do seu agente considere a seguinte ordem para adicionar os nodos em abertos: cima, baixo, esquerda e direita. 
 
 ## Formato de entrega
 
@@ -48,9 +48,9 @@ Ao implementar o método `sucessors` do seu agente considere a seguinte ordem pa
 
 * O link para o enunciado é este aqui [https://classroom.github.com/a/iZCPEiAe](https://classroom.github.com/a/iZCPEiAe). Através deste link você consegue baixar o repositório e começar a sua codificação. 
 
-* **Prazo para a entrega**: 17/03/2022 (sexta-feira) até às 23:30 horas.
+* **Prazo para a entrega**: 15/03/2022 (sexta-feira) até às 23:30 horas.
 
-* **Atenção: NOVA VERSÃO DO ARQUIVO DE TESTES** está disponível [aqui](./src/test_8Puzzle.py).
+* Este trabalho pode ser feito em equipes com até 3 integrantes. 
 
 ## Exemplo de código para o método `show_path`
 

@@ -15,7 +15,7 @@ class Map(State):
         self.operator = op
         self.goal = goal
     
-    def sucessors(self):
+    def successors(self):
         sucessors = []
         neighbors = Map.area[self.city]
         for next_city in neighbors:
