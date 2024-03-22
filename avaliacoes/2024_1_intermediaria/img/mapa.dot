@@ -1,0 +1,13 @@
+digraph G {
+    /*layout="circo";*/
+    /* Relationships */
+    "São Paulo" -> "Jundiaí"[label="59", dir="both"]
+    "Campinas" -> "Jundiaí"[label="39", dir="both"]
+    "Sorocaba" -> "Campinas"[label="89", dir="both"]
+    "Sorocaba" -> "Jundiaí"[label="93", dir="both"]
+    "Sorocaba" -> "São Paulo"[label="104", dir="both"]
+    "São Paulo" -> "Taubaté"[label="131", dir="both"]
+    "São Paulo" -> "Santos"[label="72", dir="both"]
+    "Santos" -> "Ubatuba"[label="238", dir="both"]
+    "Ubatuba" -> "Taubaté"[label="97", dir="both"] 
+} 
