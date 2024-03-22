@@ -89,7 +89,7 @@ Considere o problema de encontrar o menor caminho entre duas cidades visto em sa
 
 ## Entrega dos itens da avaliação
 
-Toda a prova deve ser submetida no Github Classroom através deste link: []().
+Toda a prova deve ser submetida no Github Classroom através deste link: [https://classroom.github.com/a/dBI-3xFz](https://classroom.github.com/a/dBI-3xFz).
 
 Os arquivos que precisam ser submetidos são: 
 
