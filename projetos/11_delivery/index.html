@@ -18,7 +18,7 @@
     
     
       
-        <title>Planejando rotas para um entregador - Inteligência Artificial e Robótica</title>
+        <title>Planejando rotas para entregadores - Inteligência Artificial e Robótica</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#planejando-rotas-para-um-entregador" class="md-skip">
+        <a href="#planejando-rotas-para-entregadores" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Planejando rotas para um entregador
+              Planejando rotas para entregadores
             
           </span>
         </div>
@@ -896,7 +896,7 @@
           
   
   <span class="md-ellipsis">
-    Planejando rotas para um entregador
+    Planejando rotas para entregadores
   </span>
   
 
@@ -907,7 +907,7 @@
         
   
   <span class="md-ellipsis">
-    Planejando rotas para um entregador
+    Planejando rotas para entregadores
   </span>
   
 
@@ -929,18 +929,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#descricao-do-problema" class="md-nav__link">
+  <a href="#rubrica-do-projeto" class="md-nav__link">
     <span class="md-ellipsis">
-      Descrição do problema
+      Rubrica do projeto
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#entrega-do-projeto" class="md-nav__link">
+  <a href="#data-de-entrega" class="md-nav__link">
     <span class="md-ellipsis">
-      Entrega do projeto
+      Data de entrega
     </span>
   </a>
   
@@ -989,18 +989,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#descricao-do-problema" class="md-nav__link">
+  <a href="#rubrica-do-projeto" class="md-nav__link">
     <span class="md-ellipsis">
-      Descrição do problema
+      Rubrica do projeto
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#entrega-do-projeto" class="md-nav__link">
+  <a href="#data-de-entrega" class="md-nav__link">
     <span class="md-ellipsis">
-      Entrega do projeto
+      Data de entrega
     </span>
   </a>
   
@@ -1021,47 +1021,44 @@
                   
 
 
-<h1 id="planejando-rotas-para-um-entregador">Planejando rotas para um entregador</h1>
-<p>Este projeto terá várias entregas. O escopo da primeira entrega é a implementação das funcionalidades mais básicas do sistema de entrega de encomendas.</p>
-<h2 id="descricao-do-problema">Descrição do problema</h2>
-<p>Neste projeto você deverá implementar um agente que é capaz de ir de um lugar até outro em um mapa, buscar uma encomenda e entregá-la ao seu destinatário. Este agente está andando de bicicleta ou moto e sabe executar as seguintes ações: </p>
+<h1 id="planejando-rotas-para-entregadores">Planejando rotas para entregadores</h1>
+<p>O objetivo deste projeto é desenvolver um sistema que identifica as melhores rotas para um conjunto de entregadores levando-se em consideração algumas restrições. </p>
+<p>Este projeto é composto por várias entregas. As entregas são: </p>
 <ul>
-<li>ir para frente: ao executar esta ação o agente avança uma casa na direção que ele está olhando;</li>
-<li>virar para a esquerda: ao executar esta ação o agente muda a direção que ele está olhando para a esquerda e não avança nenhuma casa;</li>
-<li>virar para a direita: ao executar esta ação o agente muda a direção que ele está olhando para a direita e não avança nenhuma casa;</li>
-<li>pegar a encomenda: ao executar esta ação o agente pega a encomenda que está esperando por ele na casa onde ele está;</li>
-<li>entregar a encomenda: ao executar esta ação o agente entrega a encomenda que ele está carregando na casa onde ele está.</li>
+<li>Entrega 01: <a href="parte01/">Implementação das funcionalidades mais básicas do sistema de entrega de encomendas</a>.</li>
+<li>Entrega 02: <a href="parte02/">Implementação do módulo de entrega de encomendas que considera mais de uma entrega no mapa</a>. </li>
+<li>Entrega 03: <a href="parte03/">Implementação da interface gráfica do sistema de entrega de encomendas</a>.</li>
+<li>Entrega 04: <a href="parte04/">Implementação do módulo de entrega de encomendas que considera mais de um entregador</a>.</li>
 </ul>
-<p>Um exemplo possível de mapa que este agente pode receber é apresentado abaixo: </p>
-<p>Mapa 01: </p>
-<p><img src="img/mapa_01.png"> </p>
-<p>Neste estado inicial: </p>
-<ul>
-<li>o entregador está na posição [0,0],</li>
-<li>o item que deve ser entregue está na posição [0,5],</li>
-<li>o destinatário está na posição [4,5],</li>
-<li>o mapa tem 5 linhas e 7 colunas, e</li>
-<li>existem campos no mapa que estão pintados em cinza e que representam obstáculos. </li>
-</ul>
-<p>Cada ação que o agente sabe executar tem custo 1.  </p>
-<p>Implemente uma solução que ajuda o entregador a tomar a decisão com relação ao melhor plano - aquele plano que faz ele chegar no objetivo com o menor custo.</p>
-<p>A solução implementada precisa ser capaz de tratar diversas configurações com diversas dimensões. Por exemplo:</p>
-<p>Mapa 02:</p>
-<p><img src="img/mapa_01_01.png"> </p>
-<p>Mapa 03: </p>
-<p><img src="img/mapa_02.png"> </p>
-<p>Mapa 04: </p>
-<p><img src="img/mapa_03.png"> </p>
-<p>Não existem testes pré-configurados. No entanto, recomenda-se fortemente que você teste a sua implementação nos cenários descritos acima.</p>
-<p>A configuração dos mapas não pode ser feita de forma fixa no código. A configuração dos mapas deve ser feita em arquivos de configuração.</p>
-<p>Nesta implementação você deve utilizar a biblioteca <code>aigyminsper</code>.</p>
-<h2 id="entrega-do-projeto">Entrega do projeto</h2>
-<ul>
-<li>O projeto como um todo deverá ser feito por equipes com até 3 integrantes. </li>
-<li>O prazo máximo para entrega é 20/03/2023 (quarta-feira) até às 23:30 horas.</li>
-<li>A entrega deverá ser feita via Github Classroom. O link para a entrega é <a href="https://classroom.github.com/a/D8WBu3wF">https://classroom.github.com/a/D8WBu3wF</a>.</li>
-<li>Cada equipe deverá entregar todos os arquivos python para o funcionamento da solução, uma arquivo README.md que explica como executar, todos os arquivos de configuração dos mapas e um arquivo de <code>requirements.txt</code> com todos os pacotes necessários para a execução do projeto. </li>
-</ul>
+<h2 id="rubrica-do-projeto">Rubrica do projeto</h2>
+<table>
+<thead>
+<tr>
+<th>Check-point realizado</th>
+<th>Conceito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Não fez o check-point 2</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Fez o check-point 2</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Fez o check-point 3</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Fez o check-point 4</td>
+<td>A+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-de-entrega">Data de entrega</h2>
+<p>A data de entrega máxima deste projeto será <strong>08 de abril de 2024</strong> até às 9:30. </p>
 
 
 
@@ -1082,7 +1079,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 3, 2024</span>
   </span>
 
     
