@@ -16,9 +16,19 @@ O cliente vermelho será atendido.
 
 A sua equipe deve criar vários cenários de testes para validar a implementação. Deve também considerar uma quantidade de entregas maior que 2. 
 
+No caso acima, o entregador deve atender o cliente vermelho primeiro, pois o custo para atender o cliente vermelho é menor que o custo para atender o cliente verde. Depois de atender o cliente vermelho, o entregador deverá refazer o calculo do custo para atender os clientes existentes no mapa. Neste caso o sistema deverá imprimir: 
+
+```
+Custo para atender o cliente verde: 24
+O cliente verde será atendido.
+```
+
+A forma de identificar o cliente não precisa ser por cores, pode ser por algum outro tipo de identificador alfanumérico.
+
+Se o entregador tiver um número N de entregas para fazer então o procedimento apresentado acima deve ser repetido N vezes. 
+
 Quando você tiver isto pronto, por favor, chame o professor da disciplina para validar e fazer o:  
 
 :new: check-point número 2. 
 
-**Importante**: até este momento você poderá mudar de equipe. No entanto, as equipes continuaram com no máximo 3 integrantes. Para esta entrega será liberado um novo GitHub Classroom. 
 
