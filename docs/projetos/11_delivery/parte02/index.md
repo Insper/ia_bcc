@@ -31,4 +31,12 @@ Quando você tiver isto pronto, por favor, chame o professor da disciplina para 
 
 :new: check-point número 2. 
 
+## Itens do check-point 2
+
+* Sistema calcula a melhor rota para o entregador fazer as entregas e mostra o custo
+* Sistema consegue atender mais de um cliente em diferentes instantes de tempo
+* A lógica de atendimento apresentada acima precisa estar correta
+
+[[Parte 1](../parte01/index.md)] [[Parte 3](../parte03/index.md)] [[Parte 4](../parte04/index.md)] [[Projeto](../index.md)]
+
 

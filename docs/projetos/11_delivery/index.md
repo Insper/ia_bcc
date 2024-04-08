@@ -20,6 +20,6 @@ Este projeto é composto por várias entregas. As entregas são:
 
 ## Data de entrega
 
-A data de entrega máxima deste projeto será **08 de abril de 2024** até às 9:30. Este projeto deverá ser feito por equipes com até **4 integrantes**.
+A data de entrega máxima deste projeto será **10 de abril de 2024** até às 11:00. Este projeto deverá ser feito por equipes com até **4 integrantes**.
 
 Os projetos deverão ser entregues via Github Classroom: [https://classroom.github.com/a/GaolQD5x](https://classroom.github.com/a/GaolQD5x).

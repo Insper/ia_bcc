@@ -52,3 +52,5 @@ Nesta implementação você deve utilizar a biblioteca `aigyminsper`.
 - O prazo máximo para entrega é 20/03/2024 (quarta-feira) até às 23:30 horas.
 - A entrega deverá ser feita via Github Classroom. O link para a entrega é [https://classroom.github.com/a/D8WBu3wF](https://classroom.github.com/a/D8WBu3wF).
 - Cada equipe deverá entregar todos os arquivos python para o funcionamento da solução, uma arquivo README.md que explica como executar, todos os arquivos de configuração dos mapas e um arquivo de `requirements.txt` com todos os pacotes necessários para a execução do projeto. 
+
+[[Parte 2](../parte02/index.md)] [[Parte 3](../parte03/index.md)] [[Parte 4](../parte04/index.md)] [[Projeto](../index.md)]

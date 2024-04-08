@@ -7,3 +7,12 @@ Neste meio tempo outro entregador pode ser adicionado ao mapa e ele deve fazer o
 Ao terminar esta funcionalidade, por favor, chame o professor da disciplina para validar e fazer o:  
 
 :new: check-point número 4.
+
+## Itens do check-point 4
+
+* Todas as funcionalidades entregues nas partes anteriores estão funcionando
+* Todos os entregadores são processos independentes
+* Entregadores identificam a entrega com menor custo para ele e começam a se movimentar até a entrega
+* Entregadores ignoram entregas já marcadas por outros entregadores
+
+[[Parte 1](../parte01/index.md)] [[Parte 2](../parte02/index.md)] [[Parte 3](../parte03/index.md)] [[Projeto](../index.md)]
