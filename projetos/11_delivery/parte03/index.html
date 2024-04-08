@@ -920,6 +920,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#itens-do-check-point-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Itens do check-point 3
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -937,8 +954,25 @@
 <p>Nesta parte do projeto você deverá implementar uma interface gráfica para o sistema de entrega de encomendas que você implementou nas entregas anteriores.</p>
 <p>Quando terminado, o seu sistema deverá ser capaz de mostrar o mapa com as entregas que devem ser feitas e o entregador disponível. Também deverá mostrar a movimentação do entregador no mapa indo até a entrega, pegando a entrega e entregando a encomenda.</p>
 <p>Esta interface gráfica deve permitir a adição de entregadores, encomendas, clientes e a movimentação dos entregadores no mapa.</p>
+<p>Uma vez editado o mapa, o sistema deve ser capaz de calcular a melhor rota para o entregador fazer as entregas. Não existe interação do usuário depois que o entregador começa a executar a sua lógica. </p>
+<p>A configuração do mapa não pode estar hard-coded no código. O mapa deve ser carregado de um arquivo de configuração ou definido via interface gráfica.</p>
+<p>A sua entrega pode considerar um tamanho máximo de mapa de 30 por 30. </p>
+<p>A interface gráfica deve mostrar quem é o entregador, onde estão os bloqueios, onde está a encomenda, onde está o cliente da encomenda, a ação que o entregador está executando e o caminho que ele está seguindo. Também deve ficar claro na interface se o entregador está se movendo com a entrega ou não.</p>
 <p>Quando você tiver isto pronto, por favor, chame o professor da disciplina para validar e fazer o:  </p>
 <p><img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f195.svg" title=":new:" /> check-point número 3.</p>
+<h2 id="itens-do-check-point-3">Itens do check-point 3</h2>
+<ul>
+<li>Interface gráfica mostra onde entregador está</li>
+<li>Interface gráfica mostra que ação entregador está realizado</li>
+<li>Interface gráfica mostra onde estão os bloqueios</li>
+<li>Interface gráfica mostra onde está a encomenda e o cliente da encomenda</li>
+<li>Interface gráfica consegue mostrar mais que uma encomenda</li>
+<li>Interface gráfica mostra se entregador está com encomenda ou não</li>
+<li>Sistema permite a configuração do mapa: tamanho, obstáculos, onde o entregador está e onde as encomendas estão. Esta configuração não pode ser feita via código</li>
+<li>Sistema calcula a melhor rota para o entregador fazer as entregas e mostra o custo</li>
+<li>Depois que inicializado o processo de busca pela solução não será mais possível interagir com o sistema</li>
+</ul>
+<p>[<a href="../parte01/">Parte 1</a>] [<a href="../parte02/">Parte 2</a>] [<a href="../parte04/">Parte 4</a>] [<a href="../">Projeto</a>]</p>
 
 
 
@@ -959,7 +993,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 3, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 8, 2024</span>
   </span>
 
     
