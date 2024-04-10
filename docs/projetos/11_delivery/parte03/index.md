@@ -4,7 +4,7 @@ Nesta parte do projeto você deverá implementar uma interface gráfica para o s
 
 Quando terminado, o seu sistema deverá ser capaz de mostrar o mapa com as entregas que devem ser feitas e o entregador disponível. Também deverá mostrar a movimentação do entregador no mapa indo até a entrega, pegando a entrega e entregando a encomenda.
 
-Esta interface gráfica deve permitir a adição de entregadores, encomendas, clientes e a movimentação dos entregadores no mapa.
+Esta interface gráfica deve permitir a adição de encomendas, clientes e a movimentação dos entregadores no mapa.
 
 Uma vez editado o mapa, o sistema deve ser capaz de calcular a melhor rota para o entregador fazer as entregas. Não existe interação do usuário depois que o entregador começa a executar a sua lógica. 
 

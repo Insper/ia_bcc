@@ -15,7 +15,7 @@ Este projeto é composto por várias entregas. As entregas são:
 |-----------------------|----------|
 | Não fez o check-point 2 | I |
 | Fez o check-point 2 | C |
-| Fez o check-point 3 | B |
+| Fez o check-point 3 | B+ |
 | Fez o check-point 4 | A+ |
 
 ## Data de entrega
