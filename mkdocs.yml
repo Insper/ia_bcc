@@ -35,10 +35,10 @@ nav:
     - 'Programação por restrições':
       - 'aulas/12_csp/index.md'
 
-#    - 'Ambientes competitivos':
-#      - 'aulas/13_jogos/index.md'
-#      - 'aulas/14_tictactoe/tictactoe.ipynb'
-#      - 'aulas/14_tictactoe/index.md'
+    - 'Ambientes competitivos':
+      - 'aulas/13_jogos/index.md'
+      - 'aulas/14_tictactoe/tictactoe.ipynb'
+      - 'aulas/14_tictactoe/index.md'
 
 ##    - 'aulas/14_competicao/index.md'
 #    - 'Aprendizagem por reforço':
@@ -54,7 +54,7 @@ nav:
     - 'referencias/03_algoritmos_busca/index.md'
     - 'referencias/03_csp/index.md'
 #    - 'referencias/03_dijkstra/index.md'
-#    - 'referencias/04_busca_competitiva/index.md'
+    - 'referencias/04_busca_competitiva/index.md'
 #    - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
   - 'Exercícios e avaliações antigas':

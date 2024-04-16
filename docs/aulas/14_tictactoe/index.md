@@ -32,7 +32,7 @@ O código fonte deste pacote e alguma documentação está disponível [neste li
 
 Além disso, [neste link](tictactoe.ipynb) tem um tutorial bem básico sobre o funcionamento deste ambiente. 
 
-## Implementação 
+## Implementação para conceito B
 
 * Implemente um agente usando o algoritmo `MinMax`, com limite de profundidade, capaz de jogar o jogo da velha.
 * Utilize uma função de utilidade não muito complexa, mas que você acredita que é correta para o jogo da velha.
@@ -49,9 +49,17 @@ Além disso, [neste link](tictactoe.ipynb) tem um tutorial bem básico sobre o f
 
 Toda a implementação e documentação sobre os resultados deve estar em um arquivo `ipynb`.  
 
+## Implementação para conceito A+
+
+* Implemente um agente usando o algoritmo `MinMax` com poda alpha-beta, com limite de profundidade, capaz de jogar o jogo da velha.
+* Você pode utilizar a mesma função de utilidade implementada anteriormente.
+* Repita o processo de avaliação do agente, mas agora com a poda alpha-beta.
+* Compare os resultados obtidos com a poda alpha-beta com os resultados obtidos sem a poda alpha-beta.
+* Você deve encontrar uma forma gráfica para sumarizar os dados dos experimentos. 
+* Toda a implementação e documentação sobre os resultados deve estar em um arquivo `ipynb`.
 
 ## Entrega
 
-* Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui [https://classroom.github.com/a/Vcgejq9z](https://classroom.github.com/a/Vcgejq9z). 
+* Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui [https://classroom.github.com/a/qTtNQURN](https://classroom.github.com/a/qTtNQURN). 
 
-* A entrega é individual e o  **prazo para a entrega** é 20/10/2023 (sexta-feira) até às 23:30 horas.
+* A entrega é em equipes com até 4 integrantes e o  **prazo para a entrega** é 22/04/2024 (segunda-feira) até às 23:30 horas.
