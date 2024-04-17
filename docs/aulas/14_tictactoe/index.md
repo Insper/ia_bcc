@@ -30,7 +30,7 @@ pip install kaggle-environments
 
 O código fonte deste pacote e alguma documentação está disponível [neste link](https://github.com/Kaggle/kaggle-environments). 
 
-Além disso, [neste link](tictactoe.ipynb) tem um tutorial bem básico sobre o funcionamento deste ambiente. 
+Além disso, [neste link](tictactoe.ipynb) tem um tutorial bem básico sobre o funcionamento deste ambiente. Para aqueles que estão com dificuldade em instalar o pacote do kaggle, utilizem o [Google Colab](https://colab.research.google.com/gist/fbarth/ad7d167798a0d9097d2aca4a1c98c367/tictactoe.ipynb).
 
 ## Implementação para conceito B
 
