@@ -63,3 +63,7 @@ Toda a implementação e documentação sobre os resultados deve estar em um arq
 * Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui [https://classroom.github.com/a/qTtNQURN](https://classroom.github.com/a/qTtNQURN). 
 
 * A entrega é em equipes com até 4 integrantes e o  **prazo para a entrega** é 22/04/2024 (segunda-feira) até às 23:30 horas.
+
+## Um possível solução para o problema
+
+Uma possível solução para este problema está disponível [aqui](./tictactoe_minmax.ipynb).
