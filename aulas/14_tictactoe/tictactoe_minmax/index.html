@@ -1496,7 +1496,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-1">
@@ -1525,7 +1525,7 @@ env = make('tictactoe', debug=True)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-2">
@@ -1543,32 +1543,34 @@ env = make('tictactoe', debug=True)</div>
         <span class="k">return</span> <span class="mi">2</span>
     <span class="k">return</span> <span class="mi">1</span>
 
-<span class="c1">#</span>
-<span class="c1"># return True se alguem venceu a partida</span>
-<span class="c1">#</span>
-<span class="k">def</span> <span class="nf">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+<span class="k">def</span> <span class="nf">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">player</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">my_player</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="ow">and</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="kc">False</span>
 
-<span class="c1">#</span>
-<span class="c1"># return True se houve empate</span>
-<span class="c1">#</span>
+<span class="k">def</span> <span class="nf">tabuleiro_completo</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">tabuleiro</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
 <span class="k">def</span> <span class="nf">empatou</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tabuleiro_completo</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="mi">2</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-2">def inverte_player(player):
@@ -1576,34 +1578,149 @@ env = make('tictactoe', debug=True)</div>
         return 2
     return 1
 
-#
-# return True se alguem venceu a partida
-#
-def alguem_venceu(tabuleiro, my_player):
-    if (tabuleiro[0] == tabuleiro[1] == tabuleiro[2]) and tabuleiro[0] == my_player:
+def alguem_venceu(tabuleiro, player):
+    if (tabuleiro[0] == tabuleiro[1] == tabuleiro[2]) and tabuleiro[0] == player:
         return True
-    if (tabuleiro[3] == tabuleiro[4] == tabuleiro[5]) and tabuleiro[3] == my_player:
+    if (tabuleiro[3] == tabuleiro[4] == tabuleiro[5]) and tabuleiro[3] == player:
         return True
-    if (tabuleiro[6] == tabuleiro[7] == tabuleiro[8]) and tabuleiro[6] == my_player:
+    if (tabuleiro[6] == tabuleiro[7] == tabuleiro[8]) and tabuleiro[6] == player:
         return True
-    if (tabuleiro[0] == tabuleiro[3] == tabuleiro[6]) and tabuleiro[0] == my_player:
+    if (tabuleiro[0] == tabuleiro[3] == tabuleiro[6]) and tabuleiro[0] == player:
         return True
-    if (tabuleiro[1] == tabuleiro[4] == tabuleiro[7]) and tabuleiro[1] == my_player:
+    if (tabuleiro[1] == tabuleiro[4] == tabuleiro[7]) and tabuleiro[1] == player:
         return True
-    if (tabuleiro[2] == tabuleiro[5] == tabuleiro[8]) and tabuleiro[2] == my_player:
+    if (tabuleiro[2] == tabuleiro[5] == tabuleiro[8]) and tabuleiro[2] == player:
         return True
-    if (tabuleiro[0] == tabuleiro[4] == tabuleiro[8]) and tabuleiro[0] == my_player:
+    if (tabuleiro[0] == tabuleiro[4] == tabuleiro[8]) and tabuleiro[0] == player:
         return True
-    if (tabuleiro[2] == tabuleiro[4] == tabuleiro[6]) and tabuleiro[2] == my_player:
+    if (tabuleiro[2] == tabuleiro[4] == tabuleiro[6]) and tabuleiro[2] == player:
         return True
     return False
 
-#
-# return True se houve empate
-#
+def tabuleiro_completo(tabuleiro):
+    for i in range(9):
+        if tabuleiro[i] == 0:
+            return False
+    return True
+
 def empatou(tabuleiro):
+    if tabuleiro_completo(tabuleiro) and (not alguem_venceu(tabuleiro, 1)) and (not alguem_venceu(tabuleiro, 2)):
+        return True
     return False
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">empatou</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="c1">#True</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">empatou</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="c1">#False</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">empatou</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="c1">#False</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">empatou</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="c1">#False</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alguem_venceu</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="c1">#True</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alguem_venceu</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="c1">#False</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3">t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 1, 2]
+print(empatou(t)) #True
+
+t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 1, 0]
+print(empatou(t)) #False
+
+t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 2, 0]
+print(empatou(t)) #False
+
+t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 2, 1]
+print(empatou(t)) #False
+
+t = [
+    1, 2, 1, 
+    1, 2, 1,
+    2, 2, 1]
+print(alguem_venceu(t, 2)) #True
+
+t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 1, 2]
+print(alguem_venceu(t, 2)) #False</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>True
+False
+False
+False
+True
+False
+</pre>
 </div>
 </div>
 </div>
@@ -1615,10 +1732,10 @@ def empatou(tabuleiro):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-3">
+<clipboard-copy for="cell-4">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1633,7 +1750,7 @@ def empatou(tabuleiro):
         <span class="c1"># se foi o meu player que venceu</span>
         <span class="k">return</span> <span class="mi">1000</span>
     <span class="k">elif</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">inverte_player</span><span class="p">(</span><span class="n">my_player</span><span class="p">)):</span>
-        <span class="c1"># se foi o meu adversario</span>
+        <span class="c1"># se foi o meu adversario que venceu</span>
         <span class="k">return</span> <span class="o">-</span><span class="mi">1000</span>
     <span class="k">elif</span> <span class="n">empatou</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -1642,12 +1759,12 @@ def empatou(tabuleiro):
 
     <span class="k">return</span> <span class="mi">0</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3">def f_utilidade(tabuleiro, my_player):
+<div class="clipboard-copy-txt" id="cell-4">def f_utilidade(tabuleiro, my_player):
     if alguem_venceu(tabuleiro, my_player):
         # se foi o meu player que venceu
         return 1000
     elif alguem_venceu(tabuleiro, inverte_player(my_player)):
-        # se foi o meu adversario
+        # se foi o meu adversario que venceu
         return -1000
     elif empatou(tabuleiro):
         return 0
@@ -1660,16 +1777,131 @@ def empatou(tabuleiro):
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-5">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1">#empatou</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'empate: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'empate: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#2 ganhou</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 2 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 1 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1">#1 ganhou</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 2 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 1 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1"># ...</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 2 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 1 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1"># 1 ganhou</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 2 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'para o 1 ganhar: </span><span class="si">{</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5">t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 1, 2] #empatou
+print(f'empate: {f_utilidade(t, 1)}')
+print(f'empate: {f_utilidade(t, 2)}')
+
+t = [
+    1, 2, 1, 
+    1, 2, 1, 
+    2, 2, 0] #2 ganhou
+print(f'para o 2 ganhar: {f_utilidade(t, 2)}')
+print(f'para o 1 ganhar: {f_utilidade(t, 1)}')
+
+t = [
+    1, 0, 0, 
+    2, 1, 2, 
+    0, 0, 1] #1 ganhou
+print(f'para o 2 ganhar: {f_utilidade(t, 2)}')
+print(f'para o 1 ganhar: {f_utilidade(t, 1)}')
+
+t = [
+    1, 0, 0, 
+    2, 1, 2, 
+    0, 0, 0] # ...
+print(f'para o 2 ganhar: {f_utilidade(t, 2)}')
+print(f'para o 1 ganhar: {f_utilidade(t, 1)}')
+
+t = [
+    2, 2, 1, 
+    0, 1, 0, 
+    1, 0, 0] # 1 ganhou
+print(f'para o 2 ganhar: {f_utilidade(t, 2)}')
+print(f'para o 1 ganhar: {f_utilidade(t, 1)}')</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>empate: 0
+empate: 0
+para o 2 ganhar: 1000
+para o 1 ganhar: -1000
+para o 2 ganhar: -1000
+para o 1 ganhar: 1000
+para o 2 ganhar: 0
+para o 1 ganhar: 0
+para o 2 ganhar: -1000
+para o 1 ganhar: 1000
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-4">
+<clipboard-copy for="cell-6">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1690,7 +1922,7 @@ def empatou(tabuleiro):
             <span class="n">sucessores</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">t_temp</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">sucessores</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">import copy
+<div class="clipboard-copy-txt" id="cell-6">import copy
 
 def sucessores(tabuleiro, player):
     sucessores = []
@@ -1705,124 +1937,13 @@ def sucessores(tabuleiro, player):
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-5">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">def</span> <span class="nf">max_value</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">player</span><span class="p">,</span> <span class="n">acao</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">p</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">player</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">f_utilidade</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">my_player</span><span class="p">),</span> <span class="n">acao</span>
-    <span class="n">v</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">inf</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">op</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sucessores</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">player</span><span class="p">):</span>
-        <span class="n">novo</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">min_value</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">inverte_player</span><span class="p">(</span><span class="n">player</span><span class="p">),</span> <span class="n">op</span><span class="p">,</span> <span class="n">my_player</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">novo</span> <span class="o">&gt;=</span> <span class="n">v</span><span class="p">:</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="n">novo</span>
-            <span class="n">acao</span> <span class="o">=</span> <span class="n">op</span>
-    <span class="k">return</span> <span class="n">v</span><span class="p">,</span> <span class="n">acao</span>
-
-
-<span class="k">def</span> <span class="nf">min_value</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">player</span><span class="p">,</span> <span class="n">acao</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">p</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">player</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">f_utilidade</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">my_player</span><span class="p">),</span> <span class="n">acao</span>
-    <span class="n">v</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">inf</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">op</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sucessores</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">player</span><span class="p">):</span>
-        <span class="n">novo</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">inverte_player</span><span class="p">(</span><span class="n">player</span><span class="p">),</span> <span class="n">op</span><span class="p">,</span> <span class="n">my_player</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">novo</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">:</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="n">novo</span>
-            <span class="n">acao</span> <span class="o">=</span> <span class="n">op</span>
-    <span class="k">return</span> <span class="n">v</span><span class="p">,</span> <span class="n">acao</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-5">import math
-
-def max_value(tabuleiro, p, player, acao, my_player):
-    if p == 0 or alguem_venceu(tabuleiro, player):
-        return f_utilidade(tabuleiro, my_player), acao
-    v = -math.inf
-    for (s,op) in sucessores(tabuleiro, player):
-        novo, _ = min_value(s, p-1, inverte_player(player), op, my_player)
-        if novo &gt;= v:
-            v = novo
-            acao = op
-    return v, acao
-
-
-def min_value(tabuleiro, p, player, acao, my_player):
-    if p == 0 or alguem_venceu(tabuleiro, player):
-        return f_utilidade(tabuleiro, my_player), acao
-    v = math.inf
-    for (s,op) in sucessores(tabuleiro, player):
-        novo, _ = max_value(s, p-1, inverte_player(player), op, my_player)
-        if novo &lt;= v:
-            v = novo
-            acao = op
-    return v, acao
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-6">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">my_agent</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span><span class="n">reward</span><span class="p">):</span>
-  <span class="c1">#implementar o meu jogador usando min_max</span>
-  <span class="n">p</span> <span class="o">=</span> <span class="mi">9</span>
-  <span class="n">my_player</span> <span class="o">=</span> <span class="n">obs</span><span class="p">[</span><span class="s1">'mark'</span><span class="p">]</span> <span class="c1">#primeiro a jogar = 1, segundo a jogar = 2</span>
-  <span class="n">v</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">obs</span><span class="p">[</span><span class="s1">'board'</span><span class="p">],</span> <span class="n">p</span><span class="p">,</span> <span class="n">my_player</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">my_player</span><span class="p">)</span>
-  <span class="k">return</span> <span class="n">acao</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-6">def my_agent(obs,reward):
-  #implementar o meu jogador usando min_max
-  p = 9
-  my_player = obs['mark'] #primeiro a jogar = 1, segundo a jogar = 2
-  v, acao = max_value(obs['board'], p, my_player, None, my_player)
-  return acao</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-7">
@@ -1835,9 +1956,58 @@ def min_value(tabuleiro, p, player, acao, my_player):
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">steps</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">"reaction"</span><span class="p">,</span><span class="n">my_agent</span><span class="p">])</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sucessores</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'tabuleiro pai </span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">steps = env.run(["reaction",my_agent])</div>
+<div class="clipboard-copy-txt" id="cell-7">t = [
+    1, 0, 0, 
+    0, 2, 0, 
+    0, 0, 0]
+
+for i in sucessores(t, 1):
+    print(f'tabuleiro pai {t}')
+    print(i)
+    print(f_utilidade(i[0], 1))</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 1, 0, 0, 2, 0, 0, 0, 0], 1)
+0
+tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 0, 1, 0, 2, 0, 0, 0, 0], 2)
+0
+tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 0, 0, 1, 2, 0, 0, 0, 0], 3)
+0
+tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 0, 0, 0, 2, 1, 0, 0, 0], 5)
+0
+tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 0, 0, 0, 2, 0, 1, 0, 0], 6)
+0
+tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 0, 0, 0, 2, 0, 0, 1, 0], 7)
+0
+tabuleiro pai [1, 0, 0, 0, 2, 0, 0, 0, 0]
+([1, 0, 0, 0, 2, 0, 0, 0, 1], 8)
+0
+</pre>
 </div>
 </div>
 </div>
@@ -1849,7 +2019,7 @@ def min_value(tabuleiro, p, player, acao, my_player):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-8">
@@ -1862,9 +2032,617 @@ def min_value(tabuleiro, p, player, acao, my_player):
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">env</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">'ipython'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sucessores</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f_utilidade</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">env.render(mode='ipython', width=200, height=200)</div>
+<div class="clipboard-copy-txt" id="cell-8">t = [
+    1, 0, 0,
+    0, 2, 0, 
+    1, 2, 0]
+for i in sucessores(t, 1):
+    print(i)
+    print(f_utilidade(i[0], 1))</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>([1, 1, 0, 0, 2, 0, 1, 2, 0], 1)
+0
+([1, 0, 1, 0, 2, 0, 1, 2, 0], 2)
+0
+([1, 0, 0, 1, 2, 0, 1, 2, 0], 3)
+1000
+([1, 0, 0, 0, 2, 1, 1, 2, 0], 5)
+0
+([1, 0, 0, 0, 2, 0, 1, 2, 1], 8)
+0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">max_value</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">acao</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">acao</span>
+    <span class="k">if</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">inverte_player</span><span class="p">(</span><span class="n">my_player</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="n">acao</span>
+    <span class="k">if</span> <span class="n">empatou</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="n">acao</span>
+
+    <span class="n">v</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">op</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sucessores</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
+        <span class="n">novo</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">min_value</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">my_player</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">novo</span> <span class="o">&gt;=</span> <span class="n">v</span><span class="p">:</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">novo</span>
+            <span class="n">acao</span> <span class="o">=</span> <span class="n">op</span>
+    <span class="k">return</span> <span class="n">v</span><span class="p">,</span> <span class="n">acao</span>
+
+
+<span class="k">def</span> <span class="nf">min_value</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">acao</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">my_player</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">acao</span>
+    <span class="k">if</span> <span class="n">alguem_venceu</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">inverte_player</span><span class="p">(</span><span class="n">my_player</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="n">acao</span>
+    <span class="k">if</span> <span class="n">empatou</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="n">acao</span>
+
+    <span class="n">v</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">op</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sucessores</span><span class="p">(</span><span class="n">tabuleiro</span><span class="p">,</span> <span class="n">inverte_player</span><span class="p">(</span><span class="n">my_player</span><span class="p">)):</span>
+        <span class="n">novo</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">my_player</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">novo</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">:</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">novo</span>
+            <span class="n">acao</span> <span class="o">=</span> <span class="n">op</span>
+    <span class="k">return</span> <span class="n">v</span><span class="p">,</span> <span class="n">acao</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9">import math
+
+def max_value(tabuleiro, acao, my_player):
+    if alguem_venceu(tabuleiro, my_player):
+        return 1000, acao
+    if alguem_venceu(tabuleiro, inverte_player(my_player)):
+        return -1000, acao
+    if empatou(tabuleiro):
+        return 0, acao
+
+    v = -math.inf
+    for (s,op) in sucessores(tabuleiro, my_player):
+        novo, _ = min_value(s, op, my_player)
+        if novo &gt;= v:
+            v = novo
+            acao = op
+    return v, acao
+
+
+def min_value(tabuleiro, acao, my_player):
+    if alguem_venceu(tabuleiro, my_player):
+        return 1000, acao
+    if alguem_venceu(tabuleiro, inverte_player(my_player)):
+        return -1000, acao
+    if empatou(tabuleiro):
+        return 0, acao
+
+    v = math.inf
+    for (s,op) in sucessores(tabuleiro, inverte_player(my_player)):
+        novo, _ = max_value(s, op, my_player)
+        if novo &lt;= v:
+            v = novo
+            acao = op
+    return v, acao
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-10">t = [
+    1, 0, 0, 
+    0, 2, 0, 
+    1, 2, 0]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1000 3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-11">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11">t = [
+    0, 0, 0, 
+    0, 0, 0, 
+    0, 0, 0]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 8
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-12">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-12">t = [
+    0, 0, 0, 
+    0, 2, 0, 
+    0, 0, 1]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 7
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-13">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-13">t = [
+    1, 2, 0, 
+    0, 2, 0, 
+    0, 0, 1]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 7
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-14">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-14">t = [
+    1, 0, 0, 
+    2, 2, 0, 
+    1, 0, 0]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 5
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-15">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-15">t = [
+    1, 0, 0, 
+    0, 2, 2, 
+    1, 0, 0]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1000 3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-16">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-16">t = [
+    0, 1, 0, 
+    0, 0, 2, 
+    1, 0, 2]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1000 2
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-17">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">valor</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="n">acao</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-17">t = [
+    0, 1, 2, 
+    0, 0, 2, 
+    1, 0, 0]
+valor, acao = max_value(t, None, 1)
+print(valor, acao)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1000 8
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [115]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-18">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">tabuleiro_vazio</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+  <span class="k">return</span> <span class="kc">True</span>
+
+<span class="k">def</span> <span class="nf">my_agent</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span><span class="n">reward</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">tabuleiro_vazio</span><span class="p">(</span><span class="n">obs</span><span class="p">[</span><span class="s1">'board'</span><span class="p">]):</span>
+    <span class="k">return</span> <span class="mi">0</span>
+  <span class="n">my_player</span> <span class="o">=</span> <span class="n">obs</span><span class="p">[</span><span class="s1">'mark'</span><span class="p">]</span> <span class="c1">#primeiro a jogar = 1, segundo a jogar = 2</span>
+  <span class="n">_</span><span class="p">,</span> <span class="n">acao</span> <span class="o">=</span> <span class="n">max_value</span><span class="p">(</span><span class="n">obs</span><span class="p">[</span><span class="s1">'board'</span><span class="p">],</span> <span class="kc">None</span><span class="p">,</span> <span class="n">my_player</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">acao</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-18">def tabuleiro_vazio(t):
+  for i in t:
+      if i != 0:
+        return False
+  return True
+
+def my_agent(obs,reward):
+  if tabuleiro_vazio(obs['board']):
+    return 0
+  my_player = obs['mark'] #primeiro a jogar = 1, segundo a jogar = 2
+  _, acao = max_value(obs['board'], None, my_player)
+  return acao</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-19">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#steps = env.run([my_agent,"random"])</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">"random"</span><span class="p">,</span><span class="n">my_agent</span><span class="p">])</span>
+<span class="n">env</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">'ipython'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-19">#steps = env.run([my_agent,"random"])
+steps = env.run(["random",my_agent])
+env.render(mode='ipython', width=200, height=200)</div>
 </div>
 </div>
 </div>
@@ -1937,7 +2715,7 @@ window.kaggle = {
   &quot;step&quot;: 0,
   &quot;controls&quot;: true,
   &quot;environment&quot;: {
-    &quot;id&quot;: &quot;81635bd8-d95a-11ed-8e0b-71b521c9a77f&quot;,
+    &quot;id&quot;: &quot;c8c931a4-0227-11ef-9f37-df24dfcefdd1&quot;,
     &quot;name&quot;: &quot;tictactoe&quot;,
     &quot;title&quot;: &quot;Tic Tac Toe&quot;,
     &quot;description&quot;: &quot;Classic Tic Tac Toe&quot;,
@@ -2082,7 +2860,7 @@ window.kaggle = {
       ],
       [
         {
-          &quot;action&quot;: 2,
+          &quot;action&quot;: 5,
           &quot;reward&quot;: 0,
           &quot;info&quot;: {},
           &quot;observation&quot;: {
@@ -2091,10 +2869,10 @@ window.kaggle = {
             &quot;board&quot;: [
               0,
               0,
+              0,
+              0,
+              0,
               1,
-              0,
-              0,
-              0,
               0,
               0,
               0
@@ -2125,10 +2903,10 @@ window.kaggle = {
             &quot;board&quot;: [
               0,
               0,
+              0,
+              0,
+              0,
               1,
-              0,
-              0,
-              0,
               0,
               0,
               2
@@ -2150,7 +2928,7 @@ window.kaggle = {
       ],
       [
         {
-          &quot;action&quot;: 4,
+          &quot;action&quot;: 3,
           &quot;reward&quot;: 0,
           &quot;info&quot;: {},
           &quot;observation&quot;: {
@@ -2159,10 +2937,10 @@ window.kaggle = {
             &quot;board&quot;: [
               0,
               0,
-              1,
               0,
               1,
               0,
+              1,
               0,
               0,
               2
@@ -2193,10 +2971,78 @@ window.kaggle = {
             &quot;board&quot;: [
               0,
               0,
+              0,
               1,
+              2,
+              1,
+              0,
+              0,
+              2
+            ],
+            &quot;mark&quot;: 1
+          },
+          &quot;status&quot;: &quot;ACTIVE&quot;
+        },
+        {
+          &quot;action&quot;: 4,
+          &quot;reward&quot;: 0,
+          &quot;info&quot;: {},
+          &quot;observation&quot;: {
+            &quot;remainingOverageTime&quot;: 2,
+            &quot;mark&quot;: 2
+          },
+          &quot;status&quot;: &quot;INACTIVE&quot;
+        }
+      ],
+      [
+        {
+          &quot;action&quot;: 1,
+          &quot;reward&quot;: 0,
+          &quot;info&quot;: {},
+          &quot;observation&quot;: {
+            &quot;remainingOverageTime&quot;: 2,
+            &quot;step&quot;: 5,
+            &quot;board&quot;: [
               0,
               1,
               0,
+              1,
+              2,
+              1,
+              0,
+              0,
+              2
+            ],
+            &quot;mark&quot;: 1
+          },
+          &quot;status&quot;: &quot;INACTIVE&quot;
+        },
+        {
+          &quot;action&quot;: 0,
+          &quot;reward&quot;: 0,
+          &quot;info&quot;: {},
+          &quot;observation&quot;: {
+            &quot;remainingOverageTime&quot;: 2,
+            &quot;mark&quot;: 2
+          },
+          &quot;status&quot;: &quot;ACTIVE&quot;
+        }
+      ],
+      [
+        {
+          &quot;action&quot;: 0,
+          &quot;reward&quot;: 0,
+          &quot;info&quot;: {},
+          &quot;observation&quot;: {
+            &quot;remainingOverageTime&quot;: 2,
+            &quot;step&quot;: 6,
+            &quot;board&quot;: [
+              0,
+              1,
+              0,
+              1,
+              2,
+              1,
               0,
               2,
               2
@@ -2218,20 +3064,54 @@ window.kaggle = {
       ],
       [
         {
-          &quot;action&quot;: 6,
-          &quot;reward&quot;: 1,
+          &quot;action&quot;: 2,
+          &quot;reward&quot;: 0,
           &quot;info&quot;: {},
           &quot;observation&quot;: {
             &quot;remainingOverageTime&quot;: 2,
-            &quot;step&quot;: 5,
+            &quot;step&quot;: 7,
             &quot;board&quot;: [
               0,
-              0,
+              1,
+              1,
+              1,
+              2,
               1,
               0,
-              1,
+              2,
+              2
+            ],
+            &quot;mark&quot;: 1
+          },
+          &quot;status&quot;: &quot;INACTIVE&quot;
+        },
+        {
+          &quot;action&quot;: 0,
+          &quot;reward&quot;: 0,
+          &quot;info&quot;: {},
+          &quot;observation&quot;: {
+            &quot;remainingOverageTime&quot;: 2,
+            &quot;mark&quot;: 2
+          },
+          &quot;status&quot;: &quot;ACTIVE&quot;
+        }
+      ],
+      [
+        {
+          &quot;action&quot;: 0,
+          &quot;reward&quot;: -1,
+          &quot;info&quot;: {},
+          &quot;observation&quot;: {
+            &quot;remainingOverageTime&quot;: 2,
+            &quot;step&quot;: 8,
+            &quot;board&quot;: [
               0,
               1,
+              1,
+              1,
+              2,
+              1,
+              2,
               2,
               2
             ],
@@ -2240,8 +3120,8 @@ window.kaggle = {
           &quot;status&quot;: &quot;DONE&quot;
         },
         {
-          &quot;action&quot;: 0,
-          &quot;reward&quot;: -1,
+          &quot;action&quot;: 6,
+          &quot;reward&quot;: 1,
           &quot;info&quot;: {},
           &quot;observation&quot;: {
             &quot;remainingOverageTime&quot;: 2,
@@ -2252,8 +3132,8 @@ window.kaggle = {
       ]
     ],
     &quot;rewards&quot;: [
-      1,
-      -1
+      -1,
+      1
     ],
     &quot;statuses&quot;: [
       &quot;DONE&quot;,
@@ -2267,7 +3147,7 @@ window.kaggle = {
     [],
     [
       {
-        &quot;duration&quot;: 2e-05,
+        &quot;duration&quot;: 9.9e-05,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       },
@@ -2276,14 +3156,14 @@ window.kaggle = {
     [
       {},
       {
-        &quot;duration&quot;: 0.307309,
+        &quot;duration&quot;: 0.275381,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       }
     ],
     [
       {
-        &quot;duration&quot;: 2.5e-05,
+        &quot;duration&quot;: 6e-06,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       },
@@ -2292,7 +3172,7 @@ window.kaggle = {
     [
       {},
       {
-        &quot;duration&quot;: 0.005143,
+        &quot;duration&quot;: 0.004589,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       }
@@ -2308,7 +3188,72 @@ window.kaggle = {
     [
       {},
       {
-        &quot;duration&quot;: 0.000189,
+        &quot;duration&quot;: 0.000156,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [],
+    [
+      {
+        &quot;duration&quot;: 9e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.272212,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 7e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.004286,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 6e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.000294,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 5e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 3.1e-05,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       }
@@ -2324,7 +3269,7 @@ window.kaggle = {
     [],
     [
       {
-        &quot;duration&quot;: 4.1e-05,
+        &quot;duration&quot;: 1.9e-05,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       },
@@ -2333,14 +3278,14 @@ window.kaggle = {
     [
       {},
       {
-        &quot;duration&quot;: 0.340567,
+        &quot;duration&quot;: 0.292808,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       }
     ],
     [
       {
-        &quot;duration&quot;: 2e-05,
+        &quot;duration&quot;: 6e-06,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       },
@@ -2349,18 +3294,229 @@ window.kaggle = {
     [
       {},
       {
-        &quot;duration&quot;: 0.005903,
+        &quot;duration&quot;: 0.005081,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       }
     ],
     [
       {
-        &quot;duration&quot;: 9e-06,
+        &quot;duration&quot;: 6e-06,
         &quot;stdout&quot;: &quot;&quot;,
         &quot;stderr&quot;: &quot;&quot;
       },
       {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.000152,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [],
+    [
+      {
+        &quot;duration&quot;: 1e-05,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.285246,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 7e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.006253,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 6e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.000209,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 5e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 2.7e-05,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 4e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [],
+    [
+      {
+        &quot;duration&quot;: 1e-05,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.277413,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 6e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.004612,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 6e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.00021,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 6e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 2.6e-05,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [],
+    [
+      {
+        &quot;duration&quot;: 2.9e-05,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.273748,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 7e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.003901,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 5e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 0.000135,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
+    ],
+    [
+      {
+        &quot;duration&quot;: 6e-06,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      },
+      {}
+    ],
+    [
+      {},
+      {
+        &quot;duration&quot;: 1.5e-05,
+        &quot;stdout&quot;: &quot;&quot;,
+        &quot;stderr&quot;: &quot;&quot;
+      }
     ]
   ],
   &quot;mode&quot;: &quot;ipython&quot;,
@@ -3289,10 +4445,10 @@ async function renderer(context) {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-9">
+<clipboard-copy for="cell-20">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3302,9 +4458,189 @@ async function renderer(context) {
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">kaggle_environments</span> <span class="kn">import</span> <span class="n">evaluate</span>
+
+<span class="n">environment</span> <span class="o">=</span> <span class="s1">'tictactoe'</span>
+<span class="n">configuration</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">agents</span> <span class="o">=</span> <span class="p">[</span><span class="n">my_agent</span><span class="p">,</span> <span class="s2">"random"</span><span class="p">]</span>
+<span class="n">num_episodes</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">jogos</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">environment</span><span class="p">,</span> <span class="n">agents</span><span class="p">,</span> <span class="n">configuration</span><span class="p">,</span> <span class="n">steps</span><span class="p">,</span> <span class="n">num_episodes</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-9"></div>
+<div class="clipboard-copy-txt" id="cell-20">from kaggle_environments import evaluate
+
+environment = 'tictactoe'
+configuration = {}
+steps = []
+agents = [my_agent, "random"]
+num_episodes = 100
+
+jogos = evaluate(environment, agents, configuration, steps, num_episodes)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [127]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-21">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">vitorias</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">derrotas</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">empates</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">jogos</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">vitorias</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">empates</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">derrotas</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'vitorias: </span><span class="si">{</span><span class="n">vitorias</span><span class="si">}</span><span class="s1">, derrotas: </span><span class="si">{</span><span class="n">derrotas</span><span class="si">}</span><span class="s1">, empates: </span><span class="si">{</span><span class="n">empates</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-21">vitorias = 0
+derrotas = 0
+empates = 0
+for i in jogos:
+    if i[0] == 1:
+        vitorias += 1
+    elif i[0] == 0:
+        empates += 1
+    else:
+        derrotas += 1
+
+print(f'vitorias: {vitorias}, derrotas: {derrotas}, empates: {empates}')
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>vitorias: 100, derrotas: 0, empates: 0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-22">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">environment</span> <span class="o">=</span> <span class="s1">'tictactoe'</span>
+<span class="n">configuration</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">agents</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"random"</span><span class="p">,</span> <span class="n">my_agent</span><span class="p">]</span>
+<span class="n">num_episodes</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">jogos2</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">environment</span><span class="p">,</span> <span class="n">agents</span><span class="p">,</span> <span class="n">configuration</span><span class="p">,</span> <span class="n">steps</span><span class="p">,</span> <span class="n">num_episodes</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-22">environment = 'tictactoe'
+configuration = {}
+steps = []
+agents = ["random", my_agent]
+num_episodes = 100
+
+jogos2 = evaluate(environment, agents, configuration, steps, num_episodes)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [125]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-23">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">vitorias</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">derrotas</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">empates</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">jogos2</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">vitorias</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">empates</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">derrotas</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'vitorias: </span><span class="si">{</span><span class="n">vitorias</span><span class="si">}</span><span class="s1">, derrotas: </span><span class="si">{</span><span class="n">derrotas</span><span class="si">}</span><span class="s1">, empates: </span><span class="si">{</span><span class="n">empates</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-23">vitorias = 0
+derrotas = 0
+empates = 0
+for i in jogos2:
+    if i[1] == 1:
+        vitorias += 1
+    elif i[1] == 0:
+        empates += 1
+    else:
+        derrotas += 1
+
+print(f'vitorias: {vitorias}, derrotas: {derrotas}, empates: {empates}')</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>vitorias: 78, derrotas: 0, empates: 22
+</pre>
 </div>
 </div>
 </div>
@@ -3338,7 +4674,7 @@ async function renderer(context) {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2024</span>
   </span>
 
     
