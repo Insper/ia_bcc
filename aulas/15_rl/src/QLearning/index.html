@@ -16,7 +16,7 @@
     
     
       
-        <title>N QueensProblem - Inteligência Artificial e Robótica</title>
+        <title>QLearning - Inteligência Artificial e Robótica</title>
       
     
     
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              N QueensProblem
+              QLearning
             
           </span>
         </div>
@@ -572,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../12_csp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -742,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../15_rl/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1222,7 +1222,7 @@
                   
 
 
-  <h1>N QueensProblem</h1>
+  <h1>QLearning</h1>
 
 <script>
 (function (global, factory) {
@@ -1659,19 +1659,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </style>
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21f07a14">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Implements a solution for N-queens problem, where N could
-be any number between 4 and 10.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=40363695">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a291287e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1689,26 +1678,24 @@ be any number between 4 and 10.</p>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">aigyminsper.search.CSPAlgorithms</span> <span class="kn">import</span> <span class="n">SubidaMontanha</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.CSPAlgorithms</span> <span class="kn">import</span> <span class="n">SubidaMontanhaEstocastico</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.Graph</span> <span class="kn">import</span> <span class="n">State</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">savetxt</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from aigyminsper.search.CSPAlgorithms import SubidaMontanha
-from aigyminsper.search.CSPAlgorithms import SubidaMontanhaEstocastico
-from aigyminsper.search.Graph import State
-import numpy as np
+<div class="clipboard-copy-txt" id="cell-1">import numpy as np
 import random
-import time</div>
+from numpy import savetxt
+import sys
+import matplotlib.pyplot as plt</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=11665640">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bb089af0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1726,235 +1713,125 @@ import time</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">N_QueensProblem</span><span class="p">(</span><span class="n">State</span><span class="p">):</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">QLearning</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">board</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">board</span> <span class="o">=</span> <span class="n">board</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">epsilon_min</span><span class="p">,</span> <span class="n">epsilon_dec</span><span class="p">,</span> <span class="n">episodes</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">=</span> <span class="n">env</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">env</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">env</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">n</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gamma</span> <span class="o">=</span> <span class="n">gamma</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">=</span> <span class="n">epsilon</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_min</span> <span class="o">=</span> <span class="n">epsilon_min</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_dec</span> <span class="o">=</span> <span class="n">epsilon_dec</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">episodes</span> <span class="o">=</span> <span class="n">episodes</span>
 
-    <span class="k">def</span> <span class="nf">env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span>
-    
-    <span class="k">def</span> <span class="nf">successors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">sucessores</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-                <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
-                    <span class="c1">#move up</span>
-                    <span class="k">if</span><span class="p">((</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-                        <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-                        <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-                        <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-                        <span class="n">sucessores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">N_QueensProblem</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
-                    <span class="c1">#move down</span>
-                    <span class="k">if</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-                        <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-                        <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-                        <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-                        <span class="n">sucessores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">N_QueensProblem</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
-                    <span class="c1">#move left</span>
-                    <span class="c1">#if((j - 1) &gt;=0 and self.board[i][j-1] == 0):</span>
-                    <span class="c1">#    temp = self.board.copy()</span>
-                    <span class="c1">#    temp[i][j] = 0</span>
-                    <span class="c1">#    temp[i][j-1] = 1</span>
-                    <span class="c1">#    sucessores.append(N_QueensProblem(self.size, temp))</span>
-                    <span class="c1">#move right</span>
-                    <span class="c1">#if((j + 1) &lt; self.size and self.board[i][j+1] == 0):</span>
-                    <span class="c1">#    temp = self.board.copy()</span>
-                    <span class="c1">#    temp[i][j] = 0</span>
-                    <span class="c1">#    temp[i][j+1] = 1</span>
-                    <span class="c1">#    sucessores.append(N_QueensProblem(self.size, temp))</span>
-        <span class="k">return</span> <span class="n">sucessores</span>
-                      
-    <span class="k">def</span> <span class="nf">is_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">h</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    
-    <span class="k">def</span> <span class="nf">description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">"Queens Problem"</span>
-    
-    <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="mi">1</span>
-    
-    <span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1">#TODO</span>
-        <span class="k">pass</span>
+    <span class="k">def</span> <span class="nf">select_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+        <span class="n">rv</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rv</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span> <span class="c1"># Explore action space</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">])</span> <span class="c1"># Exploit learned values</span>
 
-    <span class="k">def</span> <span class="nf">randomState</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">board</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generateBoard</span><span class="p">()</span>
-        <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">validBoard</span><span class="p">():</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">board</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generateBoard</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plotFile</span><span class="p">):</span>
+        <span class="n">actions_per_episode</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">episodes</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+            <span class="n">rewards</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">done</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">actions</span> <span class="o">=</span> <span class="mi">0</span>
 
-    <span class="k">def</span> <span class="nf">generateBoard</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="p">)</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-            <span class="n">line</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-            <span class="c1">#column = random.randrange(0, self.size)</span>
-            <span class="n">board</span><span class="p">[</span><span class="n">line</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">return</span> <span class="n">board</span>
+            <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+                <span class="n">action</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_action</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+                <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">truncated</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span> 
+        
+                <span class="c1"># Adjust Q value for current state</span>
+                <span class="n">old_value</span> <span class="o">=</span> <span class="c1">#pegar o valor na q-table para a combinacao action e state</span>
+                <span class="n">next_max</span> <span class="o">=</span> <span class="c1">#maior valor na q-table para o proximo estado</span>
+                <span class="n">new_value</span> <span class="o">=</span> <span class="c1">#calcula o novo valor</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_value</span>
+                <span class="c1"># atualiza para o novo estado</span>
+                <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+                <span class="n">actions</span><span class="o">=</span><span class="n">actions</span><span class="o">+</span><span class="mi">1</span>
+                <span class="n">rewards</span><span class="o">=</span><span class="n">rewards</span><span class="o">+</span><span class="n">reward</span>
 
-    <span class="k">def</span> <span class="nf">validBoard</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="p">)</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">:</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">return</span> <span class="kc">True</span>
+            <span class="n">actions_per_episode</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Episodes: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span><span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+            
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_min</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_dec</span>
+
+        <span class="n">savetxt</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">plotFile</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">plotactions</span><span class="p">(</span><span class="n">plotFile</span><span class="p">,</span> <span class="n">actions_per_episode</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span>
+
+    <span class="k">def</span> <span class="nf">plotactions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plotFile</span><span class="p">,</span> <span class="n">actions_per_episode</span><span class="p">):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">actions_per_episode</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Episodes'</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'# Actions'</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'# Actions vs Episodes'</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">plotFile</span><span class="o">+</span><span class="s2">".jpg"</span><span class="p">)</span>     
+        <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">class N_QueensProblem(State):
+<div class="clipboard-copy-txt" id="cell-2">class QLearning:
 
-    def __init__(self, size, board):
-        self.size = size
-        self.board = board
+    def __init__(self, env, alpha, gamma, epsilon, epsilon_min, epsilon_dec, episodes):
+        self.env = env
+        self.q_table = np.zeros([env.observation_space.n, env.action_space.n])
+        self.alpha = alpha
+        self.gamma = gamma
+        self.epsilon = epsilon
+        self.epsilon_min = epsilon_min
+        self.epsilon_dec = epsilon_dec
+        self.episodes = episodes
 
-    def env(self):
-        return self.board
-    
-    def successors(self):
-        sucessores = []
-        for i in range(0,self.size):
-            for j in range(0,self.size):
-                if(self.board[i][j] == 1):
-                    #move up
-                    if((i - 1) &gt;=0 and self.board[i-1][j] == 0):
-                        temp = self.board.copy()
-                        temp[i][j] = 0
-                        temp[i-1][j] = 1
-                        sucessores.append(N_QueensProblem(self.size, temp))
-                    #move down
-                    if((i + 1) &lt; self.size and self.board[i+1][j] == 0):
-                        temp = self.board.copy()
-                        temp[i][j] = 0
-                        temp[i+1][j] = 1
-                        sucessores.append(N_QueensProblem(self.size, temp))
-                    #move left
-                    #if((j - 1) &gt;=0 and self.board[i][j-1] == 0):
-                    #    temp = self.board.copy()
-                    #    temp[i][j] = 0
-                    #    temp[i][j-1] = 1
-                    #    sucessores.append(N_QueensProblem(self.size, temp))
-                    #move right
-                    #if((j + 1) &lt; self.size and self.board[i][j+1] == 0):
-                    #    temp = self.board.copy()
-                    #    temp[i][j] = 0
-                    #    temp[i][j+1] = 1
-                    #    sucessores.append(N_QueensProblem(self.size, temp))
-        return sucessores
-                      
-    def is_goal(self):
-        if self.h() == 0:
-            return True
-        return False
-    
-    def description(self):
-        return "Queens Problem"
-    
-    def cost(self):
-        return 1
-    
-    def h(self):
-        #TODO
-        pass
+    def select_action(self, state):
+        rv = random.uniform(0, 1)
+        if rv &lt; self.epsilon:
+            return self.env.action_space.sample() # Explore action space
+        return np.argmax(self.q_table[state]) # Exploit learned values
 
-    def randomState(self):
-        self.board = self.generateBoard()
-        while not self.validBoard():
-            self.board = self.generateBoard()
+    def train(self, filename, plotFile):
+        actions_per_episode = []
+        for i in range(1, self.episodes+1):
+            (state, _) = self.env.reset()
+            rewards = 0
+            done = False
+            actions = 0
 
-    def generateBoard(self):
-        board = np.zeros( (self.size,self.size) )
-        for i in range(0,self.size):
-            line = random.randrange(0, self.size)
-            #column = random.randrange(0, self.size)
-            board[line,i] = 1
-        return board
+            while not done:
+                action = self.select_action(state)
+                next_state, reward, done, truncated, _ = self.env.step(action) 
+        
+                # Adjust Q value for current state
+                old_value = #pegar o valor na q-table para a combinacao action e state
+                next_max = #maior valor na q-table para o proximo estado
+                new_value = #calcula o novo valor
+                self.q_table[state, action] = new_value
+                # atualiza para o novo estado
+                state = next_state
+                actions=actions+1
+                rewards=rewards+reward
 
-    def validBoard(self):
-        if np.sum(self.board) != self.size:
-            return False
-        return True</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e011f7f3">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Digite o tamanho do tabuleiro (4-10): "</span><span class="p">))</span>
-    <span class="n">state</span> <span class="o">=</span> <span class="n">N_QueensProblem</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="n">N</span><span class="p">,</span> <span class="n">board</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
-    <span class="n">state</span><span class="o">.</span><span class="n">randomState</span><span class="p">()</span>
-    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">SubidaMontanhaEstocastico</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Initial state with h = "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">state</span><span class="o">.</span><span class="n">h</span><span class="p">()))</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">env</span><span class="p">())</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'Final state with h = '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">h</span><span class="p">()))</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'Duration in seconds = '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">))</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'Nao achou solucao'</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-3">def main():
-    N = int(input("Digite o tamanho do tabuleiro (4-10): "))
-    state = N_QueensProblem(size = N, board = None)
-    state.randomState()
-    algorithm = SubidaMontanhaEstocastico()
-    print("Initial state with h = "+str(state.h()))
-    start = time.time()
-    result = algorithm.search(state)
-    end = time.time()
-    if result != None:
-        print(result.env())
-        print('Final state with h = '+str(result.h()))
-        print('Duration in seconds = '+str(end-start))
-    else:
-        print('Nao achou solucao')</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=825fb486">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-4">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-4">if __name__ == '__main__':
-    main()</div>
+            actions_per_episode.append(actions)
+            if i % 100 == 0:
+                sys.stdout.write("Episodes: " + str(i) +'\r')
+                sys.stdout.flush()
+            
+            if self.epsilon &gt; self.epsilon_min:
+                self.epsilon = self.epsilon * self.epsilon_dec
+
+        savetxt(filename, self.q_table, delimiter=',')
+        if (plotFile is not None): self.plotactions(plotFile, actions_per_episode)
+        return self.q_table
+
+    def plotactions(self, plotFile, actions_per_episode):
+        plt.plot(actions_per_episode)
+        plt.xlabel('Episodes')
+        plt.ylabel('# Actions')
+        plt.title('# Actions vs Episodes')
+        plt.savefig(plotFile+".jpg")     
+        plt.close()</div>
 </div>
 </div>
 </div>
@@ -1984,7 +1861,7 @@ import time</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 11, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2024</span>
   </span>
 
     
