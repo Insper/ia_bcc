@@ -31,8 +31,8 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| [Planejando rotas para um entregador](./projetos/11_delivery/index.md): solução completa | TBD |
-| TBD                                        | TBD          |
+| [Planejando rotas para um entregador](./projetos/11_delivery/index.md): solução completa | 10/04/2024 |
+| [Trabalhando com ambiente não determinístico](./projetos/15_rl/index.md)        |   09/05/2024        |
 
 
 ## Conversão de conceito para valor numérico
