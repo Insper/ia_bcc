@@ -2,7 +2,7 @@
 
 Ainda considerando o exemplo a implementação do `TaxiDriver`, responda as perguntas abaixo.
 
-Para responder as questões abaixo utilize as implementações do `TaxiDriverGym.py`, que está no diretório `src/part_02` e o arquivo `QLearning.py` que você implementou na atividade anterior.
+Para responder as questões abaixo utilize as implementações do `TaxiDriverGym.py` e o arquivo `QLearning.py` que você implementou na atividade anterior.
 
 ## Manipulando $\alpha$ e $\gamma$
 
@@ -96,4 +96,10 @@ Segue abaixo um exemplo de gráfico muito bem formatado e completo. Este gráfic
 
 -->
 
+Outro exemplo de gráfico muito bem feito é apresentado abaixo [^2]:
+
+<img src="figures/compare_2.png" alt="Curva de aprendizado" style="height: 400px;"/>
+
+
 [^1]: Este gráfico foi feito pela Letícia, aluna de Engenharia da Computação, durante a disciplina eletiva de *Reinforcement Learning*.  
+[^2]: Stefano V. Albrecht, Filippos Christianos, and Lukas Schäfer. [Multi-Agent Reinforcement Learning: Foundations and Modern Approaches](https://www.marl-book.com/). MIT Press, 2024.

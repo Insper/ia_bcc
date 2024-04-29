@@ -41,24 +41,12 @@ nav:
       - 'aulas/14_tictactoe/index.md'
 
 ##    - 'aulas/14_competicao/index.md'
-#    - 'Aprendizagem por reforço':
-#      - 'aulas/15_rl/index.md'
-#      - 'aulas/15_rl_parte2/index.md'
-#      - 'aulas/15_rl_sarsa/index.md'
-#      - 'aulas/15_xnon_determ/index.md'
-##     - 'aulas/15_rl/exercicio1.md'
-##     - 'aulas/15_rl/exercicio2.md'
-##    - 'aulas/99_topicos/index.md'
-  - 'Referências':
-    - 'referencias/01_introducao/index.md'
-    - 'referencias/03_algoritmos_busca/index.md'
-    - 'referencias/03_csp/index.md'
-#    - 'referencias/03_dijkstra/index.md'
-    - 'referencias/04_busca_competitiva/index.md'
-#    - 'referencias/05_jogos/index.md'
-#    - 'referencias/06_rl/index.md'
-  - 'Exercícios e avaliações antigas':
-    - 'exercicios/index.md'
+    - 'Aprendizagem por reforço':
+      - 'aulas/15_rl/index.md'
+      - 'aulas/15_rl_parte2/index.md'
+      - 'aulas/15_rl_sarsa/index.md'
+##      - 'aulas/15_xnon_determ/index.md'
+
   - 'Avaliações atuais':
     - 'avaliacoes/2024_1_intermediaria/index.md'
 #    - 'avaliacoes/2023_2_final/index.md'
@@ -66,8 +54,23 @@ nav:
 #    - 'avaliacoes/2023_2_sub/index.md'
   - 'Projetos atuais':
     - 'projetos/11_delivery/index.md'
-#    - 'projetos/15_rl/index.md'
+    - 'projetos/15_rl/index.md'
 ##    - 'projetos/16_robo/index.md'
+
+
+##   - 'Tópicos sobre IA':
+##    - 'aulas/99_topicos/index.md'
+  - 'Referências':
+    - 'referencias/01_introducao/index.md'
+    - 'referencias/03_algoritmos_busca/index.md'
+    - 'referencias/03_csp/index.md'
+#    - 'referencias/03_dijkstra/index.md'
+    - 'referencias/04_busca_competitiva/index.md'
+    - 'referencias/05_jogos/index.md'
+    - 'referencias/06_rl/index.md'
+  - 'Exercícios e avaliações antigas':
+    - 'exercicios/index.md'
+
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
