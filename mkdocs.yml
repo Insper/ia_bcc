@@ -70,6 +70,8 @@ nav:
     - 'referencias/06_rl/index.md'
   - 'Exercícios e avaliações antigas':
     - 'exercicios/index.md'
+  
+  - 'Comentários': 'comentarios.md'
 
 
 extra_javascript:
