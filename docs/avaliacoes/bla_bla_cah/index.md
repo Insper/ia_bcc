@@ -195,7 +195,7 @@ Para os nodos terminais, temos:
 
 **Qual a ação o agente irá executar?**
 
-### Analisando ambientes (1 ponto)
+### 5. Analisando ambientes (1 ponto)
 
 Ao longo do semestre fizemos algumas implementações, entre elas: busca de menor caminho entre duas cidades, um agente jogador de jogo da velha e um agente que é capaz de andar em um lago congelado. 
 
