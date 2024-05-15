@@ -156,7 +156,7 @@ Você deve:
 
 Além da implementação, entregue via o arquivo `Otimizacao.py`, você deve informar **qual é o valor de $x$ que minimiza o valor de retorno da função acima**. Explique a sua implementação. 
 
-## 4. Problema de tomada de decisão (1 ponto)
+### 4. Problema de tomada de decisão (1 ponto)
 
 Considere a árvore abaixo. 
 
@@ -195,13 +195,13 @@ Para os nodos terminais, temos:
 
 **Qual a ação o agente irá executar?**
 
-## Analisando ambientes (1 ponto)
+### Analisando ambientes (1 ponto)
 
 Ao longo do semestre fizemos algumas implementações, entre elas: busca de menor caminho entre duas cidades, um agente jogador de jogo da velha e um agente que é capaz de andar em um lago congelado. 
 
 Considerando cada um destes ambientes, responda se os mesmos são determinísticos ou estocásticos, single ou multi-agentes, e diga qual foi o algoritmo utilizado para implementar a solução. 
 
-# Entrega
+## Entrega
 
 Ao final da prova, você deverá submeter o seu projeto no Github Classroom. Este projeto deve ter todos os arquivos originais mais os arquivos que você implementou.
 
