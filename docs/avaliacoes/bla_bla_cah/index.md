@@ -127,7 +127,7 @@ g_loc = self.env.to_s(x_goal, y_goal)
 
 4. Se deixarmos o objetivo em uma posição diferente a cada simulação, o agente consegue alcançar o objetivo? Quais seriam os hiperparâmetros necessários? Justifique a sua resposta. Dica: dependendo dos hipeparâmetros escolhidos esta execução pode demorar algum tempo. Se bem justificada a sua resposta, talvez não seja necessário executar o código.
 
-Dica: você pode comentar as linhas 19, 20 e 21 do arquivo `TreinandoAgente.py` e as linhas 32, 33 e 34 do arquivo `QLearning.py` para testar esta hipótese. Não esqueça de descomentar as linhas 22 do arquivo `TreinandoAgente.py` e a linha 35 do arquivo `QLearning.py`. Você pode usar os gráficos gerados no arquivo `analise_dados_treinamento.ipynb` para justificar a sua resposta.
+Dica: você pode comentar as linhas 19, 20 e 21 do arquivo `TreinandoAgente.py` e as linhas 32, 33 e 34 do arquivo `QLearning.py` para testar esta hipótese. Não esqueça de descomentar as linhas 22 do arquivo `TreinandoAgente.py` e a linha 35 do arquivo `QLearning.py`. Você pode usar os gráficos gerados no arquivo [analise_dados_treinamento.ipynb](./src/analise_dados_treinamento.ipynb) para justificar a sua resposta.
 
 
 ### 3. Problema de otimização (2 pontos)
