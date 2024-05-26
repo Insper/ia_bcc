@@ -50,7 +50,7 @@ nav:
   - 'Avaliações atuais':
     - 'avaliacoes/2024_1_intermediaria/index.md'
     - 'avaliacoes/2024_1_final/index.md'
-#    - 'avaliacoes/gabarito/index.md'
+    - 'avaliacoes/gabarito/index.md'
 #    - 'avaliacoes/2023_2_sub/index.md'
   - 'Projetos atuais':
     - 'projetos/11_delivery/index.md'
