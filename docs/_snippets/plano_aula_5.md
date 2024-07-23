@@ -8,22 +8,22 @@
   </thead>
   <tbody>
     <tr>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">10-Abril</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">14-Out</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">O que é aprendizagem por reforço? Qual a sua relação com o desenvolvimento de agentes autônomos?</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Discussão em sala.</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">15-Abril</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">16-Out</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Onde é possível executar agentes implementados utilizando aprendizagem por reforço?</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Exercícios em sala de aula envolvendo o ambiente OpenAI Gym.</td>
     </tr>
     <tr>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">17-Abril</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">21-Out</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Quais são os limites e detalhes do algoritmo Q-Learning?</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de agentes autônomos usando o algoritmo Q-Learning.</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">22-Abril</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">23-Out</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Reinforcement Learning: métodos tabulares</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de agentes autônomos usando o algoritmo Q-Learning e Sarsa</td>
     </tr>
