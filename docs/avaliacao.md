@@ -12,7 +12,7 @@ Os objetivos de aprendizagem desta disciplina serão avaliados através das segu
 O critério para aprovação é:
 
 * nota final superior ou igual a cinco (5);
-* a média das avaliações intermediária e final deve ser igual ou maior que quatro (4);
+* a média das avaliações intermediária e final deve ser igual ou maior que cinco (5);
 * e 75% de frequência mínima nas aulas. 
 
 ## *N* exercícios sobre agentes autônomos
@@ -21,10 +21,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| [Laboratório sobre Busca em Largura e Profundidade](aulas/04_x_buscas/index.md#atividade-de-laboratório)  | 03/03/2024          |
-| [Laboratório sobre algoritmos de busca cega](aulas/08_heuristica/index.md#entrega-do-exercício)                                | 10/03/2024          |
-| [Planejando rotas para um entregador](./projetos/11_delivery/index.md) | 20/03/2024 |
-| [Ambiente competitivo](aulas/14_tictactoe/index.md#atividade-de-laboratório) | 22/04/2024 |
+| TBD |  TBD         |
 
 ## 2 projetos
 
@@ -32,9 +29,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| [Planejando rotas para um entregador](./projetos/11_delivery/index.md): solução completa | 10/04/2024 |
-| [Trabalhando com ambiente não determinístico](./projetos/15_rl/index.md)        |   09/05/2024        |
-
+| TBD | TBD |
 
 ## Conversão de conceito para valor numérico
 
