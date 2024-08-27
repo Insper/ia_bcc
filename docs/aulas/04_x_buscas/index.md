@@ -91,24 +91,22 @@ No caso do algoritmo em profundidade, teste duas versões ($m = 10$ e $m = 100$)
 
 Armazene o tempo de processamento criando uma tabela similar a esta: 
 
-| Algoritmo | Objetivo | Tempo de processamento |
+| Algoritmo | Objetivo | Tempo de processamento em segundos |
 |:----------|:--------:|:----------------------:|
-| Busca em Largura | 1 | 0:00:00.000036 |
+| Busca em Largura | 1 | 0.000036 |
 | Busca em Largua | $\cdots$ | $\cdots$ |
-| Busca em Largura| 10 | 0:00:00.000378 |
+| Busca em Largura| 10 | 0.000378 |
 | Busca em Largura | 50 | $\cdots$ | 
-| Busca em Profundidade com $m= 10$ | 1 | 0:00:00.000033 |
+| Busca em Profundidade com $m= 10$ | 1 | 0.000033 |
 | Busca em Produndidade com $m= 10$ | $\cdots$ | $\cdots$ |
 | Busca em Produndidade com $m= 100$ | $\cdots$ | $\cdots$ |
 | Busca em Profundidade Iterativa |  1 | $\cdots$ |
 | Busca em Profundidade Iterativa |  $\cdots$ | $\cdots$ |
 | Busca em Profundidade Iterativa |  50 | $\cdots$ |
 
-Em alguns casos a combinação do algoritmo com o objetivo não fornece um resultado. Você deve informar na tabela estes casos. 
+Em alguns casos a combinação do algoritmo com o objetivo não fornece um resultado. Você deve informar na tabela estes casos. Nestas situações você deve colocar o tempo de processamento como NaN, ou seja, valor faltante. De forma alguma você pode colocar o valor zero nestas situações. Utilize os conhecimentos adquiridos na disciplina de Ciência de Dados do semestre passado e faça um *plot* destes dados em um único gráfico. 
 
-Utilize os conhecimentos adquiridos na disciplina de Ciência de Dados do semestre passado e faça um *plot* destes dados em um único gráfico. 
-
-Em um documento, coloque a tabela, o gráfico e responda as seguintes perguntas: 
+**Em um documento, coloque a tabela, o gráfico e responda as seguintes perguntas**: 
 
 * Segundo o que discutimos em sala de aula, quais destes algoritmos são **ótimos**? Os resultado encontrados neste exercício são coerentes com está informação? Justifique a sua resposta.
 
@@ -118,7 +116,7 @@ Em um documento, coloque a tabela, o gráfico e responda as seguintes perguntas:
 
 * Qual é o algoritmo que tem um tempo de processamento menor? Justifique a sua resposta. 
 
-Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard. A atividade já está disponível no Blackboard e o prazo para entrega é até amanhã, dia **03/03/2024** (domingo) até às 23:30 horas.
+Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard. A atividade já está disponível no Blackboard e o prazo para entrega é até sexta, dia **30/08/2024** até às 23:30 horas.
 
 ## Rubrica de avaliação
 
@@ -130,19 +128,13 @@ Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard.
 | D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela completa ou *plot*.|   
 
 
+<!--
+
 ## Comentários sobre os trabalhos entregues :new:
 
 Pessoal, 
 
-Depois de avaliar os trabalhos entregues por vocês, gostaria de fazer os seguintes comentários: 
-
-* sempre é bom persistir os resultados das simulações. Desta maneira você ou outra pessoa não precisam re-executar novamente todos os experimentos. Para persistir os dados talvez a forma mais simples seja armazenando os dados em um CSV. 
-
-* se você persistir os dados então você deve sempre enviar os dados junto com o relatório. Não adianta persistir os dados e não encaminhar eles junto com o relatório. 
-
-* quando uma simulação não termina (por excesso de tempo ou estouro de memória) vocês não podem colocar zero para o tempo de processamento. Vocês devem sempre colocar algo como valor faltante (NA) ou outro indicador de que este dado não foi possível de ser gerado. 
-
-Além disso, seguem três exemplos de plots bem formados e completos: 
+Seguem três exemplos de plots bem formados e completos: 
 
 <img src="figuras/esdras_convencional.png" width="800" height="600">
 
@@ -151,3 +143,5 @@ Além disso, seguem três exemplos de plots bem formados e completos:
 <img src="figuras/laura.png" width="800" height="600">
 
 Estes dois *plots* sumarizam muito os experimentos feitos. Principalmente o *plot* com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. 
+
+-->
