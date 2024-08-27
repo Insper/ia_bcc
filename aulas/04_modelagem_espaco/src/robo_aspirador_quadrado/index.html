@@ -16,7 +16,7 @@
     
     
       
-        <title>QLearning - Inteligência Artificial e Robótica</title>
+        <title>Robo aspirador quadrado - Inteligência Artificial e Robótica</title>
       
     
     
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              QLearning
+              Robo aspirador quadrado
             
           </span>
         </div>
@@ -424,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../04_modelagem_espaco/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -589,7 +589,7 @@
                   
 
 
-  <h1>QLearning</h1>
+  <h1>Robo aspirador quadrado</h1>
 
 <script>
 (function (global, factory) {
@@ -1027,7 +1027,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2a12f63a">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8caa8b87">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1045,24 +1045,24 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">savetxt</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaLargura</span><span class="p">,</span> <span class="n">BuscaProfundidade</span>
+<span class="kn">from</span> <span class="nn">aigyminsper.search.Graph</span> <span class="kn">import</span> <span class="n">State</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">import</span> <span class="nn">time</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">import numpy as np
-import random
-from numpy import savetxt
-import sys
-import matplotlib.pyplot as plt</div>
+<div class="clipboard-copy-txt" id="cell-1">from aigyminsper.search.SearchAlgorithms import BuscaLargura, BuscaProfundidade
+from aigyminsper.search.Graph import State
+import json
+import copy
+import time</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=32dade0b">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=44dc95e0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1080,125 +1080,179 @@ import matplotlib.pyplot as plt</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">QLearning</span><span class="p">:</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">RoboAspiradorQuadrado</span><span class="p">(</span><span class="n">State</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">epsilon_min</span><span class="p">,</span> <span class="n">epsilon_dec</span><span class="p">,</span> <span class="n">episodes</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">=</span> <span class="n">env</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">env</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">env</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">n</span><span class="p">])</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">gamma</span> <span class="o">=</span> <span class="n">gamma</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">=</span> <span class="n">epsilon</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_min</span> <span class="o">=</span> <span class="n">epsilon_min</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_dec</span> <span class="o">=</span> <span class="n">epsilon_dec</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">episodes</span> <span class="o">=</span> <span class="n">episodes</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">posicao_robo</span><span class="p">,</span> <span class="n">situacao</span><span class="p">):</span>
+        <span class="c1"># You must use this name for the operator!</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">op</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span> <span class="o">=</span> <span class="n">posicao_robo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span> <span class="o">=</span> <span class="n">situacao</span>
 
-    <span class="k">def</span> <span class="nf">select_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="n">rv</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">rv</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span> <span class="c1"># Explore action space</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">])</span> <span class="c1"># Exploit learned values</span>
+    <span class="k">def</span> <span class="nf">successors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">successors</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># ir p/ esquerda</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">new_posicao_robo</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">successors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">RoboAspiradorQuadrado</span><span class="p">(</span><span class="s1">'ir p/ esquerda'</span><span class="p">,</span> <span class="n">new_posicao_robo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span><span class="p">))</span>
+        <span class="c1"># ir p/ direita</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">new_posicao_robo</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">successors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">RoboAspiradorQuadrado</span><span class="p">(</span><span class="s1">'ir p/ direita'</span><span class="p">,</span> <span class="n">new_posicao_robo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span><span class="p">))</span>
+        <span class="c1"># ir p/ cima</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">new_posicao_robo</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+            <span class="n">successors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">RoboAspiradorQuadrado</span><span class="p">(</span><span class="s1">'ir p/ cima'</span><span class="p">,</span> <span class="n">new_posicao_robo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span><span class="p">))</span>
+        <span class="c1"># ir p/ baixo</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">new_posicao_robo</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+            <span class="n">successors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">RoboAspiradorQuadrado</span><span class="p">(</span><span class="s1">'ir p/ baixo'</span><span class="p">,</span> <span class="n">new_posicao_robo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span><span class="p">))</span>
+        <span class="c1"># limpar</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">new_situacao</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">situacao</span><span class="p">)</span>
+            <span class="n">new_situacao</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">successors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">RoboAspiradorQuadrado</span><span class="p">(</span><span class="s1">'limpar'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao_robo</span><span class="p">,</span> <span class="n">new_situacao</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plotFile</span><span class="p">):</span>
-        <span class="n">actions_per_episode</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">episodes</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-            <span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-            <span class="n">rewards</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="n">done</span> <span class="o">=</span> <span class="kc">False</span>
-            <span class="n">actions</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="n">successors</span>
 
-            <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
-                <span class="n">action</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_action</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
-                <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">truncated</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span> 
-        
-                <span class="c1"># Adjust Q value for current state</span>
-                <span class="n">old_value</span> <span class="o">=</span> <span class="c1">#pegar o valor na q-table para a combinacao action e state</span>
-                <span class="n">next_max</span> <span class="o">=</span> <span class="c1">#maior valor na q-table para o proximo estado</span>
-                <span class="n">new_value</span> <span class="o">=</span> <span class="c1">#calcula o novo valor</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_value</span>
-                <span class="c1"># atualiza para o novo estado</span>
-                <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
-                <span class="n">actions</span><span class="o">=</span><span class="n">actions</span><span class="o">+</span><span class="mi">1</span>
-                <span class="n">rewards</span><span class="o">=</span><span class="n">rewards</span><span class="o">+</span><span class="n">reward</span>
+    <span class="k">def</span> <span class="nf">is_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">situacao</span> <span class="o">==</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
 
-            <span class="n">actions_per_episode</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Episodes: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span><span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">)</span>
-                <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-            
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_min</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">epsilon_dec</span>
-
-        <span class="n">savetxt</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">plotFile</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">plotactions</span><span class="p">(</span><span class="n">plotFile</span><span class="p">,</span> <span class="n">actions_per_episode</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">q_table</span>
-
-    <span class="k">def</span> <span class="nf">plotactions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plotFile</span><span class="p">,</span> <span class="n">actions_per_episode</span><span class="p">):</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">actions_per_episode</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Episodes'</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'# Actions'</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'# Actions vs Episodes'</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">plotFile</span><span class="o">+</span><span class="s2">".jpg"</span><span class="p">)</span>     
-        <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">"Robô aspirador de pó em uma matriz 2x2"</span>
+    
+    <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    
+    <span class="k">def</span> <span class="nf">env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">class QLearning:
+<div class="clipboard-copy-txt" id="cell-2">class RoboAspiradorQuadrado(State):
 
-    def __init__(self, env, alpha, gamma, epsilon, epsilon_min, epsilon_dec, episodes):
-        self.env = env
-        self.q_table = np.zeros([env.observation_space.n, env.action_space.n])
-        self.alpha = alpha
-        self.gamma = gamma
-        self.epsilon = epsilon
-        self.epsilon_min = epsilon_min
-        self.epsilon_dec = epsilon_dec
-        self.episodes = episodes
+    def __init__(self, op, posicao_robo, situacao):
+        # You must use this name for the operator!
+        self.operator = op
+        self.posicao_robo = posicao_robo
+        self.situacao = situacao
 
-    def select_action(self, state):
-        rv = random.uniform(0, 1)
-        if rv &lt; self.epsilon:
-            return self.env.action_space.sample() # Explore action space
-        return np.argmax(self.q_table[state]) # Exploit learned values
+    def successors(self):
+        successors = []
+        # ir p/ esquerda
+        if self.posicao_robo[1] &gt; 0:
+            new_posicao_robo = [self.posicao_robo[0], self.posicao_robo[1]-1]
+            successors.append(RoboAspiradorQuadrado('ir p/ esquerda', new_posicao_robo, self.situacao))
+        # ir p/ direita
+        if self.posicao_robo[1] &lt; 1:
+            new_posicao_robo = [self.posicao_robo[0], self.posicao_robo[1]+1]
+            successors.append(RoboAspiradorQuadrado('ir p/ direita', new_posicao_robo, self.situacao))
+        # ir p/ cima
+        if self.posicao_robo[0] &gt; 0:
+            new_posicao_robo = [self.posicao_robo[0]-1, self.posicao_robo[1]]
+            successors.append(RoboAspiradorQuadrado('ir p/ cima', new_posicao_robo, self.situacao))
+        # ir p/ baixo
+        if self.posicao_robo[0] &lt; 1:
+            new_posicao_robo = [self.posicao_robo[0]+1, self.posicao_robo[1]]
+            successors.append(RoboAspiradorQuadrado('ir p/ baixo', new_posicao_robo, self.situacao))
+        # limpar
+        if self.situacao[self.posicao_robo[0]][self.posicao_robo[1]] == 0:
+            new_situacao = copy.deepcopy(self.situacao)
+            new_situacao[self.posicao_robo[0]][self.posicao_robo[1]] = 1
+            successors.append(RoboAspiradorQuadrado('limpar', self.posicao_robo, new_situacao))
 
-    def train(self, filename, plotFile):
-        actions_per_episode = []
-        for i in range(1, self.episodes+1):
-            (state, _) = self.env.reset()
-            rewards = 0
-            done = False
-            actions = 0
+        return successors
 
-            while not done:
-                action = self.select_action(state)
-                next_state, reward, done, truncated, _ = self.env.step(action) 
-        
-                # Adjust Q value for current state
-                old_value = #pegar o valor na q-table para a combinacao action e state
-                next_max = #maior valor na q-table para o proximo estado
-                new_value = #calcula o novo valor
-                self.q_table[state, action] = new_value
-                # atualiza para o novo estado
-                state = next_state
-                actions=actions+1
-                rewards=rewards+reward
+    def is_goal(self):
+        return self.situacao == [[1,1],[1,1]]
 
-            actions_per_episode.append(actions)
-            if i % 100 == 0:
-                sys.stdout.write("Episodes: " + str(i) +'\r')
-                sys.stdout.flush()
-            
-            if self.epsilon &gt; self.epsilon_min:
-                self.epsilon = self.epsilon * self.epsilon_dec
-
-        savetxt(filename, self.q_table, delimiter=',')
-        if (plotFile is not None): self.plotactions(plotFile, actions_per_episode)
-        return self.q_table
-
-    def plotactions(self, plotFile, actions_per_episode):
-        plt.plot(actions_per_episode)
-        plt.xlabel('Episodes')
-        plt.ylabel('# Actions')
-        plt.title('# Actions vs Episodes')
-        plt.savefig(plotFile+".jpg")     
-        plt.close()</div>
+    def description(self):
+        return "Robô aspirador de pó em uma matriz 2x2"
+    
+    def cost(self):
+        return 1
+    
+    def env(self):
+        return json.dumps(self.__dict__)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=97b76e8a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Busca em largura'</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">RoboAspiradorQuadrado</span><span class="p">(</span><span class="s1">''</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Tempo de execucao: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="si">}</span><span class="s1"> segundos'</span><span class="p">)</span>
+    <span class="c1">#algorithm = BuscaProfundidade()</span>
+    <span class="c1">#result = algorithm.search(state, m=5, trace=True)</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Achou!'</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Nao achou solucao'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3">def main():
+    print('Busca em largura')
+    state = RoboAspiradorQuadrado('',[0,0],[[0,0],[0,0]])
+    algorithm = BuscaLargura()
+    start = time.time()
+    result = algorithm.search(state)
+    print(f'Tempo de execucao: {time.time() - start} segundos')
+    #algorithm = BuscaProfundidade()
+    #result = algorithm.search(state, m=5, trace=True)
+    if result != None:
+        print('Achou!')
+        print(result.show_path())
+    else:
+        print('Nao achou solucao')</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2ddaf502">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4">if __name__ == '__main__':
+    main()</div>
 </div>
 </div>
 </div>
@@ -1228,7 +1282,7 @@ import matplotlib.pyplot as plt</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2024</span>
   </span>
 
     
