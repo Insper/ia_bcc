@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../04_x_buscas/">
+      
+      
+        <link rel="next" href="../../referencias/01_introducao/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>Continuação sobre modelagem - Inteligência Artificial e Robótica</title>
+        <title>Continuação sobre algoritmos de busca - Inteligência Artificial e Robótica</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -41,7 +45,7 @@
     
       <link rel="stylesheet" href="../../css/custom.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#continuacao-sobre-modelagem" class="md-skip">
+        <a href="#continuacao-sobre-algoritmos-de-busca" class="md-skip">
           Skip to content
         </a>
       
@@ -79,12 +83,12 @@
     <a href="../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Continuação sobre modelagem
+              Continuação sobre algoritmos de busca
             
           </span>
         </div>
@@ -104,7 +108,7 @@
     </div>
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -137,7 +141,7 @@
     <a href="../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Inteligência Artificial e Robótica
@@ -229,17 +233,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -253,7 +259,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -370,17 +376,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -394,7 +402,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Busca em espaço de estados
@@ -459,6 +467,121 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Continuação sobre algoritmos de busca
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Continuação sobre algoritmos de busca
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-homem-o-lobo-o-carneiro-e-o-cesto-de-alface" class="md-nav__link">
+    <span class="md-ellipsis">
+      O homem, o lobo, o carneiro e o cesto de alface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#banda-u2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banda U2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procurando-caminhos-em-um-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procurando caminhos em um mapa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspirador-de-po-em-uma-casa-generica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspirador de Pó em uma casa genérica.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício de implementação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material de referência
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -607,6 +730,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#procurando-caminhos-em-um-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procurando caminhos em um mapa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspirador-de-po-em-uma-casa-generica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspirador de Pó em uma casa genérica.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício de implementação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material de referência
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -622,7 +781,7 @@
                   
 
 
-<h1 id="continuacao-sobre-modelagem">Continuação sobre modelagem</h1>
+<h1 id="continuacao-sobre-algoritmos-de-busca">Continuação sobre algoritmos de busca</h1>
 <p>O objetivo da aula de hoje é implementar agentes capazes de resolver os problemas abaixo. </p>
 <h2 id="o-homem-o-lobo-o-carneiro-e-o-cesto-de-alface">O homem, o lobo, o carneiro e o cesto de alface</h2>
 <p>Uma pessoa, um lobo, um carneiro e um cesto de alface estão à beira de
@@ -665,39 +824,49 @@ Coloque oito rainhas em um tabuleiro de
   outra, i.e., as rainhas não devem compartilhar colunas, linhas ou
   diagonais do tabuleiro.
 
-## Aspirador de Pó em uma casa 10 por 10.
-
-Neste exercício o agente sabe executar outras ações, mas o objetivo dele permanece o mesmo. As ações são: 
-
-* ir para frente;
-* virar para a esquerda;
-* virar para a direita, e;
-* limpar
-
-E as dimensões da casa são de $10 \times 10$ quartos. 
-
-* O que é relevante representar nos estados do mundo? Como os
-    estados são estruturados (estrutura de dados) e qual o significado
-    dela (dos campos)?
-* Mostre como ficam representados os estados inicial e final
-    segundo a representação adotada.
-* Quais as operações sobre os estados?
-    (detalhe como cada operação irá alterar os estados e quais as
-    condições para cada operação ser executada)
-* Qual a estimativa do tamanho do espaço de busca (número de
-    estados possíveis)?
-* Será que o algoritmo de busca em largura consegue encontrar resposta para todas as configurações iniciais? 
-
-
-??? "Questão"
-
-    Será que é possível utilizar outros algoritmos? 
-
-## Próximas atividades
-
-Se você já terminou as implementações acima e as implementações da [aula anterior](../03_configuracao/index.md), então leia o material neste [link](../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf). Em especial, do primeiro ao slide de número 28. 
-
 -->
+
+<h2 id="procurando-caminhos-em-um-mapa">Procurando caminhos em um mapa</h2>
+<p>Considere o mapa abaixo: </p>
+<p><img alt="image" src="img/grafo.png" /></p>
+<p>Os <span class="arithmatex">\(nodos = \{A,B,C,D,E,F,G\}\)</span> são locais. As arestas são as ligações entre os locais. Cada aresta tem um custo. Por exemplo, O caminho entre A e B tem custo 1. O caminho entre A e C tem custo 10. Este é um grafo bi-direcional. Ou seja, O custo de A para C é o mesmo de C para A.</p>
+<p>Implemente uma solução que é capaz de encontrar o menor caminho entre qualquer par de locais do mapa. </p>
+<h2 id="aspirador-de-po-em-uma-casa-generica">Aspirador de Pó em uma casa genérica.</h2>
+<p>Neste exercício o agente sabe executar outras ações, mas o objetivo dele permanece o mesmo. As ações são: </p>
+<ul>
+<li>ir para frente;</li>
+<li>virar para a esquerda;</li>
+<li>virar para a direita, e;</li>
+<li>limpar</li>
+</ul>
+<p>As características da casa são definidas via arquivo de configuração. Por exemplo, o arquivo abaixo: </p>
+<div class="highlight"><pre><span></span><code>0;0;0;0
+0;0;1;0
+0;0;0;0
+</code></pre></div>
+<p>É uma casa com <span class="arithmatex">\(3 \times 4\)</span> quartos. O número 1 indica que o quarto está sujo.</p>
+<p>Implemente um agente que recebe os seguintes parâmetros: </p>
+<div class="highlight"><pre><span></span><code>VacuumWorldGeneric(mapa, lin, col, &quot;&quot;)
+</code></pre></div>
+<p>e consiga encontrar uma solução para todos os casos de testes apresentados no projeto. <code>mapa</code> é o mapa da casa, <code>lin</code> é a linha onde o agente inicia e <code>col</code> é a coluna onde o agente inicia. </p>
+<ul>
+<li>Será que o algoritmo de busca vistos até o momento conseguem encontrar respostas para todas as configurações iniciais? </li>
+</ul>
+<details>
+<summary>Questão</summary>
+<p>Será que é possível utilizar outros algoritmos? </p>
+</details>
+<h2 id="exercicio-de-implementacao">Exercício de implementação</h2>
+<p>Implemente todos os agentes acima no projeto <a href="https://classroom.github.com/a/nKr94eGa">https://classroom.github.com/a/nKr94eGa</a>. Respeite as interfaces definidas no projeto. Em especial, nos arquivos de teste. Quando você implementar soluções que conseguem passar em todos os testes então submeta via Github Classroom. Esta submissão deve ser feita em duplas até o dia 06/09/2024. </p>
+<h2 id="material-de-referencia">Material de referência</h2>
+<ul>
+<li>
+<p>Capítulo 3: Solving Problems by Searching do livro do Russel e Norvig. </p>
+</li>
+<li>
+<p><a href="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf">Slides da disciplina</a></p>
+</li>
+</ul>
 
 
 
@@ -716,9 +885,9 @@ Se você já terminou as implementações acima e as implementações da [aula a
       
   <span class="md-source-file__fact">
     <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 4, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 2, 2024</span>
   </span>
 
     
@@ -765,10 +934,10 @@ Se você já terminou as implementações acima e as implementações da [aula a
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
       
