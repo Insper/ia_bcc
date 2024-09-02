@@ -13,39 +13,24 @@
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação dos algoritmos de busca e dos agentes autônomos em Python para resolver alguns problemas clássicos da literatura.</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">9-Set</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">5-Set</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Como um agente encontra uma sequência de ações? Quais são os algoritmos que podemos utilizar? Em que cenário utilizar qual algoritmo? O que é uma heurística?</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação dos algoritmos de busca e dos agentes autônomos em Python para resolver alguns problemas clássicos da literatura.</td>
     </tr>
     <tr>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">11-Set</td>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">9-Set</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Como um agente encontra uma sequência de ações? Quais são os algoritmos que podemos utilizar? Em que cenário utilizar qual algoritmo? O que é uma heurística?</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação dos algoritmos de busca e dos agentes autônomos em Python para resolver alguns problemas clássicos da literatura.</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">16-Set</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">11-Set</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Como unir todos os conceitos e ferramentas apresentados para resolver um problema complexo?</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de um projeto, provavelmente, envolvendo algum framework de simulação (i.e., Gym Open AI).</td>
     </tr>
     <tr>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">18-Set</td>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">12-Set</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Como unir todos os conceitos e ferramentas apresentados para resolver um problema complexo?</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de um projeto, provavelmente, envolvendo algum framework de simulação (i.e., Gym Open AI).</td>
-    </tr>
-    <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">23-Set</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS</strong></td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS - Prova Intermediária</strong></td>
-    </tr>
-    <tr>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">25-Set</td>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS</strong></td>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS - Prova Intermediária</strong></td>
-    </tr>
-    <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">30-Set</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Como desenvolver um agente autônomo capaz de identificar estados que satisfazem determinadas restrições?</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de um agente autônomo capaz de identificar estados que satisfazem determinadas restrições.</td>
     </tr>
   </tbody>
 </table></p>

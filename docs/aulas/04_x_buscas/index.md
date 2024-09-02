@@ -128,20 +128,15 @@ Esta atividade é individual. O arquivo criado deve ser submetido no Blackboard.
 | D        | Submeteu um documento, mas o mesmo não responde todas as perguntas de forma correta e também não apresenta a tabela completa ou *plot*.|   
 
 
-<!--
-
 ## Comentários sobre os trabalhos entregues :new:
 
 Pessoal, 
 
-Seguem três exemplos de plots bem formados e completos: 
+Seguem dois exemplos de plots bem formados e completos: 
 
 <img src="figuras/esdras_convencional.png" width="800" height="600">
 
 <img src="figuras/esdras_log.png" width="800" height="600">
 
-<img src="figuras/laura.png" width="800" height="600">
-
 Estes dois *plots* sumarizam muito os experimentos feitos. Principalmente o *plot* com escala logaritmica. Nele é possível perceber a diferença de tempo de processamento e também quando os algoritmos param de responder. 
 
--->
