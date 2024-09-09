@@ -9,7 +9,9 @@ No problema apresentado na [aula passada](../08_heuristica/index.md) teve alguma
     A heurística é admissível quando ela nunca superestima o custo para alcançar o objetivo.
 
 
-## Problema do Taxi Driver
+## Problemas
+
+### Problema do Taxi Driver
 
 Considere um agente que precisa levar um passageiro de um ponto A para um ponto B como apresentado no mapa abaixo: 
 
@@ -21,7 +23,7 @@ Para as dimensões apresentadas acima talvez algoritmos de busca cegos poderiam 
 
 **O que é necessário fazer para implementar uma solução que sempre fornece uma solução ótima para o problema? Independente das dimensões do mapa?**
 
-## 8-Puzzle
+### 8-Puzzle
 
 Defina uma ou mais heurísticas admissíveis para o problema do [8-puzzle](https://www.aiai.ed.ac.uk/~gwickler/eightpuzzle-inf.html).
 
@@ -30,6 +32,15 @@ Defina uma ou mais heurísticas admissíveis para o problema do [8-puzzle](https
 Esta mesma heurística pode ser utilizada para o problema do [15-puzzle](https://en.wikipedia.org/wiki/15_puzzle)?
 
 O que muda do problema do 8-puzzle para o 15-puzzle?
+
+### Cavalo e tabuleiro de xadrez
+
+Considerando um tabuleiro de xadrez (`8x8`) com um
+  único cavalo, quais os movimentos que o cavalo deve fazer para
+  percorrer todas as posições do tabuleiro uma única vez e
+  retornar ao ponto de partida?
+
+
 
 
 

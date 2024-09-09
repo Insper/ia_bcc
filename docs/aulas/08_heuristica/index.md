@@ -121,6 +121,8 @@ Ao executar:
 
 O algoritmo abriu muitos nodos de forma desnecessária? 
 
+<!--
+
 ## Entrega do exercício
 
 * Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/OQePW2ai). 
@@ -130,6 +132,8 @@ O algoritmo abriu muitos nodos de forma desnecessária?
 * Esta implementação pode ser feita em grupo de até 3 pessoas.
 
 * **Prazo para a entrega**: 10/03/2024 (domingo) até às 23:30 horas.
+
+-->
 
 ## Usando heurísticas para otimizar a busca na árvore
 
