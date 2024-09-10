@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../08_heuristica_parte_3/">
+      
+      
+        <link rel="next" href="../../referencias/01_introducao/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -229,17 +233,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -253,7 +259,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -518,17 +524,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" checked>
         
           
           <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
@@ -542,7 +550,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
             Busca com heurística
@@ -586,6 +594,106 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_heuristica_parte_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heurística admissível
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Problema do 8-Puzzle
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Problema do 8-Puzzle
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#formato-de-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formato de entrega
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-codigo-para-o-metodo-show_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de código para o método show_path
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -774,7 +882,7 @@
     estados possíveis)?</li>
 <li>Que algoritmo de busca pode ser utilizado para resolver este problema considerando que a solução apresentada precisa ser ótima? </li>
 </ul>
-<p>A entrega da sua implementação deverá ter 1 arquivo chamado <code>Puzzle8.py</code> que implementa a interface <code>State</code> e que deve passar por TODOS os testes especificados em <a href="./src/test_8Puzzle.py">test_8_puzzle.py</a>. </p>
+<p>A entrega da sua implementação deverá ter 1 arquivo chamado <code>Puzzle8.py</code> que implementa a interface <code>State</code> e que deve passar por TODOS os testes especificados em <a href="src/test_8Puzzle/">test_8_puzzle.py</a>. </p>
 <p>O seu agente deve ser capaz de identificar um plano para todos os estados iniciais descritos como fáceis e difícieis no arquivo de testes. Para os estados descritos como impossível o agente precisa retornar a mensagem <em>"Nao achou solucao"</em>. Deve-se considerar o estado <em>goal</em> em formato caracol, como apresentado abaixo:</p>
 <table>
 <thead>
@@ -801,13 +909,13 @@
 <h2 id="formato-de-entrega">Formato de entrega</h2>
 <ul>
 <li>
-<p>Para a implementação e entrega deste exercício nós vamos utilizar o <a href="https://classroom.github.com/a/iZCPEiAe">Github Classroom</a>. </p>
+<p>Para a implementação e entrega deste exercício nós vamos utilizar o <a href="https://classroom.github.com/a/exG0xESK">Github Classroom</a>. </p>
 </li>
 <li>
-<p>O link para o enunciado é este aqui <a href="https://classroom.github.com/a/iZCPEiAe">https://classroom.github.com/a/iZCPEiAe</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
+<p>O link para o enunciado é este aqui <a href="https://classroom.github.com/a/exG0xESK">https://classroom.github.com/a/exG0xESK</a>. Através deste link você consegue baixar o repositório e começar a sua codificação. </p>
 </li>
 <li>
-<p><strong>Prazo para a entrega</strong>: 15/03/2022 (sexta-feira) até às 23:30 horas.</p>
+<p><strong>Prazo para a entrega</strong>: 13/09/2022 (sexta-feira) até às 23:50 horas.</p>
 </li>
 <li>
 <p>Este trabalho pode ser feito em equipes com até 3 integrantes. </p>
@@ -845,7 +953,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2024</span>
   </span>
 
     
