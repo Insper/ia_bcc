@@ -67,3 +67,22 @@ Ao implementar o método `successors` do seu agente considere a seguinte ordem p
 ```
 
 **Detalhe importante sobre o método `tem_solucao`**: uma forma para cálculo se uma determinada configuração tem solução ou não é seguir a seguinte regra: *deve-se calcular a quantidade de inversões necessárias para ordenar certa sequência numérica, determinado por Possível a quantidade de inversões pares e Impossível a quantidade de inversões ímpares*.
+
+## Uma possível solução :new:
+
+Abaixo são apresentados os links para uma possível solução e para o arquivo de testes utilizado na validação das submissões: 
+
+* [Puzzle8.py](./src/Puzzle8.py)
+* [test_8Puzzle.py](./src/test_8Puzzle.py)
+
+Percebam que a implementação do [Puzzle8.py](./src/Puzzle8.py) faz uso ao algoritmo A* com poda. Além disso, foram implementadas duas heurísticas: a soma da distância de Manhattan e a soma de peças fora do lugar.
+
+Sugiro que vocês utilizem o arquivo de testes para validar a implementação de vocês. Além disso, sugiro também mudar as heurísticas implementadas para verificar se a solução encontrada é a mesma.
+
+Para executar os testes, sugiro executar o seguinte comando: 
+
+```bash
+pytest -v -s
+```
+
+No diretório onde se encontram os arquivos de teste e da implementação da solução. 
