@@ -16,7 +16,7 @@
     
     
       
-        <title>Map2023 - Inteligência Artificial e Robótica</title>
+        <title>Puzzle8 - Inteligência Artificial e Robótica</title>
       
     
     
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Map2023
+              Puzzle8
             
           </span>
         </div>
@@ -572,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../08_heuristica_parte_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -614,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08_heuristica_parte_3_aps/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -886,7 +886,7 @@
                   
 
 
-  <h1>Map2023</h1>
+  <h1>Puzzle8</h1>
 
 <script>
 (function (global, factory) {
@@ -1324,7 +1324,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=26cfca4e">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7d5e3aa2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1342,30 +1342,18 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaProfundidadeIterativa</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaCustoUniforme</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaGananciosa</span>
-<span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">BuscaLargura</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">aigyminsper.search.SearchAlgorithms</span> <span class="kn">import</span> <span class="n">AEstrela</span>
 <span class="kn">from</span> <span class="nn">aigyminsper.search.Graph</span> <span class="kn">import</span> <span class="n">State</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
-<span class="kn">import</span> <span class="nn">csv</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from aigyminsper.search.SearchAlgorithms import BuscaProfundidadeIterativa
-from aigyminsper.search.SearchAlgorithms import BuscaCustoUniforme
-from aigyminsper.search.SearchAlgorithms import BuscaGananciosa
-from aigyminsper.search.SearchAlgorithms import BuscaLargura
-from aigyminsper.search.Graph import State
-import time
-import networkx as nx
-import csv</div>
+<div class="clipboard-copy-txt" id="cell-1">from aigyminsper.search.SearchAlgorithms import AEstrela
+from aigyminsper.search.Graph import State</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=71dc3017">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=27a26647">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1383,235 +1371,317 @@ import csv</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">State</span><span class="p">):</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">copy</span>
+<span class="k">class</span> <span class="nc">Puzzle8</span><span class="p">(</span><span class="n">State</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">posicao</span><span class="p">,</span><span class="n">operator</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">operator</span>
+        <span class="c1"># matriz 3x3</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">posicao</span> <span class="o">=</span> <span class="n">posicao</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">goal</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">city</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">cost_value</span> <span class="o">=</span> <span class="n">cost</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">op</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">goal</span> <span class="o">=</span> <span class="n">goal</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">posicao_vazio</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">if</span> <span class="mi">0</span> <span class="ow">in</span> <span class="n">matriz_3_3</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">linha</span> <span class="o">=</span> <span class="n">i</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">if</span> <span class="mi">0</span> <span class="o">==</span> <span class="n">matriz_3_3</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span>
+                <span class="n">coluna</span> <span class="o">=</span> <span class="n">j</span>
+        <span class="k">return</span> <span class="n">linha</span><span class="p">,</span><span class="n">coluna</span>
     
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">is_solvable_puzzle</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">):</span>
+        <span class="n">puzzle_array</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">num_inversions</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">puzzle_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriz_3_3</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">puzzle_array</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+
+        <span class="c1"># Count inversions</span>
+        <span class="n">inversions</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">puzzle_array</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">puzzle_array</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">puzzle_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">puzzle_array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">puzzle_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">puzzle_array</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">inversions</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="c1"># Puzzle is solvable if inversion count is even</span>
+        <span class="k">return</span> <span class="n">inversions</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+    <span class="k">def</span> <span class="nf">show_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">algorithm</span> <span class="o">=</span> <span class="n">AEstrela</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">Puzzle8</span><span class="o">.</span><span class="n">is_solvable_puzzle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s1">'Nao tem solucao'</span> 
+        <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pruning</span><span class="o">=</span><span class="s1">'general'</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">'Nao tem solucao'</span> 
+
+
     <span class="k">def</span> <span class="nf">successors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">sucessors</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">Map</span><span class="o">.</span><span class="n">area</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">next_city</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
-            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Map</span><span class="p">(</span><span class="n">next_city</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_city</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">next_city</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">))</span>
+        <span class="n">linha_vazio</span><span class="p">,</span> <span class="n">coluna_vazio</span> <span class="o">=</span> <span class="n">Puzzle8</span><span class="o">.</span><span class="n">posicao_vazio</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">)</span>
+        
+        <span class="c1"># cima</span>
+        <span class="k">if</span> <span class="n">linha_vazio</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">mt_posicao</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">)</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span> <span class="o">=</span> <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Puzzle8</span><span class="p">(</span><span class="n">mt_posicao</span><span class="p">,</span><span class="s2">"cima"</span><span class="p">))</span>
+        
+        <span class="c1"># baixo </span>
+        <span class="k">if</span> <span class="n">linha_vazio</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">mt_posicao</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">)</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span> <span class="o">=</span> <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Puzzle8</span><span class="p">(</span><span class="n">mt_posicao</span><span class="p">,</span><span class="s2">"baixo"</span><span class="p">))</span>
+        
+        <span class="c1"># esquerda</span>
+        <span class="k">if</span> <span class="n">coluna_vazio</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">mt_posicao</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">)</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span> <span class="o">=</span> <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Puzzle8</span><span class="p">(</span><span class="n">mt_posicao</span><span class="p">,</span><span class="s2">"esquerda"</span><span class="p">))</span>
+        <span class="c1"># direita</span>
+        <span class="k">if</span> <span class="n">coluna_vazio</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">mt_posicao</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">)</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="p">]</span> <span class="o">=</span> <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">mt_posicao</span><span class="p">[</span><span class="n">linha_vazio</span><span class="p">][</span><span class="n">coluna_vazio</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">sucessors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Puzzle8</span><span class="p">(</span><span class="n">mt_posicao</span><span class="p">,</span><span class="s2">"direita"</span><span class="p">))</span>
+        
+        
         <span class="k">return</span> <span class="n">sucessors</span>
     
+    <span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h1</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">h1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># soma da distancia de manhattan de cada numero</span>
+        <span class="n">linhas</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+        <span class="n">colunas</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+        <span class="n">diff</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">coluna</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                <span class="n">num</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="n">coluna</span><span class="p">]</span>
+                <span class="n">diff_linha</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">linhas</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">-</span> <span class="n">linha</span><span class="p">)</span>
+                <span class="n">diff_coluna</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">colunas</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">-</span> <span class="n">coluna</span><span class="p">)</span>
+                <span class="n">diff</span> <span class="o">+=</span> <span class="n">diff_linha</span>
+                <span class="n">diff</span> <span class="o">+=</span> <span class="n">diff_coluna</span>
+        <span class="k">return</span> <span class="n">diff</span>
+    
+    <span class="k">def</span> <span class="nf">h2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># quantidade de elementos fora do lugar</span>
+        <span class="n">goal</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">]]</span>
+        <span class="n">diff</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">coluna</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="n">coluna</span><span class="p">]</span> <span class="o">!=</span> <span class="n">goal</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="n">coluna</span><span class="p">]:</span>
+                    <span class="n">diff</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">diff</span>
+
     <span class="k">def</span> <span class="nf">is_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicao</span> <span class="o">==</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">]]:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
     
     <span class="k">def</span> <span class="nf">description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">"Um mapa para procurar"</span>
+        <span class="k">return</span> <span class="s2">"Descrição do problema: Robo tem a missão de limpar uma casinha com duas partes com a missão de antigir um estado final desejado. "</span>
     
     <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cost_value</span>
-    
-    <span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">operator</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+        
     
     <span class="k">def</span> <span class="nf">env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">city</span>
-    
-    <span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">'distance'</span><span class="p">])</span>
-        <span class="c1">#return random.randint(1,10)</span>
-        <span class="c1">#return 1</span>
-
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">createArea</span><span class="p">():</span>
-        <span class="n">Map</span><span class="o">.</span><span class="n">area</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">'a'</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'b'</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="s1">'c'</span><span class="p">)],</span>
-            <span class="s1">'b'</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'a'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'h'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'k'</span><span class="p">)],</span>
-            <span class="s1">'c'</span><span class="p">:[(</span><span class="mi">6</span><span class="p">,</span><span class="s1">'a'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'g'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'d'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'o'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'p'</span><span class="p">)],</span>
-            <span class="s1">'d'</span><span class="p">:[(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'c'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'f'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'e'</span><span class="p">)],</span>
-            <span class="s1">'e'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'i'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'f'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'d'</span><span class="p">),(</span><span class="mi">14</span><span class="p">,</span><span class="s1">'m'</span><span class="p">)],</span>
-            <span class="s1">'f'</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'g'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'e'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'d'</span><span class="p">)],</span>
-            <span class="s1">'g'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'c'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'f'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'h'</span><span class="p">)],</span>
-            <span class="s1">'h'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'i'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'g'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'b'</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">'k'</span><span class="p">)],</span>
-            <span class="s1">'i'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'e'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'h'</span><span class="p">)],</span>
-            <span class="s1">'l'</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'k'</span><span class="p">)],</span>
-            <span class="s1">'k'</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'l'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'n'</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">'h'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'b'</span><span class="p">)],</span>
-            <span class="s1">'m'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'n'</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'x'</span><span class="p">),(</span><span class="mi">14</span><span class="p">,</span><span class="s1">'e'</span><span class="p">)],</span>
-            <span class="s1">'n'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'m'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'k'</span><span class="p">)],</span>
-            <span class="s1">'o'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'c'</span><span class="p">)],</span>
-            <span class="s1">'p'</span><span class="p">:[(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'c'</span><span class="p">)],</span>
-            <span class="s1">'x'</span><span class="p">:[(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'m'</span><span class="p">)]</span>
-            <span class="p">}</span>
-        
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">createHeuristics</span><span class="p">():</span>
         <span class="c1">#</span>
-        <span class="c1"># O arquvo MapHeuristics.csv considera apenas os objetivos "o" e "x"</span>
-        <span class="c1"># TODO modificar o arquivo para considerar todas as cidades. talvez modificar</span>
-        <span class="c1"># a estrutura do arquivo considerando uma estrutura otimizada</span>
+        <span class="c1"># IMPORTANTE: este método não deve apenas retornar uma descrição do environment, mas </span>
+        <span class="c1"># deve também retornar um valor que descreva aquele nodo em específico. Pois </span>
+        <span class="c1"># esta representação é utilizada para verificar se um nodo deve ou ser adicionado </span>
+        <span class="c1"># na lista de abertos.</span>
         <span class="c1">#</span>
-        <span class="n">Map</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">"data/MapHeuristics.csv"</span><span class="p">,</span><span class="s2">"r"</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span> 
-            <span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="c1"># Exemplos de especificações adequadas: </span>
+        <span class="c1"># - para o problema do soma 1 e 2: return str(self.number)+"#"+str(self.cost)</span>
+        <span class="c1"># - para o problema das cidades: return self.city+"#"+str(self.cost())</span>
+        <span class="c1">#</span>
+        <span class="c1"># Exemplos de especificações NÃO adequadas: </span>
+        <span class="c1"># - para o problema do soma 1 e 2: return str(self.number)</span>
+        <span class="c1"># - para o problema das cidades: return self.city</span>
+        <span class="c1">#</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">posicao</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">operator</span>
+        <span class="c1">#return self.operator</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">class Map(State):
+<div class="clipboard-copy-txt" id="cell-2">import copy
+class Puzzle8(State):
+    def __init__(self,posicao,operator):
+        self.operator = operator
+        # matriz 3x3
+        self.posicao = posicao
 
-    def __init__(self, city, cost, op, goal):
-        self.city = city
-        self.cost_value = cost
-        self.operator = op
-        self.goal = goal
+    @staticmethod
+    def posicao_vazio(matriz_3_3):
+        for i in range(3):
+            if 0 in matriz_3_3[i]:
+                linha = i
+        for j in range(3):
+            if 0 == matriz_3_3[linha][j]:
+                coluna = j
+        return linha,coluna
     
+    @staticmethod
+    def is_solvable_puzzle(matriz_3_3):
+        puzzle_array = []
+        num_inversions = 0
+        puzzle_array.append(matriz_3_3[0][0])
+        puzzle_array.append(matriz_3_3[0][1])
+        puzzle_array.append(matriz_3_3[0][2])
+        puzzle_array.append(matriz_3_3[1][2])
+        puzzle_array.append(matriz_3_3[2][2])
+        puzzle_array.append(matriz_3_3[2][1])
+        puzzle_array.append(matriz_3_3[2][0])
+        puzzle_array.append(matriz_3_3[1][0])
+        puzzle_array.append(matriz_3_3[1][1])
+        if 0 not in puzzle_array:
+            return False
+
+
+        # Count inversions
+        inversions = 0
+        for i in range(len(puzzle_array)):
+            for j in range(i+1, len(puzzle_array)):
+                if puzzle_array[i] != 0 and puzzle_array[j] != 0 and puzzle_array[i] &gt; puzzle_array[j]:
+                    inversions += 1
+        
+        # Puzzle is solvable if inversion count is even
+        return inversions % 2 == 0
+
+
+    def show_path(self):
+        algorithm = AEstrela()
+        if not Puzzle8.is_solvable_puzzle(self.posicao):
+            return 'Nao tem solucao' 
+        result = algorithm.search(self, pruning='general')
+        if result != None:
+            return result.show_path()
+        else:
+            return 'Nao tem solucao' 
+
+
     def successors(self):
         sucessors = []
-        neighbors = Map.area[self.city]
-        for next_city in neighbors:
-            sucessors.append(Map(next_city[1], next_city[0], next_city[1], self.goal))
+        linha_vazio, coluna_vazio = Puzzle8.posicao_vazio(self.posicao)
+        
+        # cima
+        if linha_vazio == 0:
+            pass
+        else:
+            mt_posicao = copy.deepcopy(self.posicao)
+            mt_posicao[linha_vazio][coluna_vazio] = mt_posicao[linha_vazio-1][coluna_vazio]
+            mt_posicao[linha_vazio-1][coluna_vazio] = 0
+            sucessors.append(Puzzle8(mt_posicao,"cima"))
+        
+        # baixo 
+        if linha_vazio == 2:
+            pass
+        else:
+            mt_posicao = copy.deepcopy(self.posicao)
+            mt_posicao[linha_vazio][coluna_vazio] = mt_posicao[linha_vazio+1][coluna_vazio]
+            mt_posicao[linha_vazio+1][coluna_vazio] = 0
+            sucessors.append(Puzzle8(mt_posicao,"baixo"))
+        
+        # esquerda
+        if coluna_vazio == 0:
+            pass
+        else:
+            mt_posicao = copy.deepcopy(self.posicao)
+            mt_posicao[linha_vazio][coluna_vazio] = mt_posicao[linha_vazio][coluna_vazio-1]
+            mt_posicao[linha_vazio][coluna_vazio-1] = 0
+            sucessors.append(Puzzle8(mt_posicao,"esquerda"))
+        # direita
+        if coluna_vazio == 2:
+            pass
+        else:
+            mt_posicao = copy.deepcopy(self.posicao)
+            mt_posicao[linha_vazio][coluna_vazio] = mt_posicao[linha_vazio][coluna_vazio+1]
+            mt_posicao[linha_vazio][coluna_vazio+1] = 0
+            sucessors.append(Puzzle8(mt_posicao,"direita"))
+        
+        
         return sucessors
     
+    def h(self):
+        return self.h1()
+
+    def h1(self):
+        # soma da distancia de manhattan de cada numero
+        linhas = {1:0,2:0,3:0,8:1,0:1,4:1,7:2,6:2,5:2}
+        colunas = {1:0,8:0,7:0,2:1,0:1,6:1,3:2,4:2,5:2}
+        diff = 0
+        for linha in range(3):
+            for coluna in range(3):
+                num = self.posicao[linha][coluna]
+                diff_linha = abs(linhas[num] - linha)
+                diff_coluna = abs(colunas[num] - coluna)
+                diff += diff_linha
+                diff += diff_coluna
+        return diff
+    
+    def h2(self):
+        # quantidade de elementos fora do lugar
+        goal = [[1,2,3],[8,0,4],[7,6,5]]
+        diff = 0
+        for linha in range(3):
+            for coluna in range(3):
+                if self.posicao[linha][coluna] != goal[linha][coluna]:
+                    diff += 1
+        return diff
+
     def is_goal(self):
-        return (self.city == self.goal)
+        if self.posicao == [[1,2,3],[8,0,4],[7,6,5]]:
+            return True
+        else:
+            return False
     
     def description(self):
-        return "Um mapa para procurar"
+        return "Descrição do problema: Robo tem a missão de limpar uma casinha com duas partes com a missão de antigir um estado final desejado. "
     
     def cost(self):
-        return self.cost_value
-    
-    def print(self):
-        return str(self.operator)
+        return 1
+        
     
     def env(self):
-        return self.city
-    
-    def h(self):
-        return int(Map.g.edges[self.city,self.goal]['distance'])
-        #return random.randint(1,10)
-        #return 1
-
-    @staticmethod
-    def createArea():
-        Map.area = {
-            'a':[(3,'b'),(6,'c')],
-            'b':[(3,'a'),(3,'h'),(3,'k')],
-            'c':[(6,'a'),(2,'g'),(3,'d'),(2,'o'),(2,'p')],
-            'd':[(3,'c'),(1,'f'),(1,'e')],
-            'e':[(2,'i'),(1,'f'),(1,'d'),(14,'m')],
-            'f':[(1,'g'),(1,'e'),(1,'d')],
-            'g':[(2,'c'),(1,'f'),(2,'h')],
-            'h':[(2,'i'),(2,'g'),(3,'b'),(4,'k')],
-            'i':[(2,'e'),(2,'h')],
-            'l':[(1,'k')],
-            'k':[(1,'l'),(3,'n'),(4,'h'),(3,'b')],
-            'm':[(2,'n'),(1,'x'),(14,'e')],
-            'n':[(2,'m'),(3,'k')],
-            'o':[(2,'c')],
-            'p':[(2,'c')],
-            'x':[(1,'m')]
-            }
-        
-    @staticmethod
-    def createHeuristics():
         #
-        # O arquvo MapHeuristics.csv considera apenas os objetivos "o" e "x"
-        # TODO modificar o arquivo para considerar todas as cidades. talvez modificar
-        # a estrutura do arquivo considerando uma estrutura otimizada
+        # IMPORTANTE: este método não deve apenas retornar uma descrição do environment, mas 
+        # deve também retornar um valor que descreva aquele nodo em específico. Pois 
+        # esta representação é utilizada para verificar se um nodo deve ou ser adicionado 
+        # na lista de abertos.
         #
-        Map.g = nx.Graph()
-        f = csv.reader(open("data/MapHeuristics.csv","r"))
-        for row in f: 
-            Map.g.add_edge(row[0],row[1], distance = row[2])</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bf1f9fb1">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-
-    <span class="n">Map</span><span class="o">.</span><span class="n">createArea</span><span class="p">()</span>
-    <span class="n">Map</span><span class="o">.</span><span class="n">createHeuristics</span><span class="p">()</span>
-
-    <span class="c1">#state = Map('i', 0, 'i', 'o')</span>
-    <span class="n">state</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">)</span>
-    <span class="c1">#state = Map('i', 0, 'i', 'x')</span>
-    <span class="c1">#algorithm = BuscaLargura()</span>
-    <span class="c1">#algorithm = BuscaCustoUniforme()</span>
-    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaGananciosa</span><span class="p">()</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">tf</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'Nao achou solucao'</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Tempo de processamento em segundos: '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tf</span><span class="o">-</span><span class="n">ts</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'O custo da solucao eh: '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="p">))</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-3">def main():
-
-    Map.createArea()
-    Map.createHeuristics()
-
-    #state = Map('i', 0, 'i', 'o')
-    state = Map('b', 0, 'b', 'o')
-    #state = Map('i', 0, 'i', 'x')
-    #algorithm = BuscaLargura()
-    #algorithm = BuscaCustoUniforme()
-    algorithm = BuscaGananciosa()
-    ts = time.time()
-    result = algorithm.search(state, trace=True)
-    tf = time.time()
-    if result != None:
-        print(result.show_path())
-    else:
-        print('Nao achou solucao')
-    print('Tempo de processamento em segundos: ' + str(tf-ts))
-    print('O custo da solucao eh: '+str(result.g))</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=31e9af4b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-4">if __name__ == '__main__':
-    main()</div>
+        # Exemplos de especificações adequadas: 
+        # - para o problema do soma 1 e 2: return str(self.number)+"#"+str(self.cost)
+        # - para o problema das cidades: return self.city+"#"+str(self.cost())
+        #
+        # Exemplos de especificações NÃO adequadas: 
+        # - para o problema do soma 1 e 2: return str(self.number)
+        # - para o problema das cidades: return self.city
+        #
+        return str(self.posicao) + self.operator
+        #return self.operator</div>
 </div>
 </div>
 </div>
@@ -1641,7 +1711,7 @@ import csv</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 12, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 16, 2024</span>
   </span>
 
     
