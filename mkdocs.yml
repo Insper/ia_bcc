@@ -40,8 +40,8 @@ nav:
 #
     - 'Ambientes competitivos':
       - 'aulas/13_jogos/index.md'
-#      - 'aulas/14_tictactoe/tictactoe.ipynb'
-#      - 'aulas/14_tictactoe/index.md'
+      - 'aulas/14_tictactoe/tictactoe.ipynb'
+      - 'aulas/14_tictactoe/index.md'
 #
 ###    - 'aulas/14_competicao/index.md'
 #    - 'Aprendizagem por reforço':
