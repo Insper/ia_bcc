@@ -56,7 +56,7 @@ Toda a implementação e documentação sobre os resultados deve estar em um arq
 
 * Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é este aqui [https://classroom.github.com/a/RrBlJCJA](https://classroom.github.com/a/RrBlJCJA). 
 
-* A entrega é em equipes com até 3 integrantes e o  **prazo para a entrega** é 20/09/2024 (sexta-feira) até às 23:30 horas.
+* A entrega é em equipes com até 3 integrantes e o  **prazo para a entrega** é 27/09/2024 (sexta-feira) até às 23:30 horas.
 
 
 <!--
