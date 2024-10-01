@@ -1,0 +1,1492 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../aulas/14_tictactoe/">
+      
+      
+        <link rel="next" href="../../referencias/01_introducao/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>Projeto intermediário 2024/2 - Inteligência Artificial e Robótica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#projeto-intermediario-20242" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Inteligência Artificial e Robótica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Projeto intermediário 2024/2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Inteligência Artificial e Robótica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ementa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ementa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano_de_aulas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Critérios para Aprovação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Aulas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Aulas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introdução
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introdução
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/01_introducao_ia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução à Inteligência Artificial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/02_agentes_autonomos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Agentes Autônomos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/03_configuracao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementando um Aspirador de Pó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Busca em espaço de estados
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Busca em espaço de estados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_modelagem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alterando os algoritmos de busca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_modelagem_espaco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelagem e espaço de busca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_x_buscas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algoritmos de Busca em Largura e Profundidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_x_modelagem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuação sobre algoritmos de busca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/07_revisao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Revisão sobre algoritmos de busca sistemáticos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Busca com heurística
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Busca com heurística
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/08_heuristica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menor caminho entre duas cidades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/08_heuristica_parte_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuação: menor caminho entre duas cidades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/08_heuristica_parte_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heurística admissível
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/08_heuristica_parte_3_aps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problema do 8-Puzzle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programação por restrições
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Programação por restrições
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/12_csp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atividade proposta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ambientes competitivos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ambientes competitivos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/13_jogos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jogos de tabuleiro e busca competitiva
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/14_tictactoe/tictactoe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial sobre o pacote kaggle-environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/14_tictactoe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jogador de jogo da velha
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Projetos atuais
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Projetos atuais
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Projeto intermediário 2024/2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Projeto intermediário 2024/2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefas-e-rubrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefas e Rubrica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-para-a-entrega-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras para a entrega do projeto
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Referências
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Referências
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução à Inteligência Artificial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algoritmos de Busca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/03_csp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constraint Satisfaction Problems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/04_busca_competitiva/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Busca Competitiva
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/05_jogos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jogos de tabuleiro e busca competitiva
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercícios e avaliações antigas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Exercícios e avaliações antigas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercícios adicionais a avaliações antigas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefas-e-rubrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefas e Rubrica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-para-a-entrega-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras para a entrega do projeto
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="projeto-intermediario-20242">Projeto intermediário 2024/2</h1>
+<h2 id="descricao">Descrição</h2>
+<p>O contexto e descricação do escopo deste projeto estão neste <a href="Projeto_Intermediario_IA_2024_2.pdf">arquivo</a>. Por favor, leia com atenção o conteúdo deste arquivo antes de continuar. </p>
+<details class="warning">
+<summary>Dúvidas? </summary>
+<p>Quais são as suas dúvidas sobre o escopo do projeto?</p>
+</details>
+<h2 id="referencias">Referências</h2>
+<p>Alguns links e arquivos que poderão ajudar na implementação do projeto: </p>
+<ul>
+<li><a href="https://pfeinsper.github.io/drone-swarm-search/Documentation/docsCoverage.html#about">Link para a biblioteca DSSE</a>.</li>
+<li><a href="src/coverage_example/">Arquivo exemplo de como utilizar o ambiente de coverage</a>.</li>
+<li><a href="src/execute_config_01/">Arquivo exemplo de como simular o funcionamento de um agente considerando o ambiente pré-configurado 01</a>.</li>
+<li><a href="src/execute_config_02/">Arquivo exemplo de como simular o funcionamento de um agente considerando o ambiente pré-configurado 02</a>.</li>
+</ul>
+<p>Arquivos que serão utilizados no projeto: </p>
+<ul>
+<li><a href="data/config_01.npy">Matriz de probabilidade para o ambiente 01 - considerando algum lugar próximo do Guarujá</a>.</li>
+<li><a href="data/config_02.npy">Matriz de probabilidade para o ambiente 02 - considerando algum lugar próximo de Florianópolis</a>.</li>
+</ul>
+<h2 id="tarefas-e-rubrica">Tarefas e Rubrica</h2>
+<p>Para a entrega deste projeto, cada equipe deverá realizar as tarefas que estão listadas na tabela abaixo. A tabela também indica a relação da atividade com a rubrica de avaliação.</p>
+<table>
+<thead>
+<tr>
+<th>Tarefas</th>
+<th>Rubrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entender o problema proposto e o ambiente de simulação, ou seja, a biblioteca <a href="https://pfeinsper.github.io/drone-swarm-search/Documentation/docsCoverage.html#about">DSSE</a>.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Fazer a configuração do repositório usando arquivo requirements.txt e um ambiente virtual. No arquivo requirements.txt deve conter todas as bibliotecas necessárias para a execução do projeto.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Implementar um agente que executa o <em>traditional maritime search pattern</em> em um ambiente com 1 agente.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Implementar um agente que executa o algoritmo <em>expanding square search</em> em um ambiente com 1 agente.</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<p>Se o grupo realizar apenas um sub-conjunto das tarefas acima, o grupo receberá o conceito I.</p>
+<table>
+<thead>
+<tr>
+<th>Tarefas</th>
+<th>Rubrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Implementar um agente que executa o algoritmo A* em um ambiente com 1 agente.</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Executar os algoritmos acima considerando o ambiente pré-configurado 01 e o ambiente pré-configurado 02, e coletar os dados da execução.</td>
+<td>C</td>
+</tr>
+<tr>
+<td>O arquivo que executa as simulações deve receber três parâmetros: o ambiente, o algoritmo e a quantidade de agentes. A implementação deste script deve permitir que qualquer pessoa possa executar a qualquer momento qualquer combinação válida. Neste momento, a quantidade de agentes sempre será 1, mas para outras análise este valor poderá ser alterado.</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Os dados da execução devem ser salvos em um arquivo CSV. Um arquivo CSV para cada ambiente, cada algoritmo e quantidade de agentes. Os arquivos CSV precisam estar em uma pasta específica e devidamente identificados.</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Para a criação dos gráficos deve-se utilizar um Jupyter Notebook. Este notebook deve ser salvo em uma pasta específica e devidamente identificado. Os gráficos gerados devem adotar o mesmo padrão dos gráficos apresentados no arquivo <a href="Projeto_Intermediario_IA_2024_2.pdf">Projeto_Intermediario_IA_2024_2.pdf</a>.</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+<p>Para que um grupo obtenha determinado conceito, é necessário que todas as tarefas que compõem o conceito sejam realizadas, além das tarefas relacionadas aos conceitos anteriores.</p>
+<table>
+<thead>
+<tr>
+<th>Tarefas</th>
+<th>Rubrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Implementar um agente que executa o <em>traditional maritime search pattern with 2 agents</em> em um ambiente com 2 agente.</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Implementar um agente que executa o <em>traditional maritime search pattern with 4 agents</em> em um ambiente com 4 agente.</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Executar os algoritmos <em>tradicional maritime search</em>, <em>expanding square search</em> e <em>A*</em> considerando os ambientes pré-configurado 01 e o ambiente pré-configurado 02, com 1, 2 e 4 agentes, e coletar os dados da execução.</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Implementar um Jupyter Notebook que apresenta os gráficos para todos os cenários simulados. Os gráficos gerados devem adotar o mesmo padrão dos gráficos apresentados no arquivo <a href="Projeto_Intermediario_IA_2024_2.pdf">Projeto_Intermediario_IA_2024_2.pdf</a>.</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tarefas</th>
+<th>Rubrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar um relatório que compara os algoritmos <em>tradicional maritime search</em>, <em>expanding square search</em> e <em>A*</em> considerando os ambientes pré-configurado 01 e o ambiente pré-configurado 02, com 1, 2 e 4 agentes. O relatório deve conter uma análise dos resultados obtidos. Para uma análise completa, este relatório precisa ter gráficos que comparam os algoritmos nos ambientes pré-configurado 01 e o ambiente pré-configurado 02, com 1, 2 e 4 agentes. Ou seja, cada gráfico irá ter <span class="arithmatex">\(n\)</span> linhas onde <span class="arithmatex">\(n\)</span> é o número de algoritmos a serem comparados.</td>
+<td>A</td>
+</tr>
+<tr>
+<td>No relatório é necessário deixar claro qual foi a heurística utilizada no algoritmo <em>A*</em> e qualquer outra informação relevante sobre os outros algoritmos.</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tarefas</th>
+<th>Rubrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pesquisar por um algoritmo de busca específico para problemas de <em>Coverage Path Planning</em>, implementar este algoritmo e aplicar este algoritmo nos ambientes pré-configurado 01 e o ambiente pré-configurado 02, com 1, 2 e 4 agentes.</td>
+<td>A+</td>
+</tr>
+<tr>
+<td>Criar um relatório que compara o algoritmo pesquisado com os algoritmos <em>tradicional maritime search</em>, <em>expanding square search</em> e <em>A*</em> considerando os ambientes pré-configurado 01 e o ambiente pré-configurado 02, com 1, 2 e 4 agentes. O relatório deve conter uma análise dos resultados obtidos. Para uma análise completa, este relatório precisa ter gráficos que comparam os algoritmos nos ambientes pré-configurado 01 e o ambiente pré-configurado 02, com 1, 2 e 4 agentes. Ou seja, cada gráfico irá ter <span class="arithmatex">\(n\)</span> linhas onde <span class="arithmatex">\(n\)</span> é o número de algoritmos a serem comparados.</td>
+<td>A+</td>
+</tr>
+<tr>
+<td>No relatório é necessário descrever o algoritmo pesquisado e informar as devidas referências.</td>
+<td>A+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="regras-para-a-entrega-do-projeto">Regras para a entrega do projeto</h2>
+<ul>
+<li>
+<p>Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é: <a href="https://classroom.github.com/a/xN_iRBUE">https://classroom.github.com/a/xN_iRBUE</a>. </p>
+</li>
+<li>
+<p>A entrega é em equipes com até 3 integrantes e o  <strong>prazo para a entrega</strong> é 07/10/2024 (segunda-feira) até às 23:30 horas.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2024</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="../../js/markdown-enhancer.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
