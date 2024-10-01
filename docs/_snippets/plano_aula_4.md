@@ -32,5 +32,10 @@
       <td style = "background-color: #efdada;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS</strong></td>
       <td style = "background-color: #efdada;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS - Prova Intermediária</strong></td>
     </tr>
+    <tr>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">30-Set</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS</strong></td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS - Prova Intermediária</strong></td>
+    </tr>
   </tbody>
 </table></p>

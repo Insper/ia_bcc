@@ -21,7 +21,10 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| TBD |  TBD         |
+| [https://insper.github.io/ia_bcc/aulas/04_x_buscas/](https://insper.github.io/ia_bcc/aulas/04_x_buscas/) |  30/08/2024         |
+| [https://insper.github.io/ia_bcc/aulas/04_x_modelagem/](https://insper.github.io/ia_bcc/aulas/04_x_modelagem/) | 06/09/2024         |
+| [https://insper.github.io/ia_bcc/aulas/08_heuristica_parte_3_aps/](https://insper.github.io/ia_bcc/aulas/08_heuristica_parte_3_aps/) | 13/09/2024 |
+| [https://insper.github.io/ia_bcc/aulas/14_tictactoe/](https://insper.github.io/ia_bcc/aulas/14_tictactoe/) | 27/09/2024 |
 
 ## 2 projetos
 
@@ -29,7 +32,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| TBD | TBD |
+| [Appling Coverage Path Planning Algorithms in Search and Rescue Operations](./projetos/2024_02_intermediario/index.md) | TBD |
 
 ## Conversão de conceito para valor numérico
 

@@ -28,10 +28,14 @@ O plano de aula desta disciplina está divido em **seis** (6) blocos. Para cada 
 
 --8<-- "plano_aula_4.md"
 
-## Aprendendo políticas
+## Projeto Intermediário
 
 --8<-- "plano_aula_5.md"
 
-## Robótica
+## Aprendendo políticas
 
 --8<-- "plano_aula_6.md"
+
+## Robótica
+
+--8<-- "plano_aula_7.md"
