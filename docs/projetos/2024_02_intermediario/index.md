@@ -67,4 +67,4 @@ Para que um grupo obtenha determinado conceito, é necessário que todas as tare
 
 * Para a implementação e entrega deste exercício nós vamos utilizar o Github Classroom. O link para para envio do projeto é: [https://classroom.github.com/a/xN_iRBUE](https://classroom.github.com/a/xN_iRBUE). 
 
-* A entrega é em equipes com até 3 integrantes e o  **prazo para a entrega** é 07/10/2024 (segunda-feira) até às 23:30 horas.
+* A entrega é em equipes com até 3 integrantes e o  **prazo para a entrega** é 13/10/2024 (domingo) até às 23:30 horas.
