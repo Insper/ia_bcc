@@ -22,5 +22,10 @@
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Appling Coverage Path Planning Algorithms in Search and Rescue Operations</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
     </tr>
+    <tr>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">9-Out</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Appling Coverage Path Planning Algorithms in Search and Rescue Operations</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
+    </tr>
   </tbody>
 </table></p>
