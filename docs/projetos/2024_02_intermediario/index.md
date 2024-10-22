@@ -1,4 +1,4 @@
-# Projeto intermediário 2024/2
+# Projeto intermediário
 
 ## Descrição
 

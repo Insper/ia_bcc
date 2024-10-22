@@ -6,7 +6,7 @@ Neste ambiente o agente consegue executar 4 ações: ir para cima, ir para baixo
 
 ##  Trabalhe com o arquivo `FrozenLake_introduction.py`
 
-1. Este arquivo está disponível em [https://github.com/Insper/rl_code/tree/main/src/part_03](https://github.com/Insper/rl_code/tree/main/src/part_03).
+1. Este arquivo está disponível [aqui](./src/FrozenLake_introduction.py).
 
 1. Leia a documentação do código fonte disponível em [https://gymnasium.farama.org/environments/toy_text/frozen_lake/](https://gymnasium.farama.org/environments/toy_text/frozen_lake/)
 
@@ -16,9 +16,9 @@ Neste ambiente o agente consegue executar 4 ações: ir para cima, ir para baixo
 
 1. O que aconteceu com a execução das ações? O resultado foi o esperado? Descreva o que aconteceu.
 
-## Trabalhe com o arquivo `FrozenLake.py`
+## Trabalhe com o arquivo `FrozenLakeQLearning.py`
 
-* Este arquivo também está em [https://github.com/Insper/rl_code/tree/main/src/part_03](https://github.com/Insper/rl_code/tree/main/src/part_03)
+* Este arquivo também está [aqui](./src/FrozenLakeQLearning.py).
 
 * Abra em um editor de texto e descomente as linhas 12 e 13 e comente a linha 14. O código deve ficar como abaixo:
 
@@ -29,29 +29,23 @@ q_table = qlearn.train('data/q-table-frozen-lake.csv','results/actions_frozen_la
 #q_table = loadtxt('data/q-table-frozen-lake.csv', delimiter=',')
 ````
 
-* Execute o arquivo `FrozenLake.py` com o comando:
+* Execute o arquivo `FrozenLakeQLearning.py` com o comando:
 
 ````bash
-python FrozenLake.py
+python FrozenLakeQLearning.py
 ````
 
-* Agora faça o algoritmo `FrozenLake.py` ler a Q-table a partir do arquivo gerado anteriormente e veja qual é o comportamento. Execute diversas vezes. Ele consegue chegar ao objetivo sempre? Ele consegue chegar ao objetivo na maioria das vezes? 
+* Agora faça o algoritmo `FrozenLakeQLearning.py` ler a Q-table a partir do arquivo gerado anteriormente e veja qual é o comportamento. Execute diversas vezes. Ele consegue chegar ao objetivo sempre? Ele consegue chegar ao objetivo na maioria das vezes? 
 
-* E se executarmos 100 vezes? Quantas vezes o agente consegue atingir o objetivo? Execute o comando abaixo:
+* E se executarmos 100 vezes? Quantas vezes o agente consegue atingir o objetivo? 
 
-````bash
-python FrozenLake100times.py
-````
-
-* Como podemos melhorar o desempenho deste agente?
-
-* Teste diferentes configurações de hiperparâmetros. Qual é o comportamento visto no gráfico de episódios versus rewards? 
+* Como podemos melhorar o desempenho deste agente? Teste diferentes configurações de hiperparâmetros. Qual é o comportamento visto no gráfico de episódios versus rewards? 
 
 ## E o algoritmo Sarsa?
 
 * Será que o algoritmo Sarsa tem um desempenho melhor para problemas não-determinísticos? 
 
-* Em [https://github.com/Insper/rl_code/tree/main/src/part_03](https://github.com/Insper/rl_code/tree/main/src/part_03) tem um arquivo chamado `FrozenLakeSarsa.py` que você pode utilizar para responder esta pergunta. 
+* [Aqui](./src/FrozenLakeSarsa.py) tem um arquivo chamado `FrozenLakeSarsa.py` que você pode utilizar para responder esta pergunta. 
 
 ## Outro mapa
 

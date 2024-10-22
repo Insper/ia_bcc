@@ -48,7 +48,7 @@ nav:
       - 'aulas/15_rl/index.md'
       - 'aulas/15_rl_parte2/index.md'
       - 'aulas/15_rl_sarsa/index.md'
-###      - 'aulas/15_xnon_determ/index.md'
+      - 'aulas/15_xnon_determ/index.md'
 #
 ##  - 'Avaliações atuais':
 ##    - 'avaliacoes/2024_1_intermediaria/index.md'
@@ -58,7 +58,7 @@ nav:
   - 'Projetos atuais':
     - 'projetos/2024_02_intermediario/index.md'
 #    - 'projetos/15_rl/index.md'
-###    - 'projetos/16_robo/index.md'
+    - 'projetos/2024_02_robo/index.md'
 #
 #
 ###   - 'Tópicos sobre IA':
