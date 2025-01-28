@@ -6,8 +6,7 @@ import time
 class RoboAspirador(State):
 
     def __init__(self, op, posicao_robo, situacao_esq, situacao_dir):
-        # You must use this name for the operator!
-        self.operator = op
+        super().__init__(op)
         self.posicao_robo = posicao_robo
         self.situacao_esq = situacao_esq
         self.situacao_dir = situacao_dir

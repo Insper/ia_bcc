@@ -40,7 +40,7 @@ from datetime import datetime
 class SumOne(State):
 
     def __init__(self, n, op, g):
-        self.operator = op
+        super().__init__(op)
         self.number = n
         self.goal = g
     
