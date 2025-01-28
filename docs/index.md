@@ -16,7 +16,7 @@ Segundas das 10:00 até 11:30.
 
 * Todas os projetos e implementações irão utilizar a linguagem de programação **Python**. Sendo assim, espera-se que os alunos desta disciplina tenham conhecimento de programação em Python. 
 
-* As entregas dos projetos e exercícios serão via [Github Classroom](){:target="_blank"}
+* As entregas dos projetos e exercícios serão via [Github Classroom](https://classroom.github.com/classrooms/66448216-insper-classroom-ai-2025-1){:target="_blank"}
 
 ## Contato
 
