@@ -18,61 +18,61 @@ nav:
     - 'Introdução':
       - 'aulas/01_introducao_ia/index.md'
       - 'aulas/02_agentes_autonomos/index.md'
-      - 'aulas/03_configuracao/index.md'
-    - 'Busca em espaço de estados':
-      - 'aulas/04_modelagem/index.md'
-      - 'aulas/04_modelagem_espaco/index.md'
-      - 'aulas/04_x_buscas/index.md'
-      - 'aulas/04_x_modelagem/index.md'
+#      - 'aulas/03_configuracao/index.md'
+#    - 'Busca em espaço de estados':
+#      - 'aulas/04_modelagem/index.md'
+#      - 'aulas/04_modelagem_espaco/index.md'
+#      - 'aulas/04_x_buscas/index.md'
+#      - 'aulas/04_x_modelagem/index.md'
 ##      - 'aulas/05_busca_com_custo/index.md'
 ##    # - 'aulas/05_x_busca_cega/index.md'
-      - 'aulas/07_revisao/index.md'
-    - 'Busca com heurística':
-      - 'aulas/08_heuristica/index.md'
-      - 'aulas/08_heuristica_parte_2/index.md'
-      - 'aulas/08_heuristica_parte_3/index.md'
-      - 'aulas/08_heuristica_parte_3_aps/index.md'
+#      - 'aulas/07_revisao/index.md'
+#    - 'Busca com heurística':
+#      - 'aulas/08_heuristica/index.md'
+#      - 'aulas/08_heuristica_parte_2/index.md'
+#      - 'aulas/08_heuristica_parte_3/index.md'
+#      - 'aulas/08_heuristica_parte_3_aps/index.md'
 ##    # - 'aulas/10_heuristica_revisao/index.md'
 ##      - 'aulas/11_contribuindo_aigyminsper/index.md'
 #
-    - 'Programação por restrições':
-      - 'aulas/12_csp/index.md'
+#    - 'Programação por restrições':
+#      - 'aulas/12_csp/index.md'
 #
-    - 'Ambientes competitivos':
-      - 'aulas/13_jogos/index.md'
-      - 'aulas/14_tictactoe/tictactoe.ipynb'
-      - 'aulas/14_tictactoe/index.md'
+#    - 'Ambientes competitivos':
+#      - 'aulas/13_jogos/index.md'
+#      - 'aulas/14_tictactoe/tictactoe.ipynb'
+#      - 'aulas/14_tictactoe/index.md'
 #
 ###    - 'aulas/14_competicao/index.md'
-    - 'Aprendizagem por reforço':
-      - 'aulas/15_rl/index.md'
-      - 'aulas/15_rl_parte2/index.md'
-      - 'aulas/15_rl_sarsa/index.md'
-      - 'aulas/15_xnon_determ/index.md'
+#    - 'Aprendizagem por reforço':
+#      - 'aulas/15_rl/index.md'
+#      - 'aulas/15_rl_parte2/index.md'
+#      - 'aulas/15_rl_sarsa/index.md'
+#      - 'aulas/15_xnon_determ/index.md'
 #
 ##  - 'Avaliações atuais':
 ##    - 'avaliacoes/2024_1_intermediaria/index.md'
 ##    - 'avaliacoes/2024_1_final/index.md'
 ##    - 'avaliacoes/2024_1_gabarito/index.md'
 ##    - 'avaliacoes/2023_2_sub/index.md'
-  - 'Projetos atuais':
-    - 'projetos/2024_02_intermediario/index.md'
-#    - 'projetos/15_rl/index.md'
-    - 'projetos/2024_02_robo/index.md'
+#  - 'Projetos atuais':
+#    - 'projetos/2024_02_intermediario/index.md'
+##    - 'projetos/15_rl/index.md'
+#    - 'projetos/2024_02_robo/index.md'
 #
 #
 ###   - 'Tópicos sobre IA':
 ###    - 'aulas/99_topicos/index.md'
   - 'Referências':
     - 'referencias/01_introducao/index.md'
-    - 'referencias/03_algoritmos_busca/index.md'
-    - 'referencias/03_csp/index.md'
-##    - 'referencias/03_dijkstra/index.md'
-    - 'referencias/04_busca_competitiva/index.md'
-    - 'referencias/05_jogos/index.md'
+#    - 'referencias/03_algoritmos_busca/index.md'
+#    - 'referencias/03_csp/index.md'
+###    - 'referencias/03_dijkstra/index.md'
+#    - 'referencias/04_busca_competitiva/index.md'
+#    - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
-  - 'Exercícios e avaliações antigas':
-    - 'exercicios/index.md'
+#  - 'Exercícios e avaliações antigas':
+#    - 'exercicios/index.md'
 #  
 #  - 'Comentários': 'comentarios.md'
 

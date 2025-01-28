@@ -8,24 +8,14 @@
   </thead>
   <tbody>
     <tr>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">2-Out</td>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Appling Coverage Path Planning Algorithms in Search and Rescue Operations</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">02-Abr</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Tema a ser definido</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">3-Out</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Appling Coverage Path Planning Algorithms in Search and Rescue Operations</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
-    </tr>
-    <tr>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">7-Out</td>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Appling Coverage Path Planning Algorithms in Search and Rescue Operations</td>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
-    </tr>
-    <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">9-Out</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Appling Coverage Path Planning Algorithms in Search and Rescue Operations</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">07-Abr</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">O que é aprendizagem por reforço? Qual a sua relação com o desenvolvimento de agentes autônomos? Algoritmo Q-Learning</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Discussão em sala. Exercícios em sala de aula envolvendo o ambiente OpenAI Gym.  Implementação de agentes autônomos usando o algoritmo Q-Learning.</td>
     </tr>
   </tbody>
 </table></p>

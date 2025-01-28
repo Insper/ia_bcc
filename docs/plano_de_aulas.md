@@ -5,11 +5,6 @@ O plano de aula desta disciplina está divido em **seis** (6) blocos. Para cada 
 ??? "Atenção!"
 
     O programa está sempre sujeito a alterações e adaptações conforme as disciplina é executada.
-
-
-??? "Atenção para reposição de aulas!"
-
-    Esta disciplina inicia no dia **14 de agosto**, uma semana depois do calendário oficial. As aulas dos dias 05, 07 e 12 de fevereiro serão repostas em datas a serem combinadas com a turma.
     
 
 ## Introdução à Inteligência Artificial
