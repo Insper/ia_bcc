@@ -16,7 +16,7 @@ Para este exercício vamos utilizar o arquivo [AgentSpecification.py](./code/Age
 
 * Faça uma cópia deste arquivo e chame ele de `AspiradorPo.py`, por exemplo.
 * No método `__init__` defina a estrutura de dados que você especificou na aula passada. 
-* No método `sucessors` codifique a execução das ações segundo o que você especificou na aula passada. **Dica**: cada novo estado é uma instância de um novo objeto da classe que é adicionado na lista retornada pelo método. 
+* No método `successors` codifique a execução das ações segundo o que você especificou na aula passada. **Dica**: cada novo estado é uma instância de um novo objeto da classe que é adicionado na lista retornada pelo método. 
 * Codifique o comportamento do método `is_goal`. Ele deve retornar `True` quando encontrar um estado igual a meta. 
 * O médoto `description()` retorna uma descrição do problema que está sendo resolvido. Por favor, altere o que está descrito no método. 
 * Faça um retorno para o método `env()`. Peça para o professor explicar em sala de aula.
