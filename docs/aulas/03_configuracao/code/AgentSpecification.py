@@ -1,11 +1,11 @@
-from aigyminsper.search.SearchAlgorithms import BuscaLargura
-from aigyminsper.search.Graph import State
+from aigyminsper.search.search_algorithms import BuscaLargura
+from aigyminsper.search.graph import State
 
 class AgentSpecification(State):
 
     def __init__(self, op):
-        # You must use this name for the operator!
-        self.operator = op
+        # voce sempre deve usar esta chamada para inicializar a superclasse
+        super().__init__(op)
         #TODO
     
     def successors(self):
@@ -41,7 +41,7 @@ class AgentSpecification(State):
 
 
 def main():
-    print('Busca em profundidade iterativa')
+    print('Busca em largura')
     state = AgentSpecification('')
     algorithm = BuscaLargura()
     result = algorithm.search(state)

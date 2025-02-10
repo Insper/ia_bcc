@@ -1,5 +1,8 @@
 # Implementando um Aspirador de Pó
 
+??? hint "Importante!"
+    As orientações sobre a entrega deste exercício estão abaixo. Este é um exercício individual. Os alunos poderão discutir sobre o problema, mas a implementação deve ser feita individualmente. Não pode ser utilizado nenhum tipo de ferramenta de Inteligência Artificial para a resolução destes problemas.
+
 ## Configuração do ambiente
 
 Para executar esta atividade você terá que criar um projeto e como dependência deste projeto instalar a biblioteca [AIGYM](https://pypi.org/project/aigyminsper/):
@@ -30,10 +33,6 @@ Para este exercício vamos utilizar o arquivo [AgentSpecification.py](./code/Age
 
     Algoritmos de Busca, começando com o algoritmo de busca em largura. 
 
-??? hint "Importante!"
-
-    Recomenda-se fortemente que todo estudante faça estas atividades em sua máquina. Os problemas podem ser discutidos em grupo, no entanto, cada aluno precisa ter a sua própria implementação.
-
 ## Exercício 2: Aspirador de Pó com 4 quartos.
 
 Vamos implementar um aspirador de pó que atua em um ambiente com 4 quartos? Um quadrado $2 \times 2$? 
@@ -51,7 +50,15 @@ Mas, antes de implementar usando uma estrutura similar a descrita acima, respond
 * Qual a estimativa do tamanho do espaço de busca (número de
     estados possíveis)?
 
-## Exercício 3: Aspirador de Pó com poltrona. 
+
+## Entrega
+
+A entrega deste exercício deve ser feita no Github Classroom: [https://classroom.github.com/a/jVJqCxFJ](https://classroom.github.com/a/jVJqCxFJ). A entrega é individual e deve ser feita até o meio dia do dia 10/02. O projeto base existente no Github classroom tem um arquivo de teste. Você deve implementar o código de forma que todos os testes passem.
+
+
+## Exercício adicional: Aspirador de Pó com poltrona. 
+
+Se você já terminou o exercício acima então você pode implementar uma solução para esta situação adicional. Este exercício é opcional e não será considerado para a nota.
 
 Neste problema os quartos da casa podem possuir poltronas. Para limpar o quarto da casa que tem poltrona o agente deve antes de executar a ação limpar `virar` a poltrona. Claro que depois de limpar o agente deve também `desvirar` a poltrona para deixar o quarto em ordem. 
 
@@ -69,3 +76,4 @@ Mas, antes de implementar usando uma estrutura similar a descrita acima, respond
     condições para cada operação ser executada)
 * Qual a estimativa do tamanho do espaço de busca (número de
     estados possíveis)?
+
