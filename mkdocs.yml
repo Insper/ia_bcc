@@ -19,8 +19,8 @@ nav:
       - 'aulas/01_introducao_ia/index.md'
       - 'aulas/02_agentes_autonomos/index.md'
       - 'aulas/03_configuracao/index.md'
-#    - 'Busca em espaço de estados':
-#      - 'aulas/04_modelagem/index.md'
+    - 'Busca em espaço de estados':
+      - 'aulas/04_modelagem/index.md'
 #      - 'aulas/04_modelagem_espaco/index.md'
 #      - 'aulas/04_x_buscas/index.md'
 #      - 'aulas/04_x_modelagem/index.md'
