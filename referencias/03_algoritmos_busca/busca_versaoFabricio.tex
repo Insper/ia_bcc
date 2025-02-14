@@ -5,6 +5,7 @@
 %\centerslidesfalse
 
 \usepackage{algorithmic}
+\usepackage{pythonhighlight}
 
 %
 % Slides
@@ -19,7 +20,7 @@
 \title{Busca em Espaço de Estados} 
 \author{Fabrício Barth}
 \institution{Insper}
-\date{Março de 2022}
+\date{Fevereiro de 2025}
 
 \SlideHeader{}
             {Agentes Autônomos e Aprendizagem por Reforço}
@@ -264,12 +265,12 @@
   \begin{itemize}
   \item Completo: sim 
   \item Ótimo:  sim, para problemas de custo uniforme
-  \item Tempo: explorar $O(b^d)$ nodos
+  \item Tempo: explorar $O(b^d)$\footnote{A notação $O(b^d)$ representa uma ordem de crescimento assintótica. Não representa um valor exato, mas sim um limite superior para o crescimento da função.} nodos
 
   \begin{itemize}
     \item $b$ = fator de ramificação
     \item $d$ = profundidade do estado meta
-    \item $O(b^d) = 1+b+b^2+b^3+....+b^d$
+    \item Tempo gasto = $1+b+b^2+b^3+....+b^d$
   \end{itemize} 
 
   \item Espaço: guardar $O(b^d)$ nodos.
@@ -306,7 +307,6 @@
 			\item o custo de ter sido gerado (dentado por $g$)
 			\item opcionalmente, os nodos sucessores
 		\end{itemize}
-		\item (fazer a figura)
 	\end{itemize}
 \end{Slide}
 
@@ -334,6 +334,29 @@
 			consulta) para saber se determinado nodo existe na árvore
 		\end{itemize}
 	\end{itemize}
+	
+	\newpage
+	
+	Poda da árvore na biblioteca \textsc{aigyminsper}: 
+	
+\begin{python}
+# Sem poda
+algorithm = BuscaLargura()
+result = algorithm.search(state)
+
+# Não permite criar um filho igual ao pai
+algorithm = BuscaLargura()
+result = algorithm.search(
+	state, pruning='father-son')
+
+# Não cria um nodo que já existe na árvore
+algorithm = BuscaLargura()
+result = algorithm.search(
+	state, pruning='general')
+\end{python}
+	
+	
+	
 \end{Slide}
 
 
