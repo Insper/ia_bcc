@@ -22,7 +22,7 @@ nav:
     - 'Busca em espaço de estados':
       - 'aulas/04_modelagem/index.md'
 #      - 'aulas/04_modelagem_espaco/index.md'
-#      - 'aulas/04_x_buscas/index.md'
+      - 'aulas/04_x_buscas/index.md'
 #      - 'aulas/04_x_modelagem/index.md'
 ##      - 'aulas/05_busca_com_custo/index.md'
 ##    # - 'aulas/05_x_busca_cega/index.md'
@@ -65,7 +65,7 @@ nav:
 ###    - 'aulas/99_topicos/index.md'
   - 'Referências':
     - 'referencias/01_introducao/index.md'
-#    - 'referencias/03_algoritmos_busca/index.md'
+    - 'referencias/03_algoritmos_busca/index.md'
 #    - 'referencias/03_csp/index.md'
 ###    - 'referencias/03_dijkstra/index.md'
 #    - 'referencias/04_busca_competitiva/index.md'
