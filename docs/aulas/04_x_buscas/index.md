@@ -75,7 +75,7 @@ Em alguns casos a combinação do algoritmo com o objetivo não fornece um resul
 
 ### Entrega 
 
-Esta atividade é individual e deve ser submetida via Github Classroom. O link para a atividade é [https://classroom.github.com/a/3HHDtNJo](https://classroom.github.com/a/3HHDtNJo). O prazo para entrega é 19/02/2025. 
+Esta atividade é individual e deve ser submetida via Github Classroom. O link para a atividade é [https://classroom.github.com/a/3HHDtNJo](https://classroom.github.com/a/3HHDtNJo). O prazo para entrega é **24/02/2025**. 
 
 ### Rubrica de avaliação
 
