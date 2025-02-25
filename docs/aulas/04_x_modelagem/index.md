@@ -50,16 +50,6 @@ Coloque oito rainhas em um tabuleiro de
 
 -->
 
-## Procurando caminhos em um mapa
-
-Considere o mapa abaixo: 
-
-![image](./img/grafo.png)
-
-Os $nodos = \{A,B,C,D,E,F,G\}$ são locais. As arestas são as ligações entre os locais. Cada aresta tem um custo. Por exemplo, O caminho entre A e B tem custo 1. O caminho entre A e C tem custo 10. Este é um grafo bi-direcional. Ou seja, O custo de A para C é o mesmo de C para A.
-
-Implemente uma solução que é capaz de encontrar o menor caminho entre qualquer par de locais do mapa. 
-
 ## Aspirador de Pó em uma casa genérica.
 
 Neste exercício o agente sabe executar outras ações, mas o objetivo dele permanece o mesmo. As ações são: 
