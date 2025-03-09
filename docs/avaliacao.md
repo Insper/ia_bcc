@@ -22,7 +22,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
 | [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md) | 10/02 |
-| [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) | 19/02 |
+| [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) | 24/02 |
 
 ## 2 projetos
 

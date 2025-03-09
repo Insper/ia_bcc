@@ -1,7 +1,5 @@
 # Continuação: menor caminho entre duas cidades
 
-Considerando o problema apresentado [na aula passada](../08_heuristica/index.md) e o código disponível em [src/Map2023.py](./src/Map2023.py) faça os seguintes testes abaixo. 
-
 ## Usando busca em profundidade iterativo
 
 **Encontrar um caminho entre a cidade *i* e *o*.**
