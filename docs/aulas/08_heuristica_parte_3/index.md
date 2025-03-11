@@ -2,6 +2,8 @@
 
 No problema apresentado na [aula passada](../08_heuristica/index.md) teve alguma situação onde o **algoritmo A*** não encontrou a solução ótima?
 
+Os arquivos: [src/MapLivro.py](./src/MapLivro.py) e [data/MapHeuristics.csv](./src/MapHeuristics.csv) fazem parte de uma possível solução para o problema. 
+
 ??? question "Resposta"
     Sim, quando a heurística não é admissível.
 
