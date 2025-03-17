@@ -35,11 +35,11 @@ nav:
 ##    # - 'aulas/10_heuristica_revisao/index.md'
 ##      - 'aulas/11_contribuindo_aigyminsper/index.md'
 #
-#    - 'Programação por restrições':
-#      - 'aulas/12_csp/index.md'
+    - 'Programação por restrições':
+      - 'aulas/12_csp/index.md'
 #
-#    - 'Ambientes competitivos':
-#      - 'aulas/13_jogos/index.md'
+    - 'Ambientes competitivos':
+      - 'aulas/13_jogos/index.md'
 #      - 'aulas/14_tictactoe/tictactoe.ipynb'
 #      - 'aulas/14_tictactoe/index.md'
 #
@@ -66,10 +66,10 @@ nav:
   - 'Referências':
     - 'referencias/01_introducao/index.md'
     - 'referencias/03_algoritmos_busca/index.md'
-#    - 'referencias/03_csp/index.md'
+    - 'referencias/03_csp/index.md'
 ###    - 'referencias/03_dijkstra/index.md'
-#    - 'referencias/04_busca_competitiva/index.md'
-#    - 'referencias/05_jogos/index.md'
+    - 'referencias/04_busca_competitiva/index.md'
+    - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
 #  - 'Exercícios e avaliações antigas':
 #    - 'exercicios/index.md'
