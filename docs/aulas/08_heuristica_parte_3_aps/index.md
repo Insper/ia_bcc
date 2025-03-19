@@ -44,13 +44,11 @@ Ao implementar o método `successors` do seu agente considere a seguinte ordem p
 
 ## Formato de entrega
 
-* Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/exG0xESK). 
+* Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/YKF8pE2R). 
 
-* O link para o enunciado é este aqui [https://classroom.github.com/a/exG0xESK](https://classroom.github.com/a/exG0xESK). Através deste link você consegue baixar o repositório e começar a sua codificação. 
+* **Prazo para a entrega**: 23/03/2025 (domingo) até às 23:50 horas.
 
-* **Prazo para a entrega**: 13/09/2022 (sexta-feira) até às 23:50 horas.
-
-* Este trabalho pode ser feito em equipes com até 3 integrantes. 
+* Este trabalho é individual.  
 
 ## Exemplo de código para o método `show_path`
 
@@ -67,6 +65,8 @@ Ao implementar o método `successors` do seu agente considere a seguinte ordem p
 ```
 
 **Detalhe importante sobre o método `tem_solucao`**: uma forma para cálculo se uma determinada configuração tem solução ou não é seguir a seguinte regra: *deve-se calcular a quantidade de inversões necessárias para ordenar certa sequência numérica, determinado por Possível a quantidade de inversões pares e Impossível a quantidade de inversões ímpares*.
+
+<!--
 
 ## Uma possível solução :new:
 
@@ -86,3 +86,5 @@ pytest -v -s
 ```
 
 No diretório onde se encontram os arquivos de teste e da implementação da solução. 
+
+-->

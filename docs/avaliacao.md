@@ -23,6 +23,8 @@ Seguem os enunciados que se encaixam nesta categoria:
 |:------------------------------------------------------------|:-------------------:|
 | [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md) | 10/02 |
 | [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) | 24/02 |
+| [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md) | 10/03 |
+| [Puzzle-8](./aulas/08_heuristica_parte_3_aps/index.md) | 23/03 |
 
 ## 2 projetos
 
