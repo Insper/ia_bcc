@@ -17,19 +17,25 @@ O conteúdo associado a este bloco é [1](./aulas/01_introducao_ia/index.md) e [
 
 --8<-- "plano_aula_2.md"
 
-O conteúdo associado a este bloco é [3](./aulas/03_configuracao/index.md), [4](./aulas/04_modelagem/index.md) e [5](./aulas/04_x_buscas/index.md).
+O conteúdo associado a este bloco é [3](./aulas/03_configuracao/index.md), [4](./aulas/04_modelagem/index.md), [5](./aulas/04_x_buscas/index.md), [6](./aulas/05_busca_com_custo/index.md) e [7](./aulas/07_revisao/index.md).
 
 ## Busca Heurística
 
 --8<-- "plano_aula_3.md"
 
+O conteúdo associado a este bloco é [8](./aulas/08_heuristica/index.md), [9](./aulas/08_heuristica_parte_2/index.md), [10](./aulas/08_heuristica_parte_3/index.md) e [11](./aulas/08_heuristica_parte_3_aps/index.md). 
+
 ## Ambientes Competitivos
 
 --8<-- "plano_aula_4.md"
 
+O conteúdo associado a este bloco é [12](./aulas/12_csp/index.md) e [13](./aulas/13_jogos/index.md).
+
 ## Projeto Intermediário
 
 --8<-- "plano_aula_5.md"
+
+O conteúdo associado a este bloco é [14](./projetos/2025_01_intermediario/index.md).
 
 ## Aprendendo políticas
 
