@@ -41,6 +41,8 @@ O conteúdo associado a este bloco é [14](./projetos/2025_01_intermediario/inde
 
 --8<-- "plano_aula_6.md"
 
+O conteúdo associado a este bloco é [15](./aulas/15_rl/index.md) e [16](./aulas/15_rl_parte2/index.md).
+
 ## Robótica
 
 --8<-- "plano_aula_7.md"

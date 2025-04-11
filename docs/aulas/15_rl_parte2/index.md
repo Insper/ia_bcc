@@ -58,11 +58,15 @@ Neste momento, você já deve ter percebido que uma ferramenta muito útil para 
 
 ## Atividade
 
-Faça uso de uma única imagem para sumarizar o aprendizado do agente. Você deve escolher a melhor métrica para o eixo $y$ do gráfico. O eixo $x$ deve ser a quantidade de episódios utilizado no treinamento. Você também deve definir qual é o melhor *zoom* (foco) no gráfico. Crie um documento que tem esta única imagem e a legenda dela.
+Você deve entregar um arquivo `README.md` que responde as seguintes perguntas: 
 
-Na legenda é necessário ter o título da imagem e um texto explicativo. O texto explicativo pode ser longo e deve ter as informações sobre os hiperparâmetros utilizados. 
+* Qual é o impacto de $\alpha$? Faça um gráfico com a curva de aprendizado do agente fixando $\gamma$ e variando $\alpha$. A sugestão é utilizar três (3) valores para $\alpha$: um próximo de zero, um intermediário e um próximo de um (1). Utilize um único gráfico com as três curvas de aprendizado.
 
-O gráfico deve possuir 3 linhas distintas. Cada uma destas linhas deve apresentar uma variação possível considerando os hiperparâmetros $\alpha$, $\gamma$ e $\epsilon$. Deverá ficar a critério do estudante quais valores utilizar. 
+* Qual é o impacto de $\gamma$ no aprendizado do agente no ambiente `TaxiDriver`? Faça um gráfico com a curva de aprendizado do agente fixando $\alpha$ e variando $\gamma$. A sugestão é utilizar três (3) valores para $\gamma$: um próximo de zero, um intermediário e um próximo de um (1). Utilize um único gráfico com as três curvas de aprendizado.
+
+* Qual é o impacto da forma como a ação é escolhida durante o treinamento? Faça um gráfico com a curva de aprendizado do agente usando três curvas: (i) onde o agente apenas explora o ambiente, ou seja, seleciona de forma aleatória todas as ações durante o treinamento; (ii) onde o agente apenas se utiliza do seu conhecimento sobre o ambiente, ou seja, na maioria das vezes faz o *explotation* ao invés do *exploration*. Para este caso, crie uma função de escolha da ação onde o agente tem probabilidade de 90% para escolher uma ação de acordo com a *q-table* e os outros 10% são aleatórios; (iii) onde o agente faz uso de uma função de *exploration and explotation* com um decaimento do $\epsilon$. 
+
+**Apresente os 3 gráficos no arquivo de `README.md`. Submeta este arquivo no repositório do projeto junto com os outros artefatos (scripts, dados e figuras). Este projeto é em grupo com até 3 pessoas e deve ser submetido neste link: [https://classroom.github.com/a/4rdGfqhx](https://classroom.github.com/a/4rdGfqhx).**
 
 ### Exemplo de gráfico
 
