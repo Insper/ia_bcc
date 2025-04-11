@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../15_rl/">
+      
+      
+        <link rel="next" href="../../projetos/2025_01_intermediario/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -237,18 +241,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -264,7 +270,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -804,18 +810,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" checked>
         
           
           <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
@@ -831,7 +839,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_6">
             <span class="md-nav__icon md-icon"></span>
             Aprendizagem por reforço
@@ -856,6 +864,131 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Hiperparâmetros no Q-Learning
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hiperparâmetros no Q-Learning
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manipulando-alpha-e-gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulando \(\alpha\) e \(\gamma\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerando-uma-escolha-de-acao-sempre-aletatoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Considerando uma escolha de ação sempre aletatória
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerando-um-agente-que-nunca-explora-novas-acoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Considerando um agente que nunca explora novas ações
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumarizando-os-resultados-atraves-de-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sumarizando os resultados através de imagens
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atividade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atividade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atividade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-grafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de gráfico
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1255,18 +1388,29 @@
 </li>
 </ul>
 <h2 id="atividade">Atividade</h2>
-<p>Faça uso de uma única imagem para sumarizar o aprendizado do agente. Você deve escolher a melhor métrica para o eixo <span class="arithmatex">\(y\)</span> do gráfico. O eixo <span class="arithmatex">\(x\)</span> deve ser a quantidade de episódios utilizado no treinamento. Você também deve definir qual é o melhor <em>zoom</em> (foco) no gráfico. Crie um documento que tem esta única imagem e a legenda dela.</p>
-<p>Na legenda é necessário ter o título da imagem e um texto explicativo. O texto explicativo pode ser longo e deve ter as informações sobre os hiperparâmetros utilizados. </p>
-<p>O gráfico deve possuir 3 linhas distintas. Cada uma destas linhas deve apresentar uma variação possível considerando os hiperparâmetros <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\gamma\)</span> e <span class="arithmatex">\(\epsilon\)</span>. Deverá ficar a critério do estudante quais valores utilizar. </p>
+<p>Você deve entregar um arquivo <code>README.md</code> que responde as seguintes perguntas: </p>
+<ul>
+<li>
+<p>Qual é o impacto de <span class="arithmatex">\(\alpha\)</span>? Faça um gráfico com a curva de aprendizado do agente fixando <span class="arithmatex">\(\gamma\)</span> e variando <span class="arithmatex">\(\alpha\)</span>. A sugestão é utilizar três (3) valores para <span class="arithmatex">\(\alpha\)</span>: um próximo de zero, um intermediário e um próximo de um (1). Utilize um único gráfico com as três curvas de aprendizado.</p>
+</li>
+<li>
+<p>Qual é o impacto de <span class="arithmatex">\(\gamma\)</span> no aprendizado do agente no ambiente <code>TaxiDriver</code>? Faça um gráfico com a curva de aprendizado do agente fixando <span class="arithmatex">\(\alpha\)</span> e variando <span class="arithmatex">\(\gamma\)</span>. A sugestão é utilizar três (3) valores para <span class="arithmatex">\(\gamma\)</span>: um próximo de zero, um intermediário e um próximo de um (1). Utilize um único gráfico com as três curvas de aprendizado.</p>
+</li>
+<li>
+<p>Qual é o impacto da forma como a ação é escolhida durante o treinamento? Faça um gráfico com a curva de aprendizado do agente usando três curvas: (i) onde o agente apenas explora o ambiente, ou seja, seleciona de forma aleatória todas as ações durante o treinamento; (ii) onde o agente apenas se utiliza do seu conhecimento sobre o ambiente, ou seja, na maioria das vezes faz o <em>explotation</em> ao invés do <em>exploration</em>. Para este caso, crie uma função de escolha da ação onde o agente tem probabilidade de 90% para escolher uma ação de acordo com a <em>q-table</em> e os outros 10% são aleatórios; (iii) onde o agente faz uso de uma função de <em>exploration and explotation</em> com um decaimento do <span class="arithmatex">\(\epsilon\)</span>. </p>
+</li>
+</ul>
+<p><strong>Apresente os 3 gráficos no arquivo de <code>README.md</code>. Submeta este arquivo no repositório do projeto junto com os outros artefatos (scripts, dados e figuras). Este projeto é em grupo com até 3 pessoas e deve ser submetido neste link: <a href="https://classroom.github.com/a/4rdGfqhx">https://classroom.github.com/a/4rdGfqhx</a>.</strong></p>
 <h3 id="exemplo-de-grafico">Exemplo de gráfico</h3>
 <p>Um exemplo de imagem <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> que sumariza dados ou apresenta resultados de experimentos é apresentada abaixo: </p>
 <!--
 <img src="figures/graph_anatomy.png" alt="Elementos de um gráfico" style="height: 400px;"/>
 -->
 
-<p><center>
+<center>
 <img src="figures/leticia.png" alt="Exemplo de gráfico" style="height: 500px;"/>
-</center></p>
+</center>
+
 <p>Todas as informações relevantes para entender o resultado do treinamento precisam estar auto-contidas na imagem e na legenda da imagem. </p>
 <!--Um documento com esta imagem e legenda deve ser entregue via Blackboard até o dia **02/03/2023**. A atividade já foi criada no Blackboard e o nome dela é *Q-Learning with hyperparameters*. Esta atividade é individual.
 
@@ -1319,7 +1463,7 @@ Segue abaixo um exemplo de gráfico muito bem formatado e completo. Este gráfic
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 29, 2024 01:18:29">April 29, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 11, 2025 18:23:36">April 11, 2025</span>
   </span>
 
     
