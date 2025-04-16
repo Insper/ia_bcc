@@ -26,6 +26,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md) | 10/03 |
 | [Puzzle-8](./aulas/08_heuristica_parte_3_aps/index.md) | 23/03 |
 | [Q-Learning e hiperparâmetros](./aulas/15_rl_parte2/index.md) | 15/04 | 
+| [Sarsa](./aulas/15_rl_sarsa/index.md) | 22/04 |
 
 ## 2 projetos
 
