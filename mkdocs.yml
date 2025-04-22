@@ -48,7 +48,7 @@ nav:
       - 'aulas/15_rl/index.md'
       - 'aulas/15_rl_parte2/index.md'
       - 'aulas/15_rl_sarsa/index.md'
-#      - 'aulas/15_xnon_determ/index.md'
+      - 'aulas/15_xnon_determ/index.md'
 #
 ##  - 'Avaliações atuais':
 ##    - 'avaliacoes/2024_1_intermediaria/index.md'
@@ -71,8 +71,8 @@ nav:
     - 'referencias/04_busca_competitiva/index.md'
     - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
-#  - 'Exercícios e avaliações antigas':
-#    - 'exercicios/index.md'
+  - 'Exercícios e avaliações antigas':
+    - 'exercicios/index.md'
 #  
 #  - 'Comentários': 'comentarios.md'
 
