@@ -9,4 +9,6 @@ openpyxl
 mkdocs-jupyter
 pretty_html_table
 seaborn
+mkdocs-with-pdf
+qrcode
 
