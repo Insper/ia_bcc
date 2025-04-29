@@ -9,3 +9,6 @@ Neste documento você irá encontrar exercícios (problemas) adicionais e avalia
 ## Avaliações antigas
 
 - [Avaliação intermediária do primeiro semestre de 2023](./2023_intermediaria/index.md)
+
+- [Avaliação final do segundo semestre de 2024](./2024_final/provaFinal.pdf)
+

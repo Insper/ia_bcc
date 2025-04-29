@@ -46,3 +46,5 @@ O conteúdo associado a este bloco é [15](./aulas/15_rl/index.md), [16](./aulas
 ## Robótica
 
 --8<-- "plano_aula_7.md"
+
+O conteúdo associado a este bloco é [19](./projetos/2025_01_robo/index.md).

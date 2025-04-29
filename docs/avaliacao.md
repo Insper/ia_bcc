@@ -35,6 +35,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |
+| [Robô e o labirinto](./projetos/2025_01_robo/index.md) | 07/05/2025 | 
 
 ## Conversão de conceito para valor numérico
 
