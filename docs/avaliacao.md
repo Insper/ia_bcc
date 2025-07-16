@@ -21,12 +21,16 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
+| TBD | TBD |
+
+<!--
 | [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md) | 10/02 |
 | [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) | 24/02 |
 | [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md) | 10/03 |
 | [Puzzle-8](./aulas/08_heuristica_parte_3_aps/index.md) | 23/03 |
 | [Q-Learning e hiperparâmetros](./aulas/15_rl_parte2/index.md) | 15/04 | 
 | [Sarsa](./aulas/15_rl_sarsa/index.md) | 22/04 |
+-->
 
 ## 2 projetos
 
@@ -34,8 +38,12 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
+| TBD | TBD |
+
+<!--
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |
 | [Robô e o labirinto](./projetos/2025_01_robo/index.md) | 07/05/2025 | 
+-->
 
 ## Conversão de conceito para valor numérico
 
