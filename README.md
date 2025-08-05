@@ -52,6 +52,10 @@ python publica-plano-de-aulas.py
 dot -Tpng input.dot > grafo.png
 ```
 
+## Random visitors and other teachers
+
+All material available in this repository is licensed under the Creative Commons 4.0 license. Although it is not mandatory, if you wish to base part of your course on the materials available here we kindly ask you to contact [fbarth](https://github.com/fbarth).
+
 
 
 
