@@ -21,7 +21,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                   |  Prazo para entrega |
 |:------------------------------------------------------------|:-------------------:|
-| TBD | TBD |
+| [Discussão sobre conceitos gerais sobre IA](./aulas/01_introducao_ia/index.md) | 13/08 |
 
 <!--
 | [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md) | 10/02 |
