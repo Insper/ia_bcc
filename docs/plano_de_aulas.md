@@ -64,4 +64,4 @@ O conteúdo associado a este bloco é [19](./projetos/2025_01_robo/index.md).
 
 Neste semestre não teremos aulas nos dias 25/8 e 27/8. 
 
-Estas aulas serão repostas nos dias 4/9 e 8/9, respectivamente. Quinta-feira das 14:15 às 16:15. 
+Estas aulas serão repostas nos dias 4/9 e 11/9, respectivamente. Quinta-feira das 14:15 às 16:15. 
