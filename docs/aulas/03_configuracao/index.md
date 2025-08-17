@@ -53,7 +53,7 @@ Mas, antes de implementar usando uma estrutura similar a descrita acima, respond
 
 ## Entrega
 
-A entrega deste exercício deve ser feita no Github Classroom: [https://classroom.github.com/a/A77CyNi2](https://classroom.github.com/a/A77CyNi2). A entrega é individual e deve ser feita até o meio dia do dia 10/02. O projeto base existente no Github classroom tem um arquivo de teste. Você deve implementar o código de forma que todos os testes passem.
+A entrega deste exercício deve ser feita no Github Classroom: [https://classroom.github.com/a/cRCLHC5C](https://classroom.github.com/a/cRCLHC5C). A entrega é individual e deve ser feita até o meio dia do dia 20/08 até às 10 horas da manhã. O projeto base existente no Github classroom tem um arquivo de teste. Você deve implementar o código de forma que todos os testes passem.
 
 
 ## Exercício adicional: Aspirador de Pó com poltrona. 
