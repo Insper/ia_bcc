@@ -10,7 +10,7 @@ Segundas e quartas das 07:30 até 09:30.
 
 ## Horário de atendimento
 
-Segundas das 16:30 às 18:00 na sala TI-27 no prédio P1 no 7o andar. 
+Segundas das 16:30 às 18:00 na sala de reunião 03 no 3o andar do prédio P2.
 
 ## Informações adicionais sobre os projetos e implementações
 
