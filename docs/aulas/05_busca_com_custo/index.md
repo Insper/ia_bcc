@@ -1,5 +1,7 @@
 # Algoritmo de custo uniforme
 
+E se as ações têm custos diferentes? Será que podemos usar algoritmos de busca em largura, profundidade ou profundidade iterativa?
+
 ## Procurando caminhos em um mapa
 
 Considere o mapa abaixo: 
@@ -10,9 +12,11 @@ Os $nodos = \{A,B,C,D,E,F,G\}$ são locais. As arestas são as ligações entre 
 
 Implemente uma solução que é capaz de encontrar o menor caminho entre qualquer par de locais do mapa. 
    
-Crie um repositório a partir do github classroom. O link é: [https://classroom.github.com/a/J4yPgJgt](https://classroom.github.com/a/J4yPgJgt). Neste repositório já existem alguns arquivos. Leia estes arquivos, inclusive o de teste, para entender o que é esperado.
+Crie um repositório a partir do github classroom. O link é: [https://classroom.github.com/a/qU_2zIpW](https://classroom.github.com/a/qU_2zIpW). Neste repositório já existem alguns arquivos. Leia estes arquivos, inclusive o de teste, para entender o que é esperado.
 
 Quando você estiver com o código pronto, faça o push para o repositório.
+
+Esta é uma atividade individual. Deve ser entregue até o dia 06/09/2025 às 23:30.
 
 ## Referências
 

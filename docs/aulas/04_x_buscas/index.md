@@ -63,7 +63,13 @@ Armazene o tempo de processamento criando uma tabela similar a esta:
 | Busca em Profundidade Iterativa |  $\cdots$ | $\cdots$ |
 | Busca em Profundidade Iterativa |  50 | $\cdots$ |
 
-Em alguns casos a combinação do algoritmo com o objetivo não fornece um resultado. Você deve informar na tabela estes casos. Nestas situações você deve colocar o tempo de processamento como NaN, ou seja, valor faltante. De forma alguma você pode colocar o valor zero nestas situações. Utilize os conhecimentos adquiridos na disciplina de Ciência de Dados do semestre passado e faça um *plot* destes dados em um único gráfico. 
+Em alguns casos a combinação do algoritmo com o objetivo não fornece um resultado. Você deve informar na tabela estes casos. Nestas situações você deve colocar o tempo de processamento como NaN, ou seja, valor faltante. De forma alguma você pode colocar o valor zero nestas situações. 
+
+Este tipo de medida pode variar de máquina para máquina. Portanto, não se preocupe em comparar os seus resultados com os resultados dos seus colegas. O importante é que você consiga perceber a diferença entre os algoritmos.
+
+Além disso, na mesma máquina, o tempo de processamento pode variar de uma execução para outra. Portanto, para cada combinação de algoritmo e objetivo, execute o teste 5 vezes e utilize a média dos tempos como o tempo final.
+
+Utilize os conhecimentos adquiridos na disciplina de Ciência de Dados do semestre passado e faça um *plot* destes dados em um único gráfico. 
 
 **Em um documento, coloque a tabela, o gráfico e responda as seguintes perguntas**: 
 
@@ -75,7 +81,7 @@ Em alguns casos a combinação do algoritmo com o objetivo não fornece um resul
 
 ### Entrega 
 
-Esta atividade é individual e deve ser submetida via Github Classroom. O link para a atividade é [https://classroom.github.com/a/3HHDtNJo](https://classroom.github.com/a/3HHDtNJo). O prazo para entrega é **24/02/2025**. 
+Esta atividade deve ser feita em duplas e deve ser submetida via Github Classroom. O link para a atividade é [https://classroom.github.com/a/VDgTzBon](https://classroom.github.com/a/VDgTzBon). O prazo para entrega é **04/09/2025**. 
 
 ### Rubrica de avaliação
 
