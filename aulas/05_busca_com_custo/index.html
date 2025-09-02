@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../04_x_buscas/">
+      
+      
+        <link rel="next" href="../../referencias/01_introducao/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -237,18 +241,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -264,7 +270,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -390,18 +396,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -417,7 +425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Busca em espaço de estados
@@ -442,6 +450,112 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_x_buscas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algoritmos de Busca em Largura, Profundidade e Profundidade Iterativa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Algoritmo de custo uniforme
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algoritmo de custo uniforme
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#procurando-caminhos-em-um-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procurando caminhos em um mapa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -614,13 +728,15 @@
 
 
 <h1 id="algoritmo-de-custo-uniforme">Algoritmo de custo uniforme</h1>
+<p>E se as ações têm custos diferentes? Será que podemos usar algoritmos de busca em largura, profundidade ou profundidade iterativa?</p>
 <h2 id="procurando-caminhos-em-um-mapa">Procurando caminhos em um mapa</h2>
 <p>Considere o mapa abaixo: </p>
 <p><img alt="image" src="img/grafo.png" /></p>
 <p>Os <span class="arithmatex">\(nodos = \{A,B,C,D,E,F,G\}\)</span> são locais. As arestas são as ligações entre os locais. Cada aresta tem um custo. Por exemplo, O caminho entre A e B tem custo 1. O caminho entre A e C tem custo 10. Este é um grafo bi-direcional. Ou seja, O custo de A para C é o mesmo de C para A.</p>
 <p>Implemente uma solução que é capaz de encontrar o menor caminho entre qualquer par de locais do mapa. </p>
-<p>Crie um repositório a partir do github classroom. O link é: <a href="https://classroom.github.com/a/J4yPgJgt">https://classroom.github.com/a/J4yPgJgt</a>. Neste repositório já existem alguns arquivos. Leia estes arquivos, inclusive o de teste, para entender o que é esperado.</p>
+<p>Crie um repositório a partir do github classroom. O link é: <a href="https://classroom.github.com/a/qU_2zIpW">https://classroom.github.com/a/qU_2zIpW</a>. Neste repositório já existem alguns arquivos. Leia estes arquivos, inclusive o de teste, para entender o que é esperado.</p>
 <p>Quando você estiver com o código pronto, faça o push para o repositório.</p>
+<p>Esta é uma atividade individual. Deve ser entregue até o dia 06/09/2025 às 23:30.</p>
 <h2 id="referencias">Referências</h2>
 <p>O material utilizado para esta aula está nos slides 30 até 32 do conjunto de slides abaixo: </p>
 <p><embed src="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300"></p>
@@ -644,7 +760,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 25, 2025 21:40:15 UTC">February 25, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 2, 2025 19:17:14 UTC">September 2, 2025</span>
   </span>
 
     
