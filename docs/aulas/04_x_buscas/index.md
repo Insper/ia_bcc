@@ -81,7 +81,7 @@ Utilize os conhecimentos adquiridos na disciplina de Ciência de Dados do semest
 
 ### Entrega 
 
-Esta atividade deve ser feita em duplas e deve ser submetida via Github Classroom. O link para a atividade é [https://classroom.github.com/a/VDgTzBon](https://classroom.github.com/a/VDgTzBon). O prazo para entrega é **04/09/2025**. 
+Esta atividade deve ser feita em duplas e deve ser submetida via Github Classroom. O link para a atividade é [https://classroom.github.com/a/VDgTzBon](https://classroom.github.com/a/VDgTzBon). O prazo para entrega é **07/09/2025** até às 23:30 horas. 
 
 ### Rubrica de avaliação
 

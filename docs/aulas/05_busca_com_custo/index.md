@@ -16,7 +16,7 @@ Crie um repositório a partir do github classroom. O link é: [https://classroom
 
 Quando você estiver com o código pronto, faça o push para o repositório.
 
-Esta é uma atividade individual. Deve ser entregue até o dia 06/09/2025 às 23:30.
+Esta é uma atividade individual. Deve ser entregue até o dia **07/09/2025** até às 23:30 horas.
 
 ## Referências
 
