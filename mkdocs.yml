@@ -26,9 +26,9 @@ nav:
 ##      - 'aulas/04_x_modelagem/index.md'
       - 'aulas/05_busca_com_custo/index.md'
 ###    # - 'aulas/05_x_busca_cega/index.md'
-#      - 'aulas/07_revisao/index.md'
-#    - 'Busca com heurística':
-#      - 'aulas/08_heuristica/index.md'
+      - 'aulas/07_revisao/index.md'
+    - 'Busca com heurística':
+      - 'aulas/08_heuristica/index.md'
 #      - 'aulas/08_heuristica_parte_2/index.md'
 #      - 'aulas/08_heuristica_parte_3/index.md'
 #      - 'aulas/08_heuristica_parte_3_aps/index.md'
@@ -67,7 +67,7 @@ nav:
     - 'referencias/01_introducao/index.md'
     - 'referencias/03_algoritmos_busca/index.md'
 #    - 'referencias/03_csp/index.md'
-###    - 'referencias/03_dijkstra/index.md'
+    - 'referencias/03_dijkstra/index.md'
 #    - 'referencias/04_busca_competitiva/index.md'
 #    - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
@@ -114,43 +114,44 @@ markdown_extensions:
 plugins: 
   - git-revision-date-localized
   - mkdocs-jupyter
-  - with-pdf:
-        author: "Fabricio Barth"
-        copyright: "https://insper.github.io/ia_bcc/"
-        #
-        cover: true
-        back_cover: true
-        cover_title: "Disciplina de Inteligência Artificial e Robótica"
-        cover_subtitle: "Material com atividades de laboratório"
-        #custom_template_path: TEMPLATES PATH
-        #
-        toc_title: "Conteúdo"
-        #heading_shift: false
-        #toc_level: 3
-        #ordered_chapter_level: 2
-        #excludes_children:
-        #    - 'release-notes/:upgrading'
-        #    - 'release-notes/:changelog'
-        #
-        #exclude_pages:
-        #    - 'bugs/'
-        #    - 'appendix/contribute/'
-        #convert_iframe:
-        #    - src: IFRAME SRC
-        #      img: POSTER IMAGE URL
-        #      text: ALTERNATE TEXT
-        #    - src: ...
-        #two_columns_level: 3
-        #
-        #render_js: true
-        #headless_chrome_path: headless-chromium
-        #
-        output_path: ia_material.pdf
-        #enabled_if_env: ENABLE_PDF_EXPORT
-        #
-        #debug_html: true
-        #show_anchors: true
-        #verbose: true
+
+  # - with-pdf:
+  #       author: "Fabricio Barth"
+  #       copyright: "https://insper.github.io/ia_bcc/"
+  #       #
+  #       cover: true
+  #       back_cover: true
+  #       cover_title: "Disciplina de Inteligência Artificial e Robótica"
+  #       cover_subtitle: "Material com atividades de laboratório"
+  #       #custom_template_path: TEMPLATES PATH
+  #       #
+  #       toc_title: "Conteúdo"
+  #       #heading_shift: false
+  #       #toc_level: 3
+  #       #ordered_chapter_level: 2
+  #       #excludes_children:
+  #       #    - 'release-notes/:upgrading'
+  #       #    - 'release-notes/:changelog'
+  #       #
+  #       #exclude_pages:
+  #       #    - 'bugs/'
+  #       #    - 'appendix/contribute/'
+  #       #convert_iframe:
+  #       #    - src: IFRAME SRC
+  #       #      img: POSTER IMAGE URL
+  #       #      text: ALTERNATE TEXT
+  #       #    - src: ...
+  #       #two_columns_level: 3
+  #       #
+  #       #render_js: true
+  #       #headless_chrome_path: headless-chromium
+  #       #
+  #       output_path: ia_material.pdf
+  #       #enabled_if_env: ENABLE_PDF_EXPORT
+  #       #
+  #       #debug_html: true
+  #       #show_anchors: true
+  #       #verbose: true
 
 
 

@@ -52,12 +52,12 @@ Considere a definição abaixo como mapa para a sua implementação:
 
 ## Implementações
 
-Implemente um agente, usando o algoritmo de busca em largura, para encontrar um caminho entre a cidade *i* e *o*. 
+Implemente um agente, usando o algoritmo de **busca em largura**, para encontrar um caminho entre a cidade *i* e *o*. 
 
 Perguntas:
 
 * Qual foi o tempo de processamento até a implementação encontrar uma solução? 
-* A árvore de busca gerada é "inteligente"? 
+* Qual é o tamanho da árvore de busca gerada? O algoritmo abre muitos nodos de forma desnecessária? 
 * A solução encontrada é ótima? 
 
 Usando a mesma implementação, encontre um caminho entre a cidade *b* e *o*. 
@@ -65,7 +65,7 @@ Usando a mesma implementação, encontre um caminho entre a cidade *b* e *o*.
 Perguntas:
 
 * Qual foi o tempo de processamento até a implementação encontrar uma solução? 
-* A árvore de busca gerada é "inteligente"? 
+* Qual é o tamanho da árvore de busca gerada? O algoritmo abre muitos nodos de forma desnecessária? 
 * A solução encontrada é ótima?
 
 
@@ -80,9 +80,8 @@ Utilize o algoritmo de custo uniforme para encontrar uma solução para os probl
 Perguntas:
 
 * Qual foi o tempo de processamento até a implementação encontrar uma solução? 
-* A árvore de busca gerada é "inteligente"? 
+* Qual é o tamanho da árvore de busca gerada? O algoritmo abre muitos nodos de forma desnecessária? 
 * A solução encontrada é ótima?
-
 
 
 ## Entendendo a busca que o algoritmo faz
