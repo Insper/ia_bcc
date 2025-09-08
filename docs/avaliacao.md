@@ -19,14 +19,14 @@ O critério para aprovação é:
 
 Seguem os enunciados que se encaixam nesta categoria: 
 
-| Descrição                                                   |  Prazo para entrega |
-|:------------------------------------------------------------|:-------------------:|
-| [Discussão sobre conceitos gerais sobre IA](./aulas/01_introducao_ia/index.md) | 13/08 |
-
+| Descrição                                                                       | Prazo para entrega |
+| :------------------------------------------------------------------------------ | :----------------: |
+| [Discussão sobre conceitos gerais sobre IA](./aulas/01_introducao_ia/index.md)  |       13/08        |
+| [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md)        |       20/08        |
+| [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) |       07/09        |
+| [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md)           |       07/09        |
+| [Menor caminho entre duas cidades](./aulas/08_heuristica_parte_2/index.md)      |       10/09        |
 <!--
-| [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md) | 10/02 |
-| [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) | 24/02 |
-| [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md) | 10/03 |
 | [Puzzle-8](./aulas/08_heuristica_parte_3_aps/index.md) | 23/03 |
 | [Q-Learning e hiperparâmetros](./aulas/15_rl_parte2/index.md) | 15/04 | 
 | [Sarsa](./aulas/15_rl_sarsa/index.md) | 22/04 |
