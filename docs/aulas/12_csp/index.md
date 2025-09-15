@@ -21,7 +21,7 @@ Para entender o funcionamento dos algoritmos, você pode ler [este conjunto de s
 
 ## Atividade de implementação
 
-Para esta atividade vamos utilizar a biblioteca [aigyminsper](https://pypi.org/project/aigyminsper/). Mais especificamente, os algoritmos disponíveis em `aigyminsper.search.CSPAlgorithms` e a solução para o problema das **N** Rainhas em [N_QueensProblem.py](./src/N_QueensProblem.py).
+Para esta atividade vamos utilizar a biblioteca [aigyminsper](https://pypi.org/project/aigyminsper/). Mais especificamente, os algoritmos disponíveis em `aigyminsper.search.csp_algorithms` e a solução para o problema das **N** Rainhas em [N_QueensProblem.py](./src/N_QueensProblem.py).
 
 * O arquivo N_QueensProblem.py está incompleto. Falta implementar a **heurística** para o problema. Sendo assim, a sua primeira atividade é fazer isto.
 

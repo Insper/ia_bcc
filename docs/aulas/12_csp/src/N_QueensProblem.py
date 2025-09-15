@@ -3,9 +3,9 @@
 # be any number between 4 and 10.
 #
 
-from aigyminsper.search.CSPAlgorithms import SubidaMontanha
-from aigyminsper.search.CSPAlgorithms import SubidaMontanhaEstocastico
-from aigyminsper.search.Graph import State
+from aigyminsper.search.csp_algorithms import SubidaMontanha
+from aigyminsper.search.csp_algorithms import SubidaMontanhaEstocastico
+from aigyminsper.search.graph import State
 import numpy as np
 import random
 import time
@@ -20,7 +20,7 @@ class N_QueensProblem(State):
         return self.board
     
     def successors(self):
-        sucessores = []
+        successores = []
         for i in range(0,self.size):
             for j in range(0,self.size):
                 if(self.board[i][j] == 1):
@@ -29,26 +29,26 @@ class N_QueensProblem(State):
                         temp = self.board.copy()
                         temp[i][j] = 0
                         temp[i-1][j] = 1
-                        sucessores.append(N_QueensProblem(self.size, temp))
+                        successores.append(N_QueensProblem(self.size, temp))
                     #move down
                     if((i + 1) < self.size and self.board[i+1][j] == 0):
                         temp = self.board.copy()
                         temp[i][j] = 0
                         temp[i+1][j] = 1
-                        sucessores.append(N_QueensProblem(self.size, temp))
+                        successores.append(N_QueensProblem(self.size, temp))
                     #move left
                     #if((j - 1) >=0 and self.board[i][j-1] == 0):
                     #    temp = self.board.copy()
                     #    temp[i][j] = 0
                     #    temp[i][j-1] = 1
-                    #    sucessores.append(N_QueensProblem(self.size, temp))
+                    #    successores.append(N_QueensProblem(self.size, temp))
                     #move right
                     #if((j + 1) < self.size and self.board[i][j+1] == 0):
                     #    temp = self.board.copy()
                     #    temp[i][j] = 0
                     #    temp[i][j+1] = 1
-                    #    sucessores.append(N_QueensProblem(self.size, temp))
-        return sucessores
+                    #    successores.append(N_QueensProblem(self.size, temp))
+        return successores
                       
     def is_goal(self):
         if self.h() == 0:
