@@ -44,9 +44,9 @@ Ao implementar o método `successors` do seu agente considere a seguinte ordem p
 
 ## Formato de entrega
 
-* Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/YKF8pE2R). 
+* Para a implementação e entrega deste exercício nós vamos utilizar o [Github Classroom](https://classroom.github.com/a/tD-CJwM7). 
 
-* **Prazo para a entrega**: 23/03/2025 (domingo) até às 23:50 horas.
+* **Prazo para a entrega**: 19/09/2025 (sexta-feira) até às 23:30 horas.
 
 * Este trabalho é individual.  
 
