@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -1385,7 +1385,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </style>
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=60f159a9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26d96048">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1397,7 +1397,7 @@ be any number between 4 and 10.</p>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5548bb4a">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=25671a6e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1415,16 +1415,16 @@ be any number between 4 and 10.</p>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">aigyminsper.search.CSPAlgorithms</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubidaMontanha</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">aigyminsper.search.CSPAlgorithms</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubidaMontanhaEstocastico</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">aigyminsper.search.Graph</span><span class="w"> </span><span class="kn">import</span> <span class="n">State</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">aigyminsper.search.csp_algorithms</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubidaMontanha</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">aigyminsper.search.csp_algorithms</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubidaMontanhaEstocastico</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">aigyminsper.search.graph</span><span class="w"> </span><span class="kn">import</span> <span class="n">State</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from aigyminsper.search.CSPAlgorithms import SubidaMontanha
-from aigyminsper.search.CSPAlgorithms import SubidaMontanhaEstocastico
-from aigyminsper.search.Graph import State
+<div class="clipboard-copy-txt" id="cell-1">from aigyminsper.search.csp_algorithms import SubidaMontanha
+from aigyminsper.search.csp_algorithms import SubidaMontanhaEstocastico
+from aigyminsper.search.graph import State
 import numpy as np
 import random
 import time</div>
@@ -1434,7 +1434,7 @@ import time</div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=72c8e412">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4766628c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1462,7 +1462,7 @@ import time</div>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span>
     
     <span class="k">def</span><span class="w"> </span><span class="nf">successors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">sucessores</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">successores</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
                 <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
@@ -1471,26 +1471,26 @@ import time</div>
                         <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
                         <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
                         <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-                        <span class="n">sucessores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">N_QueensProblem</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
+                        <span class="n">successores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">N_QueensProblem</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
                     <span class="c1">#move down</span>
                     <span class="k">if</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
                         <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">board</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
                         <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
                         <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-                        <span class="n">sucessores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">N_QueensProblem</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
+                        <span class="n">successores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">N_QueensProblem</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
                     <span class="c1">#move left</span>
                     <span class="c1">#if((j - 1) &gt;=0 and self.board[i][j-1] == 0):</span>
                     <span class="c1">#    temp = self.board.copy()</span>
                     <span class="c1">#    temp[i][j] = 0</span>
                     <span class="c1">#    temp[i][j-1] = 1</span>
-                    <span class="c1">#    sucessores.append(N_QueensProblem(self.size, temp))</span>
+                    <span class="c1">#    successores.append(N_QueensProblem(self.size, temp))</span>
                     <span class="c1">#move right</span>
                     <span class="c1">#if((j + 1) &lt; self.size and self.board[i][j+1] == 0):</span>
                     <span class="c1">#    temp = self.board.copy()</span>
                     <span class="c1">#    temp[i][j] = 0</span>
                     <span class="c1">#    temp[i][j+1] = 1</span>
-                    <span class="c1">#    sucessores.append(N_QueensProblem(self.size, temp))</span>
-        <span class="k">return</span> <span class="n">sucessores</span>
+                    <span class="c1">#    successores.append(N_QueensProblem(self.size, temp))</span>
+        <span class="k">return</span> <span class="n">successores</span>
                       
     <span class="k">def</span><span class="w"> </span><span class="nf">is_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">h</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -1535,7 +1535,7 @@ import time</div>
         return self.board
     
     def successors(self):
-        sucessores = []
+        successores = []
         for i in range(0,self.size):
             for j in range(0,self.size):
                 if(self.board[i][j] == 1):
@@ -1544,26 +1544,26 @@ import time</div>
                         temp = self.board.copy()
                         temp[i][j] = 0
                         temp[i-1][j] = 1
-                        sucessores.append(N_QueensProblem(self.size, temp))
+                        successores.append(N_QueensProblem(self.size, temp))
                     #move down
                     if((i + 1) &lt; self.size and self.board[i+1][j] == 0):
                         temp = self.board.copy()
                         temp[i][j] = 0
                         temp[i+1][j] = 1
-                        sucessores.append(N_QueensProblem(self.size, temp))
+                        successores.append(N_QueensProblem(self.size, temp))
                     #move left
                     #if((j - 1) &gt;=0 and self.board[i][j-1] == 0):
                     #    temp = self.board.copy()
                     #    temp[i][j] = 0
                     #    temp[i][j-1] = 1
-                    #    sucessores.append(N_QueensProblem(self.size, temp))
+                    #    successores.append(N_QueensProblem(self.size, temp))
                     #move right
                     #if((j + 1) &lt; self.size and self.board[i][j+1] == 0):
                     #    temp = self.board.copy()
                     #    temp[i][j] = 0
                     #    temp[i][j+1] = 1
-                    #    sucessores.append(N_QueensProblem(self.size, temp))
-        return sucessores
+                    #    successores.append(N_QueensProblem(self.size, temp))
+        return successores
                       
     def is_goal(self):
         if self.h() == 0:
@@ -1603,7 +1603,7 @@ import time</div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3a22188e">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d5d0ef26">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1658,7 +1658,7 @@ import time</div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f90b234f">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ffdf1bde">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1710,7 +1710,7 @@ import time</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2023 11:31:17 UTC">October 11, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2025 22:41:32 UTC">September 15, 2025</span>
   </span>
 
     
@@ -1762,7 +1762,7 @@ import time</div>
       <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
       
