@@ -38,7 +38,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| TBD | TBD |
+| [Projeto intermediário - VANTs](./projetos/2025_02_intermediario/index.md) | 08/10/2025 |
 
 <!--
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |
