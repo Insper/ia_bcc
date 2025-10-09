@@ -66,7 +66,9 @@ Você deve entregar um arquivo `README.md` que responde as seguintes perguntas:
 
 * Qual é o impacto da forma como a ação é escolhida durante o treinamento? Faça um gráfico com a curva de aprendizado do agente usando três curvas: (i) onde o agente apenas explora o ambiente, ou seja, seleciona de forma aleatória todas as ações durante o treinamento; (ii) onde o agente apenas se utiliza do seu conhecimento sobre o ambiente, ou seja, na maioria das vezes faz o *explotation* ao invés do *exploration*. Para este caso, crie uma função de escolha da ação onde o agente tem probabilidade de 90% para escolher uma ação de acordo com a *q-table* e os outros 10% são aleatórios; (iii) onde o agente faz uso de uma função de *exploration and explotation* com um decaimento do $\epsilon$. 
 
-**Apresente os 3 gráficos no arquivo de `README.md`. Submeta este arquivo no repositório do projeto junto com os outros artefatos (scripts, dados e figuras). Este projeto é em grupo com até 3 pessoas e deve ser submetido neste link: [https://classroom.github.com/a/4rdGfqhx](https://classroom.github.com/a/4rdGfqhx).**
+**Apresente os 3 gráficos no arquivo de `README.md`. Submeta este arquivo no repositório do projeto junto com os outros artefatos (scripts, dados e figuras). Este projeto é em grupo com até 2 pessoas e deve ser submetido neste link: [https://classroom.github.com/a/x8oTc6py](https://classroom.github.com/a/x8oTc6py).**
+
+O deadline para submissão é **15/10/2025**.
 
 ### Exemplo de gráfico
 

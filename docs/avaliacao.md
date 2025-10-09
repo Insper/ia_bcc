@@ -27,8 +27,8 @@ Seguem os enunciados que se encaixam nesta categoria:
 | [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md)           |       07/09        |
 | [Menor caminho entre duas cidades](./aulas/08_heuristica_parte_2/index.md)      |       10/09        |
 | [Puzzle-8](./aulas/08_heuristica_parte_3_aps/index.md) | 26/09 |
+| [Q-Learning e hiperparâmetros](./aulas/15_rl_parte2/index.md) | 15/10 | 
 <!--
-| [Q-Learning e hiperparâmetros](./aulas/15_rl_parte2/index.md) | 15/04 | 
 | [Sarsa](./aulas/15_rl_sarsa/index.md) | 22/04 |
 -->
 
