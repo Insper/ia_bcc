@@ -67,11 +67,12 @@ nav:
   - 'Referências':
     - 'referencias/01_introducao/index.md'
     - 'referencias/03_algoritmos_busca/index.md'
-#    - 'referencias/03_csp/index.md'
+    - 'referencias/03_csp/index.md'
     - 'referencias/03_dijkstra/index.md'
-#    - 'referencias/04_busca_competitiva/index.md'
-#    - 'referencias/05_jogos/index.md'
-#    - 'referencias/06_rl/index.md'
+    - 'referencias/04_busca_competitiva/index.md'
+    - 'referencias/05_jogos/index.md'
+    - 'referencias/06_rl/index.md'
+    - 'referencias/09_adicionais/index.md'
   - 'Exercícios e avaliações antigas':
     - 'exercicios/index.md'
 #  
