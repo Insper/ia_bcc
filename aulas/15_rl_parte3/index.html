@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../15_rl_parte2/">
+      
+      
+        <link rel="next" href="../15_rl_sarsa/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Revisão sobre heurística - Inteligência Artificial e Robótica</title>
+        <title>Análise dos gráficos de curva de aprendizado - Inteligência Artificial e Robótica</title>
       
     
     
@@ -60,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#revisao-sobre-heuristica" class="md-skip">
+        <a href="#analise-dos-graficos-de-curva-de-aprendizado" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Revisão sobre heurística
+              Análise dos gráficos de curva de aprendizado
             
           </span>
         </div>
@@ -237,18 +241,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -264,7 +270,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -804,18 +810,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" checked>
         
           
           <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
@@ -831,7 +839,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_6">
             <span class="md-nav__icon md-icon"></span>
             Aprendizagem por reforço
@@ -888,10 +896,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../15_rl_parte3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -902,6 +919,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1330,56 +1348,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#atividades" class="md-nav__link">
-    <span class="md-ellipsis">
-      Atividades:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Atividades:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilizando-o-arquivo-mappy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilizando o arquivo Map.py
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#utilizando-o-arquivo-puzzle8py" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilizando o arquivo Puzzle8.py
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#utilizando-o-arquivo-vacuumworldgenericpy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilizando o arquivo VacuumWorldGeneric.py
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1394,68 +1362,31 @@
 
 
 
-<h1 id="revisao-sobre-heuristica">Revisão sobre heurística</h1>
+<h1 id="analise-dos-graficos-de-curva-de-aprendizado">Análise dos gráficos de curva de aprendizado</h1>
+<p>Ao analisar os gráficos abaixo, além de responder as perguntas propostas, reflita sobre a corretude dos dados apresentados nos gráficos. </p>
+<p><img alt="alt text" src="image-2.png" /></p>
 <ul>
-<li>
-<p>As heurísticas utilizadas nas implementações do <em>8 puzzle</em> e do <em>Mapa</em> são heurísticas boas? </p>
-</li>
-<li>
-<p>O que são heurísticas <strong>boas</strong>? </p>
-<ul>
-<li>Heurísticas admissíveis.</li>
-<li>Heurísticas que não são do "<em>contra</em>". </li>
+<li>Levando-se em consideração o gráfico acima, qual é o melhor <span class="arithmatex">\(\alpha\)</span> para o ambiente do TaxiDriver?</li>
 </ul>
-</li>
-</ul>
-<h2 id="atividades">Atividades:</h2>
+<p><img alt="alt text" src="image-5.png" /></p>
 <ul>
-<li>Atualize o seu repositório local do projeto <a href="https://github.com/Insper/ai_code">AI Code</a>.</li>
+<li>O gráfico acima também mostra a curva de aprendizado para diferentes valores de <span class="arithmatex">\(\alpha\)</span>. Por que esta curva é diferente da anterior?</li>
 </ul>
-<h3 id="utilizando-o-arquivo-mappy">Utilizando o arquivo <code>Map.py</code></h3>
+<p><img alt="alt text" src="image-1.png" /></p>
 <ul>
-<li>
-<p>altere o algoritmo de busca que deve ser utilizado. Troque o algoritmo <code>AEstrela</code> pelo <code>BuscaGananciosa</code>. A solução retornada continua sendo ótima? Explique o comportamento da solução. </p>
-</li>
-<li>
-<p>volte a utilizar o algoritmo <code>AEstrela</code>, mas altere a heurística implementada na solução de: </p>
-</li>
+<li>O gráfico acima mostra a curva de aprendizado para diferentes valores de <span class="arithmatex">\(\gamma\)</span>. Qual é o melhor valor de <span class="arithmatex">\(\gamma\)</span> para o ambiente do TaxiDriver? É possível responder esta pergunta apenas olhando para o gráfico?</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">])</span>
-</code></pre></div>
-<p>para: </p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">Map</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">goal</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="mi">1000</span>
-</code></pre></div>
-<p>A solução continua sendo ótima? Explique o comportamento da solução. </p>
-<h3 id="utilizando-o-arquivo-puzzle8py">Utilizando o arquivo <code>Puzzle8.py</code></h3>
+<p><img alt="alt text" src="image.png" /></p>
 <ul>
-<li>
-<p>existem duas funções <code>h1()</code> e <code>h2()</code>. Ambas as funções implementam heurísticas para o problema dos <code>8 puzzles</code>. Que heurísticas são estas? </p>
-</li>
-<li>
-<p>execute o arquivo <code>Puzzle8.py</code> considerando: </p>
-</li>
+<li>O que tem de diferente neste gráfico em relação aos anteriores? </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h1</span><span class="p">()</span>
-</code></pre></div>
-<p>e depois considerando:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">h</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h2</span><span class="p">()</span>
-</code></pre></div>
-<p>você notou alguma diferença de tempo de processamento para resolver alguns dos problemas? </p>
+<p><img alt="alt text" src="image-3.png" /></p>
 <ul>
-<li>será que é possível combinar estas duas heurísticas em uma só? Esta combinação fornece algum ganho? </li>
+<li>O que tem de diferente neste gráfico em relação aos anteriores? </li>
 </ul>
-<h3 id="utilizando-o-arquivo-vacuumworldgenericpy">Utilizando o arquivo <code>VacuumWorldGeneric.py</code></h3>
+<p><img alt="alt text" src="image-4.png" /></p>
 <ul>
-<li>
-<p>implemente uma heurística para este problema. </p>
-</li>
-<li>
-<p>depois de implementada a heurística e utilizando o algoritmo <code>AEstrela</code>, a solução consegue encontrar respostas para configurações que antes não conseguia? </p>
-</li>
+<li>O agente que fez uso de uma seleção de ações totalmente aleatória durante o treinamento conseguiu aprender a resolver o ambiente do TaxiDriver? </li>
 </ul>
 
 
@@ -1477,7 +1408,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 29, 2023 20:02:51 UTC">September 29, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 18, 2025 20:27:04 UTC">October 18, 2025</span>
   </span>
 
     
