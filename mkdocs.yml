@@ -47,7 +47,8 @@ nav:
     - 'Aprendizagem por reforço':
       - 'aulas/15_rl/index.md'
       - 'aulas/15_rl_parte2/index.md'
-#      - 'aulas/15_rl_sarsa/index.md'
+      - 'aulas/15_rl_parte3/index.md'
+      - 'aulas/15_rl_sarsa/index.md'
 #      - 'aulas/15_xnon_determ/index.md'
 #
 ##  - 'Avaliações atuais':
