@@ -58,9 +58,9 @@ env = gym.make("FrozenLake-v1", map_name="8x8", is_slippery=True).env
 
 * O que muda? O problema se torna mais complexo? É necessário mudar algum dos hiperparâmetros? Qual é o melhor algoritmo? *Sarsa* ou *Q-Learning*? 
 
-<!-- 
+## Atividade Avaliativa
 
-Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto final em mais de 80% das vezes*. Faça o *clone* do projeto [https://classroom.github.com/a/theU174W](https://classroom.github.com/a/theU174W). Você deve adicionar neste projeto e fazer o commit dos seguintes artefatos: 
+Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto final em mais de 80% das vezes*. Faça o *clone* do projeto [https://classroom.github.com/a/yw_DNf5x](https://classroom.github.com/a/yw_DNf5x). Você deve adicionar neste projeto e fazer o commit dos seguintes artefatos: 
 
 * o arquivo `q-table.csv` dentro do diretório `data`. Já existe um arquivo q-table neste projeto, mas ele é para a versão do ambiente 4x4. Quando você executar o arquivo `test_frozenlake.py` usando o comando `pytest` irá ocorrer um erro de `IndexError`. Você deve substituir este arquivo pelo arquivo gerado pelo seu agente durante o período de treinamento; 
 
@@ -97,8 +97,10 @@ Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto f
 
 * Foi aprovado em todos os testes e entregou o gráfico comparando a curva de aprendizagem de diversas abordagens utilizadas ao longo do treinamento então nota igual a **10 (dez)**. Este gráfico deve possuir no mínimo duas linhas, uma considerando o algoritmo Q-Learning e outra considerando o algoritmo Sarsa. Fica à critério do estudante adicionar outras linhas considerando outros parâmetros. Este gráfico também deve um conter um texto autocontido explicando os testes executados e os resultados obtidos.
 
-### Deadline
+### Data de entrega e outras informações
 
-O deadline para a entrega desta atividade é **28 de abril de 2023** às 23:30 horas. Este trabalho é **individual**. 
+O deadline para a entrega desta atividade é **31 de outubro de 2025** às 23:30 horas. Este trabalho é **individual**. 
 
---> 
+A nota deste trabalho será utilizada para compor a nota da avaliação final da disciplina. A nota deste trabalho equivale a 20% da nota da avaliação final.
+
+Qualquer tipo de plágio ou cópia de trabalho de outro aluno implicará em nota zero para ambos os alunos envolvidos.
