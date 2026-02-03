@@ -24,7 +24,7 @@ parte2 = redefine_strong(parte2)
 with open('docs/_snippets/plano_aula_2.md', 'w') as f:
     f.write(parte2)
 
-parte3 = build_table(df.iloc[6:10][[
+parte3 = build_table(df.iloc[6:12][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='green_dark')
 
@@ -34,7 +34,7 @@ with open('docs/_snippets/plano_aula_3.md', 'w') as f:
     f.write(parte3)
 
 
-parte4 = build_table(df.iloc[10:14][[
+parte4 = build_table(df.iloc[12:14][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='red_dark')
 
@@ -44,7 +44,7 @@ with open('docs/_snippets/plano_aula_4.md', 'w') as f:
     f.write(parte4)
 
 
-parte5 = build_table(df.iloc[14:18][[
+parte5 = build_table(df.iloc[14:15][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='yellow_dark')
 
@@ -54,7 +54,7 @@ with open('docs/_snippets/plano_aula_5.md', 'w') as f:
     f.write(parte5)
 
 
-parte6 = build_table(df.iloc[18:23][[
+parte6 = build_table(df.iloc[15:19][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='blue_dark')
 
@@ -64,7 +64,7 @@ with open('docs/_snippets/plano_aula_6.md', 'w') as f:
     f.write(parte6)
 
 
-parte7 = build_table(df.iloc[23:][[
+parte7 = build_table(df.iloc[19:][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='blue_dark')
 

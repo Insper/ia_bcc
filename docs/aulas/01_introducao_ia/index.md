@@ -3,7 +3,7 @@
 ## Objetivos e estrutura da disciplina
 
 * Qual é o escopo desta disciplina? Ver [ementa](../../ementa.md).
-* Como a disciplina está organizada? Ver [plano de aulas](./plano_de_aulas.md).
+* Como a disciplina está organizada? Ver [plano de aulas](../../plano_de_aulas.md).
 * Quais são os critérios de avaliação? Ver [avaliação](../../avaliacao.md).
 
 ## Introdução
@@ -21,10 +21,8 @@ O objetivo desta aula é responder as seguintes perguntas:
 
 ## Atividade
 
-Forme grupos de 3 a 4 pessoas e discuta as perguntas acima. Elabore uma apresentação para a próxima aula que responda as perguntas listadas acima. 
-Para responder as perguntas, você pode usar os materiais de referência listados abaixo, além de outros materiais que você encontrar. Você também poderá usar sistemas de IA Generativa, como o ChatGPT, para ajudar a responder as perguntas.
-A apresentação deve ter no máximo 10 minutos.
-
+Forme grupos de 3 a 4 pessoas e discuta as perguntas acima. Elabore um documento com as respostas para as perguntas listadas acima para o final desta aula. Para responder as perguntas, você pode usar os materiais de referência listados abaixo, além de outros materiais que você encontrar. Você também poderá usar sistemas de IA Generativa, como o ChatGPT, para ajudar a responder as perguntas.
+Esteja preparado para responder as perguntas em sala de aula.
 
 ## Material de referência
 

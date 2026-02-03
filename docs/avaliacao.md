@@ -5,9 +5,10 @@ Os objetivos de aprendizagem desta disciplina serão avaliados através das segu
 | Atividade | Peso |
 | ----------| ----------|
 | *N* exercícios (APS) sobre agentes autônomos | 10% |
-| 2 projetos | 30% | 
-| Avaliação Intermediária | 30% | 
-| Avaliação Final | 30% | 
+| Projeto intermediário | 20% |
+| Projeto final | 20% | 
+| Avaliação Intermediária | 25% | 
+| Avaliação Final | 25% | 
 
 O critério para aprovação é:
 
@@ -21,15 +22,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                       | Prazo para entrega |
 | :------------------------------------------------------------------------------ | :----------------: |
-| [Discussão sobre conceitos gerais sobre IA](./aulas/01_introducao_ia/index.md)  |       13/08        |
-| [Exercício sobre modelagem de agentes](./aulas/03_configuracao/index.md)        |       20/08        |
-| [Exercício sobre busca em largura e profundidade](./aulas/04_x_buscas/index.md) |       07/09        |
-| [Procurando caminhos em um mapa](./aulas/05_busca_com_custo/index.md)           |       07/09        |
-| [Menor caminho entre duas cidades](./aulas/08_heuristica_parte_2/index.md)      |       10/09        |
-| [Puzzle-8](./aulas/08_heuristica_parte_3_aps/index.md)                          |       26/09        |
-| [Q-Learning e hiperparâmetros](./aulas/15_rl_parte2/index.md)                   |       15/10        |
-| [Sarsa](./aulas/15_rl_sarsa/index.md)                                           |       24/10        |
-| [Ambientes não-determinísticos](./aulas/15_xnon_determ/index.md)               |       31/10        |
+| TBD | TBD |
 
 ## 2 projetos
 
@@ -37,8 +30,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| [Projeto intermediário - VANTs](./projetos/2025_02_intermediario/index.md) | 08/10/2025 |
-| [Robô e o labirinto](./projetos/2025_02_robo/index.md) | 05/11/2025 |
+| TBD | TBD |
 
 <!--
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |

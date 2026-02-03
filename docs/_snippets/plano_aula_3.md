@@ -8,24 +8,34 @@
   </thead>
   <tbody>
     <tr>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">04-Set</td>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">09-Mar</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Estratégia de busca. Algoritmos de busca **informados** (busca gananciosa, $A^{*}$, família subida da montanha). Função heurística. Comparação entre os algoritmos.</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação dos algoritmos de busca e dos agentes autônomos em Python para resolver alguns problemas clássicos da literatura.</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">08-Set</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">11-Mar</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Estratégia de busca. Algoritmos de busca **informados** (busca gananciosa, $A^{*}$, família subida da montanha). Função heurística. Comparação entre os algoritmos.</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação dos algoritmos de busca e dos agentes autônomos em Python para resolver alguns problemas clássicos da literatura.</td>
     </tr>
     <tr>
-      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">10-Set</td>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">16-Mar</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Estratégia de busca. Algoritmos de busca **informados** (busca gananciosa, $A^{*}$, família subida da montanha). Função heurística. Comparação entre os algoritmos.</td>
       <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação dos algoritmos de busca e dos agentes autônomos em Python para resolver alguns problemas clássicos da literatura.</td>
     </tr>
     <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">11-Set</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">18-Mar</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de um agente autônomo que atua em um ambiente discreto, determinístico, síncrono, simulado e *single agent*.</td>
       <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de um projeto, provavelmente, envolvendo algum framework de simulação (i.e., Gym Open AI).</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">23-Mar</td>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS</strong></td>
+      <td style = "background-color: #E2EFDA;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS - Prova Intermediária</strong></td>
+    </tr>
+    <tr>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">25-Mar</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS</strong></td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto"><strong>SEMANA DE PROVAS - Prova Intermediária</strong></td>
     </tr>
   </tbody>
 </table></p>

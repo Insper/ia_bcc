@@ -10,7 +10,7 @@ Segundas e quartas das 07:30 até 09:30.
 
 ## Horário de atendimento
 
-Segundas das 16:30 às 18:00 na sala de reunião 03 no 3o andar do prédio P2.
+Quartas das 10:00 às 11:30 em sala de aula.
 
 ## Informações adicionais sobre os projetos e implementações
 
