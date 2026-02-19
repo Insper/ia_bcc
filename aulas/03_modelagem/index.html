@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../02_agentes_autonomos/">
+      
+      
+        <link rel="next" href="../../referencias/01_introducao/">
       
       
         
@@ -19,7 +23,7 @@
     
     
       
-        <title>Plano aula 6 - Inteligência Artificial e Robótica</title>
+        <title>Modelando problemas como um espaço de estados - Inteligência Artificial e Robótica</title>
       
     
     
@@ -61,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#modelando-problemas-como-um-espaco-de-estados" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Plano aula 6
+              Modelando problemas como um espaço de estados
             
           </span>
         </div>
@@ -254,18 +263,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -286,7 +297,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -351,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/01_introducao_ia/" class="md-nav__link">
+      <a href="../01_introducao_ia/" class="md-nav__link">
         
   
   
@@ -379,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/02_agentes_autonomos/" class="md-nav__link">
+      <a href="../02_agentes_autonomos/" class="md-nav__link">
         
   
   
@@ -412,18 +423,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -444,7 +457,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -459,10 +472,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../aulas/03_modelagem/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelando problemas como um espaço de estados
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -478,6 +518,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mais-um-grid-world-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mais um grid world simples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procurando-por-solucoes-algoritmos-de-busca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurando por soluções: algoritmos de busca
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material de referência
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -625,6 +718,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mais-um-grid-world-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mais um grid world simples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procurando-por-solucoes-algoritmos-de-busca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurando por soluções: algoritmos de busca
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material de referência
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,39 +777,31 @@
 
 
 
-  <h1>Plano aula 6</h1>
-
-<p><table class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th style = "background-color: #305496;font-family: Century Gothic, sans-serif;font-size: medium;color: #FFFFFF;text-align: left;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px;width: auto">Data</th>
-      <th style = "background-color: #305496;font-family: Century Gothic, sans-serif;font-size: medium;color: #FFFFFF;text-align: left;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px;width: auto">Fundamentos / Conteúdo</th>
-      <th style = "background-color: #305496;font-family: Century Gothic, sans-serif;font-size: medium;color: #FFFFFF;text-align: left;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px;width: auto">Dinâmica</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style = "background-color: #D9E1F2;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">08-Abr</td>
-      <td style = "background-color: #D9E1F2;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Definição de aprendizagem por reforço, política de controle e algoritmo Q-Learning.</td>
-      <td style = "background-color: #D9E1F2;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Discussão em sala. Exercícios em sala de aula envolvendo o ambiente OpenAI Gym.  Implementação de agentes autônomos usando o algoritmo Q-Learning.</td>
-    </tr>
-    <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">13-Abr</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Algoritmo Q-Learning: detalhes e hiperparâmetros. Apresentação do ambiente OpenAI Gym.</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Exercícios em sala de aula envolvendo o ambiente OpenAI Gym.  Implementação de agentes autônomos usando o algoritmo Q-Learning.</td>
-    </tr>
-    <tr>
-      <td style = "background-color: #D9E1F2;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">15-Abr</td>
-      <td style = "background-color: #D9E1F2;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Algoritmo Q-Learning: detalhes e hiperparâmetros.</td>
-      <td style = "background-color: #D9E1F2;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de agentes autônomos usando o algoritmo Sarsa.</td>
-    </tr>
-    <tr>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">22-Abr</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Ambientes não-determinísticos. Reinforcement Learning: métodos tabulares</td>
-      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de agentes autônomos usando o algoritmo Q-Learning e Sarsa</td>
-    </tr>
-  </tbody>
-</table></p>
+<h1 id="modelando-problemas-como-um-espaco-de-estados">Modelando problemas como um espaço de estados</h1>
+<p>Na <a href="../02_agentes_autonomos/">última aula</a> vimos o que é um agente autônomo e como ele pode perceber o ambiente e agir sobre ele. Ao final da aula, vimos um exemplo de um agente aspirador de pó e um grid world simples. Para resolver esses problemas, precisamos de uma forma de representar o estado do mundo, as ações que o agente pode executar e as transições entre os estados. Nesta aula, vamos continuar explorando esses conceitos e aprender a modelar problemas como um espaço de estados. Além disso, vamos começar a pensar em algoritmos de busca para encontrar soluções para esses problemas.</p>
+<h2 id="mais-um-grid-world-simples">Mais um grid world simples</h2>
+<p>Considere o ambiente representado abaixo, onde um agente pode se mover em quatro direções (cima, baixo, esquerda, direita) em um grid 3x3. O objetivo do agente é alcançar a célula marcada com "G" (goal). As células marcadas com as letras de "A" até "F" são células onde o agente pode estar, incluindo a célula marcada com "G". As células marcadas com "X" são obstáculos que o agente não pode atravessar.</p>
+<div class="highlight"><pre><span></span><code>+---+---+---+
+| A | B | X |
++---+---+---+
+| C | D | E |
++---+---+---+
+| X | F | G |
++---+---+---+
+</code></pre></div>
+<p>Individualmente, responda as seguintes perguntas:</p>
+<ul>
+<li>Quais são os estados possíveis do mundo? </li>
+<li>Quais são as ações que o agente pode executar?</li>
+<li>Quais são as consequências das ações sobre os estados? As ações são determinísticas?</li>
+<li>Qual é o estado inicial e qual é o estado final?</li>
+<li>Desenhe o grafo com todos os estados e transições para este problema.</li>
+</ul>
+<h2 id="procurando-por-solucoes-algoritmos-de-busca">Procurando por soluções: algoritmos de busca</h2>
+<p>Dado um estado qualquer do mundo, como o agente pode encontrar uma sequência de ações que o leve ao estado final? Para isso, precisamos de um algoritmo de busca. Existem vários algoritmos de busca, como busca em largura, busca em profundidade, busca A*, entre outros. Cada um desses algoritmos tem suas próprias características e é adequado para diferentes tipos de problemas.</p>
+<p>O objetivo desta aula é introduzir o conceito de algoritmo de busca, mais especificamente, usando os algoritmo de busca em largura e o algortimo de busca em profundidade.</p>
+<h2 id="material-de-referencia">Material de referência</h2>
+<p><embed src="../../referencias/03_algoritmos_busca/busca_versaoFabricio.pdf" type="application/pdf" width="600" height="300"></p>
 
 
 
@@ -694,7 +822,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 3, 2026 19:49:11 UTC">February 3, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 19, 2026 20:44:15 UTC">February 19, 2026</span>
   </span>
 
     
