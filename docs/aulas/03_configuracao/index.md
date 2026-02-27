@@ -1,7 +1,10 @@
 # Implementando um Aspirador de Pó
 
 ??? hint "Importante!"
-    As orientações sobre a entrega deste exercício estão abaixo. Este é um exercício individual. Os alunos poderão discutir sobre o problema, mas a implementação deve ser feita individualmente. Não pode ser utilizado nenhum tipo de ferramenta de Inteligência Artificial para a resolução destes problemas.
+    As orientações sobre a entrega deste exercício estão abaixo. Este é um exercício individual. Os alunos poderão discutir sobre o problema, mas a implementação deve ser feita individualmente. Se usarem ferramentas de IA então tentem entender o que a ferramenta de IA está fazendo.
+
+??? hint "Importante 2!"
+    Neste tipo de exercício é muito comum as ferramentas de IA gerarem código que não funciona. Por isso, se usarem ferramentas de IA, tentem entender o que a ferramenta de IA está fazendo. Se o código gerado não funcionar, tente entender o que a ferramenta de IA fez e corrija o código. Nem o professor da discipina, nem o ninja poderão ajudar a corrigir o código gerado por ferramentas de IA.
 
 ## Configuração do ambiente
 
@@ -11,13 +14,13 @@ Para executar esta atividade você terá que criar um projeto e como dependênci
 pip install aigyminsper
 ```
 
-Esta biblioteca implementa diversos algoritmos de busca que serão utilizados ao longo da disciplina. Além disso, esta biblioteca permite o desenvolvimento de agentes inteligentes através de uma interface padrão.  
+Esta biblioteca implementa diversos algoritmos de busca que serão utilizados ao longo da disciplina. Além disso, esta biblioteca permite o desenvolvimento de agentes inteligentes através de uma interface padrão. Para entender melhor como esta biblioteca funciona, por favor, leia a documentação oficial da biblioteca em [https://insper.github.io/ai_gym/](https://insper.github.io/ai_gym/). 
 
 ## Exercício: Aspirador de Pó
 
 Para este exercício vamos utilizar o arquivo [AgentSpecification.py](./code/AgentSpecification.py).
 
-* Faça uma cópia deste arquivo e chame ele de `AspiradorPo.py`, por exemplo.
+* Faça uma cópia deste arquivo e chame ele de `AspiradorPo.py`, por exemplo. Não esqueça de alterar o nome da classe dentro do arquivo.
 * No método `__init__` defina a estrutura de dados que você especificou na aula passada. 
 * No método `successors` codifique a execução das ações segundo o que você especificou na aula passada. **Dica**: cada novo estado é uma instância de um novo objeto da classe que é adicionado na lista retornada pelo método. 
 * Codifique o comportamento do método `is_goal`. Ele deve retornar `True` quando encontrar um estado igual a meta. 
@@ -50,7 +53,7 @@ Mas, antes de implementar usando uma estrutura similar a descrita acima, respond
 * Qual a estimativa do tamanho do espaço de busca (número de
     estados possíveis)?
 
-
+<!--
 ## Entrega
 
 A entrega deste exercício deve ser feita no Github Classroom: [https://classroom.github.com/a/cRCLHC5C](https://classroom.github.com/a/cRCLHC5C). A entrega é individual e deve ser feita até o meio dia do dia 20/08 até às 10 horas da manhã. O projeto base existente no Github classroom tem um arquivo de teste. Você deve implementar o código de forma que todos os testes passem.
@@ -76,4 +79,4 @@ Mas, antes de implementar usando uma estrutura similar a descrita acima, respond
     condições para cada operação ser executada)
 * Qual a estimativa do tamanho do espaço de busca (número de
     estados possíveis)?
-
+-->
