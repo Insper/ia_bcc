@@ -1,0 +1,1325 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../avaliacao/">
+      
+      
+        <link rel="next" href="../../aulas/01_introducao_ia/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>APS 01 - Inteligência Artificial e Robótica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#problema-dos-cadeados" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-header__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Inteligência Artificial e Robótica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              APS 01
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Inteligência Artificial e Robótica" class="md-nav__button md-logo" aria-label="Inteligência Artificial e Robótica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Inteligência Artificial e Robótica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ementa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ementa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano_de_aulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plano de Aula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critérios para Aprovação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    APS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APS 01
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APS 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atividade-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atividade de implementação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medindo-tempo-e-memoria-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medindo tempo e memória de execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medindo-o-tempo-e-memoria-de-execucao-para-diferentes-profundidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medindo o tempo e memória de execução para diferentes profundidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega-das-implementacoes-e-do-relatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega das implementações e do relatório
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aulas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aulas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introdução
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/01_introducao_ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução à Inteligência Artificial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/02_agentes_autonomos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentes Autônomos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Busca em espaço de estados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Busca em espaço de estados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/03_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelando problemas como um espaço de estados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/03_configuracao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementando um Aspirador de Pó
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alterando os algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_x_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuação sobre algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/05_busca_com_custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de custo uniforme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/07_revisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revisão sobre algoritmos de busca sistemáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Busca com heurística
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Busca com heurística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/08_heuristica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Menor caminho entre duas cidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referências
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução à Inteligência Artificial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmos de Busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atividade-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atividade de implementação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medindo-tempo-e-memoria-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medindo tempo e memória de execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medindo-o-tempo-e-memoria-de-execucao-para-diferentes-profundidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medindo o tempo e memória de execução para diferentes profundidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega-das-implementacoes-e-do-relatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega das implementações e do relatório
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="problema-dos-cadeados">Problema dos cadeados</h1>
+<p><img alt="Cadeado com 4 números" class="lock-inline" src="img/cadeado_4digitos.svg" /></p>
+<p>O objetivo deste problema é encontrar a combinação correta para abrir um cadeado, onde a combinação é composta por dois números. A cada passo, é possível incrementar um dos números em 1. O desafio é encontrar a combinação correta em um número mínimo de passos.</p>
+<p>Os estados são representados por um vetor de dois números, e as ações possíveis são incrementar o primeiro número ou o segundo número. O estado inicial é (0, 0) e o estado objetivo é a combinação correta do cadeado.</p>
+<p>Considerando que os números possíveis para cada posição do cadeado são de 0 a 9, o espaço de busca é finito, mas pode ser grande dependendo da combinação correta. O problema pode ser resolvido utilizando algoritmos de busca em Largura, Profundidade, Profundidade Iterativa, entre outros. A escolha do algoritmo de busca pode influenciar o desempenho da solução, especialmente em termos de tempo e memória.</p>
+<p>Considerando que os números possíveis para cada posição do cadeado são de 0 a 9, qual é a profundidade máxima da árvore de busca para este problema? Qual é a ramificação do problema? </p>
+<div class="lock-clear"></div>
+
+<h2 id="atividade-de-implementacao">Atividade de implementação</h2>
+<p>Usando a biblioteca <code>aigyminsper</code>, implemente a classe <code>Cadeado2</code> que representa o estado do problema dos cadeados. A classe deve herdar de <code>State</code> e implementar os métodos necessários para definir os sucessores, verificar se o estado é o objetivo, fornecer uma descrição do problema e calcular o custo das ações.</p>
+<p>Como os estados são representador por um vetor, é importante que no método <code>successors</code> sejam criados novos objetos <code>Cadeado2</code> para cada ação possível, garantindo que o estado atual não seja modificado. Além disso, é necessário fazer uma cópia do vetor de números antes de modificá-lo para criar os sucessores, por exemplo: </p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">copy</span>
+
+<span class="n">temp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numeros</span><span class="p">)</span>
+<span class="n">temp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Incrementa o primeiro número</span>
+<span class="c1"># e entao usa ele para criar o sucessor</span>
+</code></pre></div>
+<p>Depois de implementada a classe <code>Cadeado2</code>, utilize um algoritmo de busca, como a busca em largura, para encontrar a combinação correta do cadeado a partir do estado inicial (0, 0) até o estado objetivo (1, 3). Imprima o caminho encontrado e o custo total da solução.</p>
+<p>Por exemplo, para este código: </p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">inicio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">fim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>A saída deve ser: </p>
+<div class="highlight"><pre><span></span><code>Início: [0, 0], Fim: [1, 3]
+Achou!
+ ; [+1,_] ; [_,+1] ; [_,+1] ; [_,+1]
+Custo: 4
+</code></pre></div>
+<p>Faça vários testes para garantir que a implementação está correta. Por exemplo, usando algoritmos diferentes: </p>
+<div class="highlight"><pre><span></span><code>    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaProfundidade</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+<p>E parâmetros que permitem visualizações diferentes do processamento: </p>
+<div class="highlight"><pre><span></span><code>    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">show_process</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="medindo-tempo-e-memoria-de-execucao">Medindo tempo e memória de execução</h2>
+<p>Utilize a biblioteca <code>time</code> para medir o tempo de execução do algoritmo de busca. Para medir o uso de memória, você pode usar a biblioteca <code>memory_profiler</code>. Certifique-se de instalar a biblioteca <code>memory_profiler</code> usando pip:</p>
+<p><div class="highlight"><pre><span></span><code>pip install memory_profiler
+</code></pre></div>
+Em seguida, você pode usar o decorador <code>@profile</code> para medir o uso de memória da função que executa a busca. Por exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">memory_profiler</span><span class="w"> </span><span class="kn">import</span> <span class="n">profile</span>
+
+<span class="nd">@profile</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">inicio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">fim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>O formato de saída do <code>memory_profiler</code> mostrará o uso de memória linha por linha, permitindo que você identifique quais partes do código estão consumindo mais memória, por exemplo: </p>
+<div class="highlight"><pre><span></span><code><span class="mi">42</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="mi">43</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fim</span><span class="p">)</span>
+    <span class="mi">44</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
+    <span class="mi">45</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">4.3</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+    <span class="mi">46</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="mi">47</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+    <span class="mi">48</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
+    <span class="mi">49</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Como podemos ver, para este exemplo, a linha que executa a busca (<code>result = algorithm.search(state)</code>) é a que mais consome memória, o que é esperado, pois é onde ocorre a expansão dos nós e o armazenamento dos estados visitados. O uso de memória pode variar dependendo do algoritmo de busca utilizado e da profundidade da solução encontrada.</p>
+<p>Para medir o tempo de execução, você pode usar a função <code>time()</code> do módulo <code>time</code> para registrar o tempo antes e depois da execução do algoritmo de busca. Por exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">memory_profiler</span><span class="w"> </span><span class="kn">import</span> <span class="n">profile</span>
+
+<span class="nd">@profile</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">inicio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">fim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fim</span><span class="p">)</span>       
+    <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
+    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>  <span class="c1"># Início da medição de tempo</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>  <span class="c1"># Fim da medição de tempo</span>
+    <span class="n">execution_time</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>  <span class="c1"># Cálculo do tempo de execução</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tempo de execução: </span><span class="si">{</span><span class="n">execution_time</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> segundos&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="medindo-o-tempo-e-memoria-de-execucao-para-diferentes-profundidades">Medindo o tempo e memória de execução para diferentes profundidades</h2>
+<p>Teste a implementação do problema dos cadeados para diferentes combinações de fim, variando a profundidade da solução. Meça o tempo e a memória de execução para cada caso e analise como esses recursos são afetados pela profundidade da solução encontrada. Considere os algoritmos de busca em largura, profundidade e profundidade iterativa para comparar os resultados.</p>
+<p>Ao final, você deverá entregar três tabelas preenchidas, uma para cada algoritmo, e com a seguinte estrutura: </p>
+<table>
+<thead>
+<tr>
+<th>Combinação Final</th>
+<th>Profundidade da Solução</th>
+<th>Tempo de Execução (s)</th>
+<th>Uso de Memória (MiB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[6, 9]</td>
+<td>??</td>
+<td>??</td>
+<td>??</td>
+</tr>
+</tbody>
+</table>
+<p>Cada tabela deve ter 19 linhas, da profundidade 0 até a profundidade 18, considerando as combinações finais possíveis para o cadeado.</p>
+<p>Ao terminar as três tabelas, faça uma análise comparativa entre os algoritmos, discutindo as vantagens e desvantagens de cada um em relação ao tempo e uso de memória para diferentes profundidades de solução.</p>
+<details>
+<summary>Pergunta!</summary>
+<p>Os resultados encontrados tem relação com o que foi visto em aula sobre os algoritmos de busca? </p>
+</details>
+<h2 id="entrega-das-implementacoes-e-do-relatorio">Entrega das implementações e do relatório</h2>
+<p>A implementação da classe <code>Cadeado2</code> deve ser entregue em um arquivo chamado <code>cadeado2.py</code>. O relatório deve ser entregue no arquivo README.md, contendo as tabelas preenchidas e a análise comparativa entre os algoritmos. Certifique-se de incluir os códigos utilizados para medir o tempo e a memória de execução. </p>
+<p>Todos os artefatos devem ser organizados em um repositório no GitHub <a href="https://classroom.github.com/a/DTYRGvxr">https://classroom.github.com/a/DTYRGvxr</a>. A data de entrega desta APS é <strong>13/03/2026 até às 13:00 horas</strong>. </p>
+<p>Este projeto pode ser feito em grupos com até 3 pessoas.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 18:34:09 UTC">March 9, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="../../js/markdown-enhancer.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
