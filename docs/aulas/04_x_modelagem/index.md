@@ -85,9 +85,11 @@ e consiga encontrar uma solução para todos os casos de testes apresentados no 
     Será que é possível utilizar outros algoritmos? 
 
 
+<!--
 ## Exercício de implementação
 
 Implemente todos os agentes acima no projeto [https://classroom.github.com/a/nKr94eGa](https://classroom.github.com/a/nKr94eGa). Respeite as interfaces definidas no projeto. Em especial, nos arquivos de teste. Quando você implementar soluções que conseguem passar em todos os testes então submeta via Github Classroom. Esta submissão deve ser feita em duplas até o dia 06/09/2024. 
+-->
 
 ## Material de referência
 

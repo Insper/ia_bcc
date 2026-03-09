@@ -20,9 +20,9 @@ O critério para aprovação é:
 
 Seguem os enunciados que se encaixam nesta categoria: 
 
-| Descrição                                                                       | Prazo para entrega |
-| :------------------------------------------------------------------------------ | :----------------: |
-| TBD | TBD |
+| Descrição                       | Prazo para entrega |
+| :------------------------------ | :----------------: |
+| [Calculando a memória e tempo de execução de algoritmos de busca](./aps/aps_01/index.md) |        13/03/2026         |
 
 ## 2 projetos
 

@@ -14,6 +14,8 @@ nav:
   - 'Ementa': 'ementa.md'
   - 'Plano de Aula': 'plano_de_aulas.md'
   - 'Critérios para Aprovação': 'avaliacao.md'
+  - 'APS':
+    - 'APS 01': 'aps/aps_01/index.md'
   - 'Aulas':
     - 'Introdução':
       - 'aulas/01_introducao_ia/index.md'
@@ -24,12 +26,12 @@ nav:
       - 'aulas/04_modelagem/index.md'
 ##      - 'aulas/04_modelagem_espaco/index.md'
 #      - 'aulas/04_x_buscas/index.md'
-##      - 'aulas/04_x_modelagem/index.md'
-#      - 'aulas/05_busca_com_custo/index.md'
+      - 'aulas/04_x_modelagem/index.md'
+      - 'aulas/05_busca_com_custo/index.md'
 ###    # - 'aulas/05_x_busca_cega/index.md'
-#      - 'aulas/07_revisao/index.md'
-#    - 'Busca com heurística':
-#      - 'aulas/08_heuristica/index.md'
+      - 'aulas/07_revisao/index.md'
+    - 'Busca com heurística':
+      - 'aulas/08_heuristica/index.md'
 #      - 'aulas/08_heuristica_parte_2/index.md'
 #      - 'aulas/08_heuristica_parte_3/index.md'
 #      - 'aulas/08_heuristica_parte_3_aps/index.md'

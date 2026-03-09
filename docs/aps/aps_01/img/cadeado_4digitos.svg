@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Cadeado de mala com 4 números girando">
+  <style>
+    .stroke { stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .no-fill { fill: none; }
+    .digit { fill: currentColor; font-size: 14px; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+
+    @keyframes spinY {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-160px); }
+    }
+
+    .spin { animation-name: spinY; animation-timing-function: steps(10); animation-iteration-count: infinite; }
+    .s1 { animation-duration: 1.05s; }
+    .s2 { animation-duration: 0.95s; }
+    .s3 { animation-duration: 1.15s; }
+    .s4 { animation-duration: 1.00s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spin { animation: none; }
+    }
+  </style>
+
+  <!-- Haste do cadeado -->
+  <path class="stroke no-fill" d="M110 78V55a40 40 0 0 1 80 0v23" />
+  <path class="stroke no-fill" d="M118 78V55a32 32 0 0 1 64 0v23" opacity="0.35" />
+
+  <!-- Corpo -->
+  <rect class="stroke no-fill" x="55" y="78" width="190" height="105" rx="12" />
+
+  <!-- Janela e discos numéricos (4) -->
+  <defs>
+    <clipPath id="dial-clip-1" clipPathUnits="userSpaceOnUse">
+      <rect x="84" y="115" width="32" height="20" rx="4" />
+    </clipPath>
+    <clipPath id="dial-clip-2" clipPathUnits="userSpaceOnUse">
+      <rect x="122" y="115" width="32" height="20" rx="4" />
+    </clipPath>
+    <clipPath id="dial-clip-3" clipPathUnits="userSpaceOnUse">
+      <rect x="160" y="115" width="32" height="20" rx="4" />
+    </clipPath>
+    <clipPath id="dial-clip-4" clipPathUnits="userSpaceOnUse">
+      <rect x="198" y="115" width="32" height="20" rx="4" />
+    </clipPath>
+  </defs>
+
+  <!-- Molduras das janelas -->
+  <g class="stroke no-fill">
+    <rect x="84" y="115" width="32" height="20" rx="4" />
+    <rect x="122" y="115" width="32" height="20" rx="4" />
+    <rect x="160" y="115" width="32" height="20" rx="4" />
+    <rect x="198" y="115" width="32" height="20" rx="4" />
+  </g>
+
+  <!-- Discos (números empilhados e animados) -->
+  <!-- Cada tira tem 11 dígitos (0..9 + 0) com altura de linha 16; anima -160px com steps(10). -->
+  <g clip-path="url(#dial-clip-1)" transform="translate(100 125)">
+    <g class="spin s1">
+      <text class="digit" x="0" y="8">0</text>
+      <text class="digit" x="0" y="24">1</text>
+      <text class="digit" x="0" y="40">2</text>
+      <text class="digit" x="0" y="56">3</text>
+      <text class="digit" x="0" y="72">4</text>
+      <text class="digit" x="0" y="88">5</text>
+      <text class="digit" x="0" y="104">6</text>
+      <text class="digit" x="0" y="120">7</text>
+      <text class="digit" x="0" y="136">8</text>
+      <text class="digit" x="0" y="152">9</text>
+      <text class="digit" x="0" y="168">0</text>
+    </g>
+  </g>
+
+  <g clip-path="url(#dial-clip-2)" transform="translate(138 125)">
+    <g class="spin s2">
+      <text class="digit" x="0" y="8">0</text>
+      <text class="digit" x="0" y="24">1</text>
+      <text class="digit" x="0" y="40">2</text>
+      <text class="digit" x="0" y="56">3</text>
+      <text class="digit" x="0" y="72">4</text>
+      <text class="digit" x="0" y="88">5</text>
+      <text class="digit" x="0" y="104">6</text>
+      <text class="digit" x="0" y="120">7</text>
+      <text class="digit" x="0" y="136">8</text>
+      <text class="digit" x="0" y="152">9</text>
+      <text class="digit" x="0" y="168">0</text>
+    </g>
+  </g>
+
+  <g clip-path="url(#dial-clip-3)" transform="translate(176 125)">
+    <g class="spin s3">
+      <text class="digit" x="0" y="8">0</text>
+      <text class="digit" x="0" y="24">1</text>
+      <text class="digit" x="0" y="40">2</text>
+      <text class="digit" x="0" y="56">3</text>
+      <text class="digit" x="0" y="72">4</text>
+      <text class="digit" x="0" y="88">5</text>
+      <text class="digit" x="0" y="104">6</text>
+      <text class="digit" x="0" y="120">7</text>
+      <text class="digit" x="0" y="136">8</text>
+      <text class="digit" x="0" y="152">9</text>
+      <text class="digit" x="0" y="168">0</text>
+    </g>
+  </g>
+
+  <g clip-path="url(#dial-clip-4)" transform="translate(214 125)">
+    <g class="spin s4">
+      <text class="digit" x="0" y="8">0</text>
+      <text class="digit" x="0" y="24">1</text>
+      <text class="digit" x="0" y="40">2</text>
+      <text class="digit" x="0" y="56">3</text>
+      <text class="digit" x="0" y="72">4</text>
+      <text class="digit" x="0" y="88">5</text>
+      <text class="digit" x="0" y="104">6</text>
+      <text class="digit" x="0" y="120">7</text>
+      <text class="digit" x="0" y="136">8</text>
+      <text class="digit" x="0" y="152">9</text>
+      <text class="digit" x="0" y="168">0</text>
+    </g>
+  </g>
+
+  <!-- Base / detalhe inferior -->
+  <path class="stroke no-fill" d="M85 160h130" opacity="0.35" />
+</svg>
