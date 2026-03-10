@@ -94,8 +94,12 @@ Anote na tabela acima o tempo de processamento e a solução encontrada e discut
 * Por que a solução encontrada foi diferente em cada algoritmo?
 * Por que a solução encontrada foi diferente em cada versão do A-Estrela? 
 
+<!-- 
+
 ## Entrega
 
 Este exercício é individual.
 
 Crie um documento pdf com a tabela preenchida e com a resposta para as perguntas e envie via **blackboard**. A data limite para entrega é **10/09/2021**.
+
+--> 
