@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../aps_01/">
+      
+      
+        <link rel="next" href="../../aulas/01_introducao_ia/">
       
       
         
@@ -19,7 +23,7 @@
     
     
       
-        <title>Algoritmo de Dijkstra - Inteligência Artificial e Robótica</title>
+        <title>APS 02 - Inteligência Artificial e Robótica</title>
       
     
     
@@ -62,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algoritmo-de-dijkstra" class="md-skip">
+        <a href="#problema-de-empilhamento-de-blocos-block-world-problem" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Algoritmo de Dijkstra
+              APS 02
             
           </span>
         </div>
@@ -259,18 +263,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -291,7 +297,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -309,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aps/aps_01/" class="md-nav__link">
+      <a href="../aps_01/" class="md-nav__link">
         
   
   
@@ -334,10 +340,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../aps/aps_02/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APS 02
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -353,6 +386,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-estado-inicial-e-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo de estado inicial e objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-classicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras clássicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega-do-exercicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega do exercício
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacao-adicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informação adicional
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -946,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_introducao/" class="md-nav__link">
+      <a href="../../referencias/01_introducao/" class="md-nav__link">
         
   
   
@@ -974,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_algoritmos_busca/" class="md-nav__link">
+      <a href="../../referencias/03_algoritmos_busca/" class="md-nav__link">
         
   
   
@@ -1029,10 +1126,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comparacao-entre-os-algoritmos-de-dijkstra-e-de-custo-uniforme" class="md-nav__link">
+  <a href="#exemplo-de-estado-inicial-e-objetivo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Comparação entre os algoritmos de Dijkstra e de Custo Uniforme
+        Exemplo de estado inicial e objetivo
       
     </span>
   </a>
@@ -1040,10 +1137,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparacao-entre-os-algoritmos-de-dijkstra-e-a-estrela" class="md-nav__link">
+  <a href="#regras-classicas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Comparação entre os algoritmos de Dijkstra e A-Estrela
+        Regras clássicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega-do-exercicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega do exercício
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacao-adicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informação adicional
       
     </span>
   </a>
@@ -1067,15 +1186,80 @@
 
 
 
-<h1 id="algoritmo-de-dijkstra">Algoritmo de Dijkstra</h1>
-<p>Neste <a href="https://www.youtube.com/watch?v=ovkITlgyJ2s">vídeo</a> existe uma explicação bem didática sobre
-o algoritmo Dijkstra. </p>
-<h2 id="comparacao-entre-os-algoritmos-de-dijkstra-e-de-custo-uniforme">Comparação entre os algoritmos de Dijkstra e de Custo Uniforme</h2>
-<p>Neste <a href="https://www.baeldung.com/cs/uniform-cost-search-vs-dijkstras">texto</a> é possível encontrar uma explicação 
-de ambos os algoritmos e uma comparação entre eles.</p>
-<h2 id="comparacao-entre-os-algoritmos-de-dijkstra-e-a-estrela">Comparação entre os algoritmos de Dijkstra e A-Estrela</h2>
-<p>Este <a href="dijkstra.pdf">documento</a> descreve uma análise e comparação entre os algoritmos de 
-Dijksra e A-Estrela na descoberta de caminhos mínimos. </p>
+<h1 id="problema-de-empilhamento-de-blocos-block-world-problem">Problema de empilhamento de blocos (<em>block world problem</em>)</h1>
+<p>Temos um conjunto de blocos identificados por letras (A, B, C, D, E, ...) que podem estar: </p>
+<ul>
+<li>empilhados uns sobre os outros, ou</li>
+<li>sobre a mesa.</li>
+</ul>
+<p>O objetivo é mover os blocos para alcançar uma configuração específica. Cada bloco pode ser movido para outra posição, mas apenas um bloco pode ser movido por vez. O custo para mover um bloco é 1.</p>
+<h2 id="exemplo-de-estado-inicial-e-objetivo">Exemplo de estado inicial e objetivo</h2>
+<p>Estado inicial: </p>
+<div class="highlight"><pre><span></span><code>    A
+    B       C
+   ---     ---
+   mesa    mesa
+</code></pre></div>
+<p>Queremos alcançar o seguinte estado objetivo:</p>
+<div class="highlight"><pre><span></span><code>    C
+    B
+    A
+   ---
+   mesa
+</code></pre></div>
+<h2 id="regras-classicas">Regras clássicas</h2>
+<p>As regras clássicas são:</p>
+<ul>
+<li>Só é possível mover um bloco por vez.</li>
+<li>Um bloco só pode ser movido se não houver outro bloco sobre ele.</li>
+<li>
+<p>Um bloco pode ser colocado:</p>
+<ul>
+<li>na mesa</li>
+<li>sobre outro bloco livre</li>
+</ul>
+</li>
+</ul>
+<p>Dado um estado qualquer, como este: </p>
+<div class="highlight"><pre><span></span><code>    A
+    B       C
+   ---     ---
+   mesa    mesa
+</code></pre></div>
+<p>As ações possíveis são:</p>
+<ul>
+<li>Mover o bloco A para a mesa</li>
+<li>Mover o bloco A para o topo da pilha onde está o bloco C</li>
+<li>Mover o bloco C para o topo da pilha onde está o bloco A</li>
+</ul>
+<p>as ações <strong>não</strong> possíveis são:</p>
+<ul>
+<li>Mover o bloco B, pois o bloco A está sobre ele.</li>
+<li>Mover o bloco C para a mesa, pois ele já está sobre a mesa. Esta ação até poderia ser considerada possível, mas não faria sentido, pois o bloco C já está sobre a mesa.</li>
+</ul>
+<h2 id="entrega-do-exercicio">Entrega do exercício</h2>
+<p>Para a entrega deste exercício, considere cenários com até <strong>5 blocos</strong>.</p>
+<ul>
+<li>Defina como será a representação do estado, das ações e do custo.</li>
+<li>Explique a representação do estado escolhida e forneça um exemplo de estado inicial e estado objetivo.</li>
+<li>Defina duas heurísticas para o problema.</li>
+<li>Implemente o algoritmo A* para resolver o problema utilizando as heurísticas definidas.</li>
+<li>Teste o algoritmo A* com as heurísticas definidas em pelo menos 3 cenários diferentes, incluindo o cenário apresentado acima.</li>
+<li>Crie um script de teste para cada cenário, onde o script deve imprimir o caminho encontrado e o custo total do caminho.</li>
+<li>Compare os resultados obtidos com as heurísticas definidas e discuta qual delas é mais eficiente para resolver o problema. Se uma das heurísticas não for admissível, explique o motivo e discuta os resultados obtidos com ela.</li>
+</ul>
+<p>Este trabalho deve ser entregue neste repositório <a href="https://classroom.github.com/a/vwfirwdG">https://classroom.github.com/a/vwfirwdG</a> no Github Classroom até o dia <strong>20/03/2026</strong>, horas 23:30. Este trabalho pode ser realisado em equipes com até 3 pessoas. </p>
+<p>Todas as respostas para as perguntas acima devem ser fornecidas em um arquivo <code>README.md</code> e todo o código deve ser entregue também. Não esqueçam de incluir o nome dos integrantes da equipe no arquivo <code>README.md</code>.</p>
+<p>De preferência, tentem usar a biblioteca <code>aigyminsper</code> para implementar esta atividade. </p>
+<h2 id="informacao-adicional">Informação adicional</h2>
+<p>Este problema poderia ser resolvido com programação declarativa (Prolog), usando uma representação como o exemplos abaixo:</p>
+<div class="highlight"><pre><span></span><code><span class="nf">on</span><span class="p">(</span><span class="nv">A</span><span class="p">,</span><span class="nv">B</span><span class="p">)</span>
+<span class="nf">on</span><span class="p">(</span><span class="nv">B</span><span class="p">,</span><span class="s s-Atom">table</span><span class="p">)</span>
+<span class="nf">on</span><span class="p">(</span><span class="nv">C</span><span class="p">,</span><span class="s s-Atom">table</span><span class="p">)</span>
+<span class="nf">clear</span><span class="p">(</span><span class="nv">A</span><span class="p">)</span>
+<span class="nf">clear</span><span class="p">(</span><span class="nv">C</span><span class="p">)</span>
+</code></pre></div>
+<p>Claro que faltam as regras para mover os blocos, mas isto não é escopo desta disciplina. </p>
 
 
 
@@ -1096,7 +1280,7 @@ Dijksra e A-Estrela na descoberta de caminhos mínimos. </p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 3, 2023 16:42:06 UTC">October 3, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 16, 2026 02:23:58 UTC">March 16, 2026</span>
   </span>
 
     
