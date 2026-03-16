@@ -72,7 +72,7 @@ Para a entrega deste exercício, considere cenários com até **5 blocos**.
 * Crie um script de teste para cada cenário, onde o script deve imprimir o caminho encontrado e o custo total do caminho.
 * Compare os resultados obtidos com as heurísticas definidas e discuta qual delas é mais eficiente para resolver o problema. Se uma das heurísticas não for admissível, explique o motivo e discuta os resultados obtidos com ela.
 
-Este trabalho deve ser entregue neste repositório [https://classroom.github.com/a/vwfirwdG](https://classroom.github.com/a/vwfirwdG) no Github Classroom até o dia **20/03/2026**, horas 23:30. Este trabalho pode ser realisado em equipes com até 3 pessoas. 
+Este trabalho deve ser entregue neste repositório [https://classroom.github.com/a/vwfirwdG](https://classroom.github.com/a/vwfirwdG) no Github Classroom até o dia **27/03/2026**, horas 23:30. Este trabalho pode ser realisado em equipes com até 3 pessoas. 
 
 Todas as respostas para as perguntas acima devem ser fornecidas em um arquivo `README.md` e todo o código deve ser entregue também. Não esqueçam de incluir o nome dos integrantes da equipe no arquivo `README.md`.
 
