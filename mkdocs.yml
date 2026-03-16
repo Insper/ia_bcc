@@ -16,6 +16,7 @@ nav:
   - 'Critérios para Aprovação': 'avaliacao.md'
   - 'APS':
     - 'APS 01': 'aps/aps_01/index.md'
+    - 'APS 02': 'aps/aps_02/index.md'
   - 'Aulas':
     - 'Introdução':
       - 'aulas/01_introducao_ia/index.md'
