@@ -23,6 +23,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Descrição                       | Prazo para entrega |
 | :------------------------------ | :----------------: |
 | [Calculando a memória e tempo de execução de algoritmos de busca](./aps/aps_01/index.md) |        13/03/2026         |
+| [Solução para o problema dos blocos](./aps/aps_02/index.md) | 20/03/2026 |
 
 ## 2 projetos
 
