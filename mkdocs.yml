@@ -78,8 +78,8 @@ nav:
 #    - 'referencias/05_jogos/index.md'
 #    - 'referencias/06_rl/index.md'
 #    - 'referencias/09_adicionais/index.md'
-#  - 'Exercícios e avaliações antigas':
-#    - 'exercicios/index.md'
+  - 'Exercícios e avaliações antigas':
+    - 'exercicios/index.md'
   
 #  - 'Comentários': 'comentarios.md'
 
