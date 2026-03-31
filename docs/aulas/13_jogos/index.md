@@ -1,27 +1,28 @@
 # Jogos de tabuleiro e busca competitiva
 
-Como sugestão de atividade adicional, é proposto que você leia e execute os exercícios propostos em [Implementando um jogador para Liga4](http://fbarth.net.br/Connect4-Python/).
+Para esta aula, serão utilizados os slides disponíveis [aqui](http://fbarth.net.br/Connect4-Python/slides/slides.pdf). 
 
-Este material apresenta conceitos e algoritmos relacionados com a implementação de agentes autônomos que atuam em ambiente competitivo de soma zero e sem variável aleatória. 
+## Objetivos desta aula
 
-## Questionário
-
-Depois de feito o tutorial acima, responda as seguintes perguntas: 
+Ao final desta aula, vocês deverá saber responder as seguintes perguntas:
 
 1. O que é um ambiente competitivo de soma zero?
-1. Qual o objetivo do algoritmo Min-Max? Em outras palavras, por que um agente autônomo que atua em um ambiente competitivo deve usar o algoritmo Min-Max?
-1. O que é função de utilidade? Por que utilizar funções de utilidade? 
-1. Qual é a relação da profundidade da árvore de busca do Min-Max com o desempenho final do agente? Existe correlação? Justifique a sua resposta. 
+2. Qual o objetivo do algoritmo Min-Max? Em outras palavras, por que um agente autônomo que atua em um ambiente competitivo deve usar o algoritmo Min-Max?
+3. O que é função de utilidade? Por que utilizar funções de utilidade? 
+4. Qual é a relação da profundidade da árvore de busca do Min-Max com o desempenho final do agente? Existe correlação? Justifique a sua resposta. 
 
-## Objetivos deste tópico
+E realizar as seguintes atividades:
 
-Se ao final desta atividade você consegue: 
-
-* Entender e implementar o algoritmo Min-Max sem limite de profundidade;
+* Implementar o algoritmo Min-Max sem limite de profundidade;
 * Alterar o algoritmo Min-Max para incluir um limite de profundidade, e;
 * Entender o conceito de função de utilidade, sua aplicação e como usar em um ambiente competitivo.
+ 
 
-Então você terá alcançado os principais objetivos deste tópico. 
+## Atividade adicional 
+
+Como sugestão de atividade adicional, é proposto que você leia e execute os exercícios propostos em [Implementando um jogador para Liga4](http://fbarth.net.br/Connect4-Python/).
+
+Este material apresenta conceitos e algoritmos relacionados com a implementação de agentes autônomos que atuam em ambiente competitivo de soma zero e sem variável aleatória.
 
 ## Referências
 

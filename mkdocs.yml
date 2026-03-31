@@ -42,8 +42,8 @@ nav:
     - 'Programação por restrições':
       - 'aulas/12_csp/index.md'
 ##
-#    - 'Ambientes competitivos':
-#      - 'aulas/13_jogos/index.md'
+    - 'Ambientes competitivos':
+      - 'aulas/13_jogos/index.md'
 ##      - 'aulas/14_tictactoe/tictactoe.ipynb'
 ##      - 'aulas/14_tictactoe/index.md'
 ##
