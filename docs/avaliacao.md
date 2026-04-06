@@ -31,7 +31,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| TBD | TBD |
+| [Uso de A* em problemas de CPP](./projetos/2026_01_intermediario/index.md) | 15/04/2026 |
 
 <!--
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |
