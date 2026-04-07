@@ -117,9 +117,9 @@ print("Rewards: {}".format(rewards))
 
 Configure o `render_mode` para `human` para ver a animação do agente.
 
-### Entrega
+### Análise dos resultados
 
-Crie um arquivo `README.md` e responda as seguintes perguntas:
+Responda as perguntas abaixo criando gráficos que sumarizam os resultados do treinamento do agente.
 
 1. Qual algoritmo tem os melhores resultados para o ambiente do taxi-driver? A curva de aprendizado dos dois algoritmos é a mesma? O comportamento final do agente, depois de treinado, é ótimo em ambos os casos? 
 
@@ -128,6 +128,7 @@ Crie um arquivo `README.md` e responda as seguintes perguntas:
 3. De uma forma geral, qual seria a diferença entre os algoritmos **Q-Learning** e **Sarsa**? Os agentes treinados teriam o mesmo comportamento? As curvas de aprendizado também? 
 
 
+<!--
 ## Rubrica de avaliação
 
 | Conceito | Descrição |
@@ -143,6 +144,8 @@ Crie um arquivo `README.md` e responda as seguintes perguntas:
 Esta atividade pode ser feita em grupos com até 2 integrantes. 
 
 Coloque todos os arquivos em um mesmo projeto e submeta-os para o [https://classroom.github.com/a/dc7UwOEG](https://classroom.github.com/a/dc7UwOEG). O prazo para entrega desta atividade é **até 24/10/2025 às 23:30.**
+-->
+
 
 <!-- usar este texto https://www.baeldung.com/cs/q-learning-vs-sarsa para comentar os resultados do cliff walking e as diferencas entre os algoritmos -->
 <!-- usar o próprio livro do Sutton para comentar os resultados -->

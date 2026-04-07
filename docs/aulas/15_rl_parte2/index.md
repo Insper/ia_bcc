@@ -58,7 +58,11 @@ Neste momento, você já deve ter percebido que uma ferramenta muito útil para 
 
 ## Atividade
 
+<!--
 Você deve entregar um arquivo `README.md` que responde as seguintes perguntas: 
+-->
+
+Responda as perguntas abaixo criando gráficos que sumarizam os resultados do treinamento do agente.
 
 * Qual é o impacto de $\alpha$? Faça um gráfico com a curva de aprendizado do agente fixando $\gamma$ e variando $\alpha$. A sugestão é utilizar três (3) valores para $\alpha$: um próximo de zero, um intermediário e um próximo de um (1). Utilize um único gráfico com as três curvas de aprendizado.
 
@@ -66,9 +70,11 @@ Você deve entregar um arquivo `README.md` que responde as seguintes perguntas:
 
 * Qual é o impacto da forma como a ação é escolhida durante o treinamento? Faça um gráfico com a curva de aprendizado do agente usando três curvas: (i) onde o agente apenas explora o ambiente, ou seja, seleciona de forma aleatória todas as ações durante o treinamento; (ii) onde o agente apenas se utiliza do seu conhecimento sobre o ambiente, ou seja, na maioria das vezes faz o *explotation* ao invés do *exploration*. Para este caso, crie uma função de escolha da ação onde o agente tem probabilidade de 90% para escolher uma ação de acordo com a *q-table* e os outros 10% são aleatórios; (iii) onde o agente faz uso de uma função de *exploration and explotation* com um decaimento do $\epsilon$. 
 
+<!--
 **Apresente os 3 gráficos no arquivo de `README.md`. Submeta este arquivo no repositório do projeto junto com os outros artefatos (scripts, dados e figuras). Este projeto é em grupo com até 2 pessoas e deve ser submetido neste link: [https://classroom.github.com/a/x8oTc6py](https://classroom.github.com/a/x8oTc6py).**
 
 O deadline para submissão é **15/10/2025**.
+-->
 
 ### Exemplo de gráfico
 

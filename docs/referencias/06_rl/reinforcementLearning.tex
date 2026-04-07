@@ -14,8 +14,8 @@
 
 \title{Aprendizagem por Reforço} 
 \author{Fabrício Barth}
-\institute{Insper Instituto de Ensino e Pesquisa}
-\date{Fevereiro de 2024}
+\institute{Ciência da Computação - Insper}
+\date{Abril de 2026}
 
 \maketitle
 
@@ -25,8 +25,9 @@ Até o momento vimos nesta disciplina:
 	\item Conceito de Agente Autônomo;
 	\item Solução de problemas usando busca em espaço de estados:
 	\begin{itemize}
-		\item Algoritmos de busca cega, e;
+		\item Algoritmos de busca cega.
 		\item Algoritmos de busca informados.
+		\item Algoritmos de subida da montanha.
 	\end{itemize}
 	\item Busca competitiva.
 \end{itemize}
@@ -36,7 +37,7 @@ Até o momento vimos nesta disciplina:
   \begin{itemize}
 \item Visão Geral sobre Aprendizagem por Reforço
 \item Algoritmo \textsc{Q-Learning} e \textsc{Sarsa}
-\item Implementações com os projetos \textsc{Gymnasium} e \textsc{PettingZoo}.
+\item Implementações com o projeto \textsc{Gymnasium}.
 %\item Considerações Finais
 %\item Material de Consulta
   \end{itemize}
@@ -127,9 +128,35 @@ Até o momento vimos nesta disciplina:
 	(\textit{reward}) acumulados ao longo do tempo pelo 
 	agente.
 	\item Em tese, é a política que faz o agente percorrer o \textbf{melhor caminho}. 
+	
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Valor de um Estado e Valor de um par Estado-Ação}
+	
+	\begin{itemize}
+		\item Para entender o que é uma política que maximiza os \textit{rewards} acumulados, é necessário entender o valor de um estado ($v_\pi(s)$) 
+		
+		\[
+		v_\pi(s) = \mathbb{E}_\pi\big[ G_t \mid S_t=s \big]
+		\]
+		
+		Onde: \[
+		G_t = \sum_{k=0}^{T-t-1} \gamma^k R_{t+k+1}
+		\]
+		
+		\item e o valor de um par estado-ação ($q_\pi(s,a)$)
+		
+		\[
+		q_\pi(s,a) = \mathbb{E}_\pi\big[ G_t \mid S_t=s, A_t=a \big]
+		\]
+		
 	\end{itemize}
 
-%\hspace{1cm}
+\end{frame}
+
+\begin{frame}{Reward acumulado (0/4)}
 
   \begin{center}
 	\includegraphics[width=.8\textwidth]{figuras/grafo_rewards_0.png}
@@ -436,7 +463,7 @@ precisa criar um \textbf{mapeamento} entre \textbf{estados} ($S$) e \textbf{aç�
 	\end{alertblock}
 	
 	\begin{block}{Atividades}
-		Siga o roteiro descrito em https://insper.github.io/rl/classes/05\_q\_learning/ \href{https://insper.github.io/rl/classes/05_q_learning/}
+		Siga o roteiro descrito em https://insper.github.io/ia\_bcc/aulas/15\_rl/ \href{https://insper.github.io/ia\_bcc/aulas/15\_rl/}
 		{\beamergotobutton{Link}}
 	\end{block}
 	
@@ -449,8 +476,7 @@ precisa criar um \textbf{mapeamento} entre \textbf{estados} ($S$) e \textbf{aç�
 	\end{alertblock}
 	
 	\begin{block}{Atividades}
-		Siga o roteiro descrito em https://insper.github.io/rl/classes/05\_x\_hyperparameters/ \href{https://insper.github.io/rl/classes/05_x_hyperparameters/}
-		{\beamergotobutton{Link}}
+		Siga o roteiro descrito em https://insper.github.io/ia\_bcc/aulas/15\_rl\_parte2/ \href{https://insper.github.io/ia\_bcc/aulas/15\_rl\_parte2/}{\beamergotobutton{Link}}
 	\end{block}
 
 \end{frame}
@@ -524,7 +550,7 @@ precisa criar um \textbf{mapeamento} entre \textbf{estados} ($S$) e \textbf{aç�
 	\end{alertblock}
 	
 	\begin{block}{Atividades}
-	Siga o roteiro descrito em https://insper.github.io/rl/classes/05\_x\_sarsa/ \href{https://insper.github.io/rl/classes/05_x_sarsa/}
+	Siga o roteiro descrito em https://insper.github.io/ia\_bcc/aulas/15\_rl\_sarsa/ \href{https://insper.github.io/ia\_bcc/aulas/15\_rl\_sarsa/}
 	{\beamergotobutton{Link}}
 	\end{block}
 
@@ -629,7 +655,7 @@ precisa criar um \textbf{mapeamento} entre \textbf{estados} ($S$) e \textbf{aç�
   \item Richard S. Sutton and Andrew G. Barto. 2018. Reinforcement Learning: An Introduction. A Bradford Book, Cambridge, MA, USA.
   \item Watkins, C.J.C.H., Dayan, P. Q-Learning. Mach Learn 8, 279–292 (1992). \href{https://doi.org/10.1007/BF00992698}{\beamergotobutton{Link}}
   \item Projeto Gymnasium \href{https://gymnasium.farama.org/}{\beamergotobutton{Link}}
-  \item Projeto PettingZoo \href{https://pettingzoo.farama.org/}{\beamergotobutton{Link}}
+  %\item Projeto PettingZoo \href{https://pettingzoo.farama.org/}{\beamergotobutton{Link}}
   %\item https://deepmind.com/research/case-studies/alphago-the-story-so-far
   %\item Aurélien Géron. Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition, 2019. 
 \end{itemize}
