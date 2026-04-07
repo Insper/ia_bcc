@@ -54,7 +54,7 @@ with open('docs/_snippets/plano_aula_5.md', 'w') as f:
     f.write(parte5)
 
 
-parte6 = build_table(df.iloc[15:19][[
+parte6 = build_table(df.iloc[15:20][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='blue_dark')
 
@@ -64,7 +64,7 @@ with open('docs/_snippets/plano_aula_6.md', 'w') as f:
     f.write(parte6)
 
 
-parte7 = build_table(df.iloc[19:][[
+parte7 = build_table(df.iloc[20:][[
     'Data', ' Fundamentos / Conteúdo ','Dinâmica']], 
     color='blue_dark')
 
