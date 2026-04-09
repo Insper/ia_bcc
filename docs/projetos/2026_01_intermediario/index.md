@@ -1,8 +1,13 @@
 # Usando A* em problemas de CPP
 
+??? "Atenção!"
+
+    Teve algumas mudanças no enunciado do projeto, por favor, leia o enunciado completo para entender as mudanças. Elas estão em negrito para facilitar a identificação.
+
+
 Problemas de *Coverage Path Planning* (CPP) são um tipo de problema de planejamento de caminhos onde o objetivo é encontrar um caminho que cubra uma área específica. O objetivo é garantir que todas as áreas sejam visitadas o mais rápido possível, o que é comum em tarefas como limpeza robótica, inspeção de áreas ou agricultura de precisão. Idealmente, o caminho encontrado deve evitar passar mais de uma vez em uma determinada área (célula) para minimizar o tempo e os recursos necessários para completar a tarefa.
 
-O algoritmo A* é uma escolha popular para resolver esses problemas devido à sua eficiência e capacidade de encontrar o caminho mais curto. No entanto, existem outros algoritmos que também são usados para resolver problemas de CPP, como o *Parallel Search* e *Expanding Square Search*. A forma de funcionamento do "Expanding Square Search" é apresentado na figura abaixo: 
+**Algoritmos de busca em espaço de estados** são uma escolha possível para resolver esses problemas devido à sua eficiência e capacidade de encontrar uma sequência de ações que leve ao objetivo. No entanto, existem outros algoritmos que também são usados para resolver problemas de CPP, como o *Parallel Search* e *Expanding Square Search*. A forma de funcionamento do "Expanding Square Search" é apresentado na figura abaixo: 
 
 ![Expanding Square Search](./expanding_square.jpg)
 
@@ -14,11 +19,11 @@ A forma de funcionamento do *Parallel Search* é apresentada na figura abaixo:
 
 Nesta imagem é apresentado um cenário com múltiplos agentes que trabalham em paralelo para cobrir a área. Cada agente é responsável por uma parte específica da área, o que pode acelerar significativamente o processo de cobertura, especialmente em grandes áreas. No caso de um único agente, o funcionamento do *Parallel Search* é igual, mas sem a divisão de áreas entre múltiplos agentes.
 
-A principal pergunta que este projeto deve responder é: "**Qual é o melhor algoritmo para resolver um problema de CPP?**" Para responder a essa pergunta, é necessário implementar e comparar os algoritmos A*, *Parallel Search* e *Expanding Square Search* em diferentes cenários de CPP, considerando fatores como o tamanho da área e a presença de obstáculos.
+A principal pergunta que este projeto deve responder é: "**Qual é o melhor algoritmo para resolver um problema de CPP?**" Para responder a essa pergunta, é necessário implementar e comparar **um dos algoritmos de busca em espaço de estados**, *Parallel Search* e *Expanding Square Search* em diferentes cenários de CPP, considerando fatores como o tamanho da área e a presença de obstáculos.
 
 ## Método
 
-Para comparar os algoritmos, é necessário criar um ambiente de simulação onde cada algoritmo possa ser testado em cenários de CPP. Os cenários que serão testados serão dois: um ambiente $20 \times 20$ com 10% das células bloqueadas por obstáculos, e um ambiente $20 \times 20$ com 30% das células bloqueadas por obstáculos. Para cada cenário, os algoritmos serão avaliados levando-se em consideração o *Cumulative Coverage Rate* (CCR), que é a taxa de cobertura acumulada ao longo do tempo. A cada ação do agente (*step*), o CCR é calculado e registrado, permitindo uma comparação detalhada do desempenho de cada algoritmo ao longo do tempo. Um exemplo de gráfico de CCR ao longo do tempo é apresentado abaixo:
+Para comparar os algoritmos, é necessário criar um ambiente de simulação onde cada algoritmo possa ser testado em cenários de CPP. Os cenários que serão testados serão dois: um ambiente $20 \times 20$ com 10% das células bloqueadas por obstáculos, e um ambiente $20 \times 20$ com **20%** das células bloqueadas por obstáculos. Para cada cenário, os algoritmos serão avaliados levando-se em consideração o *Cumulative Coverage Rate* (CCR), que é a taxa de cobertura acumulada ao longo do tempo. A cada ação do agente (*step*), o CCR é calculado e registrado, permitindo uma comparação detalhada do desempenho de cada algoritmo ao longo do tempo. Um exemplo de gráfico de CCR ao longo do tempo é apresentado abaixo:
 
 ![CCR ao longo do tempo](./cov_rate_2.png)
 
@@ -34,7 +39,7 @@ Para cada uma das duas configurações, além de medir o CCR, também será impo
 
 ## Resultados esperados
 
-Espera-se que ao final deste projeto, seja possível comparar o desempenho dos algoritmos A*, *Parallel Search* e *Expanding Square Search* em dois ambientes diferentes de CPP (dimensão $20 \times 20$ com 10\% de obstáculos e dimensão $20 \times 20$ com 30\% de obstáculos). 
+Espera-se que ao final deste projeto, seja possível comparar o desempenho dos algoritmos **busca em espaço de estados (um deles)**, *Parallel Search* e *Expanding Square Search* em dois ambientes diferentes de CPP (dimensão $20 \times 20$ com 10% de obstáculos e dimensão $20 \times 20$ com **20%** de obstáculos). 
 
 Espera-se que seja entregue um gráfico de CCR ao longo do tempo para cada cenário, permitindo uma comparação visual do desempenho dos algoritmos. Além disso, espera-se que seja informado o tempo médio (com o desvio padrão) para cálculo da rota de cada algoritmo em cada cenário.
 
@@ -44,7 +49,7 @@ Para facilitar a visualização do comportamento dos algoritmos, também é espe
 
 A avaliação deste projeto será baseada nos seguintes critérios:
 
-- Implementação correta dos algoritmos A*, *Parallel Search* e *Expanding Square Search* (30 pontos)
+- Implementação correta dos algoritmos **busca em espaço de estados (um deles)**, *Parallel Search* e *Expanding Square Search* (30 pontos)
 - Geração adequada dos cenários de CPP com obstáculos (20 pontos)
 - Cálculo correto do CCR ao longo do tempo (20 pontos)
 - Relatório com análise e comparação dos resultados (20 pontos)
@@ -55,3 +60,12 @@ A avaliação deste projeto será baseada nos seguintes critérios:
 Todos os artefatos deste projeto devem ser entregues até o dia **15 de abril de 2026**. A entrega deve incluir o código-fonte da implementação, os gráficos de CCR ao longo do tempo e o relatório de análise dos resultados. Todas as entregas devem ser feitas via GitHub Classroom: [https://classroom.github.com/a/BhzwsCAU](https://classroom.github.com/a/BhzwsCAU).
 
 As equipes podem ser formadas por até **3 integrantes**. 
+
+
+## Detalhes sobre a implementação
+
+A solução de um problema de CPP usando um algoritmo de busca em espaço de estados pode ser implementada de diversas maneiras, entre elas, usando a biblioteca `aigyminsper` ou implementando um algoritmo de busca do zero. Em ambos os casos, talvez seja necessário paralelizar a execução do algoritmo para acelerar o processo de busca, especialmente em cenários com muitos obstáculos. Outro desafio que pode aparecer é o estouro do limite de recursão da linguagem de programação Python, que pode ocorrer em algoritmos quando o ambiente é muito complexo. Para lidar com esse problema, é possível aumentar o limite de recursão usando a função `sys.setrecursionlimit()`, ou implementar o algoritmo de busca de maneira iterativa em vez de recursiva.
+
+Abaixo é apresentado um vídeo que justifica alguma das mudanças no enunciado do projeto: 
+
+* [Vídeo explicativo sobre as mudanças no enunciado do projeto]()
