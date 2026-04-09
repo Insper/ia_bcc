@@ -68,4 +68,4 @@ A solução de um problema de CPP usando um algoritmo de busca em espaço de est
 
 Abaixo é apresentado um vídeo que justifica alguma das mudanças no enunciado do projeto: 
 
-* [Vídeo explicativo sobre as mudanças no enunciado do projeto]()
+* [Vídeo explicativo sobre as mudanças no enunciado do projeto](https://youtu.be/o7VmZxPCvZY)
