@@ -57,7 +57,7 @@ A avaliação deste projeto será baseada nos seguintes critérios:
 
 ## Entrega e formação de equipes
 
-Todos os artefatos deste projeto devem ser entregues até o dia **15 de abril de 2026**. A entrega deve incluir o código-fonte da implementação, os gráficos de CCR ao longo do tempo e o relatório de análise dos resultados. Todas as entregas devem ser feitas via GitHub Classroom: [https://classroom.github.com/a/BhzwsCAU](https://classroom.github.com/a/BhzwsCAU).
+Todos os artefatos deste projeto devem ser entregues até o dia **22 de abril de 2026**. A entrega deve incluir o código-fonte da implementação, os gráficos de CCR ao longo do tempo e o relatório de análise dos resultados. Todas as entregas devem ser feitas via GitHub Classroom: [https://classroom.github.com/a/BhzwsCAU](https://classroom.github.com/a/BhzwsCAU).
 
 As equipes podem ser formadas por até **3 integrantes**. 
 
