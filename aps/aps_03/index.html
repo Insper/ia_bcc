@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../03_modelagem/">
+        <link rel="prev" href="../aps_02/">
       
       
-        <link rel="next" href="../04_modelagem/">
+        <link rel="next" href="../../aulas/01_introducao_ia/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Implementando um Aspirador de Pó - Inteligência Artificial e Robótica</title>
+        <title>APS 03 - Inteligência Artificial e Robótica</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#implementando-um-aspirador-de-po" class="md-skip">
+        <a href="#aprendizagem-por-reforco" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Implementando um Aspirador de Pó
+              APS 03
             
           </span>
         </div>
@@ -263,18 +263,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -295,7 +297,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -313,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aps/aps_01/" class="md-nav__link">
+      <a href="../aps_01/" class="md-nav__link">
         
   
   
@@ -341,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aps/aps_02/" class="md-nav__link">
+      <a href="../aps_02/" class="md-nav__link">
         
   
   
@@ -366,10 +368,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../aps/aps_03/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APS 03
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -385,6 +414,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ambiente-cliffwalking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambiente CliffWalking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambiente-frozenlake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambiente FrozenLake
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-e-prazo-para-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras e prazo para entrega
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -401,20 +505,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -435,7 +537,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -500,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_introducao_ia/" class="md-nav__link">
+      <a href="../../aulas/01_introducao_ia/" class="md-nav__link">
         
   
   
@@ -528,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_agentes_autonomos/" class="md-nav__link">
+      <a href="../../aulas/02_agentes_autonomos/" class="md-nav__link">
         
   
   
@@ -561,20 +663,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
         
           
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -595,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -613,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_modelagem/" class="md-nav__link">
+      <a href="../../aulas/03_modelagem/" class="md-nav__link">
         
   
   
@@ -638,37 +738,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Implementando um Aspirador de Pó
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../aulas/03_configuracao/" class="md-nav__link">
         
   
   
@@ -684,59 +757,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configuracao-do-ambiente" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuração do ambiente
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercicio-aspirador-de-po" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercício: Aspirador de Pó
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercicio-2-aspirador-de-po-com-4-quartos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercício 2: Aspirador de Pó com 4 quartos.
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -749,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_modelagem/" class="md-nav__link">
+      <a href="../../aulas/04_modelagem/" class="md-nav__link">
         
   
   
@@ -777,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_x_modelagem/" class="md-nav__link">
+      <a href="../../aulas/04_x_modelagem/" class="md-nav__link">
         
   
   
@@ -805,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_busca_com_custo/" class="md-nav__link">
+      <a href="../../aulas/05_busca_com_custo/" class="md-nav__link">
         
   
   
@@ -833,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_revisao/" class="md-nav__link">
+      <a href="../../aulas/07_revisao/" class="md-nav__link">
         
   
   
@@ -916,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_heuristica/" class="md-nav__link">
+      <a href="../../aulas/08_heuristica/" class="md-nav__link">
         
   
   
@@ -944,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_heuristica_parte_2/" class="md-nav__link">
+      <a href="../../aulas/08_heuristica_parte_2/" class="md-nav__link">
         
   
   
@@ -972,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_heuristica_parte_3/" class="md-nav__link">
+      <a href="../../aulas/08_heuristica_parte_3/" class="md-nav__link">
         
   
   
@@ -1055,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12_csp/" class="md-nav__link">
+      <a href="../../aulas/12_csp/" class="md-nav__link">
         
   
   
@@ -1138,7 +1158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../13_jogos/" class="md-nav__link">
+      <a href="../../aulas/13_jogos/" class="md-nav__link">
         
   
   
@@ -1221,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../15_rl/" class="md-nav__link">
+      <a href="../../aulas/15_rl/" class="md-nav__link">
         
   
   
@@ -1249,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../15_rl_parte2/" class="md-nav__link">
+      <a href="../../aulas/15_rl_parte2/" class="md-nav__link">
         
   
   
@@ -1277,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../15_rl_parte3/" class="md-nav__link">
+      <a href="../../aulas/15_rl_parte3/" class="md-nav__link">
         
   
   
@@ -1305,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../15_rl_sarsa/" class="md-nav__link">
+      <a href="../../aulas/15_rl_sarsa/" class="md-nav__link">
         
   
   
@@ -1754,10 +1774,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuracao-do-ambiente" class="md-nav__link">
+  <a href="#ambiente-cliffwalking" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuração do ambiente
+        Ambiente CliffWalking
       
     </span>
   </a>
@@ -1765,10 +1785,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercicio-aspirador-de-po" class="md-nav__link">
+  <a href="#ambiente-frozenlake" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercício: Aspirador de Pó
+        Ambiente FrozenLake
       
     </span>
   </a>
@@ -1776,10 +1796,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercicio-2-aspirador-de-po-com-4-quartos" class="md-nav__link">
+  <a href="#entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercício 2: Aspirador de Pó com 4 quartos.
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-e-prazo-para-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras e prazo para entrega
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
       
     </span>
   </a>
@@ -1803,81 +1845,39 @@
 
 
 
-<h1 id="implementando-um-aspirador-de-po">Implementando um Aspirador de Pó</h1>
-<details class="hint">
-<summary>Importante!</summary>
-<p>As orientações sobre a entrega deste exercício estão abaixo. Este é um exercício individual. Os alunos poderão discutir sobre o problema, mas a implementação deve ser feita individualmente. Se usarem ferramentas de IA então tentem entender o que a ferramenta de IA está fazendo.</p>
-</details>
-<details class="hint">
-<summary>Importante 2!</summary>
-<p>Neste tipo de exercício é muito comum as ferramentas de IA gerarem código que não funciona. Por isso, se usarem ferramentas de IA, tentem entender o que a ferramenta de IA está fazendo. Se o código gerado não funcionar, tente entender o que a ferramenta de IA fez e corrija o código. Nem o professor da discipina, nem o ninja poderão ajudar a corrigir o código gerado por ferramentas de IA.</p>
-</details>
-<h2 id="configuracao-do-ambiente">Configuração do ambiente</h2>
-<p>Para executar esta atividade você terá que criar um projeto e como dependência deste projeto instalar a biblioteca <a href="https://pypi.org/project/aigyminsper/">AIGYM</a>:</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>aigyminsper
-</code></pre></div>
-<p>Esta biblioteca implementa diversos algoritmos de busca que serão utilizados ao longo da disciplina. Além disso, esta biblioteca permite o desenvolvimento de agentes inteligentes através de uma interface padrão. Para entender melhor como esta biblioteca funciona, por favor, leia a documentação oficial da biblioteca em <a href="https://insper.github.io/ai_gym/">https://insper.github.io/ai_gym/</a>. </p>
-<h2 id="exercicio-aspirador-de-po">Exercício: Aspirador de Pó</h2>
-<p>Para este exercício vamos utilizar o arquivo <a href="code/AgentSpecification/">AgentSpecification.py</a>.</p>
+<h1 id="aprendizagem-por-reforco">Aprendizagem por Reforço</h1>
+<p>Esta APS tem como objetivo exercitar os conceitos de Aprendizagem por Reforço utilizando dois ambientes da biblioteca Gymnasium: <code>CliffWalking</code> e <code>FrozenLake</code>. O ambiente <code>CliffWalking</code> já foi discutido em sala de aula.</p>
+<p>O ambiente <code>FrozenLake</code> é um ambiente de grade onde o agente deve aprender a navegar de um ponto de partida até um objetivo, evitando buracos. O agente pode se mover para cima, baixo, esquerda ou direita, e recebe recompensas por alcançar o objetivo ou penalidades por cair em buracos. Este ambiente é muito parecido com todos os ambientes já vistos neste curso, exceto por um fato: ele é <strong>não determinístico</strong>. Isso significa que, ao escolher uma ação, o agente pode não se mover na direção desejada. Por exemplo, se o agente escolher mover-se para a direita, ele pode acabar se movendo para baixo ou para cima com uma certa probabilidade. Essa característica torna o ambiente mais desafiador e realista, exigindo que o agente aprenda a lidar com a incerteza.</p>
+<p>Nesta APS, você irá utilizar o algoritmo Q-Learning e o algoritmo SARSA para treinar agentes nesses ambientes. O objetivo é comparar o comportamento dos agentes treinados com esses dois algoritmos e analisar as diferenças em suas políticas de ação.</p>
+<h2 id="ambiente-cliffwalking">Ambiente CliffWalking</h2>
+<p>Para este ambiente você deve treinar um agente utilizando o algoritmo Q-Learning e um agente utilizando o algoritmo SARSA. Ambos os agentes depois de treinados não podem cair no penhasco, ou seja, não podem receber a recompensa de -100. Para isso, você deve ajustar os hiperparâmetros dos algoritmos para garantir que os agentes aprendam a chegar no destino sem cair no penhasco. Como teste, você deve executar cada agente por 100 episódios e plotar o gráfico de recompensa acumulada ao longo dos episódios para ambos os agentes. Em nenhum episódio os agentes devem receber a recompensa de -100.</p>
+<p>Outra análise que você deve fazer é comparar as políticas de ação dos agentes treinados. Para isso, você deve criar um gif animado que mostre o comportamento dos agentes treinados no ambiente. O gif deve mostrar o agente se movendo pelo ambiente e tomando decisões com base em sua política de ação. Você deve comparar os gifs dos agentes treinados com Q-Learning e SARSA para analisar as diferenças em suas políticas de ação.</p>
+<p>Você deve responder as seguintes perguntas: </p>
 <ul>
-<li>Faça uma cópia deste arquivo e chame ele de <code>AspiradorPo.py</code>, por exemplo. Não esqueça de alterar o nome da classe dentro do arquivo.</li>
-<li>No método <code>__init__</code> defina a estrutura de dados que você especificou na aula passada. </li>
-<li>No método <code>successors</code> codifique a execução das ações segundo o que você especificou na aula passada. <strong>Dica</strong>: cada novo estado é uma instância de um novo objeto da classe que é adicionado na lista retornada pelo método. </li>
-<li>Codifique o comportamento do método <code>is_goal</code>. Ele deve retornar <code>True</code> quando encontrar um estado igual a meta. </li>
-<li>O médoto <code>description()</code> retorna uma descrição do problema que está sendo resolvido. Por favor, altere o que está descrito no método. </li>
-<li>Faça um retorno para o método <code>env()</code>. Peça para o professor explicar em sala de aula.</li>
-<li>Altere o método <code>main()</code> para que o mesmo chame a sua classe. </li>
+<li>Qual algoritmo, Q-Learning ou SARSA, apresentou um comportamento mais seguro em relação ao penhasco? Justifique sua resposta com base nos resultados obtidos.</li>
+<li>Se houver diferenças significativas entre as políticas de ação dos agentes treinados com Q-Learning e SARSA, explique por que elas podem ter ocorrido.</li>
 </ul>
-<details class="warning">
-<summary>Conceitos que devem ser explorados neste exercício</summary>
-<p>Representação de um problema na forma de <strong>estado</strong>, <strong>transição</strong>, <strong>grafo</strong></p>
-</details>
-<details class="warning">
-<summary>Conceitos que devem ser explorados neste exercício</summary>
-<p>Algoritmos de Busca, começando com o algoritmo de busca em largura. </p>
-</details>
-<h2 id="exercicio-2-aspirador-de-po-com-4-quartos">Exercício 2: Aspirador de Pó com 4 quartos.</h2>
-<p>Vamos implementar um aspirador de pó que atua em um ambiente com 4 quartos? Um quadrado <span class="arithmatex">\(2 \times 2\)</span>? </p>
-<p>Mas, antes de implementar usando uma estrutura similar a descrita acima, responda as questões abaixo: </p>
+<h2 id="ambiente-frozenlake">Ambiente FrozenLake</h2>
+<p>Para este ambiente, você deve treinar um agente utilizando o algoritmo Q-Learning e um agente utilizando o algoritmo SARSA. O objetivo é comparar o comportamento dos agentes treinados com esses dois algoritmos e analisar as diferenças em suas políticas de ação. Para isso, você deve ajustar os hiperparâmetros dos algoritmos para garantir que os agentes aprendam a chegar no destino sem cair nos buracos. Como teste, você deve executar cada agente por 100 episódios 100 vezes e contar o número de vezes que cada agente alcança o objetivo. Desta forma, você terá para cada agente 100 valores de sucesso (alcançar o objetivo). Você deve calcular a média e o desvio padrão dos valores de sucesso para ambos os agentes. </p>
+<p>Outra análise que você deve fazer é comparar as políticas de ação dos agentes treinados. Para isso, você deve analisar a q-table gerada por cada agente e identificar as ações preferidas em cada estado. Você deve comparar as q-tables dos agentes treinados com Q-Learning e SARSA para analisar as diferenças em suas políticas de ação.</p>
+<p>Você deve responder as seguintes perguntas:</p>
 <ul>
-<li>O que é relevante representar nos estados do mundo? Como os
-    estados são estruturados (estrutura de dados) e qual o significado
-    dela (dos campos)?</li>
-<li>Mostre como ficam representados os estados inicial e final
-    segundo a representação adotada.</li>
-<li>Quais as operações sobre os estados?
-    (detalhe como cada operação irá alterar os estados e quais as
-    condições para cada operação ser executada)</li>
-<li>Qual a estimativa do tamanho do espaço de busca (número de
-    estados possíveis)?</li>
+<li>Qual algoritmo, Q-Learning ou SARSA, treinou o melhor agente para o ambiente FrozenLake? Justifique sua resposta com base nos resultados obtidos.</li>
+<li>Se houver diferenças significativas entre as políticas de ação dos agentes treinados com Q-Learning e SARSA, explique por que elas podem ter ocorrido. Considere a natureza não determinística do ambiente FrozenLake em sua resposta.</li>
+<li>Explique a política de ação preferida por cada agente em um estado específico do ambiente FrozenLake. Justifique por que cada agente pode ter desenvolvido essa política com base no algoritmo utilizado e na natureza do ambiente.</li>
 </ul>
-<!--
-## Entrega
-
-A entrega deste exercício deve ser feita no Github Classroom: [https://classroom.github.com/a/cRCLHC5C](https://classroom.github.com/a/cRCLHC5C). A entrega é individual e deve ser feita até o meio dia do dia 20/08 até às 10 horas da manhã. O projeto base existente no Github classroom tem um arquivo de teste. Você deve implementar o código de forma que todos os testes passem.
-
-
-## Exercício adicional: Aspirador de Pó com poltrona. 
-
-Se você já terminou o exercício acima então você pode implementar uma solução para esta situação adicional. Este exercício é opcional e não será considerado para a nota.
-
-Neste problema os quartos da casa podem possuir poltronas. Para limpar o quarto da casa que tem poltrona o agente deve antes de executar a ação limpar `virar` a poltrona. Claro que depois de limpar o agente deve também `desvirar` a poltrona para deixar o quarto em ordem. 
-
-Para este problema considere um ambiente (casa) também com 4 quartos (um quadrado $2 \times 2$). 
-
-Mas, antes de implementar usando uma estrutura similar a descrita acima, responda as questões abaixo: 
-
-* O que é relevante representar nos estados do mundo? Como os
-    estados são estruturados (estrutura de dados) e qual o significado
-    dela (dos campos)?
-* Mostre como ficam representados os estados inicial e final
-    segundo a representação adotada.
-* Quais as operações sobre os estados?
-    (detalhe como cada operação irá alterar os estados e quais as
-    condições para cada operação ser executada)
-* Qual a estimativa do tamanho do espaço de busca (número de
-    estados possíveis)?
--->
+<h2 id="entrega">Entrega</h2>
+<p>A entrega deve ser feita via Github Classroom, neste repositório <a href="https://classroom.github.com/a/9qG0O12R">https://classroom.github.com/a/9qG0O12R</a>. O repositório deve conter um arquivo <code>README.md</code> com as respostas para as perguntas propostas e gifs gerados. Além disso, o repositório deve conter todos os códigos utilizados para treinar e avaliar os agentes dentro de um único diretório chamado <code>src</code>. Os gifs gerados ou imagens devem ser salvos dentro de um diretório chamado <code>img</code>. O código deve ser bem documentado e organizado para facilitar a compreensão. Certifique-se de incluir instruções claras sobre como executar o código e reproduzir os resultados obtidos no arquivo README.md.</p>
+<h2 id="regras-e-prazo-para-entrega">Regras e prazo para entrega</h2>
+<ul>
+<li>A entrega deve ser feita até o dia <strong>30 de junho de 2026 às 23:45</strong>. AS entregas feitas após esse prazo não serão aceitas, a menos que haja uma justificativa válida e prévia aprovada pelo professor.</li>
+<li>Este projeto pode ser feito em duplas ou individualmente. O arquivo README.md deve conter o nome dos integrantes da dupla, caso seja o caso. Ou o nome do aluno, caso seja individual.</li>
+</ul>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>Aulas sobre Aprendizagem por Reforço ministradas durante o curso.</li>
+<li>Documentação do Gymnasium: <a href="https://gymnasium.farama.org/">https://gymnasium.farama.org/</a></li>
+</ul>
 
 
 
@@ -1898,7 +1898,7 @@ Mas, antes de implementar usando uma estrutura similar a descrita acima, respond
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 27, 2026 21:35:23 UTC">February 27, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 26, 2026 21:51:39 UTC">April 26, 2026</span>
   </span>
 
     
