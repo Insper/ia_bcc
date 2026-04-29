@@ -64,7 +64,7 @@ A presença de cada integrante da equipe durante os três dias é fundamental. S
 
 O projeto deverá ser entregue via GitHub Classroom até às 11 horas da manhã do dia **06/05/2026** em sala de aula e com todo o commit do código feito. **Além do código, as equipes deverão fazer a filmagem do seu robô funcionando no labirinto. O vídeo deve ser colocado em alguma plataforma de vídeo (YouTube, Vimeo, etc) e o link do vídeo deve ser colocado no arquivo `README.md` do repositório.** **IMPORTANTE!!! Apenas o link para o vídeo. Não coloquem o vídeo diretamente no repositório.**
 
-As equipes serão formadas por **duas (2) pessoas**. 
+As equipes serão formadas por **três (3) pessoas**. 
 
 A troca de ideias entre equipes para a solução do problema é permitida e incentivada. No entanto, **não é permitido a cópia do código**. Se identificado qualquer tipo de cópia entre projetos todos os envolvidos serão encaminhados para ação disciplinar. 
 
