@@ -35,7 +35,7 @@ A entrega deve ser feita via Github Classroom, neste repositório [https://class
 
 ## Regras e prazo para entrega
 
-* A entrega deve ser feita até o dia **30 de junho de 2026 às 23:45**. AS entregas feitas após esse prazo não serão aceitas, a menos que haja uma justificativa válida e prévia aprovada pelo professor.
+* A entrega deve ser feita até o dia **30 de abril de 2026 às 23:45**. AS entregas feitas após esse prazo não serão aceitas, a menos que haja uma justificativa válida e prévia aprovada pelo professor.
 * Este projeto pode ser feito em duplas ou individualmente. O arquivo README.md deve conter o nome dos integrantes da dupla, caso seja o caso. Ou o nome do aluno, caso seja individual.
 
 ## Referências
