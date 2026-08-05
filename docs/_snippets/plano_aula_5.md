@@ -8,7 +8,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">06-Abr</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">30-Set</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de um agente autônomo que atua em um ambiente discreto, determinístico, síncrono, simulado e *single agent* ou *multi-agent*.</td>
       <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
     </tr>

@@ -22,8 +22,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                       | Prazo para entrega |
 | :------------------------------ | :----------------: |
-| [Calculando a memória e tempo de execução de algoritmos de busca](./aps/aps_01/index.md) |        13/03/2026         |
-| [Solução para o problema dos blocos](./aps/aps_02/index.md) | 20/03/2026 |
+| TBD | TBD |
 
 ## 2 projetos
 
@@ -31,7 +30,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
-| [Uso de A* em problemas de CPP](./projetos/2026_01_intermediario/index.md) | 15/04/2026 |
+| TBD | TBD |
 
 <!--
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |

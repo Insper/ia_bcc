@@ -1,5 +1,12 @@
 # Introdução à Inteligência Artificial
 
+O objetivo desta aula é apresentar a disciplina de Inteligência Artificial e Robótica, bem como apresentar os conceitos de inteligência artificial (IA) e exemplos. Para isso, 
+a disciplina está dividida em três partes: 
+
+* explicação do escopo da disciplina, plano de aulas e critérios de avaliação;
+* atividade sobre conceitos de IA, e; 
+* enunciado de atividade para a próxima aula.
+
 ## Objetivos e estrutura da disciplina
 
 * Qual é o escopo desta disciplina? Ver [ementa](../../ementa.md).
@@ -19,12 +26,12 @@ O objetivo desta aula é responder as seguintes perguntas:
 * O que é IA Generativa?
 * Quais são as outras disciplinas do curso que estão relacionadas com este tópico? 
 
-## Atividade
+### Atividade
 
 Forme grupos de 3 a 4 pessoas e discuta as perguntas acima. Elabore um documento com as respostas para as perguntas listadas acima para o final desta aula. Para responder as perguntas, você pode usar os materiais de referência listados abaixo, além de outros materiais que você encontrar. Você também poderá usar sistemas de IA Generativa, como o ChatGPT, para ajudar a responder as perguntas.
 Esteja preparado para responder as perguntas em sala de aula.
 
-## Referências
+### Referências
 
 Textos que podem ser usados como referência: 
 
@@ -32,7 +39,7 @@ Textos que podem ser usados como referência:
 * Capítulo 1 do livro [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/). Stuart Russell e Peter Norvig. 4ª edição. Pearson, 2020.
 
 
-## Material de referência
+### Material de referência
 
 Material com exemplos de ficção científica: 
 
@@ -45,3 +52,9 @@ Material com exemplos de aplicações reais:
 Uma apresentação sobre a evolução da IA:
 
 <embed src="../../referencias/01_introducao/moitara.pdf" type="application/pdf" width="600" height="300">
+
+## Atividade para a próxima aula
+
+Leia o [material da próxima aula](../02_agentes_autonomos/index.md) sobre Agentes Autônomos e venha preparado para discutir e aplicar os conceitos apresentados. 
+
+Além de ler o material, você pode ler o capítulo 2 do livro [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/). Stuart Russell e Peter Norvig. 4ª edição. Pearson, 2020, ou interagir com qualquer sistema de IA Generativa, como o ChatGPT, para ajudá-lo a entender os conceitos apresentados.
