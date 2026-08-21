@@ -516,6 +516,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alterando os algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_x_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuação sobre algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de custo uniforme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -746,12 +830,12 @@
 <div class="highlight"><pre><span></span><code>    <span class="k">def</span><span class="w"> </span><span class="nf">show_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">algorithm</span> <span class="o">=</span> <span class="n">AEstrela</span><span class="p">()</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">Puzzle8</span><span class="o">.</span><span class="n">tem_solucao</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tabuleiro</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s1">&#39;Nao tem solucao&#39;</span> 
+            <span class="k">return</span> <span class="s1">'Nao tem solucao'</span> 
         <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s1">&#39;Nao achou solucao&#39;</span>
+            <span class="k">return</span> <span class="s1">'Nao achou solucao'</span>
 </code></pre></div>
 <p><strong>Detalhe importante sobre o método <code>tem_solucao</code></strong>: uma forma para cálculo se uma determinada configuração tem solução ou não é seguir a seguinte regra: <em>deve-se calcular a quantidade de inversões necessárias para ordenar certa sequência numérica, determinado por Possível a quantidade de inversões pares e Impossível a quantidade de inversões ímpares</em>.</p>
 

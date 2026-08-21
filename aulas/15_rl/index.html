@@ -516,6 +516,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alterando os algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_x_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuação sobre algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de custo uniforme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -796,8 +880,8 @@
 <p>Este método é chamado pelo arquivo <a href="src/TaxiDriverGym/">TaxiDriverGym.py</a> nas linhas 11 e 12:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># only execute the following lines if you want to create a new q-table</span>
 <span class="n">qlearn</span> <span class="o">=</span> <span class="n">QLearning</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">epsilon_min</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon_dec</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span> <span class="n">episodes</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
-<span class="n">q_table</span> <span class="o">=</span> <span class="n">qlearn</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="s1">&#39;data/q-table-taxi-driver.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;results/actions_taxidriver&#39;</span><span class="p">)</span>
-<span class="c1">#q_table = loadtxt(&#39;data/q-table-taxi-driver.csv&#39;, delimiter=&#39;,&#39;)</span>
+<span class="n">q_table</span> <span class="o">=</span> <span class="n">qlearn</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="s1">'data/q-table-taxi-driver.csv'</span><span class="p">,</span> <span class="s1">'results/actions_taxidriver'</span><span class="p">)</span>
+<span class="c1">#q_table = loadtxt('data/q-table-taxi-driver.csv', delimiter=',')</span>
 </code></pre></div>
 <p>Atividades: </p>
 <ul>

@@ -516,6 +516,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alterando os algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_x_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuação sobre algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de custo uniforme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -782,8 +866,8 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># only execute the following lines if you want to create a new q-table</span>
 <span class="n">qlearn</span> <span class="o">=</span> <span class="n">QLearning</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">epsilon_min</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">epsilon_dec</span><span class="o">=</span><span class="mf">0.9999</span><span class="p">,</span> <span class="n">episodes</span><span class="o">=</span><span class="mi">500000</span><span class="p">)</span>
-<span class="n">q_table</span> <span class="o">=</span> <span class="n">qlearn</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="s1">&#39;data/q-table-frozen-lake.csv&#39;</span><span class="p">,</span><span class="s1">&#39;results/actions_frozen_lake&#39;</span><span class="p">)</span>
-<span class="c1">#q_table = loadtxt(&#39;data/q-table-frozen-lake.csv&#39;, delimiter=&#39;,&#39;)</span>
+<span class="n">q_table</span> <span class="o">=</span> <span class="n">qlearn</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="s1">'data/q-table-frozen-lake.csv'</span><span class="p">,</span><span class="s1">'results/actions_frozen_lake'</span><span class="p">)</span>
+<span class="c1">#q_table = loadtxt('data/q-table-frozen-lake.csv', delimiter=',')</span>
 </code></pre></div>
 <ul>
 <li>Execute o arquivo <code>FrozenLakeQLearning.py</code> com o comando:</li>
@@ -813,7 +897,7 @@
 <h2 id="outro-mapa">Outro mapa</h2>
 <p>Existem dois mapas pré-configurados em <a href="https://gymnasium.farama.org/environments/toy_text/frozen_lake/">https://gymnasium.farama.org/environments/toy_text/frozen_lake/</a>. O mapa 4x4 e um mapa 8x8. E se mudarmos o mapa para 8x8? </p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">gymnasium</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gym</span>
-<span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;FrozenLake-v1&quot;</span><span class="p">,</span> <span class="n">map_name</span><span class="o">=</span><span class="s2">&quot;8x8&quot;</span><span class="p">,</span> <span class="n">is_slippery</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">"FrozenLake-v1"</span><span class="p">,</span> <span class="n">map_name</span><span class="o">=</span><span class="s2">"8x8"</span><span class="p">,</span> <span class="n">is_slippery</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
 </code></pre></div>
 <ul>
 <li>O que muda? O problema se torna mais complexo? É necessário mudar algum dos hiperparâmetros? Qual é o melhor algoritmo? <em>Sarsa</em> ou <em>Q-Learning</em>? </li>

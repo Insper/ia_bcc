@@ -516,6 +516,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alterando os algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_x_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuação sobre algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_busca_com_custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de custo uniforme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -732,8 +816,8 @@ Q(s,a) \leftarrow Q(s,a) + \alpha [r +\gamma Q(s', a') - Q(s,a)]
 <span class="p">)</span>
 </code></pre></div>
 <p>Sugere-se também fazer uma validação mais robusta após o treinamento, executando o agente treinado em 100 episódios e calculando a recompensa média. Como apresentado no código abaixo: </p>
-<div class="highlight"><pre><span></span><code><span class="n">q_table</span> <span class="o">=</span> <span class="n">loadtxt</span><span class="p">(</span><span class="s1">&#39;data/q-table-sarsa-cliff-walking.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-<span class="c1">#q_table = loadtxt(&#39;data/q-table-qlearning-cliff-walking.csv&#39;, delimiter=&#39;,&#39;)</span>
+<div class="highlight"><pre><span></span><code><span class="n">q_table</span> <span class="o">=</span> <span class="n">loadtxt</span><span class="p">(</span><span class="s1">'data/q-table-sarsa-cliff-walking.csv'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span>
+<span class="c1">#q_table = loadtxt('data/q-table-qlearning-cliff-walking.csv', delimiter=',')</span>
 
 <span class="n">list_actions</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">list_rewards</span> <span class="o">=</span> <span class="p">[]</span>
@@ -755,19 +839,19 @@ Q(s,a) \leftarrow Q(s,a) + \alpha [r +\gamma Q(s', a') - Q(s,a)]
     <span class="n">list_actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span>
     <span class="n">list_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rewards</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average actions taken: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">list_actions</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Standard deviation actions taken: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">list_actions</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average rewards: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">list_rewards</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Standard deviation rewards: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">list_rewards</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Average actions taken: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">list_actions</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Standard deviation actions taken: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">list_actions</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Average rewards: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">list_rewards</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Standard deviation rewards: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">list_rewards</span><span class="p">)))</span>
 </code></pre></div>
 <ul>
 <li>a terceira atividade desta implementação é <strong>aplicar os algoritmos Q-Learning e Sarsa em um ambiente diferente</strong>: o <a href="https://gymnasium.farama.org/environments/toy_text/cliff_walking/">Cliff Walking</a>. Este é um ambiente muito simples. No entanto, quando você aplica esses algoritmos nesse tipo de ambiente, você pode ver as diferenças entre esses algoritmos e identificar qualquer bug em sua implementação, se existir.</li>
 </ul>
 <p>Para treinar seu agente para o problema do <strong>Cliff Walking</strong>, você deve configurar o ambiente assim:</p>
-<div class="highlight"><pre><span></span><code><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;CliffWalking-v0&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
+<div class="highlight"><pre><span></span><code><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">"CliffWalking-v0"</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
 </code></pre></div>
 <p>Depois da etapa de treinamento, para ver o comportamento, você deve codificar algo assim:</p>
-<div class="highlight"><pre><span></span><code><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;CliffWalking-v0&quot;</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="s2">&quot;human&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
+<div class="highlight"><pre><span></span><code><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">"CliffWalking-v0"</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="s2">"human"</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
 
 <span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
 <span class="n">rewards</span> <span class="o">=</span> <span class="mi">0</span>
@@ -782,9 +866,9 @@ Q(s,a) \leftarrow Q(s,a) + \alpha [r +\gamma Q(s', a') - Q(s,a)]
     <span class="n">rewards</span> <span class="o">=</span> <span class="n">rewards</span> <span class="o">+</span> <span class="n">reward</span>
     <span class="n">actions</span> <span class="o">=</span> <span class="n">actions</span> <span class="o">+</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Actions taken: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">actions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rewards: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rewards</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Actions taken: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">actions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Rewards: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rewards</span><span class="p">))</span>
 </code></pre></div>
 <p>Configure o <code>render_mode</code> para <code>human</code> para ver a animação do agente.</p>
 <h3 id="analise-dos-resultados">Análise dos resultados</h3>

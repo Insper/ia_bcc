@@ -516,6 +516,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alterando os algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/04_x_modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuação sobre algoritmos de busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/05_busca_com_custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de custo uniforme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -722,16 +806,16 @@
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">inicio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">fim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
     <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Achou!'</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Nao achou solucao'</span><span class="p">)</span>
 </code></pre></div>
 <p>A saída deve ser: </p>
 <div class="highlight"><pre><span></span><code>Início: [0, 0], Fim: [1, 3]
@@ -757,26 +841,26 @@ Em seguida, você pode usar o decorador <code>@profile</code> para medir o uso d
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">inicio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">fim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
     <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Achou!'</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Nao achou solucao'</span><span class="p">)</span>
 </code></pre></div>
 <p>O formato de saída do <code>memory_profiler</code> mostrará o uso de memória linha por linha, permitindo que você identifique quais partes do código estão consumindo mais memória, por exemplo: </p>
-<div class="highlight"><pre><span></span><code><span class="mi">42</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="mi">43</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fim</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="mi">42</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="mi">43</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fim</span><span class="p">)</span>
     <span class="mi">44</span>     <span class="mf">77.1</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
     <span class="mi">45</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">4.3</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
     <span class="mi">46</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>       <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="mi">47</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+    <span class="mi">47</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="s1">'Achou!'</span><span class="p">)</span>
     <span class="mi">48</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
-    <span class="mi">49</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="mi">49</span>     <span class="mf">81.3</span> <span class="n">MiB</span>      <span class="mf">0.0</span> <span class="n">MiB</span>           <span class="mi">1</span>           <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>Como podemos ver, para este exemplo, a linha que executa a busca (<code>result = algorithm.search(state)</code>) é a que mais consome memória, o que é esperado, pois é onde ocorre a expansão dos nós e o armazenamento dos estados visitados. O uso de memória pode variar dependendo do algoritmo de busca utilizado e da profundidade da solução encontrada.</p>
 <p>Para medir o tempo de execução, você pode usar a função <code>time()</code> do módulo <code>time</code> para registrar o tempo antes e depois da execução do algoritmo de busca. Por exemplo:</p>
@@ -787,20 +871,20 @@ Em seguida, você pode usar o decorador <code>@profile</code> para medir o uso d
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">inicio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">fim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fim</span><span class="p">)</span>       
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Início: </span><span class="si">{</span><span class="n">inicio</span><span class="si">}</span><span class="s2">, Fim: </span><span class="si">{</span><span class="n">fim</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">Cadeado2</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fim</span><span class="p">)</span>       
     <span class="n">algorithm</span> <span class="o">=</span> <span class="n">BuscaLargura</span><span class="p">()</span>
     <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>  <span class="c1"># Início da medição de tempo</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
     <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>  <span class="c1"># Fim da medição de tempo</span>
     <span class="n">execution_time</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>  <span class="c1"># Cálculo do tempo de execução</span>
     <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Achou!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Achou!'</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">show_path</span><span class="p">())</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Custo: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nao achou solucao&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tempo de execução: </span><span class="si">{</span><span class="n">execution_time</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> segundos&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Nao achou solucao'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tempo de execução: </span><span class="si">{</span><span class="n">execution_time</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> segundos"</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="medindo-o-tempo-e-memoria-de-execucao-para-diferentes-profundidades">Medindo o tempo e memória de execução para diferentes profundidades</h2>
 <p>Teste a implementação do problema dos cadeados para diferentes combinações de fim, variando a profundidade da solução. Meça o tempo e a memória de execução para cada caso e analise como esses recursos são afetados pela profundidade da solução encontrada. Considere os algoritmos de busca em largura, profundidade e profundidade iterativa para comparar os resultados.</p>
