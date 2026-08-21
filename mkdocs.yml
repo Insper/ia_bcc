@@ -73,7 +73,7 @@ nav:
 ###    - 'aulas/99_topicos/index.md'
   - 'Referências':
     - 'referencias/01_introducao/index.md'
-#    - 'referencias/03_algoritmos_busca/index.md'
+    - 'referencias/03_algoritmos_busca/index.md'
 #    - 'referencias/03_csp/index.md'
 ##    - 'referencias/03_dijkstra/index.md'
 #    - 'referencias/04_busca_competitiva/index.md'
