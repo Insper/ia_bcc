@@ -11,6 +11,8 @@ def env(self):
     return json.dumps(self.__dict__)
 ```
 
+Por enquanto, esta implementação é importante apenas para o função `trace` do método `search`. No entanto, futuramente, esta implementação também será importante para a poda da árvore de busca. 
+
 ## Alterando a chamada do método `search`
 
 Na hora de chamar o método `search` altere o código de: 
@@ -47,9 +49,12 @@ para:
 
 Tente entender o que acontece: (i) qual o resultado encontrado, (ii) qual o conteúdo do log impresso. Por que os resultados são diferentes? 
 
-## Objetivo desta aula
+??? hint "Objetivo desta aula"
+    O objetivo desta aula é introduzir o conceito de algoritmo de busca, mais especificamente, usando os algoritmo de busca em largura e o algortimo de busca em profundidade.
 
-O objetivo desta aula é introduzir o conceito de algoritmo de busca, mais especificamente, usando os algoritmo de busca em largura e o algortimo de busca em profundidade.
+??? hint "Importante!"
+    Quais são as diferenças entre os algoritmos de busca em largura e em profundidade? Quais são as vantagens e desvantagens de cada um deles?     
+
 
 ## Material de referência
 
