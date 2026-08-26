@@ -22,7 +22,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 
 | Descrição                       | Prazo para entrega |
 | :------------------------------ | :----------------: |
-| TBD | TBD |
+| Avaliação dos algoritmos BL, BP e BPI (o enunciado foi fornecido de forma oral em sala de aula) | 31/08/2026 |
 
 ## 2 projetos
 
