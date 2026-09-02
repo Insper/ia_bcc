@@ -8,9 +8,19 @@
   </thead>
   <tbody>
     <tr>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">30-Set</td>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de um agente autônomo que atua em um ambiente discreto, determinístico, síncrono, simulado e *single agent* ou *multi-agent*.</td>
-      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de projeto em sala de aula</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">28-Set</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Visão geral sobre robótica e framework ROS2</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Visão geral sobre robótica e framework ROS2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">30-Set</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de um agente robótico (físico).</td>
+      <td style = "background-color: white; color: black;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de um projeto envolvendo um robô físico</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">5-Out</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Desenvolvimento de um agente robótico (físico).</td>
+      <td style = "background-color: #FFF2CC;font-family: Century Gothic, sans-serif;font-size: medium;text-align: left;padding: 0px 20px 0px 0px;width: auto">Implementação de um projeto envolvendo um robô físico</td>
     </tr>
   </tbody>
 </table></p>

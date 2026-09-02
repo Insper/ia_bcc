@@ -36,12 +36,12 @@ O conteúdo associado a este bloco é [8](./aulas/08_heuristica/index.md), [9](.
 O conteúdo associado a este bloco é [12](./aulas/12_csp/index.md) e [13](./aulas/13_jogos/index.md).
 -->
 
-## Projeto Intermediário
+## Robótica
 
 --8<-- "plano_aula_5.md"
 
 <!--
-O conteúdo associado a este bloco é [14](./projetos/2025_01_intermediario/index.md).
+O conteúdo associado a este bloco é [19](./projetos/2025_01_robo/index.md).
 -->
 
 ## Aprendendo políticas
@@ -52,14 +52,15 @@ O conteúdo associado a este bloco é [14](./projetos/2025_01_intermediario/inde
 O conteúdo associado a este bloco é [15](./aulas/15_rl/index.md), [16](./aulas/15_rl_parte2/index.md), [17](./aulas/15_rl_sarsa/index.md) e [18](./aulas/15_xnon_determ/index.md).
 -->
 
-## Robótica
+## Projeto Final
 
 --8<-- "plano_aula_7.md"
 
 <!--
-O conteúdo associado a este bloco é [19](./projetos/2025_01_robo/index.md).
+O conteúdo associado a este bloco é [14](./projetos/2025_01_intermediario/index.md).
+-->
 
-
+<!--
 ## Reposições de aulas
 
 Neste semestre não teremos aulas nos dias 25/8 e 27/8. 

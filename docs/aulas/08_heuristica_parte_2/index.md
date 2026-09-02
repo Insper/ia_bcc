@@ -64,32 +64,34 @@ Perguntas:
 
 E o algoritmo A-Estrela? 
 
-
 ## Comparando algoritmos
 
 Execute todos os objetivos listados abaixo para os algoritmos de busca também listados na tabela abaixo. 
 
-|Objetivo | Algoritmo | Solução | Tempo de processamento|
-|:--------|:----------|:---------:|:----------------------:|
-| i $\rightarrow$ o | Custo Uniforme | | |
-| b $\rightarrow$ o | Custo Uniforme | | |
-| i $\rightarrow$ x | Custo Uniforme | | | 
-| i $\rightarrow$ o | Ganancioso | | |
-| b $\rightarrow$ o | Ganancioso | | |
-| i $\rightarrow$ x | Ganancioso | | | 
-| i $\rightarrow$ o | A-Estrela | | |
-| b $\rightarrow$ o | A-Estrela | | |
-| i $\rightarrow$ x | A-Estrela | | |
-| i $\rightarrow$ o | A-Estrela ($h(N) = h(N) * 100) | | |
-| b $\rightarrow$ o | A-Estrela ($h(N) = h(N) * 100)| | |
-| i $\rightarrow$ x | A-Estrela ($h(N) = h(N) * 100)| | | 
-| i $\rightarrow$ o | A-Estrela ($h(N) == 1$) | | |
-| b $\rightarrow$ o | A-Estrela ($h(N) == 1$)| | | 
-| i $\rightarrow$ x | A-Estrela ($h(N) == 1$)| | |
+|Objetivo | Algoritmo | Solução | Solução é ótima? | Tempo de processamento| Quantidade de nodos analisados |
+|:--------|:----------|:---------:|:----------------------:|:-------------------:|:-------------------:|
+| i $\rightarrow$ o | Custo Uniforme | | | | |
+| b $\rightarrow$ o | Custo Uniforme | | | | |
+| i $\rightarrow$ x | Custo Uniforme | | | | |
+| i $\rightarrow$ o | Ganancioso | | | | |
+| b $\rightarrow$ o | Ganancioso | | | | |
+| i $\rightarrow$ x | Ganancioso | | | | | 
+| i $\rightarrow$ o | A-Estrela | | | | |
+| b $\rightarrow$ o | A-Estrela | | | | |
+| i $\rightarrow$ x | A-Estrela | | | | |
+| i $\rightarrow$ o | A-Estrela ($h(N) = h(N) * 100) | | | | |
+| b $\rightarrow$ o | A-Estrela ($h(N) = h(N) * 100)| | | | |
+| i $\rightarrow$ x | A-Estrela ($h(N) = h(N) * 100)| | | | |
+| i $\rightarrow$ o | A-Estrela ($h(N) == 1$) | | | | |
+| b $\rightarrow$ o | A-Estrela ($h(N) == 1$)| | | | |
+| i $\rightarrow$ x | A-Estrela ($h(N) == 1$)| | | | |
 
-Anote na tabela acima o tempo de processamento e a solução encontrada e discuta os resultados obtidos:
+Anote na tabela acima o tempo de processamento a solução encontrada, se ela é ótima e a quantidade de nodos analisados.
 
-* Qual foi o tempo de processamento até a implementação encontrar uma solução?
+Uma forma de contar a quantidade nodos analisados é usar a função `trace` e contar o número de linhas que são impessas no terminal. Outra forma é alterando a implementação do método `search` para contar a quantidade de nodos analisados.
+
+Ao final da atividade, discuta com seus colegas as seguintes questões:
+
 * Por que o tempo de processamento foi diferente para cada algoritmo?
 * Por que a solução encontrada foi diferente em cada algoritmo?
 * Por que a solução encontrada foi diferente em cada versão do A-Estrela? 
