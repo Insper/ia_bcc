@@ -25,6 +25,7 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Avaliação dos algoritmos BL, BP e BPI (o enunciado foi fornecido de forma oral em sala de aula) | 31/08/2026 |
 | Atividade de busca em mapas com BCU, BG e A* | 09/09/2026 |
 | Problema das N rainhas | 14/09/2026 |
+| Revisão da prova | TBD |
 
 ## 2 projetos
 
