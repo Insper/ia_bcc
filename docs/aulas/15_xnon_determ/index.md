@@ -58,6 +58,8 @@ env = gym.make("FrozenLake-v1", map_name="8x8", is_slippery=True).env
 
 * O que muda? O problema se torna mais complexo? É necessário mudar algum dos hiperparâmetros? Qual é o melhor algoritmo? *Sarsa* ou *Q-Learning*? 
 
+<!--
+
 ## Atividade Avaliativa
 
 Considere o seguinte objetivo: *desenvolver um agente capaz de chegar ao ponto final em mais de 80% das vezes*. Faça o *clone* do projeto [https://classroom.github.com/a/yw_DNf5x](https://classroom.github.com/a/yw_DNf5x). Você deve adicionar neste projeto e fazer o commit dos seguintes artefatos: 
@@ -104,3 +106,5 @@ O deadline para a entrega desta atividade é **31 de outubro de 2025** às 23:30
 A nota deste trabalho será utilizada para compor a nota da avaliação final da disciplina. A nota deste trabalho equivale a 20% da nota da avaliação final.
 
 Qualquer tipo de plágio ou cópia de trabalho de outro aluno implicará em nota zero para ambos os alunos envolvidos.
+
+-->

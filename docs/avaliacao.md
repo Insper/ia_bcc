@@ -34,6 +34,8 @@ Seguem os enunciados que se encaixam nesta categoria:
 | Descrição                                                                                |  Prazo para entrega |
 |:-----------------------------------------------------------------------------------------|:-------------------:|
 | [Path planning com robótica](./projetos/2026_02_robo/index.md) | 05/10/2026 |
+| [Projeto final](./projetos/2026_02_final/index.md) | 04/11/2026 |
+
 
 <!--
 | [Taxi Driver anfíbio](./projetos/2025_01_intermediario/index.md) | 11/04/2025 |
